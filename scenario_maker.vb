@@ -1,6 +1,7 @@
 ﻿Public Class frm_scenario_maker
 
     ' let's initialize these variables globally so we don't have to worry about scope...
+    ' note: I made everything public as well...
 
     Dim scenario_file_path As String = "" ' ofd_scenario / sfd_scenario (string path)
     Dim aoe2de_file_path As String = "" ' ofd_aoe2de_path (string path)
@@ -18,6 +19,13 @@
     Dim starting_wood As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0} ' nud_wood_gaia, nud_wood_p1, ... nud_wood_p8 (index value)
     Dim starting_stone As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0} ' nud_stone_gaia, nud_stone_p1, ... nud_stone_p1 (index value)
     Dim starting_gold As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0} ' nud_gold_gaia, nud_gold_p1, ... nud_gold_p8 (index value)
+    Dim starting_population As Integer() = {200, 200, 200, 200, 200, 200, 200, 200, 200} ' nud_population_gaia, nud_population_p1, ... nud_population_p8 (index value)
+    Dim priority As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0} ' nud_priority_gaia, nud_priority_p1, ... nud_priority_p8 (index value)
+    Dim player_color As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0} ' cbx_color_gaia, cbx_color_p1, ... cbx_color_p8 (index value)
+    Dim tribe_name As String() = {"", "", "", "", "", "", "", "", ""} ' tbx_tribe_name_gaia, tbx_tribe_name_p1, ... tbx_tribe_name_p8 (text string)
+    ' note: I know this can be a string but, I am going to assume integer...
+    Dim tribe_string_id As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0} ' tbx_name_string_id_gaia, tbx_name_string_id_p1, ... tbx_name_string_id_p8 (text string to integer)
+    Dim ai_or_player As Boolean() = {False, False, False, False, False, False, False, False, False} ' cbx_ai_gaia, cbx_ai_p1, ... cbx_ai_p8
 
     Public Sub frm_scenario_maker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' on startup, be sure to define all your variables and reset all gui to a vaild minimum scenario...
