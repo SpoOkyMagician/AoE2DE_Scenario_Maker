@@ -13,8 +13,11 @@
     Dim script_filename As String = "" ' tbx_script_filename (text value)
     ' space for terrain...
     Dim player_count As Integer = 1 ' cbx_total_players (index value)
-    Dim starting_age As Integer() = {0, 0, 0, 0, 0, 0, 0, 0} ' cbx_gaia_age, cbx_p1_age, ... cbx_p8_age (index value)
+    Dim starting_age As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0} ' cbx_gaia_age, cbx_p1_age, ... cbx_p8_age (index value)
     Dim starting_food As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0} ' nud_food_gaia, nud_food_p1, ... nud_food_p8 (index value)
+    Dim starting_wood As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0} ' nud_wood_gaia, nud_wood_p1, ... nud_wood_p8 (index value)
+    Dim starting_stone As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0} ' nud_stone_gaia, nud_stone_p1, ... nud_stone_p1 (index value)
+    Dim starting_gold As Integer() = {0, 0, 0, 0, 0, 0, 0, 0, 0} ' nud_gold_gaia, nud_gold_p1, ... nud_gold_p8 (index value)
 
     Public Sub frm_scenario_maker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' on startup, be sure to define all your variables and reset all gui to a vaild minimum scenario...

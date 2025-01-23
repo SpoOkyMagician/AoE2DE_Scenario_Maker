@@ -32,6 +32,7 @@ Partial Class frm_scenario_maker
         btn_save = New Button()
         btn_load = New Button()
         tp_map = New TabPage()
+        tbx_script_filename = New TextBox()
         cbx_map_size = New ComboBox()
         nud_mwh_size = New NumericUpDown()
         cbx_team_positions = New CheckBox()
@@ -42,12 +43,12 @@ Partial Class frm_scenario_maker
         tp_players = New TabPage()
         cbx_gaia_age = New ComboBox()
         lbl_age = New Label()
-        ComboBox6 = New ComboBox()
-        ComboBox5 = New ComboBox()
-        ComboBox4 = New ComboBox()
-        ComboBox3 = New ComboBox()
-        ComboBox2 = New ComboBox()
-        ComboBox1 = New ComboBox()
+        cbx_p8_age = New ComboBox()
+        cbx_p7_age = New ComboBox()
+        cbx_p6_age = New ComboBox()
+        cbx_p5_age = New ComboBox()
+        cbx_p4_age = New ComboBox()
+        cbx_p3_age = New ComboBox()
         cbx_p2_age = New ComboBox()
         cbx_p1_age = New ComboBox()
         lbl_player_type = New Label()
@@ -273,7 +274,6 @@ Partial Class frm_scenario_maker
         ofd_scenario = New OpenFileDialog()
         sfd_scenario = New SaveFileDialog()
         ofd_aoe2de_path = New OpenFileDialog()
-        tbx_script_filename = New TextBox()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
@@ -446,6 +446,14 @@ Partial Class frm_scenario_maker
         tp_map.Text = "Map"
         tp_map.UseVisualStyleBackColor = True
         ' 
+        ' tbx_script_filename
+        ' 
+        tbx_script_filename.Location = New Point(8, 160)
+        tbx_script_filename.Name = "tbx_script_filename"
+        tbx_script_filename.Size = New Size(240, 23)
+        tbx_script_filename.TabIndex = 12
+        tbx_script_filename.Text = "Script Filename"
+        ' 
         ' cbx_map_size
         ' 
         cbx_map_size.FormattingEnabled = True
@@ -522,12 +530,12 @@ Partial Class frm_scenario_maker
         ' 
         tp_players.Controls.Add(cbx_gaia_age)
         tp_players.Controls.Add(lbl_age)
-        tp_players.Controls.Add(ComboBox6)
-        tp_players.Controls.Add(ComboBox5)
-        tp_players.Controls.Add(ComboBox4)
-        tp_players.Controls.Add(ComboBox3)
-        tp_players.Controls.Add(ComboBox2)
-        tp_players.Controls.Add(ComboBox1)
+        tp_players.Controls.Add(cbx_p8_age)
+        tp_players.Controls.Add(cbx_p7_age)
+        tp_players.Controls.Add(cbx_p6_age)
+        tp_players.Controls.Add(cbx_p5_age)
+        tp_players.Controls.Add(cbx_p4_age)
+        tp_players.Controls.Add(cbx_p3_age)
         tp_players.Controls.Add(cbx_p2_age)
         tp_players.Controls.Add(cbx_p1_age)
         tp_players.Controls.Add(lbl_player_type)
@@ -667,59 +675,59 @@ Partial Class frm_scenario_maker
         lbl_age.Text = "Starting Age"
         lbl_age.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' ComboBox6
+        ' cbx_p8_age
         ' 
-        ComboBox6.FormattingEnabled = True
-        ComboBox6.Location = New Point(136, 304)
-        ComboBox6.Name = "ComboBox6"
-        ComboBox6.Size = New Size(100, 23)
-        ComboBox6.TabIndex = 222
-        ComboBox6.Text = "Starting Age"
+        cbx_p8_age.FormattingEnabled = True
+        cbx_p8_age.Location = New Point(136, 304)
+        cbx_p8_age.Name = "cbx_p8_age"
+        cbx_p8_age.Size = New Size(100, 23)
+        cbx_p8_age.TabIndex = 222
+        cbx_p8_age.Text = "Starting Age"
         ' 
-        ' ComboBox5
+        ' cbx_p7_age
         ' 
-        ComboBox5.FormattingEnabled = True
-        ComboBox5.Location = New Point(136, 272)
-        ComboBox5.Name = "ComboBox5"
-        ComboBox5.Size = New Size(100, 23)
-        ComboBox5.TabIndex = 221
-        ComboBox5.Text = "Starting Age"
+        cbx_p7_age.FormattingEnabled = True
+        cbx_p7_age.Location = New Point(136, 272)
+        cbx_p7_age.Name = "cbx_p7_age"
+        cbx_p7_age.Size = New Size(100, 23)
+        cbx_p7_age.TabIndex = 221
+        cbx_p7_age.Text = "Starting Age"
         ' 
-        ' ComboBox4
+        ' cbx_p6_age
         ' 
-        ComboBox4.FormattingEnabled = True
-        ComboBox4.Location = New Point(136, 240)
-        ComboBox4.Name = "ComboBox4"
-        ComboBox4.Size = New Size(100, 23)
-        ComboBox4.TabIndex = 220
-        ComboBox4.Text = "Starting Age"
+        cbx_p6_age.FormattingEnabled = True
+        cbx_p6_age.Location = New Point(136, 240)
+        cbx_p6_age.Name = "cbx_p6_age"
+        cbx_p6_age.Size = New Size(100, 23)
+        cbx_p6_age.TabIndex = 220
+        cbx_p6_age.Text = "Starting Age"
         ' 
-        ' ComboBox3
+        ' cbx_p5_age
         ' 
-        ComboBox3.FormattingEnabled = True
-        ComboBox3.Location = New Point(136, 208)
-        ComboBox3.Name = "ComboBox3"
-        ComboBox3.Size = New Size(100, 23)
-        ComboBox3.TabIndex = 219
-        ComboBox3.Text = "Starting Age"
+        cbx_p5_age.FormattingEnabled = True
+        cbx_p5_age.Location = New Point(136, 208)
+        cbx_p5_age.Name = "cbx_p5_age"
+        cbx_p5_age.Size = New Size(100, 23)
+        cbx_p5_age.TabIndex = 219
+        cbx_p5_age.Text = "Starting Age"
         ' 
-        ' ComboBox2
+        ' cbx_p4_age
         ' 
-        ComboBox2.FormattingEnabled = True
-        ComboBox2.Location = New Point(136, 176)
-        ComboBox2.Name = "ComboBox2"
-        ComboBox2.Size = New Size(100, 23)
-        ComboBox2.TabIndex = 218
-        ComboBox2.Text = "Starting Age"
+        cbx_p4_age.FormattingEnabled = True
+        cbx_p4_age.Location = New Point(136, 176)
+        cbx_p4_age.Name = "cbx_p4_age"
+        cbx_p4_age.Size = New Size(100, 23)
+        cbx_p4_age.TabIndex = 218
+        cbx_p4_age.Text = "Starting Age"
         ' 
-        ' ComboBox1
+        ' cbx_p3_age
         ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(136, 144)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(100, 23)
-        ComboBox1.TabIndex = 217
-        ComboBox1.Text = "Starting Age"
+        cbx_p3_age.FormattingEnabled = True
+        cbx_p3_age.Location = New Point(136, 144)
+        cbx_p3_age.Name = "cbx_p3_age"
+        cbx_p3_age.Size = New Size(100, 23)
+        cbx_p3_age.TabIndex = 217
+        cbx_p3_age.Text = "Starting Age"
         ' 
         ' cbx_p2_age
         ' 
@@ -1453,9 +1461,9 @@ Partial Class frm_scenario_maker
         lb_gold.AutoSize = True
         lb_gold.Location = New Point(440, 16)
         lb_gold.Name = "lb_gold"
-        lb_gold.Size = New Size(37, 15)
+        lb_gold.Size = New Size(32, 15)
         lb_gold.TabIndex = 137
-        lb_gold.Text = "Stone"
+        lb_gold.Text = "Gold"
         lb_gold.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' nud_gold_p1
@@ -2891,14 +2899,6 @@ Partial Class frm_scenario_maker
         ofd_aoe2de_path.Filter = """Age of Empires 2 DE""|*.exe"
         ofd_aoe2de_path.InitialDirectory = """C:\Program Files (x86)\Steam\steamapps\common\AoE2DE"""
         ' 
-        ' tbx_script_filename
-        ' 
-        tbx_script_filename.Location = New Point(8, 160)
-        tbx_script_filename.Name = "tbx_script_filename"
-        tbx_script_filename.Size = New Size(240, 23)
-        tbx_script_filename.TabIndex = 12
-        tbx_script_filename.Text = "Script Filename"
-        ' 
         ' frm_scenario_maker
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -3214,14 +3214,14 @@ Partial Class frm_scenario_maker
     Public WithEvents cbx_lock_teams As CheckBox
     Public WithEvents cbx_random_starting_points As CheckBox
     Public WithEvents cbx_choose_teams As CheckBox
-    Public WithEvents ComboBox1 As ComboBox
+    Public WithEvents cbx_p3_age As ComboBox
     Public WithEvents cbx_p2_age As ComboBox
     Public WithEvents cbx_p1_age As ComboBox
-    Public WithEvents ComboBox3 As ComboBox
-    Public WithEvents ComboBox2 As ComboBox
-    Public WithEvents ComboBox6 As ComboBox
-    Public WithEvents ComboBox5 As ComboBox
-    Public WithEvents ComboBox4 As ComboBox
+    Public WithEvents cbx_p5_age As ComboBox
+    Public WithEvents cbx_p4_age As ComboBox
+    Public WithEvents cbx_p8_age As ComboBox
+    Public WithEvents cbx_p7_age As ComboBox
+    Public WithEvents cbx_p6_age As ComboBox
     Public WithEvents lbl_age As Label
     Public WithEvents cbx_gaia_age As ComboBox
     Friend WithEvents tp_terrain As TabPage
