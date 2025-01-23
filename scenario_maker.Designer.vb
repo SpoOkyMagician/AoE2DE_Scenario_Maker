@@ -274,6 +274,7 @@ Partial Class frm_scenario_maker
         ofd_scenario = New OpenFileDialog()
         sfd_scenario = New SaveFileDialog()
         ofd_aoe2de_path = New OpenFileDialog()
+        lbl_aoe2de_sm = New Label()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
@@ -335,6 +336,7 @@ Partial Class frm_scenario_maker
         CType(nud_food_p1, ComponentModel.ISupportInitialize).BeginInit()
         tp_units.SuspendLayout()
         tp_diplomacy.SuspendLayout()
+        tp_about.SuspendLayout()
         SuspendLayout()
         ' 
         ' tc_main
@@ -2871,6 +2873,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tp_about
         ' 
+        tp_about.Controls.Add(lbl_aoe2de_sm)
         tp_about.Location = New Point(4, 24)
         tp_about.Name = "tp_about"
         tp_about.Padding = New Padding(3)
@@ -2898,6 +2901,15 @@ Partial Class frm_scenario_maker
         ofd_aoe2de_path.FileName = "AoE2DE_s.exe"
         ofd_aoe2de_path.Filter = """Age of Empires 2 DE""|*.exe"
         ofd_aoe2de_path.InitialDirectory = """C:\Program Files (x86)\Steam\steamapps\common\AoE2DE"""
+        ' 
+        ' lbl_aoe2de_sm
+        ' 
+        lbl_aoe2de_sm.AutoSize = True
+        lbl_aoe2de_sm.Location = New Point(8, 16)
+        lbl_aoe2de_sm.Name = "lbl_aoe2de_sm"
+        lbl_aoe2de_sm.Size = New Size(265, 45)
+        lbl_aoe2de_sm.TabIndex = 0
+        lbl_aoe2de_sm.Text = "Age of Empires 2 DE Scenario Maker" & vbCrLf & "Version: 0.0.1" & vbCrLf & "Created By: Jeremy ""SpoOkyMagician"" Levegood"
         ' 
         ' frm_scenario_maker
         ' 
@@ -2973,6 +2985,8 @@ Partial Class frm_scenario_maker
         tp_units.ResumeLayout(False)
         tp_diplomacy.ResumeLayout(False)
         tp_diplomacy.PerformLayout()
+        tp_about.ResumeLayout(False)
+        tp_about.PerformLayout()
         ResumeLayout(False)
     End Sub
 
@@ -3228,4 +3242,5 @@ Partial Class frm_scenario_maker
     Public WithEvents btn_test As Button
     Public WithEvents ofd_aoe2de_path As OpenFileDialog
     Public WithEvents tbx_script_filename As TextBox
+    Friend WithEvents lbl_aoe2de_sm As Label
 End Class
