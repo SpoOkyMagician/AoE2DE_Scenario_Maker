@@ -225,8 +225,7 @@ Partial Class frm_scenario_maker
         cbx_unit_player = New ComboBox()
         btn_remove_unit = New Button()
         btn_create_unit = New Button()
-        lbx_map_xy = New ListBox()
-        lbx_units = New ListBox()
+        lbx_objects = New ListBox()
         tp_diplomacy = New TabPage()
         cbx_random_starting_points = New CheckBox()
         cbx_choose_teams = New CheckBox()
@@ -335,6 +334,9 @@ Partial Class frm_scenario_maker
         ofd_scenario = New OpenFileDialog()
         sfd_scenario = New SaveFileDialog()
         ofd_aoe2de_path = New OpenFileDialog()
+        lbx_map_y = New ListBox()
+        lbx_map_x = New ListBox()
+        lbx_placed_objects = New ListBox()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
@@ -2477,11 +2479,13 @@ Partial Class frm_scenario_maker
         ' 
         ' tp_units
         ' 
+        tp_units.Controls.Add(lbx_placed_objects)
+        tp_units.Controls.Add(lbx_map_y)
+        tp_units.Controls.Add(lbx_map_x)
         tp_units.Controls.Add(cbx_unit_player)
         tp_units.Controls.Add(btn_remove_unit)
         tp_units.Controls.Add(btn_create_unit)
-        tp_units.Controls.Add(lbx_map_xy)
-        tp_units.Controls.Add(lbx_units)
+        tp_units.Controls.Add(lbx_objects)
         tp_units.Location = New Point(4, 24)
         tp_units.Name = "tp_units"
         tp_units.Padding = New Padding(3)
@@ -2494,7 +2498,7 @@ Partial Class frm_scenario_maker
         ' 
         cbx_unit_player.FormattingEnabled = True
         cbx_unit_player.Items.AddRange(New Object() {"Gaia", "Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8"})
-        cbx_unit_player.Location = New Point(488, 72)
+        cbx_unit_player.Location = New Point(360, 96)
         cbx_unit_player.Name = "cbx_unit_player"
         cbx_unit_player.Size = New Size(121, 23)
         cbx_unit_player.TabIndex = 4
@@ -2502,7 +2506,7 @@ Partial Class frm_scenario_maker
         ' 
         ' btn_remove_unit
         ' 
-        btn_remove_unit.Location = New Point(488, 40)
+        btn_remove_unit.Location = New Point(360, 64)
         btn_remove_unit.Name = "btn_remove_unit"
         btn_remove_unit.Size = New Size(75, 25)
         btn_remove_unit.TabIndex = 3
@@ -2511,30 +2515,22 @@ Partial Class frm_scenario_maker
         ' 
         ' btn_create_unit
         ' 
-        btn_create_unit.Location = New Point(488, 8)
+        btn_create_unit.Location = New Point(360, 32)
         btn_create_unit.Name = "btn_create_unit"
         btn_create_unit.Size = New Size(75, 25)
         btn_create_unit.TabIndex = 2
         btn_create_unit.Text = "Create"
         btn_create_unit.UseVisualStyleBackColor = True
         ' 
-        ' lbx_map_xy
+        ' lbx_objects
         ' 
-        lbx_map_xy.FormattingEnabled = True
-        lbx_map_xy.ItemHeight = 15
-        lbx_map_xy.Location = New Point(247, 6)
-        lbx_map_xy.Name = "lbx_map_xy"
-        lbx_map_xy.Size = New Size(235, 439)
-        lbx_map_xy.TabIndex = 1
-        ' 
-        ' lbx_units
-        ' 
-        lbx_units.FormattingEnabled = True
-        lbx_units.ItemHeight = 15
-        lbx_units.Location = New Point(6, 6)
-        lbx_units.Name = "lbx_units"
-        lbx_units.Size = New Size(235, 439)
-        lbx_units.TabIndex = 0
+        lbx_objects.FormattingEnabled = True
+        lbx_objects.ItemHeight = 15
+        lbx_objects.Items.AddRange(New Object() {"-1: None", "0: "})
+        lbx_objects.Location = New Point(8, 32)
+        lbx_objects.Name = "lbx_objects"
+        lbx_objects.Size = New Size(235, 469)
+        lbx_objects.TabIndex = 0
         ' 
         ' tp_diplomacy
         ' 
@@ -3600,11 +3596,12 @@ Partial Class frm_scenario_maker
         ' lbl_aoe2de_sm
         ' 
         lbl_aoe2de_sm.AutoSize = True
+        lbl_aoe2de_sm.Font = New Font("Segoe UI", 16F, FontStyle.Bold)
         lbl_aoe2de_sm.Location = New Point(8, 16)
         lbl_aoe2de_sm.Name = "lbl_aoe2de_sm"
-        lbl_aoe2de_sm.Size = New Size(265, 45)
+        lbl_aoe2de_sm.Size = New Size(523, 90)
         lbl_aoe2de_sm.TabIndex = 0
-        lbl_aoe2de_sm.Text = "Age of Empires 2 DE Scenario Maker" & vbCrLf & "Version: 0.0.1" & vbCrLf & "Created By: Jeremy ""SpoOkyMagician"" Levegood"
+        lbl_aoe2de_sm.Text = "Age of Empires 2 DE Scenario Maker" & vbCrLf & "Version: 0.0.2" & vbCrLf & "Created By: Jeremy ""SpoOkyMagician"" Levegood"
         ' 
         ' ofd_scenario
         ' 
@@ -3625,6 +3622,35 @@ Partial Class frm_scenario_maker
         ofd_aoe2de_path.FileName = "AoE2DE_s.exe"
         ofd_aoe2de_path.Filter = """Age of Empires 2 DE""|*.exe"
         ofd_aoe2de_path.InitialDirectory = """C:\Program Files (x86)\Steam\steamapps\common\AoE2DE"""
+        ' 
+        ' lbx_map_y
+        ' 
+        lbx_map_y.FormattingEnabled = True
+        lbx_map_y.ItemHeight = 15
+        lbx_map_y.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326", "327", "328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353", "354", "355", "356", "357", "358", "359", "360", "361", "362", "363", "364", "365", "366", "367", "368", "369", "370", "371", "372", "373", "374", "375", "376", "377", "378", "379", "380", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "410", "411", "412", "413", "414", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "425", "426", "427", "428", "429", "430", "431", "432", "433", "434", "435", "436", "437", "438", "439", "440", "441", "442", "443", "444", "445", "446", "447", "448", "449", "450", "451", "452", "453", "454", "455", "456", "457", "458", "459", "460", "461", "462", "463", "464", "465", "466", "467", "468", "469", "470", "471", "472", "473", "474", "475", "476", "477", "478", "479"})
+        lbx_map_y.Location = New Point(304, 32)
+        lbx_map_y.Name = "lbx_map_y"
+        lbx_map_y.Size = New Size(48, 469)
+        lbx_map_y.TabIndex = 14
+        ' 
+        ' lbx_map_x
+        ' 
+        lbx_map_x.FormattingEnabled = True
+        lbx_map_x.ItemHeight = 15
+        lbx_map_x.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326", "327", "328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353", "354", "355", "356", "357", "358", "359", "360", "361", "362", "363", "364", "365", "366", "367", "368", "369", "370", "371", "372", "373", "374", "375", "376", "377", "378", "379", "380", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "410", "411", "412", "413", "414", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "425", "426", "427", "428", "429", "430", "431", "432", "433", "434", "435", "436", "437", "438", "439", "440", "441", "442", "443", "444", "445", "446", "447", "448", "449", "450", "451", "452", "453", "454", "455", "456", "457", "458", "459", "460", "461", "462", "463", "464", "465", "466", "467", "468", "469", "470", "471", "472", "473", "474", "475", "476", "477", "478", "479"})
+        lbx_map_x.Location = New Point(248, 32)
+        lbx_map_x.Name = "lbx_map_x"
+        lbx_map_x.Size = New Size(48, 469)
+        lbx_map_x.TabIndex = 13
+        ' 
+        ' lbx_placed_objects
+        ' 
+        lbx_placed_objects.FormattingEnabled = True
+        lbx_placed_objects.ItemHeight = 15
+        lbx_placed_objects.Location = New Point(488, 32)
+        lbx_placed_objects.Name = "lbx_placed_objects"
+        lbx_placed_objects.Size = New Size(152, 469)
+        lbx_placed_objects.TabIndex = 15
         ' 
         ' frm_scenario_maker
         ' 
@@ -3838,8 +3864,7 @@ Partial Class frm_scenario_maker
     Public WithEvents lbl_player_type As Label
     Public WithEvents btn_new_scenario As Button
     Public WithEvents tp_units As TabPage
-    Public WithEvents lbx_units As ListBox
-    Public WithEvents lbx_map_xy As ListBox
+    Public WithEvents lbx_objects As ListBox
     Public WithEvents btn_remove_unit As Button
     Public WithEvents btn_create_unit As Button
     Public WithEvents tp_diplomacy As TabPage
@@ -4022,4 +4047,7 @@ Partial Class frm_scenario_maker
     Friend WithEvents cbx_p5_lock_personality As CheckBox
     Friend WithEvents cbx_p4_lock_personality As CheckBox
     Friend WithEvents cbx_p3_lock_personality As CheckBox
+    Public WithEvents lbx_map_y As ListBox
+    Public WithEvents lbx_map_x As ListBox
+    Public WithEvents lbx_placed_objects As ListBox
 End Class
