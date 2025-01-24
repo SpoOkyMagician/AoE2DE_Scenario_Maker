@@ -36,6 +36,8 @@
     ' space for triggers...
     ' space for about...? (may not need.)
 
+    ' [APPLICATION LOAD CODE]
+
     Public Sub frm_scenario_maker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' on startup, be sure to define all your variables and reset all gui to a vaild minimum scenario...
         Try
@@ -45,6 +47,9 @@
             MessageBox.Show("An error occured while trying to create variables. Hard Drive/Memory Full?")
         End Try
     End Sub
+
+    ' [TAB: FILE CODE]
+
     Public Sub btn_new_scenario_Click(sender As Object, e As EventArgs) Handles btn_new_scenario.Click
         ' on clicking new, be sure to define all your variables and reset all gui to a vaild minimum scenario...
         Try
@@ -86,6 +91,9 @@
             MessageBox.Show("An error occured while trying to launch AoE2DE's Editor. Permission Issue/Wrong Executable/Cancelled?")
         End Try
     End Sub
+
+    ' [TAB: MAP CODE]
+
     Public Sub cbx_map_size_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_map_size.SelectedIndexChanged
 
     End Sub
@@ -110,7 +118,47 @@
 
     End Sub
 
+    Public Sub tbx_script_filename_TextChanged(sender As Object, e As EventArgs) Handles tbx_script_filename.TextChanged
+
+    End Sub
+
+    ' [TAB: TERRAIN CODE]
+
+    Public Sub lbx_base_terrain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_base_terrain.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub lbx_layer_terrain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_layer_terrain.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub lbx_x_terrain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_x_terrain.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub lbx_y_terrain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_y_terrain.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub lbx_elevation_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_elevation.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+    End Sub
+
+    Public Sub cbx_use_layers_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_use_layers.CheckedChanged
+
+    End Sub
+
+    ' [TAB: PLAYERS CODE]
+
     Public Sub cbx_total_players_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_total_players.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_gaia_age_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_gaia_age.SelectedIndexChanged
 
     End Sub
 
@@ -153,6 +201,12 @@
     Public Sub cbx_ai_gaia_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_ai_gaia.CheckedChanged
 
     End Sub
+
+    Public Sub cbx_gaia_ai_personality_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_gaia_ai_personality.SelectedIndexChanged
+
+    End Sub
+
+    ' BELOW IS NOT ORGANIZED YET...
 
     Public Sub nud_food_p1_ValueChanged(sender As Object, e As EventArgs) Handles nud_food_p1.ValueChanged
 
@@ -459,30 +513,6 @@
     End Sub
 
     Public Sub btn_p1_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p2_diplo.Click
-
-    End Sub
-
-    Public Sub lbx_base_terrain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_base_terrain.SelectedIndexChanged
-
-    End Sub
-
-    Public Sub lbx_layer_terrain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_layer_terrain.SelectedIndexChanged
-
-    End Sub
-
-    Public Sub lbx_x_terrain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_x_terrain.SelectedIndexChanged
-
-    End Sub
-
-    Public Sub lbx_y_terrain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_y_terrain.SelectedIndexChanged
-
-    End Sub
-
-    Public Sub lbx_elevation_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_elevation.SelectedIndexChanged
-
-    End Sub
-
-    Public Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
     End Sub
 

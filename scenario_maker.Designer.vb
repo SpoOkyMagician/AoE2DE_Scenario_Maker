@@ -40,6 +40,7 @@ Partial Class frm_scenario_maker
         cbx_color_mood = New ComboBox()
         cbx_ai_map_type = New ComboBox()
         tp_terrain = New TabPage()
+        cbx_use_layers = New CheckBox()
         lbl_y_terrain = New Label()
         lbx_y_terrain = New ListBox()
         lbl_x_terrain = New Label()
@@ -295,7 +296,6 @@ Partial Class frm_scenario_maker
         ofd_scenario = New OpenFileDialog()
         sfd_scenario = New SaveFileDialog()
         ofd_aoe2de_path = New OpenFileDialog()
-        cbx_use_layers = New CheckBox()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
@@ -561,6 +561,16 @@ Partial Class frm_scenario_maker
         tp_terrain.TabIndex = 11
         tp_terrain.Text = "Terrain"
         tp_terrain.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_use_layers
+        ' 
+        cbx_use_layers.AutoSize = True
+        cbx_use_layers.Location = New Point(664, 64)
+        cbx_use_layers.Name = "cbx_use_layers"
+        cbx_use_layers.Size = New Size(105, 19)
+        cbx_use_layers.TabIndex = 14
+        cbx_use_layers.Text = "Layering Mode"
+        cbx_use_layers.UseVisualStyleBackColor = True
         ' 
         ' lbl_y_terrain
         ' 
@@ -3138,16 +3148,6 @@ Partial Class frm_scenario_maker
         ofd_aoe2de_path.FileName = "AoE2DE_s.exe"
         ofd_aoe2de_path.Filter = """Age of Empires 2 DE""|*.exe"
         ofd_aoe2de_path.InitialDirectory = """C:\Program Files (x86)\Steam\steamapps\common\AoE2DE"""
-        ' 
-        ' cbx_use_layers
-        ' 
-        cbx_use_layers.AutoSize = True
-        cbx_use_layers.Location = New Point(664, 64)
-        cbx_use_layers.Name = "cbx_use_layers"
-        cbx_use_layers.Size = New Size(105, 19)
-        cbx_use_layers.TabIndex = 14
-        cbx_use_layers.Text = "Layering Mode"
-        cbx_use_layers.UseVisualStyleBackColor = True
         ' 
         ' frm_scenario_maker
         ' 
