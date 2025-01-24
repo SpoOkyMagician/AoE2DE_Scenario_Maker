@@ -40,6 +40,10 @@ Partial Class frm_scenario_maker
         cbx_color_mood = New ComboBox()
         cbx_ai_map_type = New ComboBox()
         tp_terrain = New TabPage()
+        lbx_elevation = New ListBox()
+        Button1 = New Button()
+        lbx_x_terrain = New ListBox()
+        lbx_base_terrain = New ListBox()
         tp_players = New TabPage()
         cbx_gaia_age = New ComboBox()
         lbl_age = New Label()
@@ -271,14 +275,22 @@ Partial Class frm_scenario_maker
         tp_cinematics = New TabPage()
         tp_triggers = New TabPage()
         tp_about = New TabPage()
+        lbl_aoe2de_sm = New Label()
         ofd_scenario = New OpenFileDialog()
         sfd_scenario = New SaveFileDialog()
         ofd_aoe2de_path = New OpenFileDialog()
-        lbl_aoe2de_sm = New Label()
+        lbx_layer_terrain = New ListBox()
+        lbl_base_terrain = New Label()
+        lbl_layer_terrain = New Label()
+        lbl_elevation = New Label()
+        lbl_x_terrain = New Label()
+        lbx_y_terrain = New ListBox()
+        lbl_y_terrain = New Label()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
         CType(nud_mwh_size, ComponentModel.ISupportInitialize).BeginInit()
+        tp_terrain.SuspendLayout()
         tp_players.SuspendLayout()
         CType(NumericUpDown7, ComponentModel.ISupportInitialize).BeginInit()
         CType(NumericUpDown6, ComponentModel.ISupportInitialize).BeginInit()
@@ -521,12 +533,62 @@ Partial Class frm_scenario_maker
         ' 
         ' tp_terrain
         ' 
+        tp_terrain.Controls.Add(lbl_y_terrain)
+        tp_terrain.Controls.Add(lbx_y_terrain)
+        tp_terrain.Controls.Add(lbl_x_terrain)
+        tp_terrain.Controls.Add(lbl_elevation)
+        tp_terrain.Controls.Add(lbl_layer_terrain)
+        tp_terrain.Controls.Add(lbl_base_terrain)
+        tp_terrain.Controls.Add(lbx_layer_terrain)
+        tp_terrain.Controls.Add(lbx_elevation)
+        tp_terrain.Controls.Add(Button1)
+        tp_terrain.Controls.Add(lbx_x_terrain)
+        tp_terrain.Controls.Add(lbx_base_terrain)
         tp_terrain.Location = New Point(4, 24)
         tp_terrain.Name = "tp_terrain"
         tp_terrain.Size = New Size(1152, 509)
         tp_terrain.TabIndex = 11
         tp_terrain.Text = "Terrain"
         tp_terrain.UseVisualStyleBackColor = True
+        ' 
+        ' lbx_elevation
+        ' 
+        lbx_elevation.FormattingEnabled = True
+        lbx_elevation.ItemHeight = 15
+        lbx_elevation.Items.AddRange(New Object() {"Elevation 1", "Elevation 2", "Elevation 3", "Elevation 4", "Elevation 5", "Elevation 6", "Elevation 7"})
+        lbx_elevation.Location = New Point(568, 32)
+        lbx_elevation.Name = "lbx_elevation"
+        lbx_elevation.Size = New Size(88, 109)
+        lbx_elevation.TabIndex = 6
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(664, 32)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(75, 25)
+        Button1.TabIndex = 5
+        Button1.Text = "Set"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' lbx_x_terrain
+        ' 
+        lbx_x_terrain.FormattingEnabled = True
+        lbx_x_terrain.ItemHeight = 15
+        lbx_x_terrain.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326", "327", "328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353", "354", "355", "356", "357", "358", "359", "360", "361", "362", "363", "364", "365", "366", "367", "368", "369", "370", "371", "372", "373", "374", "375", "376", "377", "378", "379", "380", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "410", "411", "412", "413", "414", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "425", "426", "427", "428", "429", "430", "431", "432", "433", "434", "435", "436", "437", "438", "439", "440", "441", "442", "443", "444", "445", "446", "447", "448", "449", "450", "451", "452", "453", "454", "455", "456", "457", "458", "459", "460", "461", "462", "463", "464", "465", "466", "467", "468", "469", "470", "471", "472", "473", "474", "475", "476", "477", "478", "479"})
+        lbx_x_terrain.Location = New Point(456, 32)
+        lbx_x_terrain.Name = "lbx_x_terrain"
+        lbx_x_terrain.Size = New Size(48, 469)
+        lbx_x_terrain.TabIndex = 4
+        ' 
+        ' lbx_base_terrain
+        ' 
+        lbx_base_terrain.FormattingEnabled = True
+        lbx_base_terrain.ItemHeight = 15
+        lbx_base_terrain.Items.AddRange(New Object() {"Beach", "Beach (Non-Navigable)", "Beach (Non-Navigable), Wet Gravel", "Beach (Non-Navigable), Wet Rock", "Beach (Non-Navigable), Wet Sand", "Beach, Ice", "Beach, Vegetation", "Beach, Wet", "Beach, Wet Gravel", "Beach, Wet Rock", "Beach, White", "Beach, White, Vegetation", "Black", "Desert, Cracked", "Desert, Quicksand", "Desert, Sand", "Dirt 1", "Dirt 2", "Dirt 3", "Dirt 4", "Dirt, Mud", "Dirt, Savannah", "Farm", "Farm, 0%", "Farm, 33%", "Farm, 67%", "Farm, Dead", "Forest, Acacia", "Forest, Autumn", "Forest, Autumn Snow", "Forest, Bamboo", "Forest, Baobab", "Forest, Birch", "Forest, Bush", "Forest, Dead", "Forest, Dragon Tree", "Forest, Jungle", "Forest, Mangrove", "Forest, Mediterranean", "Forest, Oak", "Forest, Oak Bush", "Forest, Palm Desert", "Forest, Palm Grass", "Forest, Pine", "Forest, Pine Snow", "Forest, Rainforest", "Forest, Reeds", "Forest, Reeds (Beach)", "Forest, Reeds (Shallow)", "Grass 1", "Grass 2", "Grass 3", "Grass, Dry", "Grass, Foundation", "Grass, Jungle", "Grass, Jungle (Rainforest)", "Grass, Other", "Gravel, Default", "Gravel, Desert", "Ice", "Ice, Navigable", "Rice Farm", "Rice Farm, 0%", "Rice Farm, 33%", "Rice Farm, 66%", "Rice Farm, Dead", "Road", "Road, Broken", "Road, Fungus", "Road, Gravel", "Rock 1", "Shallows", "Shallows, Azure", "Shallows, Mangrove", "Snow", "Snow, Foundation", "Snow, Light", "Snow, Strong", "Swamp, Bogland", "Swamp, Shallows", "Underbrush", "Underbrush, Jungle", "Underbrush, Leaves", "Underbrush, Snow", "Water 2D, Bridge", "Water 2D, Shoreless", "Water, Azure", "Water, Brown", "Water, Deep", "Water, Deep Ocean", "Water, Green", "Water, Medium", "Water, Shallow"})
+        lbx_base_terrain.Location = New Point(8, 32)
+        lbx_base_terrain.Name = "lbx_base_terrain"
+        lbx_base_terrain.Size = New Size(216, 469)
+        lbx_base_terrain.TabIndex = 3
         ' 
         ' tp_players
         ' 
@@ -1779,7 +1841,7 @@ Partial Class frm_scenario_maker
         ' 
         cbx_unit_player.FormattingEnabled = True
         cbx_unit_player.Items.AddRange(New Object() {"Gaia", "Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8"})
-        cbx_unit_player.Location = New Point(488, 64)
+        cbx_unit_player.Location = New Point(488, 72)
         cbx_unit_player.Name = "cbx_unit_player"
         cbx_unit_player.Size = New Size(121, 23)
         cbx_unit_player.TabIndex = 4
@@ -1787,18 +1849,18 @@ Partial Class frm_scenario_maker
         ' 
         ' btn_remove_unit
         ' 
-        btn_remove_unit.Location = New Point(488, 35)
+        btn_remove_unit.Location = New Point(488, 40)
         btn_remove_unit.Name = "btn_remove_unit"
-        btn_remove_unit.Size = New Size(75, 23)
+        btn_remove_unit.Size = New Size(75, 25)
         btn_remove_unit.TabIndex = 3
         btn_remove_unit.Text = "Remove Unit"
         btn_remove_unit.UseVisualStyleBackColor = True
         ' 
         ' btn_create_unit
         ' 
-        btn_create_unit.Location = New Point(488, 6)
+        btn_create_unit.Location = New Point(488, 8)
         btn_create_unit.Name = "btn_create_unit"
-        btn_create_unit.Size = New Size(75, 23)
+        btn_create_unit.Size = New Size(75, 25)
         btn_create_unit.TabIndex = 2
         btn_create_unit.Text = "Create"
         btn_create_unit.UseVisualStyleBackColor = True
@@ -2882,6 +2944,15 @@ Partial Class frm_scenario_maker
         tp_about.Text = "About"
         tp_about.UseVisualStyleBackColor = True
         ' 
+        ' lbl_aoe2de_sm
+        ' 
+        lbl_aoe2de_sm.AutoSize = True
+        lbl_aoe2de_sm.Location = New Point(8, 16)
+        lbl_aoe2de_sm.Name = "lbl_aoe2de_sm"
+        lbl_aoe2de_sm.Size = New Size(265, 45)
+        lbl_aoe2de_sm.TabIndex = 0
+        lbl_aoe2de_sm.Text = "Age of Empires 2 DE Scenario Maker" & vbCrLf & "Version: 0.0.1" & vbCrLf & "Created By: Jeremy ""SpoOkyMagician"" Levegood"
+        ' 
         ' ofd_scenario
         ' 
         ofd_scenario.DefaultExt = "aoe2scenario"
@@ -2902,14 +2973,70 @@ Partial Class frm_scenario_maker
         ofd_aoe2de_path.Filter = """Age of Empires 2 DE""|*.exe"
         ofd_aoe2de_path.InitialDirectory = """C:\Program Files (x86)\Steam\steamapps\common\AoE2DE"""
         ' 
-        ' lbl_aoe2de_sm
+        ' lbx_layer_terrain
         ' 
-        lbl_aoe2de_sm.AutoSize = True
-        lbl_aoe2de_sm.Location = New Point(8, 16)
-        lbl_aoe2de_sm.Name = "lbl_aoe2de_sm"
-        lbl_aoe2de_sm.Size = New Size(265, 45)
-        lbl_aoe2de_sm.TabIndex = 0
-        lbl_aoe2de_sm.Text = "Age of Empires 2 DE Scenario Maker" & vbCrLf & "Version: 0.0.1" & vbCrLf & "Created By: Jeremy ""SpoOkyMagician"" Levegood"
+        lbx_layer_terrain.FormattingEnabled = True
+        lbx_layer_terrain.ItemHeight = 15
+        lbx_layer_terrain.Items.AddRange(New Object() {"Beach", "Beach (Non-Navigable)", "Beach (Non-Navigable), Wet Gravel", "Beach (Non-Navigable), Wet Rock", "Beach (Non-Navigable), Wet Sand", "Beach, Ice", "Beach, Vegetation", "Beach, Wet", "Beach, Wet Gravel", "Beach, Wet Rock", "Beach, White", "Beach, White, Vegetation", "Black", "Desert, Cracked", "Desert, Quicksand", "Desert, Sand", "Dirt 1", "Dirt 2", "Dirt 3", "Dirt 4", "Dirt, Mud", "Dirt, Savannah", "Farm", "Farm, 0%", "Farm, 33%", "Farm, 67%", "Farm, Dead", "Forest, Acacia", "Forest, Autumn", "Forest, Autumn Snow", "Forest, Bamboo", "Forest, Baobab", "Forest, Birch", "Forest, Bush", "Forest, Dead", "Forest, Dragon Tree", "Forest, Jungle", "Forest, Mangrove", "Forest, Mediterranean", "Forest, Oak", "Forest, Oak Bush", "Forest, Palm Desert", "Forest, Palm Grass", "Forest, Pine", "Forest, Pine Snow", "Forest, Rainforest", "Forest, Reeds", "Forest, Reeds (Beach)", "Forest, Reeds (Shallow)", "Grass 1", "Grass 2", "Grass 3", "Grass, Dry", "Grass, Foundation", "Grass, Jungle", "Grass, Jungle (Rainforest)", "Grass, Other", "Gravel, Default", "Gravel, Desert", "Ice", "Ice, Navigable", "Rice Farm", "Rice Farm, 0%", "Rice Farm, 33%", "Rice Farm, 66%", "Rice Farm, Dead", "Road", "Road, Broken", "Road, Fungus", "Road, Gravel", "Rock 1", "Shallows", "Shallows, Azure", "Shallows, Mangrove", "Snow", "Snow, Foundation", "Snow, Light", "Snow, Strong", "Swamp, Bogland", "Swamp, Shallows", "Underbrush", "Underbrush, Jungle", "Underbrush, Leaves", "Underbrush, Snow", "Water 2D, Bridge", "Water 2D, Shoreless", "Water, Azure", "Water, Brown", "Water, Deep", "Water, Deep Ocean", "Water, Green", "Water, Medium", "Water, Shallow"})
+        lbx_layer_terrain.Location = New Point(232, 32)
+        lbx_layer_terrain.Name = "lbx_layer_terrain"
+        lbx_layer_terrain.Size = New Size(216, 469)
+        lbx_layer_terrain.TabIndex = 7
+        ' 
+        ' lbl_base_terrain
+        ' 
+        lbl_base_terrain.AutoSize = True
+        lbl_base_terrain.Location = New Point(8, 8)
+        lbl_base_terrain.Name = "lbl_base_terrain"
+        lbl_base_terrain.Size = New Size(69, 15)
+        lbl_base_terrain.TabIndex = 8
+        lbl_base_terrain.Text = "Base Terrain"
+        ' 
+        ' lbl_layer_terrain
+        ' 
+        lbl_layer_terrain.AutoSize = True
+        lbl_layer_terrain.Location = New Point(232, 8)
+        lbl_layer_terrain.Name = "lbl_layer_terrain"
+        lbl_layer_terrain.Size = New Size(73, 15)
+        lbl_layer_terrain.TabIndex = 9
+        lbl_layer_terrain.Text = "Layer Terrain"
+        ' 
+        ' lbl_elevation
+        ' 
+        lbl_elevation.AutoSize = True
+        lbl_elevation.Location = New Point(568, 8)
+        lbl_elevation.Name = "lbl_elevation"
+        lbl_elevation.Size = New Size(55, 15)
+        lbl_elevation.TabIndex = 10
+        lbl_elevation.Text = "Elevation"
+        ' 
+        ' lbl_x_terrain
+        ' 
+        lbl_x_terrain.AutoSize = True
+        lbl_x_terrain.Location = New Point(456, 8)
+        lbl_x_terrain.Name = "lbl_x_terrain"
+        lbl_x_terrain.Size = New Size(14, 15)
+        lbl_x_terrain.TabIndex = 11
+        lbl_x_terrain.Text = "X"
+        ' 
+        ' lbx_y_terrain
+        ' 
+        lbx_y_terrain.FormattingEnabled = True
+        lbx_y_terrain.ItemHeight = 15
+        lbx_y_terrain.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326", "327", "328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353", "354", "355", "356", "357", "358", "359", "360", "361", "362", "363", "364", "365", "366", "367", "368", "369", "370", "371", "372", "373", "374", "375", "376", "377", "378", "379", "380", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "410", "411", "412", "413", "414", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "425", "426", "427", "428", "429", "430", "431", "432", "433", "434", "435", "436", "437", "438", "439", "440", "441", "442", "443", "444", "445", "446", "447", "448", "449", "450", "451", "452", "453", "454", "455", "456", "457", "458", "459", "460", "461", "462", "463", "464", "465", "466", "467", "468", "469", "470", "471", "472", "473", "474", "475", "476", "477", "478", "479"})
+        lbx_y_terrain.Location = New Point(512, 32)
+        lbx_y_terrain.Name = "lbx_y_terrain"
+        lbx_y_terrain.Size = New Size(48, 469)
+        lbx_y_terrain.TabIndex = 12
+        ' 
+        ' lbl_y_terrain
+        ' 
+        lbl_y_terrain.AutoSize = True
+        lbl_y_terrain.Location = New Point(512, 8)
+        lbl_y_terrain.Name = "lbl_y_terrain"
+        lbl_y_terrain.Size = New Size(14, 15)
+        lbl_y_terrain.TabIndex = 13
+        lbl_y_terrain.Text = "Y"
         ' 
         ' frm_scenario_maker
         ' 
@@ -2926,6 +3053,8 @@ Partial Class frm_scenario_maker
         tp_map.ResumeLayout(False)
         tp_map.PerformLayout()
         CType(nud_mwh_size, ComponentModel.ISupportInitialize).EndInit()
+        tp_terrain.ResumeLayout(False)
+        tp_terrain.PerformLayout()
         tp_players.ResumeLayout(False)
         tp_players.PerformLayout()
         CType(NumericUpDown7, ComponentModel.ISupportInitialize).EndInit()
@@ -3243,4 +3372,15 @@ Partial Class frm_scenario_maker
     Public WithEvents ofd_aoe2de_path As OpenFileDialog
     Public WithEvents tbx_script_filename As TextBox
     Friend WithEvents lbl_aoe2de_sm As Label
+    Public WithEvents Button1 As Button
+    Public WithEvents lbx_x_terrain As ListBox
+    Public WithEvents lbx_base_terrain As ListBox
+    Public WithEvents lbx_elevation As ListBox
+    Public WithEvents lbx_layer_terrain As ListBox
+    Public WithEvents lbl_base_terrain As Label
+    Public WithEvents lbl_elevation As Label
+    Public WithEvents lbl_layer_terrain As Label
+    Public WithEvents lbx_y_terrain As ListBox
+    Public WithEvents lbl_x_terrain As Label
+    Public WithEvents lbl_y_terrain As Label
 End Class
