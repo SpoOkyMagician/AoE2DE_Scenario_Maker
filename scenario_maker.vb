@@ -162,43 +162,43 @@
 
     End Sub
 
-    Public Sub nud_food_gaia_ValueChanged(sender As Object, e As EventArgs) Handles nud_food_gaia.ValueChanged
+    Public Sub nud_gaia_food_ValueChanged(sender As Object, e As EventArgs) Handles nud_gaia_food.ValueChanged
 
     End Sub
 
-    Public Sub nud_wood_gaia_ValueChanged(sender As Object, e As EventArgs) Handles nud_wood_gaia.ValueChanged
+    Public Sub nud_gaia_wood_ValueChanged(sender As Object, e As EventArgs) Handles nud_gaia_wood.ValueChanged
 
     End Sub
 
-    Public Sub nud_stone_gaia_ValueChanged(sender As Object, e As EventArgs) Handles nud_stone_gaia.ValueChanged
+    Public Sub nud_gaia_stone_ValueChanged(sender As Object, e As EventArgs) Handles nud_gaia_stone.ValueChanged
 
     End Sub
 
-    Public Sub nud_gold_gaia_ValueChanged(sender As Object, e As EventArgs) Handles nud_gold_gaia.ValueChanged
+    Public Sub nud_gaia_gold_ValueChanged(sender As Object, e As EventArgs) Handles nud_gaia_gold.ValueChanged
 
     End Sub
 
-    Public Sub nud_population_gaia_ValueChanged(sender As Object, e As EventArgs) Handles nud_population_gaia.ValueChanged
+    Public Sub nud_gaia_population_ValueChanged(sender As Object, e As EventArgs) Handles nud_gaia_population.ValueChanged
 
     End Sub
 
-    Public Sub nud_priority_gaia_ValueChanged(sender As Object, e As EventArgs) Handles nud_priority_gaia.ValueChanged
+    Public Sub nud_gaia_priority_ValueChanged(sender As Object, e As EventArgs) Handles nud_gaia_priority.ValueChanged
 
     End Sub
 
-    Public Sub cbx_color_gaia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_color_gaia.SelectedIndexChanged
+    Public Sub cbx_gaia_color_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_gaia_color.SelectedIndexChanged
 
     End Sub
 
-    Public Sub tbx_tribe_name_gaia_TextChanged(sender As Object, e As EventArgs) Handles tbx_tribe_name_gaia.TextChanged
+    Public Sub tbx_gaia_tribe_name_TextChanged(sender As Object, e As EventArgs) Handles tbx_gaia_tribe_name.TextChanged
 
     End Sub
 
-    Public Sub tbx_name_string_id_gaia_TextChanged(sender As Object, e As EventArgs) Handles tbx_name_string_id_gaia.TextChanged
+    Public Sub tbx_gaia_name_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_gaia_name_string_id.TextChanged
 
     End Sub
 
-    Public Sub cbx_ai_gaia_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_ai_gaia.CheckedChanged
+    Public Sub cbx_gaia_ai_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_gaia_ai.CheckedChanged
 
     End Sub
 
@@ -206,313 +206,531 @@
 
     End Sub
 
-    ' BELOW IS NOT ORGANIZED YET...
+    Public Sub cbx_gaia_civilization_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_gaia_civilization.SelectedIndexChanged
 
-    Public Sub nud_food_p1_ValueChanged(sender As Object, e As EventArgs) Handles nud_food_p1.ValueChanged
+    End Sub
+
+    Public Sub cbx_gaia_architecture_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_gaia_architecture.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_gaia_lock_civ_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_gaia_lock_civ.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_gaia_lock_personality_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_gaia_lock_personality.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p1_age_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p1_age.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub nud_p1_food_ValueChanged(sender As Object, e As EventArgs) Handles nud_p1_food.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p1_wood_ValueChanged(sender As Object, e As EventArgs) Handles nud_p1_wood.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p1_stone_ValueChanged(sender As Object, e As EventArgs) Handles nud_p1_stone.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p1_gold_ValueChanged(sender As Object, e As EventArgs) Handles nud_p1_gold.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p1_population_ValueChanged(sender As Object, e As EventArgs) Handles nud_p1_population.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p1_priority_ValueChanged(sender As Object, e As EventArgs) Handles nud_p1_priority.ValueChanged
+
+    End Sub
+
+    Public Sub cbx_p1_color_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p1_color.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub tbx_p1_tribe_name_TextChanged(sender As Object, e As EventArgs) Handles tbx_p1_tribe_name.TextChanged
+
+    End Sub
+
+    Public Sub tbx_p1_name_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_p1_name_string_id.TextChanged
+
+    End Sub
+
+    Public Sub cbx_p1_ai_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p1_ai.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p1_ai_personality_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p1_ai_personality.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_p1_civilization_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p1_civilization.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_p1_architecture_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p1_architecture.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_p1_lock_civ_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p1_lock_civ.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p1_lock_personality_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p1_lock_personality.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p2_age_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p2_age.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub nud_p2_food_ValueChanged(sender As Object, e As EventArgs) Handles nud_p2_food.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p2_wood_ValueChanged(sender As Object, e As EventArgs) Handles nud_p2_wood.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p2_stone_ValueChanged(sender As Object, e As EventArgs) Handles nud_p2_stone.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p2_gold_ValueChanged(sender As Object, e As EventArgs) Handles nud_p2_gold.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p2_population_ValueChanged(sender As Object, e As EventArgs) Handles nud_p2_population.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p2_priority_ValueChanged(sender As Object, e As EventArgs) Handles nud_p2_priority.ValueChanged
+
+    End Sub
+
+    Public Sub cbx_p2_color_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p2_color.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub tbx_p2_tribe_name_TextChanged(sender As Object, e As EventArgs) Handles tbx_p2_tribe_name.TextChanged
+
+    End Sub
+
+    Public Sub tbx_p2_name_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_p2_name_string_id.TextChanged
+
+    End Sub
+
+    Public Sub cbx_p2_ai_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p2_ai.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p2_ai_personality_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p2_ai_personality.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_p2_civilization_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p2_civilization.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_p2_architecture_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p2_architecture.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_p2_lock_civ_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p2_lock_civ.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p2_lock_personality_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p2_lock_personality.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p3_age_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p3_age.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub nud_p3_food_ValueChanged(sender As Object, e As EventArgs) Handles nud_p3_food.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p3_wood_ValueChanged(sender As Object, e As EventArgs) Handles nud_p3_wood.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p3_stone_ValueChanged(sender As Object, e As EventArgs) Handles nud_p3_stone.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p3_gold_ValueChanged(sender As Object, e As EventArgs) Handles nud_p3_gold.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p3_population_ValueChanged(sender As Object, e As EventArgs) Handles nud_p3_population.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p3_priority_ValueChanged(sender As Object, e As EventArgs) Handles nud_p3_priority.ValueChanged
+
+    End Sub
+
+    Public Sub cbx_p3_color_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p3_color.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub tbx_p3_tribe_name_TextChanged(sender As Object, e As EventArgs) Handles tbx_p3_tribe_name.TextChanged
+
+    End Sub
+
+    Public Sub tbx_p3_name_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_p3_name_string_id.TextChanged
+
+    End Sub
+
+    Public Sub cbx_p3_ai_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p3_ai.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p3_ai_personality_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p3_ai_personality.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_p3_civilization_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p3_civilization.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_p3_architecture_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p3_architecture.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_p3_lock_civ_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p3_lock_civ.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p3_lock_personality_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p3_lock_personality.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p4_age_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p4_age.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub nud_p4_food_ValueChanged(sender As Object, e As EventArgs) Handles nud_p4_food.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p4_wood_ValueChanged(sender As Object, e As EventArgs) Handles nud_p4_wood.ValueChanged
+
+    End Sub
+
+    Public Sub nud_p4_stone_ValueChanged(sender As Object, e As EventArgs) Handles nud_p4_stone.ValueChanged
 
     End Sub
 
-    Public Sub nud_wood_p1_ValueChanged(sender As Object, e As EventArgs) Handles nud_wood_p1.ValueChanged
+    Public Sub nud_p4_gold_ValueChanged(sender As Object, e As EventArgs) Handles nud_p4_gold.ValueChanged
 
     End Sub
 
-    Public Sub nud_stone_p1_ValueChanged(sender As Object, e As EventArgs) Handles nud_stone_p1.ValueChanged
+    Public Sub nud_p4_population_ValueChanged(sender As Object, e As EventArgs) Handles nud_p4_population.ValueChanged
 
     End Sub
 
-    Public Sub nud_gold_p1_ValueChanged(sender As Object, e As EventArgs) Handles nud_gold_p1.ValueChanged
+    Public Sub nud_p4_priority_ValueChanged(sender As Object, e As EventArgs) Handles nud_p4_priority.ValueChanged
 
     End Sub
 
-    Public Sub nud_population_p1_ValueChanged(sender As Object, e As EventArgs) Handles nud_population_p1.ValueChanged
+    Public Sub cbx_p4_color_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p4_color.SelectedIndexChanged
 
     End Sub
 
-    Public Sub nud_priority_p1_ValueChanged(sender As Object, e As EventArgs) Handles nud_priority_p1.ValueChanged
+    Public Sub tbx_p4_tribe_name_TextChanged(sender As Object, e As EventArgs) Handles tbx_p4_tribe_name.TextChanged
 
     End Sub
 
-    Public Sub cbx_color_p1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_color_p1.SelectedIndexChanged
+    Public Sub tbx_p4_name_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_p4_name_string_id.TextChanged
 
     End Sub
 
-    Public Sub tbx_tribe_name_p1_TextChanged(sender As Object, e As EventArgs) Handles tbx_tribe_name_p1.TextChanged
+    Public Sub cbx_p4_ai_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p4_ai.CheckedChanged
 
     End Sub
 
-    Public Sub tbx_name_string_id_p1_TextChanged(sender As Object, e As EventArgs) Handles tbx_name_string_id_p1.TextChanged
+    Public Sub cbx_p4_ai_personality_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p4_ai_personality.SelectedIndexChanged
 
     End Sub
 
-    Public Sub cbx_ai_p1_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_ai_p1.CheckedChanged
+    Public Sub cbx_p4_civilization_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p4_civilization.SelectedIndexChanged
 
     End Sub
 
-    Public Sub nud_food_p2_ValueChanged(sender As Object, e As EventArgs) Handles nud_food_p2.ValueChanged
+    Public Sub cbx_p4_architecture_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p4_architecture.SelectedIndexChanged
 
     End Sub
 
-    Public Sub nud_wood_p2_ValueChanged(sender As Object, e As EventArgs) Handles nud_wood_p2.ValueChanged
+    Public Sub cbx_p4_lock_civ_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p4_lock_civ.CheckedChanged
 
     End Sub
 
-    Public Sub nud_stone_p2_ValueChanged(sender As Object, e As EventArgs) Handles nud_stone_p2.ValueChanged
+    Public Sub cbx_p4_lock_personality_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p4_lock_personality.CheckedChanged
 
     End Sub
 
-    Public Sub nud_gold_p2_ValueChanged(sender As Object, e As EventArgs) Handles nud_gold_p2.ValueChanged
+    Public Sub cbx_p5_age_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p5_age.SelectedIndexChanged
 
     End Sub
 
-    Public Sub nud_population_p2_ValueChanged(sender As Object, e As EventArgs) Handles nud_population_p2.ValueChanged
+    Public Sub nud_p5_food_ValueChanged(sender As Object, e As EventArgs) Handles nud_p5_food.ValueChanged
 
     End Sub
 
-    Public Sub cbx_color_p2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_color_p2.SelectedIndexChanged
+    Public Sub nud_p5_wood_ValueChanged(sender As Object, e As EventArgs) Handles nud_p5_wood.ValueChanged
 
     End Sub
 
-    Public Sub tbx_tribe_name_p2_TextChanged(sender As Object, e As EventArgs) Handles tbx_tribe_name_p2.TextChanged
+    Public Sub nud_p5_stone_ValueChanged(sender As Object, e As EventArgs) Handles nud_p5_stone.ValueChanged
 
     End Sub
 
-    Public Sub tbx_name_string_id_p2_TextChanged(sender As Object, e As EventArgs) Handles tbx_name_string_id_p2.TextChanged
+    Public Sub nud_p5_gold_ValueChanged(sender As Object, e As EventArgs) Handles nud_p5_gold.ValueChanged
 
     End Sub
 
-    Public Sub cbx_ai_p2_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_ai_p2.CheckedChanged
+    Public Sub nud_p5_population_ValueChanged(sender As Object, e As EventArgs) Handles nud_p5_population.ValueChanged
 
     End Sub
 
-    Public Sub nud_food_p3_ValueChanged(sender As Object, e As EventArgs) Handles nud_food_p3.ValueChanged
+    Public Sub nud_p5_priority_ValueChanged(sender As Object, e As EventArgs) Handles nud_p5_priority.ValueChanged
 
     End Sub
 
-    Public Sub nud_wood_p3_ValueChanged(sender As Object, e As EventArgs) Handles nud_wood_p3.ValueChanged
+    Public Sub cbx_p5_color_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p5_color.SelectedIndexChanged
 
     End Sub
 
-    Public Sub nud_stone_p3_ValueChanged(sender As Object, e As EventArgs) Handles nud_stone_p3.ValueChanged
+    Public Sub tbx_p5_tribe_name_TextChanged(sender As Object, e As EventArgs) Handles tbx_p5_tribe_name.TextChanged
 
     End Sub
 
-    Public Sub nud_gold_p3_ValueChanged(sender As Object, e As EventArgs) Handles nud_gold_p3.ValueChanged
+    Public Sub tbx_p5_name_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_p5_name_string_id.TextChanged
 
     End Sub
 
-    Public Sub nud_population_p3_ValueChanged(sender As Object, e As EventArgs) Handles nud_population_p3.ValueChanged
+    Public Sub cbx_p5_ai_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p5_ai.CheckedChanged
 
     End Sub
 
-    Public Sub NumericUpDown2_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown2.ValueChanged
+    Public Sub cbx_p5_ai_personality_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p5_ai_personality.SelectedIndexChanged
 
     End Sub
 
-    Public Sub cbx_color_p3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_color_p3.SelectedIndexChanged
+    Public Sub cbx_p5_civilization_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p5_civilization.SelectedIndexChanged
 
     End Sub
 
-    Public Sub tbx_tribe_name_p3_TextChanged(sender As Object, e As EventArgs) Handles tbx_tribe_name_p3.TextChanged
+    Public Sub cbx_p5_architecture_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p5_architecture.SelectedIndexChanged
 
     End Sub
 
-    Public Sub tbx_name_string_id_p3_TextChanged(sender As Object, e As EventArgs) Handles tbx_name_string_id_p3.TextChanged
+    Public Sub cbx_p5_lock_civ_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p5_lock_civ.CheckedChanged
 
     End Sub
 
-    Public Sub cbx_ai_p3_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_ai_p3.CheckedChanged
+    Public Sub cbx_p5_lock_personality_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p5_lock_personality.CheckedChanged
 
     End Sub
 
-    Public Sub nud_food_p4_ValueChanged(sender As Object, e As EventArgs) Handles nud_food_p4.ValueChanged
+    Public Sub cbx_p6_age_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p6_age.SelectedIndexChanged
 
     End Sub
 
-    Public Sub nud_wood_p4_ValueChanged(sender As Object, e As EventArgs) Handles nud_wood_p4.ValueChanged
+    Public Sub nud_p6_food_ValueChanged(sender As Object, e As EventArgs) Handles nud_p6_food.ValueChanged
 
     End Sub
 
-    Public Sub nud_stone_p4_ValueChanged(sender As Object, e As EventArgs) Handles nud_stone_p4.ValueChanged
+    Public Sub nud_p6_wood_ValueChanged(sender As Object, e As EventArgs) Handles nud_p6_wood.ValueChanged
 
     End Sub
 
-    Public Sub nud_gold_p4_ValueChanged(sender As Object, e As EventArgs) Handles nud_gold_p4.ValueChanged
+    Public Sub nud_p6_stone_ValueChanged(sender As Object, e As EventArgs) Handles nud_p6_stone.ValueChanged
 
     End Sub
 
-    Public Sub nud_population_p4_ValueChanged(sender As Object, e As EventArgs) Handles nud_population_p4.ValueChanged
+    Public Sub nud_p6_gold_ValueChanged(sender As Object, e As EventArgs) Handles nud_p6_gold.ValueChanged
 
     End Sub
 
-    Public Sub NumericUpDown3_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown3.ValueChanged
+    Public Sub nud_p6_population_ValueChanged(sender As Object, e As EventArgs) Handles nud_p6_population.ValueChanged
 
     End Sub
 
-    Public Sub cbx_color_p4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_color_p4.SelectedIndexChanged
+    Public Sub nud_p6_priority_ValueChanged(sender As Object, e As EventArgs) Handles nud_p6_priority.ValueChanged
 
     End Sub
 
-    Public Sub tbx_tribe_name_p4_TextChanged(sender As Object, e As EventArgs) Handles tbx_tribe_name_p4.TextChanged
+    Public Sub cbx_p6_color_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p6_color.SelectedIndexChanged
 
     End Sub
 
-    Public Sub tbx_name_string_id_p4_TextChanged(sender As Object, e As EventArgs) Handles tbx_name_string_id_p4.TextChanged
+    Public Sub tbx_p6_tribe_name_TextChanged(sender As Object, e As EventArgs) Handles tbx_p6_tribe_name.TextChanged
 
     End Sub
 
-    Public Sub cbx_ai_p4_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_ai_p4.CheckedChanged
+    Public Sub tbx_p6_name_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_p6_name_string_id.TextChanged
 
     End Sub
 
-    Public Sub nud_food_p5_ValueChanged(sender As Object, e As EventArgs) Handles nud_food_p5.ValueChanged
+    Public Sub cbx_p6_ai_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p6_ai.CheckedChanged
 
     End Sub
 
-    Public Sub nud_wood_p5_ValueChanged(sender As Object, e As EventArgs) Handles nud_wood_p5.ValueChanged
+    Public Sub cbx_p6_ai_personality_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p6_ai_personality.SelectedIndexChanged
 
     End Sub
 
-    Public Sub nud_stone_p5_ValueChanged(sender As Object, e As EventArgs) Handles nud_stone_p5.ValueChanged
+    Public Sub cbx_p6_civilization_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p6_civilization.SelectedIndexChanged
 
     End Sub
 
-    Public Sub nud_gold_p5_ValueChanged(sender As Object, e As EventArgs) Handles nud_gold_p5.ValueChanged
+    Public Sub cbx_p6_architecture_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p6_architecture.SelectedIndexChanged
 
     End Sub
 
-    Public Sub nud_population_p5_ValueChanged(sender As Object, e As EventArgs) Handles nud_population_p5.ValueChanged
+    Public Sub cbx_p6_lock_civ_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p6_lock_civ.CheckedChanged
 
     End Sub
 
-    Public Sub cbx_color_p5_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_color_p5.SelectedIndexChanged
+    Public Sub cbx_p6_lock_personality_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p6_lock_personality.CheckedChanged
 
     End Sub
 
-    Public Sub tbx_tribe_name_p5_TextChanged(sender As Object, e As EventArgs) Handles tbx_tribe_name_p5.TextChanged
+    Public Sub cbx_p7_age_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p7_age.SelectedIndexChanged
 
     End Sub
 
-    Public Sub tbx_name_string_id_p5_TextChanged(sender As Object, e As EventArgs) Handles tbx_name_string_id_p5.TextChanged
+    Public Sub nud_p7_food_ValueChanged(sender As Object, e As EventArgs) Handles nud_p7_food.ValueChanged
 
     End Sub
 
-    Public Sub cbx_ai_p5_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_ai_p5.CheckedChanged
+    Public Sub nud_p7_wood_ValueChanged(sender As Object, e As EventArgs) Handles nud_p7_wood.ValueChanged
 
     End Sub
 
-    Public Sub nud_food_p6_ValueChanged(sender As Object, e As EventArgs) Handles nud_food_p6.ValueChanged
+    Public Sub nud_p7_stone_ValueChanged(sender As Object, e As EventArgs) Handles nud_p7_stone.ValueChanged
 
     End Sub
 
-    Public Sub nud_wood_p6_ValueChanged(sender As Object, e As EventArgs) Handles nud_wood_p6.ValueChanged
+    Public Sub nud_p7_gold_ValueChanged(sender As Object, e As EventArgs) Handles nud_p7_gold.ValueChanged
 
     End Sub
 
-    Public Sub nud_stone_p6_ValueChanged(sender As Object, e As EventArgs) Handles nud_stone_p6.ValueChanged
+    Public Sub nud_p7_population_ValueChanged(sender As Object, e As EventArgs) Handles nud_p7_population.ValueChanged
 
     End Sub
 
-    Public Sub nud_gold_p6_ValueChanged(sender As Object, e As EventArgs) Handles nud_gold_p6.ValueChanged
+    Public Sub nud_p7_priority_ValueChanged(sender As Object, e As EventArgs) Handles nud_p7_priority.ValueChanged
 
     End Sub
 
-    Public Sub nud_population_p6_ValueChanged(sender As Object, e As EventArgs) Handles nud_population_p6.ValueChanged
+    Public Sub cbx_p7_color_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p7_color.SelectedIndexChanged
 
     End Sub
 
-    Public Sub cbx_color_p6_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_color_p6.SelectedIndexChanged
+    Public Sub tbx_p7_tribe_name_TextChanged(sender As Object, e As EventArgs) Handles tbx_p7_tribe_name.TextChanged
 
     End Sub
 
-    Public Sub tbx_tribe_name_p6_TextChanged(sender As Object, e As EventArgs) Handles tbx_tribe_name_p6.TextChanged
+    Public Sub tbx_p7_name_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_p7_name_string_id.TextChanged
 
     End Sub
 
-    Public Sub tbx_name_string_id_p6_TextChanged(sender As Object, e As EventArgs) Handles tbx_name_string_id_p6.TextChanged
+    Public Sub cbx_p7_ai_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p7_ai.CheckedChanged
 
     End Sub
 
-    Public Sub cbx_ai_p6_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_ai_p6.CheckedChanged
+    Public Sub cbx_p7_ai_personality_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p7_ai_personality.SelectedIndexChanged
 
     End Sub
 
-    Public Sub nud_food_p7_ValueChanged(sender As Object, e As EventArgs) Handles nud_food_p7.ValueChanged
+    Public Sub cbx_p7_civilization_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p7_civilization.SelectedIndexChanged
 
     End Sub
 
-    Public Sub nud_wood_p7_ValueChanged(sender As Object, e As EventArgs) Handles nud_wood_p7.ValueChanged
+    Public Sub cbx_p7_architecture_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p7_architecture.SelectedIndexChanged
 
     End Sub
 
-    Public Sub nud_stone_p7_ValueChanged(sender As Object, e As EventArgs) Handles nud_stone_p7.ValueChanged
+    Public Sub cbx_p7_lock_civ_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p7_lock_civ.CheckedChanged
 
     End Sub
 
-    Public Sub nud_gold_p7_ValueChanged(sender As Object, e As EventArgs) Handles nud_gold_p7.ValueChanged
+    Public Sub cbx_p7_lock_personality_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p7_lock_personality.CheckedChanged
 
     End Sub
 
-    Public Sub nud_population_p7_ValueChanged(sender As Object, e As EventArgs) Handles nud_population_p7.ValueChanged
+    Public Sub cbx_p8_age_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p8_age.SelectedIndexChanged
 
     End Sub
 
-    Public Sub cbx_color_p7_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_color_p7.SelectedIndexChanged
+    Public Sub nud_p8_food_ValueChanged(sender As Object, e As EventArgs) Handles nud_p8_food.ValueChanged
 
     End Sub
 
-    Public Sub tbx_tribe_name_p7_TextChanged(sender As Object, e As EventArgs) Handles tbx_tribe_name_p7.TextChanged
+    Public Sub nud_p8_wood_ValueChanged(sender As Object, e As EventArgs) Handles nud_p8_wood.ValueChanged
 
     End Sub
 
-    Public Sub tbx_name_string_id_p7_TextChanged(sender As Object, e As EventArgs) Handles tbx_name_string_id_p7.TextChanged
+    Public Sub nud_p8_stone_ValueChanged(sender As Object, e As EventArgs) Handles nud_p8_stone.ValueChanged
 
     End Sub
 
-    Public Sub cbx_ai_p7_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_ai_p7.CheckedChanged
+    Public Sub nud_p8_gold_ValueChanged(sender As Object, e As EventArgs) Handles nud_p8_gold.ValueChanged
 
     End Sub
 
-    Public Sub nud_food_p8_ValueChanged(sender As Object, e As EventArgs) Handles nud_food_p8.ValueChanged
+    Public Sub nud_p8_population_ValueChanged(sender As Object, e As EventArgs) Handles nud_p8_population.ValueChanged
 
     End Sub
 
-    Public Sub nud_wood_p8_ValueChanged(sender As Object, e As EventArgs) Handles nud_wood_p8.ValueChanged
+    Public Sub nud_p8_priority_ValueChanged(sender As Object, e As EventArgs) Handles nud_p8_priority.ValueChanged
 
     End Sub
 
-    Public Sub nud_stone_p8_ValueChanged(sender As Object, e As EventArgs) Handles nud_stone_p8.ValueChanged
+    Public Sub cbx_p8_color_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p8_color.SelectedIndexChanged
 
     End Sub
 
-    Public Sub nud_gold_p8_ValueChanged(sender As Object, e As EventArgs) Handles nud_gold_p8.ValueChanged
+    Public Sub tbx_p8_tribe_name_TextChanged(sender As Object, e As EventArgs) Handles tbx_p8_tribe_name.TextChanged
 
     End Sub
 
-    Public Sub nud_population_p8_ValueChanged(sender As Object, e As EventArgs) Handles nud_population_p8.ValueChanged
+    Public Sub tbx_p8_name_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_p8_name_string_id.TextChanged
 
     End Sub
 
-    Public Sub NumericUpDown7_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown7.ValueChanged
+    Public Sub cbx_p8_ai_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p8_ai.CheckedChanged
 
     End Sub
 
-    Public Sub cbx_color_p8_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_color_p8.SelectedIndexChanged
+    Public Sub cbx_p8_ai_personality_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p8_ai_personality.SelectedIndexChanged
 
     End Sub
 
-    Public Sub tbx_tribe_name_p8_TextChanged(sender As Object, e As EventArgs) Handles tbx_tribe_name_p8.TextChanged
+    Public Sub cbx_p8_civilization_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p8_civilization.SelectedIndexChanged
 
     End Sub
 
-    Public Sub tbx_name_string_id_p8_TextChanged(sender As Object, e As EventArgs) Handles tbx_name_string_id_p8.TextChanged
+    Public Sub cbx_p8_architecture_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_p8_architecture.SelectedIndexChanged
 
     End Sub
 
-    Public Sub cbx_ai_p8_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_ai_p8.CheckedChanged
+    Public Sub cbx_p8_lock_civ_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p8_lock_civ.CheckedChanged
 
     End Sub
 
-    Public Sub btn_p1_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p2_diplo.Click
+    Public Sub cbx_p8_lock_personality_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p8_lock_personality.CheckedChanged
 
     End Sub
 

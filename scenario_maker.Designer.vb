@@ -53,6 +53,45 @@ Partial Class frm_scenario_maker
         lbx_x_terrain = New ListBox()
         lbx_base_terrain = New ListBox()
         tp_players = New TabPage()
+        cbx_p8_lock_personality = New CheckBox()
+        cbx_p7_lock_personality = New CheckBox()
+        cbx_p6_lock_personality = New CheckBox()
+        cbx_p5_lock_personality = New CheckBox()
+        cbx_p4_lock_personality = New CheckBox()
+        cbx_p3_lock_personality = New CheckBox()
+        cbx_p2_lock_personality = New CheckBox()
+        cbx_p1_lock_personality = New CheckBox()
+        cbx_gaia_lock_personality = New CheckBox()
+        cbx_p8_lock_civ = New CheckBox()
+        cbx_p7_lock_civ = New CheckBox()
+        cbx_p6_lock_civ = New CheckBox()
+        cbx_p5_lock_civ = New CheckBox()
+        cbx_p4_lock_civ = New CheckBox()
+        cbx_p3_lock_civ = New CheckBox()
+        cbx_p2_lock_civ = New CheckBox()
+        cbx_p1_lock_civ = New CheckBox()
+        cbx_gaia_lock_civ = New CheckBox()
+        cbx_p8_architecture = New ComboBox()
+        cbx_p7_architecture = New ComboBox()
+        cbx_p6_architecture = New ComboBox()
+        cbx_p5_architecture = New ComboBox()
+        cbx_p4_architecture = New ComboBox()
+        cbx_p3_architecture = New ComboBox()
+        cbx_p2_architecture = New ComboBox()
+        cbx_p1_architecture = New ComboBox()
+        cbx_gaia_architecture = New ComboBox()
+        lbl_architecture = New Label()
+        lbl_civilization = New Label()
+        cbx_p8_civilization = New ComboBox()
+        cbx_p7_civilization = New ComboBox()
+        cbx_p6_civilization = New ComboBox()
+        cbx_p5_civilization = New ComboBox()
+        cbx_p4_civilization = New ComboBox()
+        cbx_p3_civilization = New ComboBox()
+        cbx_p2_civilization = New ComboBox()
+        cbx_p1_civilization = New ComboBox()
+        cbx_gaia_civilization = New ComboBox()
+        lbl_ai_personality = New Label()
         cbx_p8_ai_personality = New ComboBox()
         cbx_p7_ai_personality = New ComboBox()
         cbx_p6_ai_personality = New ComboBox()
@@ -73,45 +112,45 @@ Partial Class frm_scenario_maker
         cbx_p2_age = New ComboBox()
         cbx_p1_age = New ComboBox()
         lbl_player_type = New Label()
-        cbx_ai_p8 = New CheckBox()
-        cbx_ai_p7 = New CheckBox()
-        cbx_ai_p6 = New CheckBox()
-        cbx_ai_p5 = New CheckBox()
-        cbx_ai_p4 = New CheckBox()
-        cbx_ai_p3 = New CheckBox()
-        cbx_ai_p2 = New CheckBox()
-        cbx_ai_p1 = New CheckBox()
-        cbx_ai_gaia = New CheckBox()
+        cbx_p8_ai = New CheckBox()
+        cbx_p7_ai = New CheckBox()
+        cbx_p6_ai = New CheckBox()
+        cbx_p5_ai = New CheckBox()
+        cbx_p4_ai = New CheckBox()
+        cbx_p3_ai = New CheckBox()
+        cbx_p2_ai = New CheckBox()
+        cbx_p1_ai = New CheckBox()
+        cbx_gaia_ai = New CheckBox()
         lb_name_string_id = New Label()
-        tbx_name_string_id_p8 = New TextBox()
-        tbx_name_string_id_p7 = New TextBox()
-        tbx_name_string_id_p6 = New TextBox()
-        tbx_name_string_id_p5 = New TextBox()
-        tbx_name_string_id_p4 = New TextBox()
-        tbx_name_string_id_p3 = New TextBox()
-        tbx_name_string_id_p2 = New TextBox()
-        tbx_name_string_id_p1 = New TextBox()
-        tbx_name_string_id_gaia = New TextBox()
+        tbx_p8_name_string_id = New TextBox()
+        tbx_p7_name_string_id = New TextBox()
+        tbx_p6_name_string_id = New TextBox()
+        tbx_p5_name_string_id = New TextBox()
+        tbx_p4_name_string_id = New TextBox()
+        tbx_p3_name_string_id = New TextBox()
+        tbx_p2_name_string_id = New TextBox()
+        tbx_p1_name_string_id = New TextBox()
+        tbx_gaia_name_string_id = New TextBox()
         lb_tribe_name = New Label()
-        tbx_tribe_name_p8 = New TextBox()
-        tbx_tribe_name_p7 = New TextBox()
-        tbx_tribe_name_p6 = New TextBox()
-        tbx_tribe_name_p5 = New TextBox()
-        tbx_tribe_name_p4 = New TextBox()
-        tbx_tribe_name_p3 = New TextBox()
-        tbx_tribe_name_p2 = New TextBox()
-        tbx_tribe_name_p1 = New TextBox()
-        tbx_tribe_name_gaia = New TextBox()
-        cbx_color_p8 = New ComboBox()
-        cbx_color_p7 = New ComboBox()
-        cbx_color_p6 = New ComboBox()
-        cbx_color_p5 = New ComboBox()
-        cbx_color_p4 = New ComboBox()
-        cbx_color_p3 = New ComboBox()
-        cbx_color_p2 = New ComboBox()
-        cbx_color_p1 = New ComboBox()
+        tbx_p8_tribe_name = New TextBox()
+        tbx_p7_tribe_name = New TextBox()
+        tbx_p6_tribe_name = New TextBox()
+        tbx_p5_tribe_name = New TextBox()
+        tbx_p4_tribe_name = New TextBox()
+        tbx_p3_tribe_name = New TextBox()
+        tbx_p2_tribe_name = New TextBox()
+        tbx_p1_tribe_name = New TextBox()
+        tbx_gaia_tribe_name = New TextBox()
+        cbx_p8_color = New ComboBox()
+        cbx_p7_color = New ComboBox()
+        cbx_p6_color = New ComboBox()
+        cbx_p5_color = New ComboBox()
+        cbx_p4_color = New ComboBox()
+        cbx_p3_color = New ComboBox()
+        cbx_p2_color = New ComboBox()
+        cbx_p1_color = New ComboBox()
         lb_color = New Label()
-        cbx_color_gaia = New ComboBox()
+        cbx_gaia_color = New ComboBox()
         lb_player_8 = New Label()
         lb_player_7 = New Label()
         lb_player_6 = New Label()
@@ -121,66 +160,66 @@ Partial Class frm_scenario_maker
         lb_player_2 = New Label()
         lb_player_1 = New Label()
         lb_gaia = New Label()
-        NumericUpDown7 = New NumericUpDown()
-        NumericUpDown6 = New NumericUpDown()
-        NumericUpDown5 = New NumericUpDown()
-        NumericUpDown4 = New NumericUpDown()
-        NumericUpDown3 = New NumericUpDown()
-        NumericUpDown2 = New NumericUpDown()
-        NumericUpDown1 = New NumericUpDown()
-        nud_priority_p1 = New NumericUpDown()
-        nud_priority_gaia = New NumericUpDown()
+        nud_p8_priority = New NumericUpDown()
+        nud_p7_priority = New NumericUpDown()
+        nud_p6_priority = New NumericUpDown()
+        nud_p5_priority = New NumericUpDown()
+        nud_p4_priority = New NumericUpDown()
+        nud_p3_priority = New NumericUpDown()
+        nud_p2_priority = New NumericUpDown()
+        nud_p1_priority = New NumericUpDown()
+        nud_gaia_priority = New NumericUpDown()
         lb_priority_gaia = New Label()
-        nud_population_gaia = New NumericUpDown()
-        nud_population_p8 = New NumericUpDown()
-        nud_population_p7 = New NumericUpDown()
-        nud_population_p6 = New NumericUpDown()
-        nud_population_p5 = New NumericUpDown()
-        nud_population_p4 = New NumericUpDown()
-        nud_population_p3 = New NumericUpDown()
-        nud_population_p2 = New NumericUpDown()
+        nud_gaia_population = New NumericUpDown()
+        nud_p8_population = New NumericUpDown()
+        nud_p7_population = New NumericUpDown()
+        nud_p6_population = New NumericUpDown()
+        nud_p5_population = New NumericUpDown()
+        nud_p4_population = New NumericUpDown()
+        nud_p3_population = New NumericUpDown()
+        nud_p2_population = New NumericUpDown()
         lb_pop = New Label()
-        nud_population_p1 = New NumericUpDown()
-        nud_gold_gaia = New NumericUpDown()
-        nud_gold_p8 = New NumericUpDown()
-        nud_gold_p7 = New NumericUpDown()
-        nud_gold_p6 = New NumericUpDown()
-        nud_gold_p5 = New NumericUpDown()
-        nud_gold_p4 = New NumericUpDown()
-        nud_gold_p3 = New NumericUpDown()
-        nud_gold_p2 = New NumericUpDown()
+        nud_p1_population = New NumericUpDown()
+        nud_gaia_gold = New NumericUpDown()
+        nud_p8_gold = New NumericUpDown()
+        nud_p7_gold = New NumericUpDown()
+        nud_p6_gold = New NumericUpDown()
+        nud_p5_gold = New NumericUpDown()
+        nud_p4_gold = New NumericUpDown()
+        nud_p3_gold = New NumericUpDown()
+        nud_p2_gold = New NumericUpDown()
         lb_gold = New Label()
-        nud_gold_p1 = New NumericUpDown()
-        nud_stone_gaia = New NumericUpDown()
-        nud_stone_p8 = New NumericUpDown()
-        nud_stone_p7 = New NumericUpDown()
-        nud_stone_p6 = New NumericUpDown()
-        nud_stone_p5 = New NumericUpDown()
-        nud_stone_p4 = New NumericUpDown()
-        nud_stone_p3 = New NumericUpDown()
-        nud_stone_p2 = New NumericUpDown()
+        nud_p1_gold = New NumericUpDown()
+        nud_gaia_stone = New NumericUpDown()
+        nud_p8_stone = New NumericUpDown()
+        nud_p7_stone = New NumericUpDown()
+        nud_p6_stone = New NumericUpDown()
+        nud_p5_stone = New NumericUpDown()
+        nud_p4_stone = New NumericUpDown()
+        nud_p3_stone = New NumericUpDown()
+        nud_p2_stone = New NumericUpDown()
         lb_stone = New Label()
-        nud_stone_p1 = New NumericUpDown()
-        nud_wood_gaia = New NumericUpDown()
-        nud_wood_p8 = New NumericUpDown()
-        nud_wood_p7 = New NumericUpDown()
-        nud_wood_p6 = New NumericUpDown()
-        nud_wood_p5 = New NumericUpDown()
-        nud_wood_p4 = New NumericUpDown()
-        nud_wood_p3 = New NumericUpDown()
-        nud_wood_p2 = New NumericUpDown()
+        nud_p1_stone = New NumericUpDown()
+        nud_gaia_wood = New NumericUpDown()
+        nud_p8_wood = New NumericUpDown()
+        nud_p7_wood = New NumericUpDown()
+        nud_p6_wood = New NumericUpDown()
+        nud_p5_wood = New NumericUpDown()
+        nud_p4_wood = New NumericUpDown()
+        nud_p3_wood = New NumericUpDown()
+        nud_p2_wood = New NumericUpDown()
         lb_wood = New Label()
-        nud_wood_p1 = New NumericUpDown()
-        nud_food_gaia = New NumericUpDown()
-        nud_food_p8 = New NumericUpDown()
-        nud_food_p7 = New NumericUpDown()
-        nud_food_p6 = New NumericUpDown()
-        nud_food_p5 = New NumericUpDown()
-        nud_food_p4 = New NumericUpDown()
-        nud_food_p3 = New NumericUpDown()
-        nud_food_p2 = New NumericUpDown()
+        nud_p1_wood = New NumericUpDown()
+        nud_gaia_food = New NumericUpDown()
+        nud_p8_food = New NumericUpDown()
+        nud_p7_food = New NumericUpDown()
+        nud_p6_food = New NumericUpDown()
+        nud_p5_food = New NumericUpDown()
+        nud_p4_food = New NumericUpDown()
+        nud_p3_food = New NumericUpDown()
+        nud_p2_food = New NumericUpDown()
         lb_food = New Label()
-        nud_food_p1 = New NumericUpDown()
+        nud_p1_food = New NumericUpDown()
         cbx_total_players = New ComboBox()
         tp_units = New TabPage()
         cbx_unit_player = New ComboBox()
@@ -302,60 +341,60 @@ Partial Class frm_scenario_maker
         CType(nud_mwh_size, ComponentModel.ISupportInitialize).BeginInit()
         tp_terrain.SuspendLayout()
         tp_players.SuspendLayout()
-        CType(NumericUpDown7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(NumericUpDown6, ComponentModel.ISupportInitialize).BeginInit()
-        CType(NumericUpDown5, ComponentModel.ISupportInitialize).BeginInit()
-        CType(NumericUpDown4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(NumericUpDown3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(NumericUpDown2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(NumericUpDown1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_priority_p1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_priority_gaia, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_population_gaia, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_population_p8, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_population_p7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_population_p6, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_population_p5, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_population_p4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_population_p3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_population_p2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_population_p1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_gold_gaia, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_gold_p8, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_gold_p7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_gold_p6, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_gold_p5, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_gold_p4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_gold_p3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_gold_p2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_gold_p1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_stone_gaia, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_stone_p8, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_stone_p7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_stone_p6, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_stone_p5, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_stone_p4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_stone_p3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_stone_p2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_stone_p1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_wood_gaia, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_wood_p8, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_wood_p7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_wood_p6, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_wood_p5, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_wood_p4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_wood_p3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_wood_p2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_wood_p1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_food_gaia, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_food_p8, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_food_p7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_food_p6, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_food_p5, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_food_p4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_food_p3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_food_p2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nud_food_p1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p8_priority, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p7_priority, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p6_priority, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p5_priority, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p4_priority, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p3_priority, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p2_priority, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p1_priority, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_gaia_priority, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_gaia_population, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p8_population, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p7_population, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p6_population, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p5_population, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p4_population, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p3_population, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p2_population, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p1_population, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_gaia_gold, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p8_gold, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p7_gold, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p6_gold, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p5_gold, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p4_gold, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p3_gold, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p2_gold, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p1_gold, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_gaia_stone, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p8_stone, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p7_stone, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p6_stone, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p5_stone, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p4_stone, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p3_stone, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p2_stone, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p1_stone, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_gaia_wood, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p8_wood, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p7_wood, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p6_wood, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p5_wood, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p4_wood, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p3_wood, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p2_wood, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p1_wood, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_gaia_food, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p8_food, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p7_food, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p6_food, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p5_food, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p4_food, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p3_food, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p2_food, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nud_p1_food, ComponentModel.ISupportInitialize).BeginInit()
         tp_units.SuspendLayout()
         tp_diplomacy.SuspendLayout()
         tp_about.SuspendLayout()
@@ -379,7 +418,7 @@ Partial Class frm_scenario_maker
         tc_main.Location = New Point(12, 12)
         tc_main.Name = "tc_main"
         tc_main.SelectedIndex = 0
-        tc_main.Size = New Size(1160, 537)
+        tc_main.Size = New Size(1436, 537)
         tc_main.TabIndex = 0
         ' 
         ' tp_file
@@ -393,7 +432,7 @@ Partial Class frm_scenario_maker
         tp_file.Location = New Point(4, 24)
         tp_file.Name = "tp_file"
         tp_file.Padding = New Padding(3)
-        tp_file.Size = New Size(1152, 509)
+        tp_file.Size = New Size(1428, 509)
         tp_file.TabIndex = 2
         tp_file.Text = "File"
         tp_file.UseVisualStyleBackColor = True
@@ -465,7 +504,7 @@ Partial Class frm_scenario_maker
         tp_map.Location = New Point(4, 24)
         tp_map.Name = "tp_map"
         tp_map.Padding = New Padding(3)
-        tp_map.Size = New Size(1152, 509)
+        tp_map.Size = New Size(1428, 509)
         tp_map.TabIndex = 0
         tp_map.Text = "Map"
         tp_map.UseVisualStyleBackColor = True
@@ -557,7 +596,7 @@ Partial Class frm_scenario_maker
         tp_terrain.Controls.Add(lbx_base_terrain)
         tp_terrain.Location = New Point(4, 24)
         tp_terrain.Name = "tp_terrain"
-        tp_terrain.Size = New Size(1152, 509)
+        tp_terrain.Size = New Size(1428, 509)
         tp_terrain.TabIndex = 11
         tp_terrain.Text = "Terrain"
         tp_terrain.UseVisualStyleBackColor = True
@@ -678,6 +717,45 @@ Partial Class frm_scenario_maker
         ' 
         ' tp_players
         ' 
+        tp_players.Controls.Add(cbx_p8_lock_personality)
+        tp_players.Controls.Add(cbx_p7_lock_personality)
+        tp_players.Controls.Add(cbx_p6_lock_personality)
+        tp_players.Controls.Add(cbx_p5_lock_personality)
+        tp_players.Controls.Add(cbx_p4_lock_personality)
+        tp_players.Controls.Add(cbx_p3_lock_personality)
+        tp_players.Controls.Add(cbx_p2_lock_personality)
+        tp_players.Controls.Add(cbx_p1_lock_personality)
+        tp_players.Controls.Add(cbx_gaia_lock_personality)
+        tp_players.Controls.Add(cbx_p8_lock_civ)
+        tp_players.Controls.Add(cbx_p7_lock_civ)
+        tp_players.Controls.Add(cbx_p6_lock_civ)
+        tp_players.Controls.Add(cbx_p5_lock_civ)
+        tp_players.Controls.Add(cbx_p4_lock_civ)
+        tp_players.Controls.Add(cbx_p3_lock_civ)
+        tp_players.Controls.Add(cbx_p2_lock_civ)
+        tp_players.Controls.Add(cbx_p1_lock_civ)
+        tp_players.Controls.Add(cbx_gaia_lock_civ)
+        tp_players.Controls.Add(cbx_p8_architecture)
+        tp_players.Controls.Add(cbx_p7_architecture)
+        tp_players.Controls.Add(cbx_p6_architecture)
+        tp_players.Controls.Add(cbx_p5_architecture)
+        tp_players.Controls.Add(cbx_p4_architecture)
+        tp_players.Controls.Add(cbx_p3_architecture)
+        tp_players.Controls.Add(cbx_p2_architecture)
+        tp_players.Controls.Add(cbx_p1_architecture)
+        tp_players.Controls.Add(cbx_gaia_architecture)
+        tp_players.Controls.Add(lbl_architecture)
+        tp_players.Controls.Add(lbl_civilization)
+        tp_players.Controls.Add(cbx_p8_civilization)
+        tp_players.Controls.Add(cbx_p7_civilization)
+        tp_players.Controls.Add(cbx_p6_civilization)
+        tp_players.Controls.Add(cbx_p5_civilization)
+        tp_players.Controls.Add(cbx_p4_civilization)
+        tp_players.Controls.Add(cbx_p3_civilization)
+        tp_players.Controls.Add(cbx_p2_civilization)
+        tp_players.Controls.Add(cbx_p1_civilization)
+        tp_players.Controls.Add(cbx_gaia_civilization)
+        tp_players.Controls.Add(lbl_ai_personality)
         tp_players.Controls.Add(cbx_p8_ai_personality)
         tp_players.Controls.Add(cbx_p7_ai_personality)
         tp_players.Controls.Add(cbx_p6_ai_personality)
@@ -698,45 +776,45 @@ Partial Class frm_scenario_maker
         tp_players.Controls.Add(cbx_p2_age)
         tp_players.Controls.Add(cbx_p1_age)
         tp_players.Controls.Add(lbl_player_type)
-        tp_players.Controls.Add(cbx_ai_p8)
-        tp_players.Controls.Add(cbx_ai_p7)
-        tp_players.Controls.Add(cbx_ai_p6)
-        tp_players.Controls.Add(cbx_ai_p5)
-        tp_players.Controls.Add(cbx_ai_p4)
-        tp_players.Controls.Add(cbx_ai_p3)
-        tp_players.Controls.Add(cbx_ai_p2)
-        tp_players.Controls.Add(cbx_ai_p1)
-        tp_players.Controls.Add(cbx_ai_gaia)
+        tp_players.Controls.Add(cbx_p8_ai)
+        tp_players.Controls.Add(cbx_p7_ai)
+        tp_players.Controls.Add(cbx_p6_ai)
+        tp_players.Controls.Add(cbx_p5_ai)
+        tp_players.Controls.Add(cbx_p4_ai)
+        tp_players.Controls.Add(cbx_p3_ai)
+        tp_players.Controls.Add(cbx_p2_ai)
+        tp_players.Controls.Add(cbx_p1_ai)
+        tp_players.Controls.Add(cbx_gaia_ai)
         tp_players.Controls.Add(lb_name_string_id)
-        tp_players.Controls.Add(tbx_name_string_id_p8)
-        tp_players.Controls.Add(tbx_name_string_id_p7)
-        tp_players.Controls.Add(tbx_name_string_id_p6)
-        tp_players.Controls.Add(tbx_name_string_id_p5)
-        tp_players.Controls.Add(tbx_name_string_id_p4)
-        tp_players.Controls.Add(tbx_name_string_id_p3)
-        tp_players.Controls.Add(tbx_name_string_id_p2)
-        tp_players.Controls.Add(tbx_name_string_id_p1)
-        tp_players.Controls.Add(tbx_name_string_id_gaia)
+        tp_players.Controls.Add(tbx_p8_name_string_id)
+        tp_players.Controls.Add(tbx_p7_name_string_id)
+        tp_players.Controls.Add(tbx_p6_name_string_id)
+        tp_players.Controls.Add(tbx_p5_name_string_id)
+        tp_players.Controls.Add(tbx_p4_name_string_id)
+        tp_players.Controls.Add(tbx_p3_name_string_id)
+        tp_players.Controls.Add(tbx_p2_name_string_id)
+        tp_players.Controls.Add(tbx_p1_name_string_id)
+        tp_players.Controls.Add(tbx_gaia_name_string_id)
         tp_players.Controls.Add(lb_tribe_name)
-        tp_players.Controls.Add(tbx_tribe_name_p8)
-        tp_players.Controls.Add(tbx_tribe_name_p7)
-        tp_players.Controls.Add(tbx_tribe_name_p6)
-        tp_players.Controls.Add(tbx_tribe_name_p5)
-        tp_players.Controls.Add(tbx_tribe_name_p4)
-        tp_players.Controls.Add(tbx_tribe_name_p3)
-        tp_players.Controls.Add(tbx_tribe_name_p2)
-        tp_players.Controls.Add(tbx_tribe_name_p1)
-        tp_players.Controls.Add(tbx_tribe_name_gaia)
-        tp_players.Controls.Add(cbx_color_p8)
-        tp_players.Controls.Add(cbx_color_p7)
-        tp_players.Controls.Add(cbx_color_p6)
-        tp_players.Controls.Add(cbx_color_p5)
-        tp_players.Controls.Add(cbx_color_p4)
-        tp_players.Controls.Add(cbx_color_p3)
-        tp_players.Controls.Add(cbx_color_p2)
-        tp_players.Controls.Add(cbx_color_p1)
+        tp_players.Controls.Add(tbx_p8_tribe_name)
+        tp_players.Controls.Add(tbx_p7_tribe_name)
+        tp_players.Controls.Add(tbx_p6_tribe_name)
+        tp_players.Controls.Add(tbx_p5_tribe_name)
+        tp_players.Controls.Add(tbx_p4_tribe_name)
+        tp_players.Controls.Add(tbx_p3_tribe_name)
+        tp_players.Controls.Add(tbx_p2_tribe_name)
+        tp_players.Controls.Add(tbx_p1_tribe_name)
+        tp_players.Controls.Add(tbx_gaia_tribe_name)
+        tp_players.Controls.Add(cbx_p8_color)
+        tp_players.Controls.Add(cbx_p7_color)
+        tp_players.Controls.Add(cbx_p6_color)
+        tp_players.Controls.Add(cbx_p5_color)
+        tp_players.Controls.Add(cbx_p4_color)
+        tp_players.Controls.Add(cbx_p3_color)
+        tp_players.Controls.Add(cbx_p2_color)
+        tp_players.Controls.Add(cbx_p1_color)
         tp_players.Controls.Add(lb_color)
-        tp_players.Controls.Add(cbx_color_gaia)
+        tp_players.Controls.Add(cbx_gaia_color)
         tp_players.Controls.Add(lb_player_8)
         tp_players.Controls.Add(lb_player_7)
         tp_players.Controls.Add(lb_player_6)
@@ -746,74 +824,464 @@ Partial Class frm_scenario_maker
         tp_players.Controls.Add(lb_player_2)
         tp_players.Controls.Add(lb_player_1)
         tp_players.Controls.Add(lb_gaia)
-        tp_players.Controls.Add(NumericUpDown7)
-        tp_players.Controls.Add(NumericUpDown6)
-        tp_players.Controls.Add(NumericUpDown5)
-        tp_players.Controls.Add(NumericUpDown4)
-        tp_players.Controls.Add(NumericUpDown3)
-        tp_players.Controls.Add(NumericUpDown2)
-        tp_players.Controls.Add(NumericUpDown1)
-        tp_players.Controls.Add(nud_priority_p1)
-        tp_players.Controls.Add(nud_priority_gaia)
+        tp_players.Controls.Add(nud_p8_priority)
+        tp_players.Controls.Add(nud_p7_priority)
+        tp_players.Controls.Add(nud_p6_priority)
+        tp_players.Controls.Add(nud_p5_priority)
+        tp_players.Controls.Add(nud_p4_priority)
+        tp_players.Controls.Add(nud_p3_priority)
+        tp_players.Controls.Add(nud_p2_priority)
+        tp_players.Controls.Add(nud_p1_priority)
+        tp_players.Controls.Add(nud_gaia_priority)
         tp_players.Controls.Add(lb_priority_gaia)
-        tp_players.Controls.Add(nud_population_gaia)
-        tp_players.Controls.Add(nud_population_p8)
-        tp_players.Controls.Add(nud_population_p7)
-        tp_players.Controls.Add(nud_population_p6)
-        tp_players.Controls.Add(nud_population_p5)
-        tp_players.Controls.Add(nud_population_p4)
-        tp_players.Controls.Add(nud_population_p3)
-        tp_players.Controls.Add(nud_population_p2)
+        tp_players.Controls.Add(nud_gaia_population)
+        tp_players.Controls.Add(nud_p8_population)
+        tp_players.Controls.Add(nud_p7_population)
+        tp_players.Controls.Add(nud_p6_population)
+        tp_players.Controls.Add(nud_p5_population)
+        tp_players.Controls.Add(nud_p4_population)
+        tp_players.Controls.Add(nud_p3_population)
+        tp_players.Controls.Add(nud_p2_population)
         tp_players.Controls.Add(lb_pop)
-        tp_players.Controls.Add(nud_population_p1)
-        tp_players.Controls.Add(nud_gold_gaia)
-        tp_players.Controls.Add(nud_gold_p8)
-        tp_players.Controls.Add(nud_gold_p7)
-        tp_players.Controls.Add(nud_gold_p6)
-        tp_players.Controls.Add(nud_gold_p5)
-        tp_players.Controls.Add(nud_gold_p4)
-        tp_players.Controls.Add(nud_gold_p3)
-        tp_players.Controls.Add(nud_gold_p2)
+        tp_players.Controls.Add(nud_p1_population)
+        tp_players.Controls.Add(nud_gaia_gold)
+        tp_players.Controls.Add(nud_p8_gold)
+        tp_players.Controls.Add(nud_p7_gold)
+        tp_players.Controls.Add(nud_p6_gold)
+        tp_players.Controls.Add(nud_p5_gold)
+        tp_players.Controls.Add(nud_p4_gold)
+        tp_players.Controls.Add(nud_p3_gold)
+        tp_players.Controls.Add(nud_p2_gold)
         tp_players.Controls.Add(lb_gold)
-        tp_players.Controls.Add(nud_gold_p1)
-        tp_players.Controls.Add(nud_stone_gaia)
-        tp_players.Controls.Add(nud_stone_p8)
-        tp_players.Controls.Add(nud_stone_p7)
-        tp_players.Controls.Add(nud_stone_p6)
-        tp_players.Controls.Add(nud_stone_p5)
-        tp_players.Controls.Add(nud_stone_p4)
-        tp_players.Controls.Add(nud_stone_p3)
-        tp_players.Controls.Add(nud_stone_p2)
+        tp_players.Controls.Add(nud_p1_gold)
+        tp_players.Controls.Add(nud_gaia_stone)
+        tp_players.Controls.Add(nud_p8_stone)
+        tp_players.Controls.Add(nud_p7_stone)
+        tp_players.Controls.Add(nud_p6_stone)
+        tp_players.Controls.Add(nud_p5_stone)
+        tp_players.Controls.Add(nud_p4_stone)
+        tp_players.Controls.Add(nud_p3_stone)
+        tp_players.Controls.Add(nud_p2_stone)
         tp_players.Controls.Add(lb_stone)
-        tp_players.Controls.Add(nud_stone_p1)
-        tp_players.Controls.Add(nud_wood_gaia)
-        tp_players.Controls.Add(nud_wood_p8)
-        tp_players.Controls.Add(nud_wood_p7)
-        tp_players.Controls.Add(nud_wood_p6)
-        tp_players.Controls.Add(nud_wood_p5)
-        tp_players.Controls.Add(nud_wood_p4)
-        tp_players.Controls.Add(nud_wood_p3)
-        tp_players.Controls.Add(nud_wood_p2)
+        tp_players.Controls.Add(nud_p1_stone)
+        tp_players.Controls.Add(nud_gaia_wood)
+        tp_players.Controls.Add(nud_p8_wood)
+        tp_players.Controls.Add(nud_p7_wood)
+        tp_players.Controls.Add(nud_p6_wood)
+        tp_players.Controls.Add(nud_p5_wood)
+        tp_players.Controls.Add(nud_p4_wood)
+        tp_players.Controls.Add(nud_p3_wood)
+        tp_players.Controls.Add(nud_p2_wood)
         tp_players.Controls.Add(lb_wood)
-        tp_players.Controls.Add(nud_wood_p1)
-        tp_players.Controls.Add(nud_food_gaia)
-        tp_players.Controls.Add(nud_food_p8)
-        tp_players.Controls.Add(nud_food_p7)
-        tp_players.Controls.Add(nud_food_p6)
-        tp_players.Controls.Add(nud_food_p5)
-        tp_players.Controls.Add(nud_food_p4)
-        tp_players.Controls.Add(nud_food_p3)
-        tp_players.Controls.Add(nud_food_p2)
+        tp_players.Controls.Add(nud_p1_wood)
+        tp_players.Controls.Add(nud_gaia_food)
+        tp_players.Controls.Add(nud_p8_food)
+        tp_players.Controls.Add(nud_p7_food)
+        tp_players.Controls.Add(nud_p6_food)
+        tp_players.Controls.Add(nud_p5_food)
+        tp_players.Controls.Add(nud_p4_food)
+        tp_players.Controls.Add(nud_p3_food)
+        tp_players.Controls.Add(nud_p2_food)
         tp_players.Controls.Add(lb_food)
-        tp_players.Controls.Add(nud_food_p1)
+        tp_players.Controls.Add(nud_p1_food)
         tp_players.Controls.Add(cbx_total_players)
         tp_players.Location = New Point(4, 24)
         tp_players.Name = "tp_players"
         tp_players.Padding = New Padding(3)
-        tp_players.Size = New Size(1152, 509)
+        tp_players.Size = New Size(1428, 509)
         tp_players.TabIndex = 1
         tp_players.Text = "Players"
         tp_players.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p8_lock_personality
+        ' 
+        cbx_p8_lock_personality.AutoSize = True
+        cbx_p8_lock_personality.Location = New Point(1312, 304)
+        cbx_p8_lock_personality.Name = "cbx_p8_lock_personality"
+        cbx_p8_lock_personality.Size = New Size(112, 19)
+        cbx_p8_lock_personality.TabIndex = 272
+        cbx_p8_lock_personality.Text = "Lock Personality"
+        cbx_p8_lock_personality.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p7_lock_personality
+        ' 
+        cbx_p7_lock_personality.AutoSize = True
+        cbx_p7_lock_personality.Location = New Point(1312, 272)
+        cbx_p7_lock_personality.Name = "cbx_p7_lock_personality"
+        cbx_p7_lock_personality.Size = New Size(112, 19)
+        cbx_p7_lock_personality.TabIndex = 271
+        cbx_p7_lock_personality.Text = "Lock Personality"
+        cbx_p7_lock_personality.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p6_lock_personality
+        ' 
+        cbx_p6_lock_personality.AutoSize = True
+        cbx_p6_lock_personality.Location = New Point(1312, 240)
+        cbx_p6_lock_personality.Name = "cbx_p6_lock_personality"
+        cbx_p6_lock_personality.Size = New Size(112, 19)
+        cbx_p6_lock_personality.TabIndex = 270
+        cbx_p6_lock_personality.Text = "Lock Personality"
+        cbx_p6_lock_personality.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p5_lock_personality
+        ' 
+        cbx_p5_lock_personality.AutoSize = True
+        cbx_p5_lock_personality.Location = New Point(1312, 208)
+        cbx_p5_lock_personality.Name = "cbx_p5_lock_personality"
+        cbx_p5_lock_personality.Size = New Size(112, 19)
+        cbx_p5_lock_personality.TabIndex = 269
+        cbx_p5_lock_personality.Text = "Lock Personality"
+        cbx_p5_lock_personality.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p4_lock_personality
+        ' 
+        cbx_p4_lock_personality.AutoSize = True
+        cbx_p4_lock_personality.Location = New Point(1312, 176)
+        cbx_p4_lock_personality.Name = "cbx_p4_lock_personality"
+        cbx_p4_lock_personality.Size = New Size(112, 19)
+        cbx_p4_lock_personality.TabIndex = 268
+        cbx_p4_lock_personality.Text = "Lock Personality"
+        cbx_p4_lock_personality.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p3_lock_personality
+        ' 
+        cbx_p3_lock_personality.AutoSize = True
+        cbx_p3_lock_personality.Location = New Point(1312, 144)
+        cbx_p3_lock_personality.Name = "cbx_p3_lock_personality"
+        cbx_p3_lock_personality.Size = New Size(112, 19)
+        cbx_p3_lock_personality.TabIndex = 267
+        cbx_p3_lock_personality.Text = "Lock Personality"
+        cbx_p3_lock_personality.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p2_lock_personality
+        ' 
+        cbx_p2_lock_personality.AutoSize = True
+        cbx_p2_lock_personality.Location = New Point(1312, 112)
+        cbx_p2_lock_personality.Name = "cbx_p2_lock_personality"
+        cbx_p2_lock_personality.Size = New Size(112, 19)
+        cbx_p2_lock_personality.TabIndex = 266
+        cbx_p2_lock_personality.Text = "Lock Personality"
+        cbx_p2_lock_personality.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p1_lock_personality
+        ' 
+        cbx_p1_lock_personality.AutoSize = True
+        cbx_p1_lock_personality.Location = New Point(1312, 80)
+        cbx_p1_lock_personality.Name = "cbx_p1_lock_personality"
+        cbx_p1_lock_personality.Size = New Size(112, 19)
+        cbx_p1_lock_personality.TabIndex = 265
+        cbx_p1_lock_personality.Text = "Lock Personality"
+        cbx_p1_lock_personality.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_gaia_lock_personality
+        ' 
+        cbx_gaia_lock_personality.AutoSize = True
+        cbx_gaia_lock_personality.Location = New Point(1312, 48)
+        cbx_gaia_lock_personality.Name = "cbx_gaia_lock_personality"
+        cbx_gaia_lock_personality.Size = New Size(112, 19)
+        cbx_gaia_lock_personality.TabIndex = 264
+        cbx_gaia_lock_personality.Text = "Lock Personality"
+        cbx_gaia_lock_personality.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p8_lock_civ
+        ' 
+        cbx_p8_lock_civ.AutoSize = True
+        cbx_p8_lock_civ.Location = New Point(1240, 304)
+        cbx_p8_lock_civ.Name = "cbx_p8_lock_civ"
+        cbx_p8_lock_civ.Size = New Size(71, 19)
+        cbx_p8_lock_civ.TabIndex = 263
+        cbx_p8_lock_civ.Text = "Lock Civ"
+        cbx_p8_lock_civ.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p7_lock_civ
+        ' 
+        cbx_p7_lock_civ.AutoSize = True
+        cbx_p7_lock_civ.Location = New Point(1240, 272)
+        cbx_p7_lock_civ.Name = "cbx_p7_lock_civ"
+        cbx_p7_lock_civ.Size = New Size(71, 19)
+        cbx_p7_lock_civ.TabIndex = 262
+        cbx_p7_lock_civ.Text = "Lock Civ"
+        cbx_p7_lock_civ.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p6_lock_civ
+        ' 
+        cbx_p6_lock_civ.AutoSize = True
+        cbx_p6_lock_civ.Location = New Point(1240, 240)
+        cbx_p6_lock_civ.Name = "cbx_p6_lock_civ"
+        cbx_p6_lock_civ.Size = New Size(71, 19)
+        cbx_p6_lock_civ.TabIndex = 261
+        cbx_p6_lock_civ.Text = "Lock Civ"
+        cbx_p6_lock_civ.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p5_lock_civ
+        ' 
+        cbx_p5_lock_civ.AutoSize = True
+        cbx_p5_lock_civ.Location = New Point(1240, 208)
+        cbx_p5_lock_civ.Name = "cbx_p5_lock_civ"
+        cbx_p5_lock_civ.Size = New Size(71, 19)
+        cbx_p5_lock_civ.TabIndex = 260
+        cbx_p5_lock_civ.Text = "Lock Civ"
+        cbx_p5_lock_civ.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p4_lock_civ
+        ' 
+        cbx_p4_lock_civ.AutoSize = True
+        cbx_p4_lock_civ.Location = New Point(1240, 176)
+        cbx_p4_lock_civ.Name = "cbx_p4_lock_civ"
+        cbx_p4_lock_civ.Size = New Size(71, 19)
+        cbx_p4_lock_civ.TabIndex = 259
+        cbx_p4_lock_civ.Text = "Lock Civ"
+        cbx_p4_lock_civ.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p3_lock_civ
+        ' 
+        cbx_p3_lock_civ.AutoSize = True
+        cbx_p3_lock_civ.Location = New Point(1240, 144)
+        cbx_p3_lock_civ.Name = "cbx_p3_lock_civ"
+        cbx_p3_lock_civ.Size = New Size(71, 19)
+        cbx_p3_lock_civ.TabIndex = 258
+        cbx_p3_lock_civ.Text = "Lock Civ"
+        cbx_p3_lock_civ.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p2_lock_civ
+        ' 
+        cbx_p2_lock_civ.AutoSize = True
+        cbx_p2_lock_civ.Location = New Point(1240, 112)
+        cbx_p2_lock_civ.Name = "cbx_p2_lock_civ"
+        cbx_p2_lock_civ.Size = New Size(71, 19)
+        cbx_p2_lock_civ.TabIndex = 257
+        cbx_p2_lock_civ.Text = "Lock Civ"
+        cbx_p2_lock_civ.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p1_lock_civ
+        ' 
+        cbx_p1_lock_civ.AutoSize = True
+        cbx_p1_lock_civ.Location = New Point(1240, 80)
+        cbx_p1_lock_civ.Name = "cbx_p1_lock_civ"
+        cbx_p1_lock_civ.Size = New Size(71, 19)
+        cbx_p1_lock_civ.TabIndex = 256
+        cbx_p1_lock_civ.Text = "Lock Civ"
+        cbx_p1_lock_civ.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_gaia_lock_civ
+        ' 
+        cbx_gaia_lock_civ.AutoSize = True
+        cbx_gaia_lock_civ.Location = New Point(1240, 48)
+        cbx_gaia_lock_civ.Name = "cbx_gaia_lock_civ"
+        cbx_gaia_lock_civ.Size = New Size(71, 19)
+        cbx_gaia_lock_civ.TabIndex = 255
+        cbx_gaia_lock_civ.Text = "Lock Civ"
+        cbx_gaia_lock_civ.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_p8_architecture
+        ' 
+        cbx_p8_architecture.FormattingEnabled = True
+        cbx_p8_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p8_architecture.Location = New Point(1128, 304)
+        cbx_p8_architecture.Name = "cbx_p8_architecture"
+        cbx_p8_architecture.Size = New Size(104, 23)
+        cbx_p8_architecture.TabIndex = 254
+        cbx_p8_architecture.Text = "Civilization"
+        ' 
+        ' cbx_p7_architecture
+        ' 
+        cbx_p7_architecture.FormattingEnabled = True
+        cbx_p7_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p7_architecture.Location = New Point(1128, 272)
+        cbx_p7_architecture.Name = "cbx_p7_architecture"
+        cbx_p7_architecture.Size = New Size(104, 23)
+        cbx_p7_architecture.TabIndex = 253
+        cbx_p7_architecture.Text = "Civilization"
+        ' 
+        ' cbx_p6_architecture
+        ' 
+        cbx_p6_architecture.FormattingEnabled = True
+        cbx_p6_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p6_architecture.Location = New Point(1128, 240)
+        cbx_p6_architecture.Name = "cbx_p6_architecture"
+        cbx_p6_architecture.Size = New Size(104, 23)
+        cbx_p6_architecture.TabIndex = 252
+        cbx_p6_architecture.Text = "Civilization"
+        ' 
+        ' cbx_p5_architecture
+        ' 
+        cbx_p5_architecture.FormattingEnabled = True
+        cbx_p5_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p5_architecture.Location = New Point(1128, 208)
+        cbx_p5_architecture.Name = "cbx_p5_architecture"
+        cbx_p5_architecture.Size = New Size(104, 23)
+        cbx_p5_architecture.TabIndex = 251
+        cbx_p5_architecture.Text = "Civilization"
+        ' 
+        ' cbx_p4_architecture
+        ' 
+        cbx_p4_architecture.FormattingEnabled = True
+        cbx_p4_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p4_architecture.Location = New Point(1128, 176)
+        cbx_p4_architecture.Name = "cbx_p4_architecture"
+        cbx_p4_architecture.Size = New Size(104, 23)
+        cbx_p4_architecture.TabIndex = 250
+        cbx_p4_architecture.Text = "Civilization"
+        ' 
+        ' cbx_p3_architecture
+        ' 
+        cbx_p3_architecture.FormattingEnabled = True
+        cbx_p3_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p3_architecture.Location = New Point(1128, 144)
+        cbx_p3_architecture.Name = "cbx_p3_architecture"
+        cbx_p3_architecture.Size = New Size(104, 23)
+        cbx_p3_architecture.TabIndex = 249
+        cbx_p3_architecture.Text = "Civilization"
+        ' 
+        ' cbx_p2_architecture
+        ' 
+        cbx_p2_architecture.FormattingEnabled = True
+        cbx_p2_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p2_architecture.Location = New Point(1128, 112)
+        cbx_p2_architecture.Name = "cbx_p2_architecture"
+        cbx_p2_architecture.Size = New Size(104, 23)
+        cbx_p2_architecture.TabIndex = 248
+        cbx_p2_architecture.Text = "Civilization"
+        ' 
+        ' cbx_p1_architecture
+        ' 
+        cbx_p1_architecture.FormattingEnabled = True
+        cbx_p1_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p1_architecture.Location = New Point(1128, 80)
+        cbx_p1_architecture.Name = "cbx_p1_architecture"
+        cbx_p1_architecture.Size = New Size(104, 23)
+        cbx_p1_architecture.TabIndex = 247
+        cbx_p1_architecture.Text = "Civilization"
+        ' 
+        ' cbx_gaia_architecture
+        ' 
+        cbx_gaia_architecture.FormattingEnabled = True
+        cbx_gaia_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_gaia_architecture.Location = New Point(1128, 48)
+        cbx_gaia_architecture.Name = "cbx_gaia_architecture"
+        cbx_gaia_architecture.Size = New Size(104, 23)
+        cbx_gaia_architecture.TabIndex = 246
+        cbx_gaia_architecture.Text = "Civilization"
+        ' 
+        ' lbl_architecture
+        ' 
+        lbl_architecture.AutoSize = True
+        lbl_architecture.Location = New Point(1128, 16)
+        lbl_architecture.Name = "lbl_architecture"
+        lbl_architecture.Size = New Size(72, 15)
+        lbl_architecture.TabIndex = 245
+        lbl_architecture.Text = "Architecture"
+        lbl_architecture.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lbl_civilization
+        ' 
+        lbl_civilization.AutoSize = True
+        lbl_civilization.Location = New Point(1016, 16)
+        lbl_civilization.Name = "lbl_civilization"
+        lbl_civilization.Size = New Size(65, 15)
+        lbl_civilization.TabIndex = 244
+        lbl_civilization.Text = "Civilization"
+        lbl_civilization.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' cbx_p8_civilization
+        ' 
+        cbx_p8_civilization.FormattingEnabled = True
+        cbx_p8_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p8_civilization.Location = New Point(1016, 304)
+        cbx_p8_civilization.Name = "cbx_p8_civilization"
+        cbx_p8_civilization.Size = New Size(104, 23)
+        cbx_p8_civilization.TabIndex = 243
+        cbx_p8_civilization.Text = "Civilization"
+        ' 
+        ' cbx_p7_civilization
+        ' 
+        cbx_p7_civilization.FormattingEnabled = True
+        cbx_p7_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p7_civilization.Location = New Point(1016, 272)
+        cbx_p7_civilization.Name = "cbx_p7_civilization"
+        cbx_p7_civilization.Size = New Size(104, 23)
+        cbx_p7_civilization.TabIndex = 242
+        cbx_p7_civilization.Text = "Civilization"
+        ' 
+        ' cbx_p6_civilization
+        ' 
+        cbx_p6_civilization.FormattingEnabled = True
+        cbx_p6_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p6_civilization.Location = New Point(1016, 240)
+        cbx_p6_civilization.Name = "cbx_p6_civilization"
+        cbx_p6_civilization.Size = New Size(104, 23)
+        cbx_p6_civilization.TabIndex = 241
+        cbx_p6_civilization.Text = "Civilization"
+        ' 
+        ' cbx_p5_civilization
+        ' 
+        cbx_p5_civilization.FormattingEnabled = True
+        cbx_p5_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p5_civilization.Location = New Point(1016, 208)
+        cbx_p5_civilization.Name = "cbx_p5_civilization"
+        cbx_p5_civilization.Size = New Size(104, 23)
+        cbx_p5_civilization.TabIndex = 240
+        cbx_p5_civilization.Text = "Civilization"
+        ' 
+        ' cbx_p4_civilization
+        ' 
+        cbx_p4_civilization.FormattingEnabled = True
+        cbx_p4_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p4_civilization.Location = New Point(1016, 176)
+        cbx_p4_civilization.Name = "cbx_p4_civilization"
+        cbx_p4_civilization.Size = New Size(104, 23)
+        cbx_p4_civilization.TabIndex = 239
+        cbx_p4_civilization.Text = "Civilization"
+        ' 
+        ' cbx_p3_civilization
+        ' 
+        cbx_p3_civilization.FormattingEnabled = True
+        cbx_p3_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p3_civilization.Location = New Point(1016, 144)
+        cbx_p3_civilization.Name = "cbx_p3_civilization"
+        cbx_p3_civilization.Size = New Size(104, 23)
+        cbx_p3_civilization.TabIndex = 238
+        cbx_p3_civilization.Text = "Civilization"
+        ' 
+        ' cbx_p2_civilization
+        ' 
+        cbx_p2_civilization.FormattingEnabled = True
+        cbx_p2_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p2_civilization.Location = New Point(1016, 112)
+        cbx_p2_civilization.Name = "cbx_p2_civilization"
+        cbx_p2_civilization.Size = New Size(104, 23)
+        cbx_p2_civilization.TabIndex = 237
+        cbx_p2_civilization.Text = "Civilization"
+        ' 
+        ' cbx_p1_civilization
+        ' 
+        cbx_p1_civilization.FormattingEnabled = True
+        cbx_p1_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_p1_civilization.Location = New Point(1016, 80)
+        cbx_p1_civilization.Name = "cbx_p1_civilization"
+        cbx_p1_civilization.Size = New Size(104, 23)
+        cbx_p1_civilization.TabIndex = 236
+        cbx_p1_civilization.Text = "Civilization"
+        ' 
+        ' cbx_gaia_civilization
+        ' 
+        cbx_gaia_civilization.FormattingEnabled = True
+        cbx_gaia_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
+        cbx_gaia_civilization.Location = New Point(1016, 48)
+        cbx_gaia_civilization.Name = "cbx_gaia_civilization"
+        cbx_gaia_civilization.Size = New Size(104, 23)
+        cbx_gaia_civilization.TabIndex = 235
+        cbx_gaia_civilization.Text = "Civilization"
+        ' 
+        ' lbl_ai_personality
+        ' 
+        lbl_ai_personality.AutoSize = True
+        lbl_ai_personality.Location = New Point(896, 16)
+        lbl_ai_personality.Name = "lbl_ai_personality"
+        lbl_ai_personality.Size = New Size(79, 15)
+        lbl_ai_personality.TabIndex = 234
+        lbl_ai_personality.Text = "AI Personality"
+        lbl_ai_personality.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' cbx_p8_ai_personality
         ' 
@@ -823,6 +1291,7 @@ Partial Class frm_scenario_maker
         cbx_p8_ai_personality.Name = "cbx_p8_ai_personality"
         cbx_p8_ai_personality.Size = New Size(112, 23)
         cbx_p8_ai_personality.TabIndex = 233
+        cbx_p8_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_p7_ai_personality
         ' 
@@ -832,6 +1301,7 @@ Partial Class frm_scenario_maker
         cbx_p7_ai_personality.Name = "cbx_p7_ai_personality"
         cbx_p7_ai_personality.Size = New Size(112, 23)
         cbx_p7_ai_personality.TabIndex = 232
+        cbx_p7_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_p6_ai_personality
         ' 
@@ -841,6 +1311,7 @@ Partial Class frm_scenario_maker
         cbx_p6_ai_personality.Name = "cbx_p6_ai_personality"
         cbx_p6_ai_personality.Size = New Size(112, 23)
         cbx_p6_ai_personality.TabIndex = 231
+        cbx_p6_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_p5_ai_personality
         ' 
@@ -850,6 +1321,7 @@ Partial Class frm_scenario_maker
         cbx_p5_ai_personality.Name = "cbx_p5_ai_personality"
         cbx_p5_ai_personality.Size = New Size(112, 23)
         cbx_p5_ai_personality.TabIndex = 230
+        cbx_p5_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_p4_ai_personality
         ' 
@@ -859,6 +1331,7 @@ Partial Class frm_scenario_maker
         cbx_p4_ai_personality.Name = "cbx_p4_ai_personality"
         cbx_p4_ai_personality.Size = New Size(112, 23)
         cbx_p4_ai_personality.TabIndex = 229
+        cbx_p4_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_p3_ai_personality
         ' 
@@ -868,6 +1341,7 @@ Partial Class frm_scenario_maker
         cbx_p3_ai_personality.Name = "cbx_p3_ai_personality"
         cbx_p3_ai_personality.Size = New Size(112, 23)
         cbx_p3_ai_personality.TabIndex = 228
+        cbx_p3_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_p2_ai_personality
         ' 
@@ -877,6 +1351,7 @@ Partial Class frm_scenario_maker
         cbx_p2_ai_personality.Name = "cbx_p2_ai_personality"
         cbx_p2_ai_personality.Size = New Size(112, 23)
         cbx_p2_ai_personality.TabIndex = 227
+        cbx_p2_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_gaia_ai_personality
         ' 
@@ -886,6 +1361,7 @@ Partial Class frm_scenario_maker
         cbx_gaia_ai_personality.Name = "cbx_gaia_ai_personality"
         cbx_gaia_ai_personality.Size = New Size(112, 23)
         cbx_gaia_ai_personality.TabIndex = 226
+        cbx_gaia_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_p1_ai_personality
         ' 
@@ -895,6 +1371,7 @@ Partial Class frm_scenario_maker
         cbx_p1_ai_personality.Name = "cbx_p1_ai_personality"
         cbx_p1_ai_personality.Size = New Size(112, 23)
         cbx_p1_ai_personality.TabIndex = 225
+        cbx_p1_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_gaia_age
         ' 
@@ -990,102 +1467,102 @@ Partial Class frm_scenario_maker
         ' lbl_player_type
         ' 
         lbl_player_type.AutoSize = True
-        lbl_player_type.Location = New Point(848, 16)
+        lbl_player_type.Location = New Point(856, 16)
         lbl_player_type.Name = "lbl_player_type"
-        lbl_player_type.Size = New Size(41, 15)
+        lbl_player_type.Size = New Size(34, 15)
         lbl_player_type.TabIndex = 214
-        lbl_player_type.Text = "P Type"
+        lbl_player_type.Text = "Is AI?"
         lbl_player_type.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' cbx_ai_p8
+        ' cbx_p8_ai
         ' 
-        cbx_ai_p8.AutoSize = True
-        cbx_ai_p8.Location = New Point(856, 304)
-        cbx_ai_p8.Name = "cbx_ai_p8"
-        cbx_ai_p8.Size = New Size(37, 19)
-        cbx_ai_p8.TabIndex = 213
-        cbx_ai_p8.Text = "AI"
-        cbx_ai_p8.UseVisualStyleBackColor = True
+        cbx_p8_ai.AutoSize = True
+        cbx_p8_ai.Location = New Point(856, 304)
+        cbx_p8_ai.Name = "cbx_p8_ai"
+        cbx_p8_ai.Size = New Size(37, 19)
+        cbx_p8_ai.TabIndex = 213
+        cbx_p8_ai.Text = "AI"
+        cbx_p8_ai.UseVisualStyleBackColor = True
         ' 
-        ' cbx_ai_p7
+        ' cbx_p7_ai
         ' 
-        cbx_ai_p7.AutoSize = True
-        cbx_ai_p7.Location = New Point(856, 272)
-        cbx_ai_p7.Name = "cbx_ai_p7"
-        cbx_ai_p7.Size = New Size(37, 19)
-        cbx_ai_p7.TabIndex = 212
-        cbx_ai_p7.Text = "AI"
-        cbx_ai_p7.UseVisualStyleBackColor = True
+        cbx_p7_ai.AutoSize = True
+        cbx_p7_ai.Location = New Point(856, 272)
+        cbx_p7_ai.Name = "cbx_p7_ai"
+        cbx_p7_ai.Size = New Size(37, 19)
+        cbx_p7_ai.TabIndex = 212
+        cbx_p7_ai.Text = "AI"
+        cbx_p7_ai.UseVisualStyleBackColor = True
         ' 
-        ' cbx_ai_p6
+        ' cbx_p6_ai
         ' 
-        cbx_ai_p6.AutoSize = True
-        cbx_ai_p6.Location = New Point(856, 240)
-        cbx_ai_p6.Name = "cbx_ai_p6"
-        cbx_ai_p6.Size = New Size(37, 19)
-        cbx_ai_p6.TabIndex = 211
-        cbx_ai_p6.Text = "AI"
-        cbx_ai_p6.UseVisualStyleBackColor = True
+        cbx_p6_ai.AutoSize = True
+        cbx_p6_ai.Location = New Point(856, 240)
+        cbx_p6_ai.Name = "cbx_p6_ai"
+        cbx_p6_ai.Size = New Size(37, 19)
+        cbx_p6_ai.TabIndex = 211
+        cbx_p6_ai.Text = "AI"
+        cbx_p6_ai.UseVisualStyleBackColor = True
         ' 
-        ' cbx_ai_p5
+        ' cbx_p5_ai
         ' 
-        cbx_ai_p5.AutoSize = True
-        cbx_ai_p5.Location = New Point(856, 208)
-        cbx_ai_p5.Name = "cbx_ai_p5"
-        cbx_ai_p5.Size = New Size(37, 19)
-        cbx_ai_p5.TabIndex = 210
-        cbx_ai_p5.Text = "AI"
-        cbx_ai_p5.UseVisualStyleBackColor = True
+        cbx_p5_ai.AutoSize = True
+        cbx_p5_ai.Location = New Point(856, 208)
+        cbx_p5_ai.Name = "cbx_p5_ai"
+        cbx_p5_ai.Size = New Size(37, 19)
+        cbx_p5_ai.TabIndex = 210
+        cbx_p5_ai.Text = "AI"
+        cbx_p5_ai.UseVisualStyleBackColor = True
         ' 
-        ' cbx_ai_p4
+        ' cbx_p4_ai
         ' 
-        cbx_ai_p4.AutoSize = True
-        cbx_ai_p4.Location = New Point(856, 176)
-        cbx_ai_p4.Name = "cbx_ai_p4"
-        cbx_ai_p4.Size = New Size(37, 19)
-        cbx_ai_p4.TabIndex = 209
-        cbx_ai_p4.Text = "AI"
-        cbx_ai_p4.UseVisualStyleBackColor = True
+        cbx_p4_ai.AutoSize = True
+        cbx_p4_ai.Location = New Point(856, 176)
+        cbx_p4_ai.Name = "cbx_p4_ai"
+        cbx_p4_ai.Size = New Size(37, 19)
+        cbx_p4_ai.TabIndex = 209
+        cbx_p4_ai.Text = "AI"
+        cbx_p4_ai.UseVisualStyleBackColor = True
         ' 
-        ' cbx_ai_p3
+        ' cbx_p3_ai
         ' 
-        cbx_ai_p3.AutoSize = True
-        cbx_ai_p3.Location = New Point(856, 144)
-        cbx_ai_p3.Name = "cbx_ai_p3"
-        cbx_ai_p3.Size = New Size(37, 19)
-        cbx_ai_p3.TabIndex = 208
-        cbx_ai_p3.Text = "AI"
-        cbx_ai_p3.UseVisualStyleBackColor = True
+        cbx_p3_ai.AutoSize = True
+        cbx_p3_ai.Location = New Point(856, 144)
+        cbx_p3_ai.Name = "cbx_p3_ai"
+        cbx_p3_ai.Size = New Size(37, 19)
+        cbx_p3_ai.TabIndex = 208
+        cbx_p3_ai.Text = "AI"
+        cbx_p3_ai.UseVisualStyleBackColor = True
         ' 
-        ' cbx_ai_p2
+        ' cbx_p2_ai
         ' 
-        cbx_ai_p2.AutoSize = True
-        cbx_ai_p2.Location = New Point(856, 112)
-        cbx_ai_p2.Name = "cbx_ai_p2"
-        cbx_ai_p2.Size = New Size(37, 19)
-        cbx_ai_p2.TabIndex = 207
-        cbx_ai_p2.Text = "AI"
-        cbx_ai_p2.UseVisualStyleBackColor = True
+        cbx_p2_ai.AutoSize = True
+        cbx_p2_ai.Location = New Point(856, 112)
+        cbx_p2_ai.Name = "cbx_p2_ai"
+        cbx_p2_ai.Size = New Size(37, 19)
+        cbx_p2_ai.TabIndex = 207
+        cbx_p2_ai.Text = "AI"
+        cbx_p2_ai.UseVisualStyleBackColor = True
         ' 
-        ' cbx_ai_p1
+        ' cbx_p1_ai
         ' 
-        cbx_ai_p1.AutoSize = True
-        cbx_ai_p1.Location = New Point(856, 80)
-        cbx_ai_p1.Name = "cbx_ai_p1"
-        cbx_ai_p1.Size = New Size(37, 19)
-        cbx_ai_p1.TabIndex = 206
-        cbx_ai_p1.Text = "AI"
-        cbx_ai_p1.UseVisualStyleBackColor = True
+        cbx_p1_ai.AutoSize = True
+        cbx_p1_ai.Location = New Point(856, 80)
+        cbx_p1_ai.Name = "cbx_p1_ai"
+        cbx_p1_ai.Size = New Size(37, 19)
+        cbx_p1_ai.TabIndex = 206
+        cbx_p1_ai.Text = "AI"
+        cbx_p1_ai.UseVisualStyleBackColor = True
         ' 
-        ' cbx_ai_gaia
+        ' cbx_gaia_ai
         ' 
-        cbx_ai_gaia.AutoSize = True
-        cbx_ai_gaia.Location = New Point(856, 48)
-        cbx_ai_gaia.Name = "cbx_ai_gaia"
-        cbx_ai_gaia.Size = New Size(37, 19)
-        cbx_ai_gaia.TabIndex = 205
-        cbx_ai_gaia.Text = "AI"
-        cbx_ai_gaia.UseVisualStyleBackColor = True
+        cbx_gaia_ai.AutoSize = True
+        cbx_gaia_ai.Location = New Point(856, 48)
+        cbx_gaia_ai.Name = "cbx_gaia_ai"
+        cbx_gaia_ai.Size = New Size(37, 19)
+        cbx_gaia_ai.TabIndex = 205
+        cbx_gaia_ai.Text = "AI"
+        cbx_gaia_ai.UseVisualStyleBackColor = True
         ' 
         ' lb_name_string_id
         ' 
@@ -1097,77 +1574,77 @@ Partial Class frm_scenario_maker
         lb_name_string_id.Text = "String ID"
         lb_name_string_id.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' tbx_name_string_id_p8
+        ' tbx_p8_name_string_id
         ' 
-        tbx_name_string_id_p8.Location = New Point(752, 304)
-        tbx_name_string_id_p8.MaxLength = 10
-        tbx_name_string_id_p8.Name = "tbx_name_string_id_p8"
-        tbx_name_string_id_p8.Size = New Size(100, 23)
-        tbx_name_string_id_p8.TabIndex = 199
+        tbx_p8_name_string_id.Location = New Point(752, 304)
+        tbx_p8_name_string_id.MaxLength = 10
+        tbx_p8_name_string_id.Name = "tbx_p8_name_string_id"
+        tbx_p8_name_string_id.Size = New Size(100, 23)
+        tbx_p8_name_string_id.TabIndex = 199
         ' 
-        ' tbx_name_string_id_p7
+        ' tbx_p7_name_string_id
         ' 
-        tbx_name_string_id_p7.Location = New Point(752, 272)
-        tbx_name_string_id_p7.MaxLength = 10
-        tbx_name_string_id_p7.Name = "tbx_name_string_id_p7"
-        tbx_name_string_id_p7.Size = New Size(100, 23)
-        tbx_name_string_id_p7.TabIndex = 200
+        tbx_p7_name_string_id.Location = New Point(752, 272)
+        tbx_p7_name_string_id.MaxLength = 10
+        tbx_p7_name_string_id.Name = "tbx_p7_name_string_id"
+        tbx_p7_name_string_id.Size = New Size(100, 23)
+        tbx_p7_name_string_id.TabIndex = 200
         ' 
-        ' tbx_name_string_id_p6
+        ' tbx_p6_name_string_id
         ' 
-        tbx_name_string_id_p6.Location = New Point(752, 240)
-        tbx_name_string_id_p6.MaxLength = 10
-        tbx_name_string_id_p6.Name = "tbx_name_string_id_p6"
-        tbx_name_string_id_p6.Size = New Size(100, 23)
-        tbx_name_string_id_p6.TabIndex = 201
+        tbx_p6_name_string_id.Location = New Point(752, 240)
+        tbx_p6_name_string_id.MaxLength = 10
+        tbx_p6_name_string_id.Name = "tbx_p6_name_string_id"
+        tbx_p6_name_string_id.Size = New Size(100, 23)
+        tbx_p6_name_string_id.TabIndex = 201
         ' 
-        ' tbx_name_string_id_p5
+        ' tbx_p5_name_string_id
         ' 
-        tbx_name_string_id_p5.Location = New Point(752, 208)
-        tbx_name_string_id_p5.MaxLength = 10
-        tbx_name_string_id_p5.Name = "tbx_name_string_id_p5"
-        tbx_name_string_id_p5.Size = New Size(100, 23)
-        tbx_name_string_id_p5.TabIndex = 203
+        tbx_p5_name_string_id.Location = New Point(752, 208)
+        tbx_p5_name_string_id.MaxLength = 10
+        tbx_p5_name_string_id.Name = "tbx_p5_name_string_id"
+        tbx_p5_name_string_id.Size = New Size(100, 23)
+        tbx_p5_name_string_id.TabIndex = 203
         ' 
-        ' tbx_name_string_id_p4
+        ' tbx_p4_name_string_id
         ' 
-        tbx_name_string_id_p4.Location = New Point(752, 176)
-        tbx_name_string_id_p4.MaxLength = 10
-        tbx_name_string_id_p4.Name = "tbx_name_string_id_p4"
-        tbx_name_string_id_p4.Size = New Size(100, 23)
-        tbx_name_string_id_p4.TabIndex = 202
+        tbx_p4_name_string_id.Location = New Point(752, 176)
+        tbx_p4_name_string_id.MaxLength = 10
+        tbx_p4_name_string_id.Name = "tbx_p4_name_string_id"
+        tbx_p4_name_string_id.Size = New Size(100, 23)
+        tbx_p4_name_string_id.TabIndex = 202
         ' 
-        ' tbx_name_string_id_p3
+        ' tbx_p3_name_string_id
         ' 
-        tbx_name_string_id_p3.Location = New Point(752, 144)
-        tbx_name_string_id_p3.MaxLength = 10
-        tbx_name_string_id_p3.Name = "tbx_name_string_id_p3"
-        tbx_name_string_id_p3.Size = New Size(100, 23)
-        tbx_name_string_id_p3.TabIndex = 198
+        tbx_p3_name_string_id.Location = New Point(752, 144)
+        tbx_p3_name_string_id.MaxLength = 10
+        tbx_p3_name_string_id.Name = "tbx_p3_name_string_id"
+        tbx_p3_name_string_id.Size = New Size(100, 23)
+        tbx_p3_name_string_id.TabIndex = 198
         ' 
-        ' tbx_name_string_id_p2
+        ' tbx_p2_name_string_id
         ' 
-        tbx_name_string_id_p2.Location = New Point(752, 112)
-        tbx_name_string_id_p2.MaxLength = 10
-        tbx_name_string_id_p2.Name = "tbx_name_string_id_p2"
-        tbx_name_string_id_p2.Size = New Size(100, 23)
-        tbx_name_string_id_p2.TabIndex = 197
+        tbx_p2_name_string_id.Location = New Point(752, 112)
+        tbx_p2_name_string_id.MaxLength = 10
+        tbx_p2_name_string_id.Name = "tbx_p2_name_string_id"
+        tbx_p2_name_string_id.Size = New Size(100, 23)
+        tbx_p2_name_string_id.TabIndex = 197
         ' 
-        ' tbx_name_string_id_p1
+        ' tbx_p1_name_string_id
         ' 
-        tbx_name_string_id_p1.Location = New Point(752, 80)
-        tbx_name_string_id_p1.MaxLength = 10
-        tbx_name_string_id_p1.Name = "tbx_name_string_id_p1"
-        tbx_name_string_id_p1.Size = New Size(100, 23)
-        tbx_name_string_id_p1.TabIndex = 196
+        tbx_p1_name_string_id.Location = New Point(752, 80)
+        tbx_p1_name_string_id.MaxLength = 10
+        tbx_p1_name_string_id.Name = "tbx_p1_name_string_id"
+        tbx_p1_name_string_id.Size = New Size(100, 23)
+        tbx_p1_name_string_id.TabIndex = 196
         ' 
-        ' tbx_name_string_id_gaia
+        ' tbx_gaia_name_string_id
         ' 
-        tbx_name_string_id_gaia.Location = New Point(752, 48)
-        tbx_name_string_id_gaia.MaxLength = 10
-        tbx_name_string_id_gaia.Name = "tbx_name_string_id_gaia"
-        tbx_name_string_id_gaia.Size = New Size(100, 23)
-        tbx_name_string_id_gaia.TabIndex = 195
+        tbx_gaia_name_string_id.Location = New Point(752, 48)
+        tbx_gaia_name_string_id.MaxLength = 10
+        tbx_gaia_name_string_id.Name = "tbx_gaia_name_string_id"
+        tbx_gaia_name_string_id.Size = New Size(100, 23)
+        tbx_gaia_name_string_id.TabIndex = 195
         ' 
         ' lb_tribe_name
         ' 
@@ -1179,157 +1656,157 @@ Partial Class frm_scenario_maker
         lb_tribe_name.Text = "Tribe Name"
         lb_tribe_name.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' tbx_tribe_name_p8
+        ' tbx_p8_tribe_name
         ' 
-        tbx_tribe_name_p8.Location = New Point(648, 304)
-        tbx_tribe_name_p8.MaxLength = 28
-        tbx_tribe_name_p8.Name = "tbx_tribe_name_p8"
-        tbx_tribe_name_p8.Size = New Size(100, 23)
-        tbx_tribe_name_p8.TabIndex = 192
+        tbx_p8_tribe_name.Location = New Point(648, 304)
+        tbx_p8_tribe_name.MaxLength = 28
+        tbx_p8_tribe_name.Name = "tbx_p8_tribe_name"
+        tbx_p8_tribe_name.Size = New Size(100, 23)
+        tbx_p8_tribe_name.TabIndex = 192
         ' 
-        ' tbx_tribe_name_p7
+        ' tbx_p7_tribe_name
         ' 
-        tbx_tribe_name_p7.Location = New Point(648, 272)
-        tbx_tribe_name_p7.MaxLength = 28
-        tbx_tribe_name_p7.Name = "tbx_tribe_name_p7"
-        tbx_tribe_name_p7.Size = New Size(100, 23)
-        tbx_tribe_name_p7.TabIndex = 191
+        tbx_p7_tribe_name.Location = New Point(648, 272)
+        tbx_p7_tribe_name.MaxLength = 28
+        tbx_p7_tribe_name.Name = "tbx_p7_tribe_name"
+        tbx_p7_tribe_name.Size = New Size(100, 23)
+        tbx_p7_tribe_name.TabIndex = 191
         ' 
-        ' tbx_tribe_name_p6
+        ' tbx_p6_tribe_name
         ' 
-        tbx_tribe_name_p6.Location = New Point(648, 240)
-        tbx_tribe_name_p6.MaxLength = 28
-        tbx_tribe_name_p6.Name = "tbx_tribe_name_p6"
-        tbx_tribe_name_p6.Size = New Size(100, 23)
-        tbx_tribe_name_p6.TabIndex = 190
+        tbx_p6_tribe_name.Location = New Point(648, 240)
+        tbx_p6_tribe_name.MaxLength = 28
+        tbx_p6_tribe_name.Name = "tbx_p6_tribe_name"
+        tbx_p6_tribe_name.Size = New Size(100, 23)
+        tbx_p6_tribe_name.TabIndex = 190
         ' 
-        ' tbx_tribe_name_p5
+        ' tbx_p5_tribe_name
         ' 
-        tbx_tribe_name_p5.Location = New Point(648, 208)
-        tbx_tribe_name_p5.MaxLength = 28
-        tbx_tribe_name_p5.Name = "tbx_tribe_name_p5"
-        tbx_tribe_name_p5.Size = New Size(100, 23)
-        tbx_tribe_name_p5.TabIndex = 193
+        tbx_p5_tribe_name.Location = New Point(648, 208)
+        tbx_p5_tribe_name.MaxLength = 28
+        tbx_p5_tribe_name.Name = "tbx_p5_tribe_name"
+        tbx_p5_tribe_name.Size = New Size(100, 23)
+        tbx_p5_tribe_name.TabIndex = 193
         ' 
-        ' tbx_tribe_name_p4
+        ' tbx_p4_tribe_name
         ' 
-        tbx_tribe_name_p4.Location = New Point(648, 176)
-        tbx_tribe_name_p4.MaxLength = 28
-        tbx_tribe_name_p4.Name = "tbx_tribe_name_p4"
-        tbx_tribe_name_p4.Size = New Size(100, 23)
-        tbx_tribe_name_p4.TabIndex = 189
+        tbx_p4_tribe_name.Location = New Point(648, 176)
+        tbx_p4_tribe_name.MaxLength = 28
+        tbx_p4_tribe_name.Name = "tbx_p4_tribe_name"
+        tbx_p4_tribe_name.Size = New Size(100, 23)
+        tbx_p4_tribe_name.TabIndex = 189
         ' 
-        ' tbx_tribe_name_p3
+        ' tbx_p3_tribe_name
         ' 
-        tbx_tribe_name_p3.Location = New Point(648, 144)
-        tbx_tribe_name_p3.MaxLength = 28
-        tbx_tribe_name_p3.Name = "tbx_tribe_name_p3"
-        tbx_tribe_name_p3.Size = New Size(100, 23)
-        tbx_tribe_name_p3.TabIndex = 188
+        tbx_p3_tribe_name.Location = New Point(648, 144)
+        tbx_p3_tribe_name.MaxLength = 28
+        tbx_p3_tribe_name.Name = "tbx_p3_tribe_name"
+        tbx_p3_tribe_name.Size = New Size(100, 23)
+        tbx_p3_tribe_name.TabIndex = 188
         ' 
-        ' tbx_tribe_name_p2
+        ' tbx_p2_tribe_name
         ' 
-        tbx_tribe_name_p2.Location = New Point(648, 112)
-        tbx_tribe_name_p2.MaxLength = 28
-        tbx_tribe_name_p2.Name = "tbx_tribe_name_p2"
-        tbx_tribe_name_p2.Size = New Size(100, 23)
-        tbx_tribe_name_p2.TabIndex = 187
+        tbx_p2_tribe_name.Location = New Point(648, 112)
+        tbx_p2_tribe_name.MaxLength = 28
+        tbx_p2_tribe_name.Name = "tbx_p2_tribe_name"
+        tbx_p2_tribe_name.Size = New Size(100, 23)
+        tbx_p2_tribe_name.TabIndex = 187
         ' 
-        ' tbx_tribe_name_p1
+        ' tbx_p1_tribe_name
         ' 
-        tbx_tribe_name_p1.Location = New Point(648, 80)
-        tbx_tribe_name_p1.MaxLength = 28
-        tbx_tribe_name_p1.Name = "tbx_tribe_name_p1"
-        tbx_tribe_name_p1.Size = New Size(100, 23)
-        tbx_tribe_name_p1.TabIndex = 186
+        tbx_p1_tribe_name.Location = New Point(648, 80)
+        tbx_p1_tribe_name.MaxLength = 28
+        tbx_p1_tribe_name.Name = "tbx_p1_tribe_name"
+        tbx_p1_tribe_name.Size = New Size(100, 23)
+        tbx_p1_tribe_name.TabIndex = 186
         ' 
-        ' tbx_tribe_name_gaia
+        ' tbx_gaia_tribe_name
         ' 
-        tbx_tribe_name_gaia.Location = New Point(648, 48)
-        tbx_tribe_name_gaia.MaxLength = 28
-        tbx_tribe_name_gaia.Name = "tbx_tribe_name_gaia"
-        tbx_tribe_name_gaia.Size = New Size(100, 23)
-        tbx_tribe_name_gaia.TabIndex = 185
+        tbx_gaia_tribe_name.Location = New Point(648, 48)
+        tbx_gaia_tribe_name.MaxLength = 28
+        tbx_gaia_tribe_name.Name = "tbx_gaia_tribe_name"
+        tbx_gaia_tribe_name.Size = New Size(100, 23)
+        tbx_gaia_tribe_name.TabIndex = 185
         ' 
-        ' cbx_color_p8
+        ' cbx_p8_color
         ' 
-        cbx_color_p8.FormattingEnabled = True
-        cbx_color_p8.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p8.Location = New Point(568, 304)
-        cbx_color_p8.Name = "cbx_color_p8"
-        cbx_color_p8.Size = New Size(75, 23)
-        cbx_color_p8.TabIndex = 184
-        cbx_color_p8.Text = "Color"
+        cbx_p8_color.FormattingEnabled = True
+        cbx_p8_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
+        cbx_p8_color.Location = New Point(568, 304)
+        cbx_p8_color.Name = "cbx_p8_color"
+        cbx_p8_color.Size = New Size(75, 23)
+        cbx_p8_color.TabIndex = 184
+        cbx_p8_color.Text = "Color"
         ' 
-        ' cbx_color_p7
+        ' cbx_p7_color
         ' 
-        cbx_color_p7.FormattingEnabled = True
-        cbx_color_p7.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p7.Location = New Point(568, 272)
-        cbx_color_p7.Name = "cbx_color_p7"
-        cbx_color_p7.Size = New Size(75, 23)
-        cbx_color_p7.TabIndex = 183
-        cbx_color_p7.Text = "Color"
+        cbx_p7_color.FormattingEnabled = True
+        cbx_p7_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
+        cbx_p7_color.Location = New Point(568, 272)
+        cbx_p7_color.Name = "cbx_p7_color"
+        cbx_p7_color.Size = New Size(75, 23)
+        cbx_p7_color.TabIndex = 183
+        cbx_p7_color.Text = "Color"
         ' 
-        ' cbx_color_p6
+        ' cbx_p6_color
         ' 
-        cbx_color_p6.FormattingEnabled = True
-        cbx_color_p6.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p6.Location = New Point(568, 240)
-        cbx_color_p6.Name = "cbx_color_p6"
-        cbx_color_p6.Size = New Size(75, 23)
-        cbx_color_p6.TabIndex = 182
-        cbx_color_p6.Text = "Color"
+        cbx_p6_color.FormattingEnabled = True
+        cbx_p6_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
+        cbx_p6_color.Location = New Point(568, 240)
+        cbx_p6_color.Name = "cbx_p6_color"
+        cbx_p6_color.Size = New Size(75, 23)
+        cbx_p6_color.TabIndex = 182
+        cbx_p6_color.Text = "Color"
         ' 
-        ' cbx_color_p5
+        ' cbx_p5_color
         ' 
-        cbx_color_p5.FormattingEnabled = True
-        cbx_color_p5.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p5.Location = New Point(568, 208)
-        cbx_color_p5.Name = "cbx_color_p5"
-        cbx_color_p5.Size = New Size(75, 23)
-        cbx_color_p5.TabIndex = 181
-        cbx_color_p5.Text = "Color"
+        cbx_p5_color.FormattingEnabled = True
+        cbx_p5_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
+        cbx_p5_color.Location = New Point(568, 208)
+        cbx_p5_color.Name = "cbx_p5_color"
+        cbx_p5_color.Size = New Size(75, 23)
+        cbx_p5_color.TabIndex = 181
+        cbx_p5_color.Text = "Color"
         ' 
-        ' cbx_color_p4
+        ' cbx_p4_color
         ' 
-        cbx_color_p4.FormattingEnabled = True
-        cbx_color_p4.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p4.Location = New Point(568, 176)
-        cbx_color_p4.Name = "cbx_color_p4"
-        cbx_color_p4.Size = New Size(75, 23)
-        cbx_color_p4.TabIndex = 180
-        cbx_color_p4.Text = "Color"
+        cbx_p4_color.FormattingEnabled = True
+        cbx_p4_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
+        cbx_p4_color.Location = New Point(568, 176)
+        cbx_p4_color.Name = "cbx_p4_color"
+        cbx_p4_color.Size = New Size(75, 23)
+        cbx_p4_color.TabIndex = 180
+        cbx_p4_color.Text = "Color"
         ' 
-        ' cbx_color_p3
+        ' cbx_p3_color
         ' 
-        cbx_color_p3.FormattingEnabled = True
-        cbx_color_p3.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p3.Location = New Point(568, 144)
-        cbx_color_p3.Name = "cbx_color_p3"
-        cbx_color_p3.Size = New Size(75, 23)
-        cbx_color_p3.TabIndex = 179
-        cbx_color_p3.Text = "Color"
+        cbx_p3_color.FormattingEnabled = True
+        cbx_p3_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
+        cbx_p3_color.Location = New Point(568, 144)
+        cbx_p3_color.Name = "cbx_p3_color"
+        cbx_p3_color.Size = New Size(75, 23)
+        cbx_p3_color.TabIndex = 179
+        cbx_p3_color.Text = "Color"
         ' 
-        ' cbx_color_p2
+        ' cbx_p2_color
         ' 
-        cbx_color_p2.FormattingEnabled = True
-        cbx_color_p2.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p2.Location = New Point(568, 112)
-        cbx_color_p2.Name = "cbx_color_p2"
-        cbx_color_p2.Size = New Size(75, 23)
-        cbx_color_p2.TabIndex = 178
-        cbx_color_p2.Text = "Color"
+        cbx_p2_color.FormattingEnabled = True
+        cbx_p2_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
+        cbx_p2_color.Location = New Point(568, 112)
+        cbx_p2_color.Name = "cbx_p2_color"
+        cbx_p2_color.Size = New Size(75, 23)
+        cbx_p2_color.TabIndex = 178
+        cbx_p2_color.Text = "Color"
         ' 
-        ' cbx_color_p1
+        ' cbx_p1_color
         ' 
-        cbx_color_p1.FormattingEnabled = True
-        cbx_color_p1.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p1.Location = New Point(568, 80)
-        cbx_color_p1.Name = "cbx_color_p1"
-        cbx_color_p1.Size = New Size(75, 23)
-        cbx_color_p1.TabIndex = 177
-        cbx_color_p1.Text = "Color"
+        cbx_p1_color.FormattingEnabled = True
+        cbx_p1_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
+        cbx_p1_color.Location = New Point(568, 80)
+        cbx_p1_color.Name = "cbx_p1_color"
+        cbx_p1_color.Size = New Size(75, 23)
+        cbx_p1_color.TabIndex = 177
+        cbx_p1_color.Text = "Color"
         ' 
         ' lb_color
         ' 
@@ -1341,15 +1818,15 @@ Partial Class frm_scenario_maker
         lb_color.Text = "Color"
         lb_color.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' cbx_color_gaia
+        ' cbx_gaia_color
         ' 
-        cbx_color_gaia.FormattingEnabled = True
-        cbx_color_gaia.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_gaia.Location = New Point(568, 48)
-        cbx_color_gaia.Name = "cbx_color_gaia"
-        cbx_color_gaia.Size = New Size(75, 23)
-        cbx_color_gaia.TabIndex = 175
-        cbx_color_gaia.Text = "Color"
+        cbx_gaia_color.FormattingEnabled = True
+        cbx_gaia_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
+        cbx_gaia_color.Location = New Point(568, 48)
+        cbx_gaia_color.Name = "cbx_gaia_color"
+        cbx_gaia_color.Size = New Size(75, 23)
+        cbx_gaia_color.TabIndex = 175
+        cbx_gaia_color.Text = "Color"
         ' 
         ' lb_player_8
         ' 
@@ -1441,87 +1918,87 @@ Partial Class frm_scenario_maker
         lb_gaia.Text = "Gaia:"
         lb_gaia.TextAlign = ContentAlignment.MiddleLeft
         ' 
-        ' NumericUpDown7
+        ' nud_p8_priority
         ' 
-        NumericUpDown7.Location = New Point(528, 304)
-        NumericUpDown7.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
-        NumericUpDown7.Name = "NumericUpDown7"
-        NumericUpDown7.Size = New Size(32, 23)
-        NumericUpDown7.TabIndex = 165
-        NumericUpDown7.Value = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p8_priority.Location = New Point(528, 304)
+        nud_p8_priority.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p8_priority.Name = "nud_p8_priority"
+        nud_p8_priority.Size = New Size(32, 23)
+        nud_p8_priority.TabIndex = 165
+        nud_p8_priority.Value = New Decimal(New Integer() {9, 0, 0, 0})
         ' 
-        ' NumericUpDown6
+        ' nud_p7_priority
         ' 
-        NumericUpDown6.Location = New Point(528, 272)
-        NumericUpDown6.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
-        NumericUpDown6.Name = "NumericUpDown6"
-        NumericUpDown6.Size = New Size(32, 23)
-        NumericUpDown6.TabIndex = 164
-        NumericUpDown6.Value = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p7_priority.Location = New Point(528, 272)
+        nud_p7_priority.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p7_priority.Name = "nud_p7_priority"
+        nud_p7_priority.Size = New Size(32, 23)
+        nud_p7_priority.TabIndex = 164
+        nud_p7_priority.Value = New Decimal(New Integer() {9, 0, 0, 0})
         ' 
-        ' NumericUpDown5
+        ' nud_p6_priority
         ' 
-        NumericUpDown5.Location = New Point(528, 240)
-        NumericUpDown5.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
-        NumericUpDown5.Name = "NumericUpDown5"
-        NumericUpDown5.Size = New Size(32, 23)
-        NumericUpDown5.TabIndex = 163
-        NumericUpDown5.Value = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p6_priority.Location = New Point(528, 240)
+        nud_p6_priority.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p6_priority.Name = "nud_p6_priority"
+        nud_p6_priority.Size = New Size(32, 23)
+        nud_p6_priority.TabIndex = 163
+        nud_p6_priority.Value = New Decimal(New Integer() {9, 0, 0, 0})
         ' 
-        ' NumericUpDown4
+        ' nud_p5_priority
         ' 
-        NumericUpDown4.Location = New Point(528, 208)
-        NumericUpDown4.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
-        NumericUpDown4.Name = "NumericUpDown4"
-        NumericUpDown4.Size = New Size(32, 23)
-        NumericUpDown4.TabIndex = 162
-        NumericUpDown4.Value = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p5_priority.Location = New Point(528, 208)
+        nud_p5_priority.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p5_priority.Name = "nud_p5_priority"
+        nud_p5_priority.Size = New Size(32, 23)
+        nud_p5_priority.TabIndex = 162
+        nud_p5_priority.Value = New Decimal(New Integer() {9, 0, 0, 0})
         ' 
-        ' NumericUpDown3
+        ' nud_p4_priority
         ' 
-        NumericUpDown3.Location = New Point(528, 176)
-        NumericUpDown3.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
-        NumericUpDown3.Name = "NumericUpDown3"
-        NumericUpDown3.Size = New Size(32, 23)
-        NumericUpDown3.TabIndex = 161
-        NumericUpDown3.Value = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p4_priority.Location = New Point(528, 176)
+        nud_p4_priority.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p4_priority.Name = "nud_p4_priority"
+        nud_p4_priority.Size = New Size(32, 23)
+        nud_p4_priority.TabIndex = 161
+        nud_p4_priority.Value = New Decimal(New Integer() {9, 0, 0, 0})
         ' 
-        ' NumericUpDown2
+        ' nud_p3_priority
         ' 
-        NumericUpDown2.Location = New Point(528, 144)
-        NumericUpDown2.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
-        NumericUpDown2.Name = "NumericUpDown2"
-        NumericUpDown2.Size = New Size(32, 23)
-        NumericUpDown2.TabIndex = 160
-        NumericUpDown2.Value = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p3_priority.Location = New Point(528, 144)
+        nud_p3_priority.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p3_priority.Name = "nud_p3_priority"
+        nud_p3_priority.Size = New Size(32, 23)
+        nud_p3_priority.TabIndex = 160
+        nud_p3_priority.Value = New Decimal(New Integer() {9, 0, 0, 0})
         ' 
-        ' NumericUpDown1
+        ' nud_p2_priority
         ' 
-        NumericUpDown1.Location = New Point(528, 112)
-        NumericUpDown1.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
-        NumericUpDown1.Name = "NumericUpDown1"
-        NumericUpDown1.Size = New Size(32, 23)
-        NumericUpDown1.TabIndex = 159
-        NumericUpDown1.Value = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p2_priority.Location = New Point(528, 112)
+        nud_p2_priority.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p2_priority.Name = "nud_p2_priority"
+        nud_p2_priority.Size = New Size(32, 23)
+        nud_p2_priority.TabIndex = 159
+        nud_p2_priority.Value = New Decimal(New Integer() {9, 0, 0, 0})
         ' 
-        ' nud_priority_p1
+        ' nud_p1_priority
         ' 
-        nud_priority_p1.Location = New Point(528, 80)
-        nud_priority_p1.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
-        nud_priority_p1.Name = "nud_priority_p1"
-        nud_priority_p1.Size = New Size(32, 23)
-        nud_priority_p1.TabIndex = 158
-        nud_priority_p1.Value = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p1_priority.Location = New Point(528, 80)
+        nud_p1_priority.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_p1_priority.Name = "nud_p1_priority"
+        nud_p1_priority.Size = New Size(32, 23)
+        nud_p1_priority.TabIndex = 158
+        nud_p1_priority.Value = New Decimal(New Integer() {9, 0, 0, 0})
         ' 
-        ' nud_priority_gaia
+        ' nud_gaia_priority
         ' 
-        nud_priority_gaia.Enabled = False
-        nud_priority_gaia.Location = New Point(528, 48)
-        nud_priority_gaia.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
-        nud_priority_gaia.Name = "nud_priority_gaia"
-        nud_priority_gaia.Size = New Size(32, 23)
-        nud_priority_gaia.TabIndex = 157
-        nud_priority_gaia.Value = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_gaia_priority.Enabled = False
+        nud_gaia_priority.Location = New Point(528, 48)
+        nud_gaia_priority.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
+        nud_gaia_priority.Name = "nud_gaia_priority"
+        nud_gaia_priority.Size = New Size(32, 23)
+        nud_gaia_priority.TabIndex = 157
+        nud_gaia_priority.Value = New Decimal(New Integer() {9, 0, 0, 0})
         ' 
         ' lb_priority_gaia
         ' 
@@ -1533,77 +2010,77 @@ Partial Class frm_scenario_maker
         lb_priority_gaia.Text = "Priority"
         lb_priority_gaia.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' nud_population_gaia
+        ' nud_gaia_population
         ' 
-        nud_population_gaia.Location = New Point(464, 48)
-        nud_population_gaia.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_population_gaia.Name = "nud_population_gaia"
-        nud_population_gaia.Size = New Size(55, 23)
-        nud_population_gaia.TabIndex = 155
-        nud_population_gaia.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_gaia_population.Location = New Point(464, 48)
+        nud_gaia_population.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_gaia_population.Name = "nud_gaia_population"
+        nud_gaia_population.Size = New Size(55, 23)
+        nud_gaia_population.TabIndex = 155
+        nud_gaia_population.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_population_p8
+        ' nud_p8_population
         ' 
-        nud_population_p8.Location = New Point(464, 304)
-        nud_population_p8.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_population_p8.Name = "nud_population_p8"
-        nud_population_p8.Size = New Size(55, 23)
-        nud_population_p8.TabIndex = 154
-        nud_population_p8.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p8_population.Location = New Point(464, 304)
+        nud_p8_population.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p8_population.Name = "nud_p8_population"
+        nud_p8_population.Size = New Size(55, 23)
+        nud_p8_population.TabIndex = 154
+        nud_p8_population.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_population_p7
+        ' nud_p7_population
         ' 
-        nud_population_p7.Location = New Point(464, 272)
-        nud_population_p7.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_population_p7.Name = "nud_population_p7"
-        nud_population_p7.Size = New Size(55, 23)
-        nud_population_p7.TabIndex = 153
-        nud_population_p7.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p7_population.Location = New Point(464, 272)
+        nud_p7_population.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p7_population.Name = "nud_p7_population"
+        nud_p7_population.Size = New Size(55, 23)
+        nud_p7_population.TabIndex = 153
+        nud_p7_population.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_population_p6
+        ' nud_p6_population
         ' 
-        nud_population_p6.Location = New Point(464, 240)
-        nud_population_p6.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_population_p6.Name = "nud_population_p6"
-        nud_population_p6.Size = New Size(55, 23)
-        nud_population_p6.TabIndex = 152
-        nud_population_p6.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p6_population.Location = New Point(464, 240)
+        nud_p6_population.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p6_population.Name = "nud_p6_population"
+        nud_p6_population.Size = New Size(55, 23)
+        nud_p6_population.TabIndex = 152
+        nud_p6_population.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_population_p5
+        ' nud_p5_population
         ' 
-        nud_population_p5.Location = New Point(464, 208)
-        nud_population_p5.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_population_p5.Name = "nud_population_p5"
-        nud_population_p5.Size = New Size(55, 23)
-        nud_population_p5.TabIndex = 151
-        nud_population_p5.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p5_population.Location = New Point(464, 208)
+        nud_p5_population.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p5_population.Name = "nud_p5_population"
+        nud_p5_population.Size = New Size(55, 23)
+        nud_p5_population.TabIndex = 151
+        nud_p5_population.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_population_p4
+        ' nud_p4_population
         ' 
-        nud_population_p4.Location = New Point(464, 176)
-        nud_population_p4.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_population_p4.Name = "nud_population_p4"
-        nud_population_p4.Size = New Size(55, 23)
-        nud_population_p4.TabIndex = 150
-        nud_population_p4.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p4_population.Location = New Point(464, 176)
+        nud_p4_population.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p4_population.Name = "nud_p4_population"
+        nud_p4_population.Size = New Size(55, 23)
+        nud_p4_population.TabIndex = 150
+        nud_p4_population.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_population_p3
+        ' nud_p3_population
         ' 
-        nud_population_p3.Location = New Point(464, 144)
-        nud_population_p3.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_population_p3.Name = "nud_population_p3"
-        nud_population_p3.Size = New Size(55, 23)
-        nud_population_p3.TabIndex = 149
-        nud_population_p3.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p3_population.Location = New Point(464, 144)
+        nud_p3_population.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p3_population.Name = "nud_p3_population"
+        nud_p3_population.Size = New Size(55, 23)
+        nud_p3_population.TabIndex = 149
+        nud_p3_population.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_population_p2
+        ' nud_p2_population
         ' 
-        nud_population_p2.Location = New Point(464, 112)
-        nud_population_p2.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_population_p2.Name = "nud_population_p2"
-        nud_population_p2.Size = New Size(55, 23)
-        nud_population_p2.TabIndex = 148
-        nud_population_p2.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p2_population.Location = New Point(464, 112)
+        nud_p2_population.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p2_population.Name = "nud_p2_population"
+        nud_p2_population.Size = New Size(55, 23)
+        nud_p2_population.TabIndex = 148
+        nud_p2_population.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
         ' lb_pop
         ' 
@@ -1615,86 +2092,86 @@ Partial Class frm_scenario_maker
         lb_pop.Text = "Pop"
         lb_pop.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' nud_population_p1
+        ' nud_p1_population
         ' 
-        nud_population_p1.Location = New Point(464, 80)
-        nud_population_p1.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_population_p1.Name = "nud_population_p1"
-        nud_population_p1.Size = New Size(55, 23)
-        nud_population_p1.TabIndex = 146
-        nud_population_p1.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p1_population.Location = New Point(464, 80)
+        nud_p1_population.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p1_population.Name = "nud_p1_population"
+        nud_p1_population.Size = New Size(55, 23)
+        nud_p1_population.TabIndex = 146
+        nud_p1_population.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_gold_gaia
+        ' nud_gaia_gold
         ' 
-        nud_gold_gaia.Location = New Point(400, 48)
-        nud_gold_gaia.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_gold_gaia.Name = "nud_gold_gaia"
-        nud_gold_gaia.Size = New Size(55, 23)
-        nud_gold_gaia.TabIndex = 145
-        nud_gold_gaia.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_gaia_gold.Location = New Point(400, 48)
+        nud_gaia_gold.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_gaia_gold.Name = "nud_gaia_gold"
+        nud_gaia_gold.Size = New Size(55, 23)
+        nud_gaia_gold.TabIndex = 145
+        nud_gaia_gold.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_gold_p8
+        ' nud_p8_gold
         ' 
-        nud_gold_p8.Location = New Point(400, 304)
-        nud_gold_p8.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_gold_p8.Name = "nud_gold_p8"
-        nud_gold_p8.Size = New Size(55, 23)
-        nud_gold_p8.TabIndex = 144
-        nud_gold_p8.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p8_gold.Location = New Point(400, 304)
+        nud_p8_gold.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p8_gold.Name = "nud_p8_gold"
+        nud_p8_gold.Size = New Size(55, 23)
+        nud_p8_gold.TabIndex = 144
+        nud_p8_gold.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_gold_p7
+        ' nud_p7_gold
         ' 
-        nud_gold_p7.Location = New Point(400, 272)
-        nud_gold_p7.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_gold_p7.Name = "nud_gold_p7"
-        nud_gold_p7.Size = New Size(55, 23)
-        nud_gold_p7.TabIndex = 143
-        nud_gold_p7.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p7_gold.Location = New Point(400, 272)
+        nud_p7_gold.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p7_gold.Name = "nud_p7_gold"
+        nud_p7_gold.Size = New Size(55, 23)
+        nud_p7_gold.TabIndex = 143
+        nud_p7_gold.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_gold_p6
+        ' nud_p6_gold
         ' 
-        nud_gold_p6.Location = New Point(400, 240)
-        nud_gold_p6.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_gold_p6.Name = "nud_gold_p6"
-        nud_gold_p6.Size = New Size(55, 23)
-        nud_gold_p6.TabIndex = 142
-        nud_gold_p6.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p6_gold.Location = New Point(400, 240)
+        nud_p6_gold.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p6_gold.Name = "nud_p6_gold"
+        nud_p6_gold.Size = New Size(55, 23)
+        nud_p6_gold.TabIndex = 142
+        nud_p6_gold.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_gold_p5
+        ' nud_p5_gold
         ' 
-        nud_gold_p5.Location = New Point(400, 208)
-        nud_gold_p5.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_gold_p5.Name = "nud_gold_p5"
-        nud_gold_p5.Size = New Size(55, 23)
-        nud_gold_p5.TabIndex = 141
-        nud_gold_p5.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p5_gold.Location = New Point(400, 208)
+        nud_p5_gold.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p5_gold.Name = "nud_p5_gold"
+        nud_p5_gold.Size = New Size(55, 23)
+        nud_p5_gold.TabIndex = 141
+        nud_p5_gold.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_gold_p4
+        ' nud_p4_gold
         ' 
-        nud_gold_p4.Location = New Point(400, 176)
-        nud_gold_p4.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_gold_p4.Name = "nud_gold_p4"
-        nud_gold_p4.Size = New Size(55, 23)
-        nud_gold_p4.TabIndex = 140
-        nud_gold_p4.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p4_gold.Location = New Point(400, 176)
+        nud_p4_gold.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p4_gold.Name = "nud_p4_gold"
+        nud_p4_gold.Size = New Size(55, 23)
+        nud_p4_gold.TabIndex = 140
+        nud_p4_gold.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_gold_p3
+        ' nud_p3_gold
         ' 
-        nud_gold_p3.Location = New Point(400, 144)
-        nud_gold_p3.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_gold_p3.Name = "nud_gold_p3"
-        nud_gold_p3.Size = New Size(55, 23)
-        nud_gold_p3.TabIndex = 139
-        nud_gold_p3.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p3_gold.Location = New Point(400, 144)
+        nud_p3_gold.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p3_gold.Name = "nud_p3_gold"
+        nud_p3_gold.Size = New Size(55, 23)
+        nud_p3_gold.TabIndex = 139
+        nud_p3_gold.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_gold_p2
+        ' nud_p2_gold
         ' 
-        nud_gold_p2.Location = New Point(400, 112)
-        nud_gold_p2.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_gold_p2.Name = "nud_gold_p2"
-        nud_gold_p2.Size = New Size(55, 23)
-        nud_gold_p2.TabIndex = 138
-        nud_gold_p2.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p2_gold.Location = New Point(400, 112)
+        nud_p2_gold.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p2_gold.Name = "nud_p2_gold"
+        nud_p2_gold.Size = New Size(55, 23)
+        nud_p2_gold.TabIndex = 138
+        nud_p2_gold.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
         ' lb_gold
         ' 
@@ -1706,86 +2183,86 @@ Partial Class frm_scenario_maker
         lb_gold.Text = "Gold"
         lb_gold.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' nud_gold_p1
+        ' nud_p1_gold
         ' 
-        nud_gold_p1.Location = New Point(400, 80)
-        nud_gold_p1.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_gold_p1.Name = "nud_gold_p1"
-        nud_gold_p1.Size = New Size(55, 23)
-        nud_gold_p1.TabIndex = 136
-        nud_gold_p1.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p1_gold.Location = New Point(400, 80)
+        nud_p1_gold.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p1_gold.Name = "nud_p1_gold"
+        nud_p1_gold.Size = New Size(55, 23)
+        nud_p1_gold.TabIndex = 136
+        nud_p1_gold.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_stone_gaia
+        ' nud_gaia_stone
         ' 
-        nud_stone_gaia.Location = New Point(336, 48)
-        nud_stone_gaia.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_stone_gaia.Name = "nud_stone_gaia"
-        nud_stone_gaia.Size = New Size(55, 23)
-        nud_stone_gaia.TabIndex = 135
-        nud_stone_gaia.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_gaia_stone.Location = New Point(336, 48)
+        nud_gaia_stone.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_gaia_stone.Name = "nud_gaia_stone"
+        nud_gaia_stone.Size = New Size(55, 23)
+        nud_gaia_stone.TabIndex = 135
+        nud_gaia_stone.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_stone_p8
+        ' nud_p8_stone
         ' 
-        nud_stone_p8.Location = New Point(336, 304)
-        nud_stone_p8.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_stone_p8.Name = "nud_stone_p8"
-        nud_stone_p8.Size = New Size(55, 23)
-        nud_stone_p8.TabIndex = 134
-        nud_stone_p8.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p8_stone.Location = New Point(336, 304)
+        nud_p8_stone.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p8_stone.Name = "nud_p8_stone"
+        nud_p8_stone.Size = New Size(55, 23)
+        nud_p8_stone.TabIndex = 134
+        nud_p8_stone.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_stone_p7
+        ' nud_p7_stone
         ' 
-        nud_stone_p7.Location = New Point(336, 272)
-        nud_stone_p7.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_stone_p7.Name = "nud_stone_p7"
-        nud_stone_p7.Size = New Size(55, 23)
-        nud_stone_p7.TabIndex = 133
-        nud_stone_p7.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p7_stone.Location = New Point(336, 272)
+        nud_p7_stone.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p7_stone.Name = "nud_p7_stone"
+        nud_p7_stone.Size = New Size(55, 23)
+        nud_p7_stone.TabIndex = 133
+        nud_p7_stone.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_stone_p6
+        ' nud_p6_stone
         ' 
-        nud_stone_p6.Location = New Point(336, 240)
-        nud_stone_p6.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_stone_p6.Name = "nud_stone_p6"
-        nud_stone_p6.Size = New Size(55, 23)
-        nud_stone_p6.TabIndex = 132
-        nud_stone_p6.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p6_stone.Location = New Point(336, 240)
+        nud_p6_stone.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p6_stone.Name = "nud_p6_stone"
+        nud_p6_stone.Size = New Size(55, 23)
+        nud_p6_stone.TabIndex = 132
+        nud_p6_stone.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_stone_p5
+        ' nud_p5_stone
         ' 
-        nud_stone_p5.Location = New Point(336, 208)
-        nud_stone_p5.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_stone_p5.Name = "nud_stone_p5"
-        nud_stone_p5.Size = New Size(55, 23)
-        nud_stone_p5.TabIndex = 131
-        nud_stone_p5.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p5_stone.Location = New Point(336, 208)
+        nud_p5_stone.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p5_stone.Name = "nud_p5_stone"
+        nud_p5_stone.Size = New Size(55, 23)
+        nud_p5_stone.TabIndex = 131
+        nud_p5_stone.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_stone_p4
+        ' nud_p4_stone
         ' 
-        nud_stone_p4.Location = New Point(336, 176)
-        nud_stone_p4.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_stone_p4.Name = "nud_stone_p4"
-        nud_stone_p4.Size = New Size(55, 23)
-        nud_stone_p4.TabIndex = 130
-        nud_stone_p4.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p4_stone.Location = New Point(336, 176)
+        nud_p4_stone.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p4_stone.Name = "nud_p4_stone"
+        nud_p4_stone.Size = New Size(55, 23)
+        nud_p4_stone.TabIndex = 130
+        nud_p4_stone.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_stone_p3
+        ' nud_p3_stone
         ' 
-        nud_stone_p3.Location = New Point(336, 144)
-        nud_stone_p3.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_stone_p3.Name = "nud_stone_p3"
-        nud_stone_p3.Size = New Size(55, 23)
-        nud_stone_p3.TabIndex = 129
-        nud_stone_p3.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p3_stone.Location = New Point(336, 144)
+        nud_p3_stone.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p3_stone.Name = "nud_p3_stone"
+        nud_p3_stone.Size = New Size(55, 23)
+        nud_p3_stone.TabIndex = 129
+        nud_p3_stone.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_stone_p2
+        ' nud_p2_stone
         ' 
-        nud_stone_p2.Location = New Point(336, 112)
-        nud_stone_p2.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_stone_p2.Name = "nud_stone_p2"
-        nud_stone_p2.Size = New Size(55, 23)
-        nud_stone_p2.TabIndex = 128
-        nud_stone_p2.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p2_stone.Location = New Point(336, 112)
+        nud_p2_stone.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p2_stone.Name = "nud_p2_stone"
+        nud_p2_stone.Size = New Size(55, 23)
+        nud_p2_stone.TabIndex = 128
+        nud_p2_stone.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
         ' lb_stone
         ' 
@@ -1797,86 +2274,86 @@ Partial Class frm_scenario_maker
         lb_stone.Text = "Stone"
         lb_stone.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' nud_stone_p1
+        ' nud_p1_stone
         ' 
-        nud_stone_p1.Location = New Point(336, 80)
-        nud_stone_p1.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_stone_p1.Name = "nud_stone_p1"
-        nud_stone_p1.Size = New Size(55, 23)
-        nud_stone_p1.TabIndex = 126
-        nud_stone_p1.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p1_stone.Location = New Point(336, 80)
+        nud_p1_stone.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p1_stone.Name = "nud_p1_stone"
+        nud_p1_stone.Size = New Size(55, 23)
+        nud_p1_stone.TabIndex = 126
+        nud_p1_stone.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_wood_gaia
+        ' nud_gaia_wood
         ' 
-        nud_wood_gaia.Location = New Point(272, 48)
-        nud_wood_gaia.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_wood_gaia.Name = "nud_wood_gaia"
-        nud_wood_gaia.Size = New Size(55, 23)
-        nud_wood_gaia.TabIndex = 125
-        nud_wood_gaia.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_gaia_wood.Location = New Point(272, 48)
+        nud_gaia_wood.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_gaia_wood.Name = "nud_gaia_wood"
+        nud_gaia_wood.Size = New Size(55, 23)
+        nud_gaia_wood.TabIndex = 125
+        nud_gaia_wood.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_wood_p8
+        ' nud_p8_wood
         ' 
-        nud_wood_p8.Location = New Point(272, 304)
-        nud_wood_p8.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_wood_p8.Name = "nud_wood_p8"
-        nud_wood_p8.Size = New Size(55, 23)
-        nud_wood_p8.TabIndex = 124
-        nud_wood_p8.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p8_wood.Location = New Point(272, 304)
+        nud_p8_wood.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p8_wood.Name = "nud_p8_wood"
+        nud_p8_wood.Size = New Size(55, 23)
+        nud_p8_wood.TabIndex = 124
+        nud_p8_wood.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_wood_p7
+        ' nud_p7_wood
         ' 
-        nud_wood_p7.Location = New Point(272, 272)
-        nud_wood_p7.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_wood_p7.Name = "nud_wood_p7"
-        nud_wood_p7.Size = New Size(55, 23)
-        nud_wood_p7.TabIndex = 123
-        nud_wood_p7.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p7_wood.Location = New Point(272, 272)
+        nud_p7_wood.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p7_wood.Name = "nud_p7_wood"
+        nud_p7_wood.Size = New Size(55, 23)
+        nud_p7_wood.TabIndex = 123
+        nud_p7_wood.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_wood_p6
+        ' nud_p6_wood
         ' 
-        nud_wood_p6.Location = New Point(272, 240)
-        nud_wood_p6.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_wood_p6.Name = "nud_wood_p6"
-        nud_wood_p6.Size = New Size(55, 23)
-        nud_wood_p6.TabIndex = 122
-        nud_wood_p6.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p6_wood.Location = New Point(272, 240)
+        nud_p6_wood.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p6_wood.Name = "nud_p6_wood"
+        nud_p6_wood.Size = New Size(55, 23)
+        nud_p6_wood.TabIndex = 122
+        nud_p6_wood.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_wood_p5
+        ' nud_p5_wood
         ' 
-        nud_wood_p5.Location = New Point(272, 208)
-        nud_wood_p5.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_wood_p5.Name = "nud_wood_p5"
-        nud_wood_p5.Size = New Size(55, 23)
-        nud_wood_p5.TabIndex = 121
-        nud_wood_p5.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p5_wood.Location = New Point(272, 208)
+        nud_p5_wood.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p5_wood.Name = "nud_p5_wood"
+        nud_p5_wood.Size = New Size(55, 23)
+        nud_p5_wood.TabIndex = 121
+        nud_p5_wood.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_wood_p4
+        ' nud_p4_wood
         ' 
-        nud_wood_p4.Location = New Point(272, 176)
-        nud_wood_p4.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_wood_p4.Name = "nud_wood_p4"
-        nud_wood_p4.Size = New Size(55, 23)
-        nud_wood_p4.TabIndex = 120
-        nud_wood_p4.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p4_wood.Location = New Point(272, 176)
+        nud_p4_wood.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p4_wood.Name = "nud_p4_wood"
+        nud_p4_wood.Size = New Size(55, 23)
+        nud_p4_wood.TabIndex = 120
+        nud_p4_wood.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_wood_p3
+        ' nud_p3_wood
         ' 
-        nud_wood_p3.Location = New Point(272, 144)
-        nud_wood_p3.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_wood_p3.Name = "nud_wood_p3"
-        nud_wood_p3.Size = New Size(55, 23)
-        nud_wood_p3.TabIndex = 119
-        nud_wood_p3.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p3_wood.Location = New Point(272, 144)
+        nud_p3_wood.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p3_wood.Name = "nud_p3_wood"
+        nud_p3_wood.Size = New Size(55, 23)
+        nud_p3_wood.TabIndex = 119
+        nud_p3_wood.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_wood_p2
+        ' nud_p2_wood
         ' 
-        nud_wood_p2.Location = New Point(272, 112)
-        nud_wood_p2.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_wood_p2.Name = "nud_wood_p2"
-        nud_wood_p2.Size = New Size(55, 23)
-        nud_wood_p2.TabIndex = 118
-        nud_wood_p2.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p2_wood.Location = New Point(272, 112)
+        nud_p2_wood.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p2_wood.Name = "nud_p2_wood"
+        nud_p2_wood.Size = New Size(55, 23)
+        nud_p2_wood.TabIndex = 118
+        nud_p2_wood.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
         ' lb_wood
         ' 
@@ -1888,86 +2365,86 @@ Partial Class frm_scenario_maker
         lb_wood.Text = "Wood"
         lb_wood.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' nud_wood_p1
+        ' nud_p1_wood
         ' 
-        nud_wood_p1.Location = New Point(272, 80)
-        nud_wood_p1.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_wood_p1.Name = "nud_wood_p1"
-        nud_wood_p1.Size = New Size(55, 23)
-        nud_wood_p1.TabIndex = 116
-        nud_wood_p1.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p1_wood.Location = New Point(272, 80)
+        nud_p1_wood.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p1_wood.Name = "nud_p1_wood"
+        nud_p1_wood.Size = New Size(55, 23)
+        nud_p1_wood.TabIndex = 116
+        nud_p1_wood.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_food_gaia
+        ' nud_gaia_food
         ' 
-        nud_food_gaia.Location = New Point(208, 48)
-        nud_food_gaia.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_food_gaia.Name = "nud_food_gaia"
-        nud_food_gaia.Size = New Size(55, 23)
-        nud_food_gaia.TabIndex = 115
-        nud_food_gaia.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_gaia_food.Location = New Point(208, 48)
+        nud_gaia_food.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_gaia_food.Name = "nud_gaia_food"
+        nud_gaia_food.Size = New Size(55, 23)
+        nud_gaia_food.TabIndex = 115
+        nud_gaia_food.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_food_p8
+        ' nud_p8_food
         ' 
-        nud_food_p8.Location = New Point(208, 304)
-        nud_food_p8.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_food_p8.Name = "nud_food_p8"
-        nud_food_p8.Size = New Size(55, 23)
-        nud_food_p8.TabIndex = 114
-        nud_food_p8.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p8_food.Location = New Point(208, 304)
+        nud_p8_food.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p8_food.Name = "nud_p8_food"
+        nud_p8_food.Size = New Size(55, 23)
+        nud_p8_food.TabIndex = 114
+        nud_p8_food.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_food_p7
+        ' nud_p7_food
         ' 
-        nud_food_p7.Location = New Point(208, 272)
-        nud_food_p7.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_food_p7.Name = "nud_food_p7"
-        nud_food_p7.Size = New Size(55, 23)
-        nud_food_p7.TabIndex = 113
-        nud_food_p7.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p7_food.Location = New Point(208, 272)
+        nud_p7_food.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p7_food.Name = "nud_p7_food"
+        nud_p7_food.Size = New Size(55, 23)
+        nud_p7_food.TabIndex = 113
+        nud_p7_food.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_food_p6
+        ' nud_p6_food
         ' 
-        nud_food_p6.Location = New Point(208, 240)
-        nud_food_p6.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_food_p6.Name = "nud_food_p6"
-        nud_food_p6.Size = New Size(55, 23)
-        nud_food_p6.TabIndex = 112
-        nud_food_p6.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p6_food.Location = New Point(208, 240)
+        nud_p6_food.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p6_food.Name = "nud_p6_food"
+        nud_p6_food.Size = New Size(55, 23)
+        nud_p6_food.TabIndex = 112
+        nud_p6_food.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_food_p5
+        ' nud_p5_food
         ' 
-        nud_food_p5.Location = New Point(208, 208)
-        nud_food_p5.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_food_p5.Name = "nud_food_p5"
-        nud_food_p5.Size = New Size(55, 23)
-        nud_food_p5.TabIndex = 111
-        nud_food_p5.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p5_food.Location = New Point(208, 208)
+        nud_p5_food.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p5_food.Name = "nud_p5_food"
+        nud_p5_food.Size = New Size(55, 23)
+        nud_p5_food.TabIndex = 111
+        nud_p5_food.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_food_p4
+        ' nud_p4_food
         ' 
-        nud_food_p4.Location = New Point(208, 176)
-        nud_food_p4.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_food_p4.Name = "nud_food_p4"
-        nud_food_p4.Size = New Size(55, 23)
-        nud_food_p4.TabIndex = 110
-        nud_food_p4.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p4_food.Location = New Point(208, 176)
+        nud_p4_food.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p4_food.Name = "nud_p4_food"
+        nud_p4_food.Size = New Size(55, 23)
+        nud_p4_food.TabIndex = 110
+        nud_p4_food.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_food_p3
+        ' nud_p3_food
         ' 
-        nud_food_p3.Location = New Point(208, 144)
-        nud_food_p3.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_food_p3.Name = "nud_food_p3"
-        nud_food_p3.Size = New Size(55, 23)
-        nud_food_p3.TabIndex = 109
-        nud_food_p3.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p3_food.Location = New Point(208, 144)
+        nud_p3_food.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p3_food.Name = "nud_p3_food"
+        nud_p3_food.Size = New Size(55, 23)
+        nud_p3_food.TabIndex = 109
+        nud_p3_food.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
-        ' nud_food_p2
+        ' nud_p2_food
         ' 
-        nud_food_p2.Location = New Point(208, 112)
-        nud_food_p2.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_food_p2.Name = "nud_food_p2"
-        nud_food_p2.Size = New Size(55, 23)
-        nud_food_p2.TabIndex = 108
-        nud_food_p2.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p2_food.Location = New Point(208, 112)
+        nud_p2_food.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p2_food.Name = "nud_p2_food"
+        nud_p2_food.Size = New Size(55, 23)
+        nud_p2_food.TabIndex = 108
+        nud_p2_food.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
         ' lb_food
         ' 
@@ -1979,14 +2456,14 @@ Partial Class frm_scenario_maker
         lb_food.Text = "Food"
         lb_food.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' nud_food_p1
+        ' nud_p1_food
         ' 
-        nud_food_p1.Location = New Point(208, 80)
-        nud_food_p1.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
-        nud_food_p1.Name = "nud_food_p1"
-        nud_food_p1.Size = New Size(55, 23)
-        nud_food_p1.TabIndex = 106
-        nud_food_p1.Value = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p1_food.Location = New Point(208, 80)
+        nud_p1_food.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        nud_p1_food.Name = "nud_p1_food"
+        nud_p1_food.Size = New Size(55, 23)
+        nud_p1_food.TabIndex = 106
+        nud_p1_food.Value = New Decimal(New Integer() {99999, 0, 0, 0})
         ' 
         ' cbx_total_players
         ' 
@@ -2008,7 +2485,7 @@ Partial Class frm_scenario_maker
         tp_units.Location = New Point(4, 24)
         tp_units.Name = "tp_units"
         tp_units.Padding = New Padding(3)
-        tp_units.Size = New Size(1152, 509)
+        tp_units.Size = New Size(1428, 509)
         tp_units.TabIndex = 3
         tp_units.Text = "Units"
         tp_units.UseVisualStyleBackColor = True
@@ -2161,7 +2638,7 @@ Partial Class frm_scenario_maker
         tp_diplomacy.Location = New Point(4, 24)
         tp_diplomacy.Name = "tp_diplomacy"
         tp_diplomacy.Padding = New Padding(3)
-        tp_diplomacy.Size = New Size(1152, 509)
+        tp_diplomacy.Size = New Size(1428, 509)
         tp_diplomacy.TabIndex = 4
         tp_diplomacy.Text = "Diplomacy"
         tp_diplomacy.UseVisualStyleBackColor = True
@@ -3064,7 +3541,7 @@ Partial Class frm_scenario_maker
         tp_victory.Location = New Point(4, 24)
         tp_victory.Name = "tp_victory"
         tp_victory.Padding = New Padding(3)
-        tp_victory.Size = New Size(1152, 509)
+        tp_victory.Size = New Size(1428, 509)
         tp_victory.TabIndex = 5
         tp_victory.Text = "Victory"
         tp_victory.UseVisualStyleBackColor = True
@@ -3074,7 +3551,7 @@ Partial Class frm_scenario_maker
         tp_options.Location = New Point(4, 24)
         tp_options.Name = "tp_options"
         tp_options.Padding = New Padding(3)
-        tp_options.Size = New Size(1152, 509)
+        tp_options.Size = New Size(1428, 509)
         tp_options.TabIndex = 6
         tp_options.Text = "Options"
         tp_options.UseVisualStyleBackColor = True
@@ -3084,7 +3561,7 @@ Partial Class frm_scenario_maker
         tp_messages.Location = New Point(4, 24)
         tp_messages.Name = "tp_messages"
         tp_messages.Padding = New Padding(3)
-        tp_messages.Size = New Size(1152, 509)
+        tp_messages.Size = New Size(1428, 509)
         tp_messages.TabIndex = 7
         tp_messages.Text = "Messages"
         tp_messages.UseVisualStyleBackColor = True
@@ -3094,7 +3571,7 @@ Partial Class frm_scenario_maker
         tp_cinematics.Location = New Point(4, 24)
         tp_cinematics.Name = "tp_cinematics"
         tp_cinematics.Padding = New Padding(3)
-        tp_cinematics.Size = New Size(1152, 509)
+        tp_cinematics.Size = New Size(1428, 509)
         tp_cinematics.TabIndex = 8
         tp_cinematics.Text = "Cinematics"
         tp_cinematics.UseVisualStyleBackColor = True
@@ -3104,7 +3581,7 @@ Partial Class frm_scenario_maker
         tp_triggers.Location = New Point(4, 24)
         tp_triggers.Name = "tp_triggers"
         tp_triggers.Padding = New Padding(3)
-        tp_triggers.Size = New Size(1152, 509)
+        tp_triggers.Size = New Size(1428, 509)
         tp_triggers.TabIndex = 9
         tp_triggers.Text = "Triggers"
         tp_triggers.UseVisualStyleBackColor = True
@@ -3115,7 +3592,7 @@ Partial Class frm_scenario_maker
         tp_about.Location = New Point(4, 24)
         tp_about.Name = "tp_about"
         tp_about.Padding = New Padding(3)
-        tp_about.Size = New Size(1152, 509)
+        tp_about.Size = New Size(1428, 509)
         tp_about.TabIndex = 10
         tp_about.Text = "About"
         tp_about.UseVisualStyleBackColor = True
@@ -3153,7 +3630,7 @@ Partial Class frm_scenario_maker
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1184, 561)
+        ClientSize = New Size(1457, 561)
         Controls.Add(tc_main)
         FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
@@ -3170,60 +3647,60 @@ Partial Class frm_scenario_maker
         tp_terrain.PerformLayout()
         tp_players.ResumeLayout(False)
         tp_players.PerformLayout()
-        CType(NumericUpDown7, ComponentModel.ISupportInitialize).EndInit()
-        CType(NumericUpDown6, ComponentModel.ISupportInitialize).EndInit()
-        CType(NumericUpDown5, ComponentModel.ISupportInitialize).EndInit()
-        CType(NumericUpDown4, ComponentModel.ISupportInitialize).EndInit()
-        CType(NumericUpDown3, ComponentModel.ISupportInitialize).EndInit()
-        CType(NumericUpDown2, ComponentModel.ISupportInitialize).EndInit()
-        CType(NumericUpDown1, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_priority_p1, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_priority_gaia, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_population_gaia, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_population_p8, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_population_p7, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_population_p6, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_population_p5, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_population_p4, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_population_p3, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_population_p2, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_population_p1, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_gold_gaia, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_gold_p8, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_gold_p7, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_gold_p6, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_gold_p5, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_gold_p4, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_gold_p3, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_gold_p2, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_gold_p1, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_stone_gaia, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_stone_p8, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_stone_p7, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_stone_p6, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_stone_p5, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_stone_p4, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_stone_p3, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_stone_p2, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_stone_p1, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_wood_gaia, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_wood_p8, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_wood_p7, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_wood_p6, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_wood_p5, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_wood_p4, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_wood_p3, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_wood_p2, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_wood_p1, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_food_gaia, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_food_p8, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_food_p7, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_food_p6, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_food_p5, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_food_p4, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_food_p3, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_food_p2, ComponentModel.ISupportInitialize).EndInit()
-        CType(nud_food_p1, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p8_priority, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p7_priority, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p6_priority, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p5_priority, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p4_priority, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p3_priority, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p2_priority, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p1_priority, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_gaia_priority, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_gaia_population, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p8_population, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p7_population, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p6_population, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p5_population, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p4_population, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p3_population, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p2_population, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p1_population, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_gaia_gold, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p8_gold, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p7_gold, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p6_gold, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p5_gold, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p4_gold, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p3_gold, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p2_gold, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p1_gold, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_gaia_stone, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p8_stone, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p7_stone, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p6_stone, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p5_stone, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p4_stone, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p3_stone, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p2_stone, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p1_stone, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_gaia_wood, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p8_wood, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p7_wood, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p6_wood, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p5_wood, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p4_wood, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p3_wood, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p2_wood, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p1_wood, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_gaia_food, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p8_food, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p7_food, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p6_food, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p5_food, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p4_food, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p3_food, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p2_food, ComponentModel.ISupportInitialize).EndInit()
+        CType(nud_p1_food, ComponentModel.ISupportInitialize).EndInit()
         tp_units.ResumeLayout(False)
         tp_diplomacy.ResumeLayout(False)
         tp_diplomacy.PerformLayout()
@@ -3242,35 +3719,35 @@ Partial Class frm_scenario_maker
     Public WithEvents cbx_ai_map_type As ComboBox
     Public WithEvents tp_players As TabPage
     Public WithEvents lb_name_string_id As Label
-    Public WithEvents tbx_name_string_id_p8 As TextBox
-    Public WithEvents tbx_name_string_id_p7 As TextBox
-    Public WithEvents tbx_name_string_id_p6 As TextBox
-    Public WithEvents tbx_name_string_id_p5 As TextBox
-    Public WithEvents tbx_name_string_id_p4 As TextBox
-    Public WithEvents tbx_name_string_id_p3 As TextBox
-    Public WithEvents tbx_name_string_id_p2 As TextBox
-    Public WithEvents tbx_name_string_id_p1 As TextBox
-    Public WithEvents tbx_name_string_id_gaia As TextBox
+    Public WithEvents tbx_p8_name_string_id As TextBox
+    Public WithEvents tbx_p7_name_string_id As TextBox
+    Public WithEvents tbx_p6_name_string_id As TextBox
+    Public WithEvents tbx_p5_name_string_id As TextBox
+    Public WithEvents tbx_p4_name_string_id As TextBox
+    Public WithEvents tbx_p3_name_string_id As TextBox
+    Public WithEvents tbx_p2_name_string_id As TextBox
+    Public WithEvents tbx_p1_name_string_id As TextBox
+    Public WithEvents tbx_gaia_name_string_id As TextBox
     Public WithEvents lb_tribe_name As Label
-    Public WithEvents tbx_tribe_name_p8 As TextBox
-    Public WithEvents tbx_tribe_name_p7 As TextBox
-    Public WithEvents tbx_tribe_name_p6 As TextBox
-    Public WithEvents tbx_tribe_name_p5 As TextBox
-    Public WithEvents tbx_tribe_name_p4 As TextBox
-    Public WithEvents tbx_tribe_name_p3 As TextBox
-    Public WithEvents tbx_tribe_name_p2 As TextBox
-    Public WithEvents tbx_tribe_name_p1 As TextBox
-    Public WithEvents tbx_tribe_name_gaia As TextBox
-    Public WithEvents cbx_color_p8 As ComboBox
-    Public WithEvents cbx_color_p7 As ComboBox
-    Public WithEvents cbx_color_p6 As ComboBox
-    Public WithEvents cbx_color_p5 As ComboBox
-    Public WithEvents cbx_color_p4 As ComboBox
-    Public WithEvents cbx_color_p3 As ComboBox
-    Public WithEvents cbx_color_p2 As ComboBox
-    Public WithEvents cbx_color_p1 As ComboBox
+    Public WithEvents tbx_p8_tribe_name As TextBox
+    Public WithEvents tbx_p7_tribe_name As TextBox
+    Public WithEvents tbx_p6_tribe_name As TextBox
+    Public WithEvents tbx_p5_tribe_name As TextBox
+    Public WithEvents tbx_p4_tribe_name As TextBox
+    Public WithEvents tbx_p3_tribe_name As TextBox
+    Public WithEvents tbx_p2_tribe_name As TextBox
+    Public WithEvents tbx_p1_tribe_name As TextBox
+    Public WithEvents tbx_gaia_tribe_name As TextBox
+    Public WithEvents cbx_p8_color As ComboBox
+    Public WithEvents cbx_p7_color As ComboBox
+    Public WithEvents cbx_p6_color As ComboBox
+    Public WithEvents cbx_p5_color As ComboBox
+    Public WithEvents cbx_p4_color As ComboBox
+    Public WithEvents cbx_p3_color As ComboBox
+    Public WithEvents cbx_p2_color As ComboBox
+    Public WithEvents cbx_p1_color As ComboBox
     Public WithEvents lb_color As Label
-    Public WithEvents cbx_color_gaia As ComboBox
+    Public WithEvents cbx_gaia_color As ComboBox
     Public WithEvents lb_player_8 As Label
     Public WithEvents lb_player_7 As Label
     Public WithEvents lb_player_6 As Label
@@ -3280,66 +3757,66 @@ Partial Class frm_scenario_maker
     Public WithEvents lb_player_2 As Label
     Public WithEvents lb_player_1 As Label
     Public WithEvents lb_gaia As Label
-    Public WithEvents NumericUpDown7 As NumericUpDown
-    Public WithEvents NumericUpDown6 As NumericUpDown
-    Public WithEvents NumericUpDown5 As NumericUpDown
-    Public WithEvents NumericUpDown4 As NumericUpDown
-    Public WithEvents NumericUpDown3 As NumericUpDown
-    Public WithEvents NumericUpDown2 As NumericUpDown
-    Public WithEvents NumericUpDown1 As NumericUpDown
-    Public WithEvents nud_priority_p1 As NumericUpDown
-    Public WithEvents nud_priority_gaia As NumericUpDown
+    Public WithEvents nud_p8_priority As NumericUpDown
+    Public WithEvents nud_p7_priority As NumericUpDown
+    Public WithEvents nud_p6_priority As NumericUpDown
+    Public WithEvents nud_p5_priority As NumericUpDown
+    Public WithEvents nud_p4_priority As NumericUpDown
+    Public WithEvents nud_p3_priority As NumericUpDown
+    Public WithEvents nud_p2_priority As NumericUpDown
+    Public WithEvents nud_p1_priority As NumericUpDown
+    Public WithEvents nud_gaia_priority As NumericUpDown
     Public WithEvents lb_priority_gaia As Label
-    Public WithEvents nud_population_gaia As NumericUpDown
-    Public WithEvents nud_population_p8 As NumericUpDown
-    Public WithEvents nud_population_p7 As NumericUpDown
-    Public WithEvents nud_population_p6 As NumericUpDown
-    Public WithEvents nud_population_p5 As NumericUpDown
-    Public WithEvents nud_population_p4 As NumericUpDown
-    Public WithEvents nud_population_p3 As NumericUpDown
-    Public WithEvents nud_population_p2 As NumericUpDown
+    Public WithEvents nud_gaia_population As NumericUpDown
+    Public WithEvents nud_p8_population As NumericUpDown
+    Public WithEvents nud_p7_population As NumericUpDown
+    Public WithEvents nud_p6_population As NumericUpDown
+    Public WithEvents nud_p5_population As NumericUpDown
+    Public WithEvents nud_p4_population As NumericUpDown
+    Public WithEvents nud_p3_population As NumericUpDown
+    Public WithEvents nud_p2_population As NumericUpDown
     Public WithEvents lb_pop As Label
-    Public WithEvents nud_population_p1 As NumericUpDown
-    Public WithEvents nud_gold_gaia As NumericUpDown
-    Public WithEvents nud_gold_p8 As NumericUpDown
-    Public WithEvents nud_gold_p7 As NumericUpDown
-    Public WithEvents nud_gold_p6 As NumericUpDown
-    Public WithEvents nud_gold_p5 As NumericUpDown
-    Public WithEvents nud_gold_p4 As NumericUpDown
-    Public WithEvents nud_gold_p3 As NumericUpDown
-    Public WithEvents nud_gold_p2 As NumericUpDown
+    Public WithEvents nud_p1_population As NumericUpDown
+    Public WithEvents nud_gaia_gold As NumericUpDown
+    Public WithEvents nud_p8_gold As NumericUpDown
+    Public WithEvents nud_p7_gold As NumericUpDown
+    Public WithEvents nud_p6_gold As NumericUpDown
+    Public WithEvents nud_p5_gold As NumericUpDown
+    Public WithEvents nud_p4_gold As NumericUpDown
+    Public WithEvents nud_p3_gold As NumericUpDown
+    Public WithEvents nud_p2_gold As NumericUpDown
     Public WithEvents lb_gold As Label
-    Public WithEvents nud_gold_p1 As NumericUpDown
-    Public WithEvents nud_stone_gaia As NumericUpDown
-    Public WithEvents nud_stone_p8 As NumericUpDown
-    Public WithEvents nud_stone_p7 As NumericUpDown
-    Public WithEvents nud_stone_p6 As NumericUpDown
-    Public WithEvents nud_stone_p5 As NumericUpDown
-    Public WithEvents nud_stone_p4 As NumericUpDown
-    Public WithEvents nud_stone_p3 As NumericUpDown
-    Public WithEvents nud_stone_p2 As NumericUpDown
+    Public WithEvents nud_p1_gold As NumericUpDown
+    Public WithEvents nud_gaia_stone As NumericUpDown
+    Public WithEvents nud_p8_stone As NumericUpDown
+    Public WithEvents nud_p7_stone As NumericUpDown
+    Public WithEvents nud_p6_stone As NumericUpDown
+    Public WithEvents nud_p5_stone As NumericUpDown
+    Public WithEvents nud_p4_stone As NumericUpDown
+    Public WithEvents nud_p3_stone As NumericUpDown
+    Public WithEvents nud_p2_stone As NumericUpDown
     Public WithEvents lb_stone As Label
-    Public WithEvents nud_stone_p1 As NumericUpDown
-    Public WithEvents nud_wood_gaia As NumericUpDown
-    Public WithEvents nud_wood_p8 As NumericUpDown
-    Public WithEvents nud_wood_p7 As NumericUpDown
-    Public WithEvents nud_wood_p6 As NumericUpDown
-    Public WithEvents nud_wood_p5 As NumericUpDown
-    Public WithEvents nud_wood_p4 As NumericUpDown
-    Public WithEvents nud_wood_p3 As NumericUpDown
-    Public WithEvents nud_wood_p2 As NumericUpDown
+    Public WithEvents nud_p1_stone As NumericUpDown
+    Public WithEvents nud_gaia_wood As NumericUpDown
+    Public WithEvents nud_p8_wood As NumericUpDown
+    Public WithEvents nud_p7_wood As NumericUpDown
+    Public WithEvents nud_p6_wood As NumericUpDown
+    Public WithEvents nud_p5_wood As NumericUpDown
+    Public WithEvents nud_p4_wood As NumericUpDown
+    Public WithEvents nud_p3_wood As NumericUpDown
+    Public WithEvents nud_p2_wood As NumericUpDown
     Public WithEvents lb_wood As Label
-    Public WithEvents nud_wood_p1 As NumericUpDown
-    Public WithEvents nud_food_gaia As NumericUpDown
-    Public WithEvents nud_food_p8 As NumericUpDown
-    Public WithEvents nud_food_p7 As NumericUpDown
-    Public WithEvents nud_food_p6 As NumericUpDown
-    Public WithEvents nud_food_p5 As NumericUpDown
-    Public WithEvents nud_food_p4 As NumericUpDown
-    Public WithEvents nud_food_p3 As NumericUpDown
-    Public WithEvents nud_food_p2 As NumericUpDown
+    Public WithEvents nud_p1_wood As NumericUpDown
+    Public WithEvents nud_gaia_food As NumericUpDown
+    Public WithEvents nud_p8_food As NumericUpDown
+    Public WithEvents nud_p7_food As NumericUpDown
+    Public WithEvents nud_p6_food As NumericUpDown
+    Public WithEvents nud_p5_food As NumericUpDown
+    Public WithEvents nud_p4_food As NumericUpDown
+    Public WithEvents nud_p3_food As NumericUpDown
+    Public WithEvents nud_p2_food As NumericUpDown
     Public WithEvents lb_food As Label
-    Public WithEvents nud_food_p1 As NumericUpDown
+    Public WithEvents nud_p1_food As NumericUpDown
     Public WithEvents cbx_total_players As ComboBox
     Public WithEvents tp_file As TabPage
     Public WithEvents ofd_scenario As OpenFileDialog
@@ -3349,15 +3826,15 @@ Partial Class frm_scenario_maker
     Public WithEvents lbl_load_path As Label
     Public WithEvents lbl_save_path As Label
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
-    Public WithEvents cbx_ai_p8 As CheckBox
-    Public WithEvents cbx_ai_p7 As CheckBox
-    Public WithEvents cbx_ai_p6 As CheckBox
-    Public WithEvents cbx_ai_p5 As CheckBox
-    Public WithEvents cbx_ai_p4 As CheckBox
-    Public WithEvents cbx_ai_p3 As CheckBox
-    Public WithEvents cbx_ai_p2 As CheckBox
-    Public WithEvents cbx_ai_p1 As CheckBox
-    Public WithEvents cbx_ai_gaia As CheckBox
+    Public WithEvents cbx_p8_ai As CheckBox
+    Public WithEvents cbx_p7_ai As CheckBox
+    Public WithEvents cbx_p6_ai As CheckBox
+    Public WithEvents cbx_p5_ai As CheckBox
+    Public WithEvents cbx_p4_ai As CheckBox
+    Public WithEvents cbx_p3_ai As CheckBox
+    Public WithEvents cbx_p2_ai As CheckBox
+    Public WithEvents cbx_p1_ai As CheckBox
+    Public WithEvents cbx_gaia_ai As CheckBox
     Public WithEvents lbl_player_type As Label
     Public WithEvents btn_new_scenario As Button
     Public WithEvents tp_units As TabPage
@@ -3506,4 +3983,43 @@ Partial Class frm_scenario_maker
     Public WithEvents cbx_p3_ai_personality As ComboBox
     Public WithEvents cbx_p2_ai_personality As ComboBox
     Public WithEvents cbx_use_layers As CheckBox
+    Public WithEvents lbl_ai_personality As Label
+    Public WithEvents cbx_gaia_civilization As ComboBox
+    Public WithEvents cbx_p3_civilization As ComboBox
+    Public WithEvents cbx_p2_civilization As ComboBox
+    Public WithEvents cbx_p1_civilization As ComboBox
+    Public WithEvents cbx_p8_civilization As ComboBox
+    Public WithEvents cbx_p7_civilization As ComboBox
+    Public WithEvents cbx_p6_civilization As ComboBox
+    Public WithEvents cbx_p5_civilization As ComboBox
+    Public WithEvents cbx_p4_civilization As ComboBox
+    Public WithEvents lbl_civilization As Label
+    Public WithEvents cbx_p8_architecture As ComboBox
+    Public WithEvents cbx_p7_architecture As ComboBox
+    Public WithEvents cbx_p6_architecture As ComboBox
+    Public WithEvents cbx_p5_architecture As ComboBox
+    Public WithEvents cbx_p4_architecture As ComboBox
+    Public WithEvents cbx_p3_architecture As ComboBox
+    Public WithEvents cbx_p2_architecture As ComboBox
+    Public WithEvents cbx_p1_architecture As ComboBox
+    Public WithEvents cbx_gaia_architecture As ComboBox
+    Public WithEvents lbl_architecture As Label
+    Public WithEvents cbx_gaia_lock_civ As CheckBox
+    Public WithEvents cbx_p8_lock_civ As CheckBox
+    Public WithEvents cbx_p7_lock_civ As CheckBox
+    Public WithEvents cbx_p6_lock_civ As CheckBox
+    Public WithEvents cbx_p5_lock_civ As CheckBox
+    Public WithEvents cbx_p4_lock_civ As CheckBox
+    Public WithEvents cbx_p3_lock_civ As CheckBox
+    Public WithEvents cbx_p2_lock_civ As CheckBox
+    Public WithEvents cbx_p1_lock_civ As CheckBox
+    Friend WithEvents cbx_gaia_lock_personality As CheckBox
+    Friend WithEvents cbx_p2_lock_personality As CheckBox
+    Friend WithEvents cbx_p1_lock_personality As CheckBox
+    Friend WithEvents cbx_p8_lock_personality As CheckBox
+    Friend WithEvents cbx_p7_lock_personality As CheckBox
+    Friend WithEvents cbx_p6_lock_personality As CheckBox
+    Friend WithEvents cbx_p5_lock_personality As CheckBox
+    Friend WithEvents cbx_p4_lock_personality As CheckBox
+    Friend WithEvents cbx_p3_lock_personality As CheckBox
 End Class
