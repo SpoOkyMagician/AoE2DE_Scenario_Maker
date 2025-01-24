@@ -462,4 +462,28 @@
 
     End Sub
 
+    Public Sub lbx_base_terrain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_base_terrain.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub lbx_layer_terrain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_layer_terrain.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub lbx_x_terrain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_x_terrain.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub lbx_y_terrain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_y_terrain.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub lbx_elevation_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_elevation.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+    End Sub
+
 End Class

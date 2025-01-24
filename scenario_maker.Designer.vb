@@ -40,11 +40,27 @@ Partial Class frm_scenario_maker
         cbx_color_mood = New ComboBox()
         cbx_ai_map_type = New ComboBox()
         tp_terrain = New TabPage()
+        lbl_y_terrain = New Label()
+        lbx_y_terrain = New ListBox()
+        lbl_x_terrain = New Label()
+        lbl_elevation = New Label()
+        lbl_layer_terrain = New Label()
+        lbl_base_terrain = New Label()
+        lbx_layer_terrain = New ListBox()
         lbx_elevation = New ListBox()
         Button1 = New Button()
         lbx_x_terrain = New ListBox()
         lbx_base_terrain = New ListBox()
         tp_players = New TabPage()
+        cbx_p8_ai_personality = New ComboBox()
+        cbx_p7_ai_personality = New ComboBox()
+        cbx_p6_ai_personality = New ComboBox()
+        cbx_p5_ai_personality = New ComboBox()
+        cbx_p4_ai_personality = New ComboBox()
+        cbx_p3_ai_personality = New ComboBox()
+        cbx_p2_ai_personality = New ComboBox()
+        cbx_gaia_ai_personality = New ComboBox()
+        cbx_p1_ai_personality = New ComboBox()
         cbx_gaia_age = New ComboBox()
         lbl_age = New Label()
         cbx_p8_age = New ComboBox()
@@ -279,13 +295,7 @@ Partial Class frm_scenario_maker
         ofd_scenario = New OpenFileDialog()
         sfd_scenario = New SaveFileDialog()
         ofd_aoe2de_path = New OpenFileDialog()
-        lbx_layer_terrain = New ListBox()
-        lbl_base_terrain = New Label()
-        lbl_layer_terrain = New Label()
-        lbl_elevation = New Label()
-        lbl_x_terrain = New Label()
-        lbx_y_terrain = New ListBox()
-        lbl_y_terrain = New Label()
+        cbx_use_layers = New CheckBox()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
@@ -533,6 +543,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tp_terrain
         ' 
+        tp_terrain.Controls.Add(cbx_use_layers)
         tp_terrain.Controls.Add(lbl_y_terrain)
         tp_terrain.Controls.Add(lbx_y_terrain)
         tp_terrain.Controls.Add(lbl_x_terrain)
@@ -550,6 +561,71 @@ Partial Class frm_scenario_maker
         tp_terrain.TabIndex = 11
         tp_terrain.Text = "Terrain"
         tp_terrain.UseVisualStyleBackColor = True
+        ' 
+        ' lbl_y_terrain
+        ' 
+        lbl_y_terrain.AutoSize = True
+        lbl_y_terrain.Location = New Point(512, 8)
+        lbl_y_terrain.Name = "lbl_y_terrain"
+        lbl_y_terrain.Size = New Size(14, 15)
+        lbl_y_terrain.TabIndex = 13
+        lbl_y_terrain.Text = "Y"
+        ' 
+        ' lbx_y_terrain
+        ' 
+        lbx_y_terrain.FormattingEnabled = True
+        lbx_y_terrain.ItemHeight = 15
+        lbx_y_terrain.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326", "327", "328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353", "354", "355", "356", "357", "358", "359", "360", "361", "362", "363", "364", "365", "366", "367", "368", "369", "370", "371", "372", "373", "374", "375", "376", "377", "378", "379", "380", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "410", "411", "412", "413", "414", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "425", "426", "427", "428", "429", "430", "431", "432", "433", "434", "435", "436", "437", "438", "439", "440", "441", "442", "443", "444", "445", "446", "447", "448", "449", "450", "451", "452", "453", "454", "455", "456", "457", "458", "459", "460", "461", "462", "463", "464", "465", "466", "467", "468", "469", "470", "471", "472", "473", "474", "475", "476", "477", "478", "479"})
+        lbx_y_terrain.Location = New Point(512, 32)
+        lbx_y_terrain.Name = "lbx_y_terrain"
+        lbx_y_terrain.Size = New Size(48, 469)
+        lbx_y_terrain.TabIndex = 12
+        ' 
+        ' lbl_x_terrain
+        ' 
+        lbl_x_terrain.AutoSize = True
+        lbl_x_terrain.Location = New Point(456, 8)
+        lbl_x_terrain.Name = "lbl_x_terrain"
+        lbl_x_terrain.Size = New Size(14, 15)
+        lbl_x_terrain.TabIndex = 11
+        lbl_x_terrain.Text = "X"
+        ' 
+        ' lbl_elevation
+        ' 
+        lbl_elevation.AutoSize = True
+        lbl_elevation.Location = New Point(568, 8)
+        lbl_elevation.Name = "lbl_elevation"
+        lbl_elevation.Size = New Size(55, 15)
+        lbl_elevation.TabIndex = 10
+        lbl_elevation.Text = "Elevation"
+        ' 
+        ' lbl_layer_terrain
+        ' 
+        lbl_layer_terrain.AutoSize = True
+        lbl_layer_terrain.Location = New Point(232, 8)
+        lbl_layer_terrain.Name = "lbl_layer_terrain"
+        lbl_layer_terrain.Size = New Size(73, 15)
+        lbl_layer_terrain.TabIndex = 9
+        lbl_layer_terrain.Text = "Layer Terrain"
+        ' 
+        ' lbl_base_terrain
+        ' 
+        lbl_base_terrain.AutoSize = True
+        lbl_base_terrain.Location = New Point(8, 8)
+        lbl_base_terrain.Name = "lbl_base_terrain"
+        lbl_base_terrain.Size = New Size(69, 15)
+        lbl_base_terrain.TabIndex = 8
+        lbl_base_terrain.Text = "Base Terrain"
+        ' 
+        ' lbx_layer_terrain
+        ' 
+        lbx_layer_terrain.FormattingEnabled = True
+        lbx_layer_terrain.ItemHeight = 15
+        lbx_layer_terrain.Items.AddRange(New Object() {"Beach", "Beach (Non-Navigable)", "Beach (Non-Navigable), Wet Gravel", "Beach (Non-Navigable), Wet Rock", "Beach (Non-Navigable), Wet Sand", "Beach, Ice", "Beach, Vegetation", "Beach, Wet", "Beach, Wet Gravel", "Beach, Wet Rock", "Beach, White", "Beach, White, Vegetation", "Black", "Desert, Cracked", "Desert, Quicksand", "Desert, Sand", "Dirt 1", "Dirt 2", "Dirt 3", "Dirt 4", "Dirt, Mud", "Dirt, Savannah", "Farm", "Farm, 0%", "Farm, 33%", "Farm, 67%", "Farm, Dead", "Forest, Acacia", "Forest, Autumn", "Forest, Autumn Snow", "Forest, Bamboo", "Forest, Baobab", "Forest, Birch", "Forest, Bush", "Forest, Dead", "Forest, Dragon Tree", "Forest, Jungle", "Forest, Mangrove", "Forest, Mediterranean", "Forest, Oak", "Forest, Oak Bush", "Forest, Palm Desert", "Forest, Palm Grass", "Forest, Pine", "Forest, Pine Snow", "Forest, Rainforest", "Forest, Reeds", "Forest, Reeds (Beach)", "Forest, Reeds (Shallow)", "Grass 1", "Grass 2", "Grass 3", "Grass, Dry", "Grass, Foundation", "Grass, Jungle", "Grass, Jungle (Rainforest)", "Grass, Other", "Gravel, Default", "Gravel, Desert", "Ice", "Ice, Navigable", "Rice Farm", "Rice Farm, 0%", "Rice Farm, 33%", "Rice Farm, 66%", "Rice Farm, Dead", "Road", "Road, Broken", "Road, Fungus", "Road, Gravel", "Rock 1", "Shallows", "Shallows, Azure", "Shallows, Mangrove", "Snow", "Snow, Foundation", "Snow, Light", "Snow, Strong", "Swamp, Bogland", "Swamp, Shallows", "Underbrush", "Underbrush, Jungle", "Underbrush, Leaves", "Underbrush, Snow", "Water 2D, Bridge", "Water 2D, Shoreless", "Water, Azure", "Water, Brown", "Water, Deep", "Water, Deep Ocean", "Water, Green", "Water, Medium", "Water, Shallow"})
+        lbx_layer_terrain.Location = New Point(232, 32)
+        lbx_layer_terrain.Name = "lbx_layer_terrain"
+        lbx_layer_terrain.Size = New Size(216, 469)
+        lbx_layer_terrain.TabIndex = 7
         ' 
         ' lbx_elevation
         ' 
@@ -592,6 +668,15 @@ Partial Class frm_scenario_maker
         ' 
         ' tp_players
         ' 
+        tp_players.Controls.Add(cbx_p8_ai_personality)
+        tp_players.Controls.Add(cbx_p7_ai_personality)
+        tp_players.Controls.Add(cbx_p6_ai_personality)
+        tp_players.Controls.Add(cbx_p5_ai_personality)
+        tp_players.Controls.Add(cbx_p4_ai_personality)
+        tp_players.Controls.Add(cbx_p3_ai_personality)
+        tp_players.Controls.Add(cbx_p2_ai_personality)
+        tp_players.Controls.Add(cbx_gaia_ai_personality)
+        tp_players.Controls.Add(cbx_p1_ai_personality)
         tp_players.Controls.Add(cbx_gaia_age)
         tp_players.Controls.Add(lbl_age)
         tp_players.Controls.Add(cbx_p8_age)
@@ -720,10 +805,91 @@ Partial Class frm_scenario_maker
         tp_players.Text = "Players"
         tp_players.UseVisualStyleBackColor = True
         ' 
+        ' cbx_p8_ai_personality
+        ' 
+        cbx_p8_ai_personality.FormattingEnabled = True
+        cbx_p8_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
+        cbx_p8_ai_personality.Location = New Point(896, 304)
+        cbx_p8_ai_personality.Name = "cbx_p8_ai_personality"
+        cbx_p8_ai_personality.Size = New Size(112, 23)
+        cbx_p8_ai_personality.TabIndex = 233
+        ' 
+        ' cbx_p7_ai_personality
+        ' 
+        cbx_p7_ai_personality.FormattingEnabled = True
+        cbx_p7_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
+        cbx_p7_ai_personality.Location = New Point(896, 272)
+        cbx_p7_ai_personality.Name = "cbx_p7_ai_personality"
+        cbx_p7_ai_personality.Size = New Size(112, 23)
+        cbx_p7_ai_personality.TabIndex = 232
+        ' 
+        ' cbx_p6_ai_personality
+        ' 
+        cbx_p6_ai_personality.FormattingEnabled = True
+        cbx_p6_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
+        cbx_p6_ai_personality.Location = New Point(896, 240)
+        cbx_p6_ai_personality.Name = "cbx_p6_ai_personality"
+        cbx_p6_ai_personality.Size = New Size(112, 23)
+        cbx_p6_ai_personality.TabIndex = 231
+        ' 
+        ' cbx_p5_ai_personality
+        ' 
+        cbx_p5_ai_personality.FormattingEnabled = True
+        cbx_p5_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
+        cbx_p5_ai_personality.Location = New Point(896, 208)
+        cbx_p5_ai_personality.Name = "cbx_p5_ai_personality"
+        cbx_p5_ai_personality.Size = New Size(112, 23)
+        cbx_p5_ai_personality.TabIndex = 230
+        ' 
+        ' cbx_p4_ai_personality
+        ' 
+        cbx_p4_ai_personality.FormattingEnabled = True
+        cbx_p4_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
+        cbx_p4_ai_personality.Location = New Point(896, 176)
+        cbx_p4_ai_personality.Name = "cbx_p4_ai_personality"
+        cbx_p4_ai_personality.Size = New Size(112, 23)
+        cbx_p4_ai_personality.TabIndex = 229
+        ' 
+        ' cbx_p3_ai_personality
+        ' 
+        cbx_p3_ai_personality.FormattingEnabled = True
+        cbx_p3_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
+        cbx_p3_ai_personality.Location = New Point(896, 144)
+        cbx_p3_ai_personality.Name = "cbx_p3_ai_personality"
+        cbx_p3_ai_personality.Size = New Size(112, 23)
+        cbx_p3_ai_personality.TabIndex = 228
+        ' 
+        ' cbx_p2_ai_personality
+        ' 
+        cbx_p2_ai_personality.FormattingEnabled = True
+        cbx_p2_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
+        cbx_p2_ai_personality.Location = New Point(896, 112)
+        cbx_p2_ai_personality.Name = "cbx_p2_ai_personality"
+        cbx_p2_ai_personality.Size = New Size(112, 23)
+        cbx_p2_ai_personality.TabIndex = 227
+        ' 
+        ' cbx_gaia_ai_personality
+        ' 
+        cbx_gaia_ai_personality.FormattingEnabled = True
+        cbx_gaia_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
+        cbx_gaia_ai_personality.Location = New Point(896, 48)
+        cbx_gaia_ai_personality.Name = "cbx_gaia_ai_personality"
+        cbx_gaia_ai_personality.Size = New Size(112, 23)
+        cbx_gaia_ai_personality.TabIndex = 226
+        ' 
+        ' cbx_p1_ai_personality
+        ' 
+        cbx_p1_ai_personality.FormattingEnabled = True
+        cbx_p1_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
+        cbx_p1_ai_personality.Location = New Point(896, 80)
+        cbx_p1_ai_personality.Name = "cbx_p1_ai_personality"
+        cbx_p1_ai_personality.Size = New Size(112, 23)
+        cbx_p1_ai_personality.TabIndex = 225
+        ' 
         ' cbx_gaia_age
         ' 
         cbx_gaia_age.FormattingEnabled = True
-        cbx_gaia_age.Location = New Point(136, 48)
+        cbx_gaia_age.Location = New Point(104, 48)
         cbx_gaia_age.Name = "cbx_gaia_age"
         cbx_gaia_age.Size = New Size(100, 23)
         cbx_gaia_age.TabIndex = 224
@@ -732,7 +898,7 @@ Partial Class frm_scenario_maker
         ' lbl_age
         ' 
         lbl_age.AutoSize = True
-        lbl_age.Location = New Point(136, 16)
+        lbl_age.Location = New Point(104, 16)
         lbl_age.Name = "lbl_age"
         lbl_age.Size = New Size(72, 15)
         lbl_age.TabIndex = 223
@@ -742,7 +908,7 @@ Partial Class frm_scenario_maker
         ' cbx_p8_age
         ' 
         cbx_p8_age.FormattingEnabled = True
-        cbx_p8_age.Location = New Point(136, 304)
+        cbx_p8_age.Location = New Point(104, 304)
         cbx_p8_age.Name = "cbx_p8_age"
         cbx_p8_age.Size = New Size(100, 23)
         cbx_p8_age.TabIndex = 222
@@ -751,7 +917,7 @@ Partial Class frm_scenario_maker
         ' cbx_p7_age
         ' 
         cbx_p7_age.FormattingEnabled = True
-        cbx_p7_age.Location = New Point(136, 272)
+        cbx_p7_age.Location = New Point(104, 272)
         cbx_p7_age.Name = "cbx_p7_age"
         cbx_p7_age.Size = New Size(100, 23)
         cbx_p7_age.TabIndex = 221
@@ -760,7 +926,7 @@ Partial Class frm_scenario_maker
         ' cbx_p6_age
         ' 
         cbx_p6_age.FormattingEnabled = True
-        cbx_p6_age.Location = New Point(136, 240)
+        cbx_p6_age.Location = New Point(104, 240)
         cbx_p6_age.Name = "cbx_p6_age"
         cbx_p6_age.Size = New Size(100, 23)
         cbx_p6_age.TabIndex = 220
@@ -769,7 +935,7 @@ Partial Class frm_scenario_maker
         ' cbx_p5_age
         ' 
         cbx_p5_age.FormattingEnabled = True
-        cbx_p5_age.Location = New Point(136, 208)
+        cbx_p5_age.Location = New Point(104, 208)
         cbx_p5_age.Name = "cbx_p5_age"
         cbx_p5_age.Size = New Size(100, 23)
         cbx_p5_age.TabIndex = 219
@@ -778,7 +944,7 @@ Partial Class frm_scenario_maker
         ' cbx_p4_age
         ' 
         cbx_p4_age.FormattingEnabled = True
-        cbx_p4_age.Location = New Point(136, 176)
+        cbx_p4_age.Location = New Point(104, 176)
         cbx_p4_age.Name = "cbx_p4_age"
         cbx_p4_age.Size = New Size(100, 23)
         cbx_p4_age.TabIndex = 218
@@ -787,7 +953,7 @@ Partial Class frm_scenario_maker
         ' cbx_p3_age
         ' 
         cbx_p3_age.FormattingEnabled = True
-        cbx_p3_age.Location = New Point(136, 144)
+        cbx_p3_age.Location = New Point(104, 144)
         cbx_p3_age.Name = "cbx_p3_age"
         cbx_p3_age.Size = New Size(100, 23)
         cbx_p3_age.TabIndex = 217
@@ -796,7 +962,7 @@ Partial Class frm_scenario_maker
         ' cbx_p2_age
         ' 
         cbx_p2_age.FormattingEnabled = True
-        cbx_p2_age.Location = New Point(136, 112)
+        cbx_p2_age.Location = New Point(104, 112)
         cbx_p2_age.Name = "cbx_p2_age"
         cbx_p2_age.Size = New Size(100, 23)
         cbx_p2_age.TabIndex = 216
@@ -805,7 +971,7 @@ Partial Class frm_scenario_maker
         ' cbx_p1_age
         ' 
         cbx_p1_age.FormattingEnabled = True
-        cbx_p1_age.Location = New Point(136, 80)
+        cbx_p1_age.Location = New Point(104, 80)
         cbx_p1_age.Name = "cbx_p1_age"
         cbx_p1_age.Size = New Size(100, 23)
         cbx_p1_age.TabIndex = 215
@@ -814,7 +980,7 @@ Partial Class frm_scenario_maker
         ' lbl_player_type
         ' 
         lbl_player_type.AutoSize = True
-        lbl_player_type.Location = New Point(888, 16)
+        lbl_player_type.Location = New Point(848, 16)
         lbl_player_type.Name = "lbl_player_type"
         lbl_player_type.Size = New Size(41, 15)
         lbl_player_type.TabIndex = 214
@@ -824,7 +990,7 @@ Partial Class frm_scenario_maker
         ' cbx_ai_p8
         ' 
         cbx_ai_p8.AutoSize = True
-        cbx_ai_p8.Location = New Point(896, 304)
+        cbx_ai_p8.Location = New Point(856, 304)
         cbx_ai_p8.Name = "cbx_ai_p8"
         cbx_ai_p8.Size = New Size(37, 19)
         cbx_ai_p8.TabIndex = 213
@@ -834,7 +1000,7 @@ Partial Class frm_scenario_maker
         ' cbx_ai_p7
         ' 
         cbx_ai_p7.AutoSize = True
-        cbx_ai_p7.Location = New Point(896, 272)
+        cbx_ai_p7.Location = New Point(856, 272)
         cbx_ai_p7.Name = "cbx_ai_p7"
         cbx_ai_p7.Size = New Size(37, 19)
         cbx_ai_p7.TabIndex = 212
@@ -844,7 +1010,7 @@ Partial Class frm_scenario_maker
         ' cbx_ai_p6
         ' 
         cbx_ai_p6.AutoSize = True
-        cbx_ai_p6.Location = New Point(896, 240)
+        cbx_ai_p6.Location = New Point(856, 240)
         cbx_ai_p6.Name = "cbx_ai_p6"
         cbx_ai_p6.Size = New Size(37, 19)
         cbx_ai_p6.TabIndex = 211
@@ -854,7 +1020,7 @@ Partial Class frm_scenario_maker
         ' cbx_ai_p5
         ' 
         cbx_ai_p5.AutoSize = True
-        cbx_ai_p5.Location = New Point(896, 208)
+        cbx_ai_p5.Location = New Point(856, 208)
         cbx_ai_p5.Name = "cbx_ai_p5"
         cbx_ai_p5.Size = New Size(37, 19)
         cbx_ai_p5.TabIndex = 210
@@ -864,7 +1030,7 @@ Partial Class frm_scenario_maker
         ' cbx_ai_p4
         ' 
         cbx_ai_p4.AutoSize = True
-        cbx_ai_p4.Location = New Point(896, 176)
+        cbx_ai_p4.Location = New Point(856, 176)
         cbx_ai_p4.Name = "cbx_ai_p4"
         cbx_ai_p4.Size = New Size(37, 19)
         cbx_ai_p4.TabIndex = 209
@@ -874,7 +1040,7 @@ Partial Class frm_scenario_maker
         ' cbx_ai_p3
         ' 
         cbx_ai_p3.AutoSize = True
-        cbx_ai_p3.Location = New Point(896, 144)
+        cbx_ai_p3.Location = New Point(856, 144)
         cbx_ai_p3.Name = "cbx_ai_p3"
         cbx_ai_p3.Size = New Size(37, 19)
         cbx_ai_p3.TabIndex = 208
@@ -884,7 +1050,7 @@ Partial Class frm_scenario_maker
         ' cbx_ai_p2
         ' 
         cbx_ai_p2.AutoSize = True
-        cbx_ai_p2.Location = New Point(896, 112)
+        cbx_ai_p2.Location = New Point(856, 112)
         cbx_ai_p2.Name = "cbx_ai_p2"
         cbx_ai_p2.Size = New Size(37, 19)
         cbx_ai_p2.TabIndex = 207
@@ -894,7 +1060,7 @@ Partial Class frm_scenario_maker
         ' cbx_ai_p1
         ' 
         cbx_ai_p1.AutoSize = True
-        cbx_ai_p1.Location = New Point(896, 80)
+        cbx_ai_p1.Location = New Point(856, 80)
         cbx_ai_p1.Name = "cbx_ai_p1"
         cbx_ai_p1.Size = New Size(37, 19)
         cbx_ai_p1.TabIndex = 206
@@ -904,7 +1070,7 @@ Partial Class frm_scenario_maker
         ' cbx_ai_gaia
         ' 
         cbx_ai_gaia.AutoSize = True
-        cbx_ai_gaia.Location = New Point(896, 48)
+        cbx_ai_gaia.Location = New Point(856, 48)
         cbx_ai_gaia.Name = "cbx_ai_gaia"
         cbx_ai_gaia.Size = New Size(37, 19)
         cbx_ai_gaia.TabIndex = 205
@@ -914,7 +1080,7 @@ Partial Class frm_scenario_maker
         ' lb_name_string_id
         ' 
         lb_name_string_id.AutoSize = True
-        lb_name_string_id.Location = New Point(792, 16)
+        lb_name_string_id.Location = New Point(752, 16)
         lb_name_string_id.Name = "lb_name_string_id"
         lb_name_string_id.Size = New Size(52, 15)
         lb_name_string_id.TabIndex = 204
@@ -923,7 +1089,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_name_string_id_p8
         ' 
-        tbx_name_string_id_p8.Location = New Point(792, 304)
+        tbx_name_string_id_p8.Location = New Point(752, 304)
         tbx_name_string_id_p8.MaxLength = 10
         tbx_name_string_id_p8.Name = "tbx_name_string_id_p8"
         tbx_name_string_id_p8.Size = New Size(100, 23)
@@ -931,7 +1097,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_name_string_id_p7
         ' 
-        tbx_name_string_id_p7.Location = New Point(792, 272)
+        tbx_name_string_id_p7.Location = New Point(752, 272)
         tbx_name_string_id_p7.MaxLength = 10
         tbx_name_string_id_p7.Name = "tbx_name_string_id_p7"
         tbx_name_string_id_p7.Size = New Size(100, 23)
@@ -939,7 +1105,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_name_string_id_p6
         ' 
-        tbx_name_string_id_p6.Location = New Point(792, 240)
+        tbx_name_string_id_p6.Location = New Point(752, 240)
         tbx_name_string_id_p6.MaxLength = 10
         tbx_name_string_id_p6.Name = "tbx_name_string_id_p6"
         tbx_name_string_id_p6.Size = New Size(100, 23)
@@ -947,7 +1113,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_name_string_id_p5
         ' 
-        tbx_name_string_id_p5.Location = New Point(792, 208)
+        tbx_name_string_id_p5.Location = New Point(752, 208)
         tbx_name_string_id_p5.MaxLength = 10
         tbx_name_string_id_p5.Name = "tbx_name_string_id_p5"
         tbx_name_string_id_p5.Size = New Size(100, 23)
@@ -955,7 +1121,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_name_string_id_p4
         ' 
-        tbx_name_string_id_p4.Location = New Point(792, 176)
+        tbx_name_string_id_p4.Location = New Point(752, 176)
         tbx_name_string_id_p4.MaxLength = 10
         tbx_name_string_id_p4.Name = "tbx_name_string_id_p4"
         tbx_name_string_id_p4.Size = New Size(100, 23)
@@ -963,7 +1129,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_name_string_id_p3
         ' 
-        tbx_name_string_id_p3.Location = New Point(792, 144)
+        tbx_name_string_id_p3.Location = New Point(752, 144)
         tbx_name_string_id_p3.MaxLength = 10
         tbx_name_string_id_p3.Name = "tbx_name_string_id_p3"
         tbx_name_string_id_p3.Size = New Size(100, 23)
@@ -971,7 +1137,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_name_string_id_p2
         ' 
-        tbx_name_string_id_p2.Location = New Point(792, 112)
+        tbx_name_string_id_p2.Location = New Point(752, 112)
         tbx_name_string_id_p2.MaxLength = 10
         tbx_name_string_id_p2.Name = "tbx_name_string_id_p2"
         tbx_name_string_id_p2.Size = New Size(100, 23)
@@ -979,7 +1145,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_name_string_id_p1
         ' 
-        tbx_name_string_id_p1.Location = New Point(792, 80)
+        tbx_name_string_id_p1.Location = New Point(752, 80)
         tbx_name_string_id_p1.MaxLength = 10
         tbx_name_string_id_p1.Name = "tbx_name_string_id_p1"
         tbx_name_string_id_p1.Size = New Size(100, 23)
@@ -987,7 +1153,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_name_string_id_gaia
         ' 
-        tbx_name_string_id_gaia.Location = New Point(792, 48)
+        tbx_name_string_id_gaia.Location = New Point(752, 48)
         tbx_name_string_id_gaia.MaxLength = 10
         tbx_name_string_id_gaia.Name = "tbx_name_string_id_gaia"
         tbx_name_string_id_gaia.Size = New Size(100, 23)
@@ -996,7 +1162,7 @@ Partial Class frm_scenario_maker
         ' lb_tribe_name
         ' 
         lb_tribe_name.AutoSize = True
-        lb_tribe_name.Location = New Point(688, 16)
+        lb_tribe_name.Location = New Point(648, 16)
         lb_tribe_name.Name = "lb_tribe_name"
         lb_tribe_name.Size = New Size(67, 15)
         lb_tribe_name.TabIndex = 194
@@ -1005,7 +1171,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_tribe_name_p8
         ' 
-        tbx_tribe_name_p8.Location = New Point(688, 304)
+        tbx_tribe_name_p8.Location = New Point(648, 304)
         tbx_tribe_name_p8.MaxLength = 28
         tbx_tribe_name_p8.Name = "tbx_tribe_name_p8"
         tbx_tribe_name_p8.Size = New Size(100, 23)
@@ -1013,7 +1179,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_tribe_name_p7
         ' 
-        tbx_tribe_name_p7.Location = New Point(688, 272)
+        tbx_tribe_name_p7.Location = New Point(648, 272)
         tbx_tribe_name_p7.MaxLength = 28
         tbx_tribe_name_p7.Name = "tbx_tribe_name_p7"
         tbx_tribe_name_p7.Size = New Size(100, 23)
@@ -1021,7 +1187,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_tribe_name_p6
         ' 
-        tbx_tribe_name_p6.Location = New Point(688, 240)
+        tbx_tribe_name_p6.Location = New Point(648, 240)
         tbx_tribe_name_p6.MaxLength = 28
         tbx_tribe_name_p6.Name = "tbx_tribe_name_p6"
         tbx_tribe_name_p6.Size = New Size(100, 23)
@@ -1029,7 +1195,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_tribe_name_p5
         ' 
-        tbx_tribe_name_p5.Location = New Point(688, 208)
+        tbx_tribe_name_p5.Location = New Point(648, 208)
         tbx_tribe_name_p5.MaxLength = 28
         tbx_tribe_name_p5.Name = "tbx_tribe_name_p5"
         tbx_tribe_name_p5.Size = New Size(100, 23)
@@ -1037,7 +1203,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_tribe_name_p4
         ' 
-        tbx_tribe_name_p4.Location = New Point(688, 176)
+        tbx_tribe_name_p4.Location = New Point(648, 176)
         tbx_tribe_name_p4.MaxLength = 28
         tbx_tribe_name_p4.Name = "tbx_tribe_name_p4"
         tbx_tribe_name_p4.Size = New Size(100, 23)
@@ -1045,7 +1211,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_tribe_name_p3
         ' 
-        tbx_tribe_name_p3.Location = New Point(688, 144)
+        tbx_tribe_name_p3.Location = New Point(648, 144)
         tbx_tribe_name_p3.MaxLength = 28
         tbx_tribe_name_p3.Name = "tbx_tribe_name_p3"
         tbx_tribe_name_p3.Size = New Size(100, 23)
@@ -1053,7 +1219,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_tribe_name_p2
         ' 
-        tbx_tribe_name_p2.Location = New Point(688, 112)
+        tbx_tribe_name_p2.Location = New Point(648, 112)
         tbx_tribe_name_p2.MaxLength = 28
         tbx_tribe_name_p2.Name = "tbx_tribe_name_p2"
         tbx_tribe_name_p2.Size = New Size(100, 23)
@@ -1061,7 +1227,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_tribe_name_p1
         ' 
-        tbx_tribe_name_p1.Location = New Point(688, 80)
+        tbx_tribe_name_p1.Location = New Point(648, 80)
         tbx_tribe_name_p1.MaxLength = 28
         tbx_tribe_name_p1.Name = "tbx_tribe_name_p1"
         tbx_tribe_name_p1.Size = New Size(100, 23)
@@ -1069,7 +1235,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_tribe_name_gaia
         ' 
-        tbx_tribe_name_gaia.Location = New Point(688, 48)
+        tbx_tribe_name_gaia.Location = New Point(648, 48)
         tbx_tribe_name_gaia.MaxLength = 28
         tbx_tribe_name_gaia.Name = "tbx_tribe_name_gaia"
         tbx_tribe_name_gaia.Size = New Size(100, 23)
@@ -1079,7 +1245,7 @@ Partial Class frm_scenario_maker
         ' 
         cbx_color_p8.FormattingEnabled = True
         cbx_color_p8.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p8.Location = New Point(608, 304)
+        cbx_color_p8.Location = New Point(568, 304)
         cbx_color_p8.Name = "cbx_color_p8"
         cbx_color_p8.Size = New Size(75, 23)
         cbx_color_p8.TabIndex = 184
@@ -1089,7 +1255,7 @@ Partial Class frm_scenario_maker
         ' 
         cbx_color_p7.FormattingEnabled = True
         cbx_color_p7.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p7.Location = New Point(608, 272)
+        cbx_color_p7.Location = New Point(568, 272)
         cbx_color_p7.Name = "cbx_color_p7"
         cbx_color_p7.Size = New Size(75, 23)
         cbx_color_p7.TabIndex = 183
@@ -1099,7 +1265,7 @@ Partial Class frm_scenario_maker
         ' 
         cbx_color_p6.FormattingEnabled = True
         cbx_color_p6.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p6.Location = New Point(608, 240)
+        cbx_color_p6.Location = New Point(568, 240)
         cbx_color_p6.Name = "cbx_color_p6"
         cbx_color_p6.Size = New Size(75, 23)
         cbx_color_p6.TabIndex = 182
@@ -1109,7 +1275,7 @@ Partial Class frm_scenario_maker
         ' 
         cbx_color_p5.FormattingEnabled = True
         cbx_color_p5.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p5.Location = New Point(608, 208)
+        cbx_color_p5.Location = New Point(568, 208)
         cbx_color_p5.Name = "cbx_color_p5"
         cbx_color_p5.Size = New Size(75, 23)
         cbx_color_p5.TabIndex = 181
@@ -1119,7 +1285,7 @@ Partial Class frm_scenario_maker
         ' 
         cbx_color_p4.FormattingEnabled = True
         cbx_color_p4.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p4.Location = New Point(608, 176)
+        cbx_color_p4.Location = New Point(568, 176)
         cbx_color_p4.Name = "cbx_color_p4"
         cbx_color_p4.Size = New Size(75, 23)
         cbx_color_p4.TabIndex = 180
@@ -1129,7 +1295,7 @@ Partial Class frm_scenario_maker
         ' 
         cbx_color_p3.FormattingEnabled = True
         cbx_color_p3.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p3.Location = New Point(608, 144)
+        cbx_color_p3.Location = New Point(568, 144)
         cbx_color_p3.Name = "cbx_color_p3"
         cbx_color_p3.Size = New Size(75, 23)
         cbx_color_p3.TabIndex = 179
@@ -1139,7 +1305,7 @@ Partial Class frm_scenario_maker
         ' 
         cbx_color_p2.FormattingEnabled = True
         cbx_color_p2.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p2.Location = New Point(608, 112)
+        cbx_color_p2.Location = New Point(568, 112)
         cbx_color_p2.Name = "cbx_color_p2"
         cbx_color_p2.Size = New Size(75, 23)
         cbx_color_p2.TabIndex = 178
@@ -1149,7 +1315,7 @@ Partial Class frm_scenario_maker
         ' 
         cbx_color_p1.FormattingEnabled = True
         cbx_color_p1.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_p1.Location = New Point(608, 80)
+        cbx_color_p1.Location = New Point(568, 80)
         cbx_color_p1.Name = "cbx_color_p1"
         cbx_color_p1.Size = New Size(75, 23)
         cbx_color_p1.TabIndex = 177
@@ -1158,7 +1324,7 @@ Partial Class frm_scenario_maker
         ' lb_color
         ' 
         lb_color.AutoSize = True
-        lb_color.Location = New Point(608, 16)
+        lb_color.Location = New Point(568, 16)
         lb_color.Name = "lb_color"
         lb_color.Size = New Size(36, 15)
         lb_color.TabIndex = 176
@@ -1169,7 +1335,7 @@ Partial Class frm_scenario_maker
         ' 
         cbx_color_gaia.FormattingEnabled = True
         cbx_color_gaia.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
-        cbx_color_gaia.Location = New Point(608, 48)
+        cbx_color_gaia.Location = New Point(568, 48)
         cbx_color_gaia.Name = "cbx_color_gaia"
         cbx_color_gaia.Size = New Size(75, 23)
         cbx_color_gaia.TabIndex = 175
@@ -1267,7 +1433,7 @@ Partial Class frm_scenario_maker
         ' 
         ' NumericUpDown7
         ' 
-        NumericUpDown7.Location = New Point(568, 304)
+        NumericUpDown7.Location = New Point(528, 304)
         NumericUpDown7.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
         NumericUpDown7.Name = "NumericUpDown7"
         NumericUpDown7.Size = New Size(32, 23)
@@ -1276,7 +1442,7 @@ Partial Class frm_scenario_maker
         ' 
         ' NumericUpDown6
         ' 
-        NumericUpDown6.Location = New Point(568, 272)
+        NumericUpDown6.Location = New Point(528, 272)
         NumericUpDown6.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
         NumericUpDown6.Name = "NumericUpDown6"
         NumericUpDown6.Size = New Size(32, 23)
@@ -1285,7 +1451,7 @@ Partial Class frm_scenario_maker
         ' 
         ' NumericUpDown5
         ' 
-        NumericUpDown5.Location = New Point(568, 240)
+        NumericUpDown5.Location = New Point(528, 240)
         NumericUpDown5.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
         NumericUpDown5.Name = "NumericUpDown5"
         NumericUpDown5.Size = New Size(32, 23)
@@ -1294,7 +1460,7 @@ Partial Class frm_scenario_maker
         ' 
         ' NumericUpDown4
         ' 
-        NumericUpDown4.Location = New Point(568, 208)
+        NumericUpDown4.Location = New Point(528, 208)
         NumericUpDown4.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
         NumericUpDown4.Name = "NumericUpDown4"
         NumericUpDown4.Size = New Size(32, 23)
@@ -1303,7 +1469,7 @@ Partial Class frm_scenario_maker
         ' 
         ' NumericUpDown3
         ' 
-        NumericUpDown3.Location = New Point(568, 176)
+        NumericUpDown3.Location = New Point(528, 176)
         NumericUpDown3.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
         NumericUpDown3.Name = "NumericUpDown3"
         NumericUpDown3.Size = New Size(32, 23)
@@ -1312,7 +1478,7 @@ Partial Class frm_scenario_maker
         ' 
         ' NumericUpDown2
         ' 
-        NumericUpDown2.Location = New Point(568, 144)
+        NumericUpDown2.Location = New Point(528, 144)
         NumericUpDown2.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
         NumericUpDown2.Name = "NumericUpDown2"
         NumericUpDown2.Size = New Size(32, 23)
@@ -1321,7 +1487,7 @@ Partial Class frm_scenario_maker
         ' 
         ' NumericUpDown1
         ' 
-        NumericUpDown1.Location = New Point(568, 112)
+        NumericUpDown1.Location = New Point(528, 112)
         NumericUpDown1.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
         NumericUpDown1.Name = "NumericUpDown1"
         NumericUpDown1.Size = New Size(32, 23)
@@ -1330,7 +1496,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_priority_p1
         ' 
-        nud_priority_p1.Location = New Point(568, 80)
+        nud_priority_p1.Location = New Point(528, 80)
         nud_priority_p1.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
         nud_priority_p1.Name = "nud_priority_p1"
         nud_priority_p1.Size = New Size(32, 23)
@@ -1340,7 +1506,7 @@ Partial Class frm_scenario_maker
         ' nud_priority_gaia
         ' 
         nud_priority_gaia.Enabled = False
-        nud_priority_gaia.Location = New Point(568, 48)
+        nud_priority_gaia.Location = New Point(528, 48)
         nud_priority_gaia.Maximum = New Decimal(New Integer() {9, 0, 0, 0})
         nud_priority_gaia.Name = "nud_priority_gaia"
         nud_priority_gaia.Size = New Size(32, 23)
@@ -1350,7 +1516,7 @@ Partial Class frm_scenario_maker
         ' lb_priority_gaia
         ' 
         lb_priority_gaia.AutoSize = True
-        lb_priority_gaia.Location = New Point(560, 16)
+        lb_priority_gaia.Location = New Point(520, 16)
         lb_priority_gaia.Name = "lb_priority_gaia"
         lb_priority_gaia.Size = New Size(45, 15)
         lb_priority_gaia.TabIndex = 156
@@ -1359,7 +1525,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_population_gaia
         ' 
-        nud_population_gaia.Location = New Point(504, 48)
+        nud_population_gaia.Location = New Point(464, 48)
         nud_population_gaia.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_population_gaia.Name = "nud_population_gaia"
         nud_population_gaia.Size = New Size(55, 23)
@@ -1368,7 +1534,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_population_p8
         ' 
-        nud_population_p8.Location = New Point(504, 304)
+        nud_population_p8.Location = New Point(464, 304)
         nud_population_p8.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_population_p8.Name = "nud_population_p8"
         nud_population_p8.Size = New Size(55, 23)
@@ -1377,7 +1543,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_population_p7
         ' 
-        nud_population_p7.Location = New Point(504, 272)
+        nud_population_p7.Location = New Point(464, 272)
         nud_population_p7.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_population_p7.Name = "nud_population_p7"
         nud_population_p7.Size = New Size(55, 23)
@@ -1386,7 +1552,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_population_p6
         ' 
-        nud_population_p6.Location = New Point(504, 240)
+        nud_population_p6.Location = New Point(464, 240)
         nud_population_p6.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_population_p6.Name = "nud_population_p6"
         nud_population_p6.Size = New Size(55, 23)
@@ -1395,7 +1561,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_population_p5
         ' 
-        nud_population_p5.Location = New Point(504, 208)
+        nud_population_p5.Location = New Point(464, 208)
         nud_population_p5.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_population_p5.Name = "nud_population_p5"
         nud_population_p5.Size = New Size(55, 23)
@@ -1404,7 +1570,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_population_p4
         ' 
-        nud_population_p4.Location = New Point(504, 176)
+        nud_population_p4.Location = New Point(464, 176)
         nud_population_p4.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_population_p4.Name = "nud_population_p4"
         nud_population_p4.Size = New Size(55, 23)
@@ -1413,7 +1579,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_population_p3
         ' 
-        nud_population_p3.Location = New Point(504, 144)
+        nud_population_p3.Location = New Point(464, 144)
         nud_population_p3.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_population_p3.Name = "nud_population_p3"
         nud_population_p3.Size = New Size(55, 23)
@@ -1422,7 +1588,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_population_p2
         ' 
-        nud_population_p2.Location = New Point(504, 112)
+        nud_population_p2.Location = New Point(464, 112)
         nud_population_p2.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_population_p2.Name = "nud_population_p2"
         nud_population_p2.Size = New Size(55, 23)
@@ -1432,7 +1598,7 @@ Partial Class frm_scenario_maker
         ' lb_pop
         ' 
         lb_pop.AutoSize = True
-        lb_pop.Location = New Point(504, 16)
+        lb_pop.Location = New Point(464, 16)
         lb_pop.Name = "lb_pop"
         lb_pop.Size = New Size(28, 15)
         lb_pop.TabIndex = 147
@@ -1441,7 +1607,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_population_p1
         ' 
-        nud_population_p1.Location = New Point(504, 80)
+        nud_population_p1.Location = New Point(464, 80)
         nud_population_p1.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_population_p1.Name = "nud_population_p1"
         nud_population_p1.Size = New Size(55, 23)
@@ -1450,7 +1616,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_gold_gaia
         ' 
-        nud_gold_gaia.Location = New Point(440, 48)
+        nud_gold_gaia.Location = New Point(400, 48)
         nud_gold_gaia.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_gold_gaia.Name = "nud_gold_gaia"
         nud_gold_gaia.Size = New Size(55, 23)
@@ -1459,7 +1625,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_gold_p8
         ' 
-        nud_gold_p8.Location = New Point(440, 304)
+        nud_gold_p8.Location = New Point(400, 304)
         nud_gold_p8.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_gold_p8.Name = "nud_gold_p8"
         nud_gold_p8.Size = New Size(55, 23)
@@ -1468,7 +1634,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_gold_p7
         ' 
-        nud_gold_p7.Location = New Point(440, 272)
+        nud_gold_p7.Location = New Point(400, 272)
         nud_gold_p7.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_gold_p7.Name = "nud_gold_p7"
         nud_gold_p7.Size = New Size(55, 23)
@@ -1477,7 +1643,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_gold_p6
         ' 
-        nud_gold_p6.Location = New Point(440, 240)
+        nud_gold_p6.Location = New Point(400, 240)
         nud_gold_p6.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_gold_p6.Name = "nud_gold_p6"
         nud_gold_p6.Size = New Size(55, 23)
@@ -1486,7 +1652,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_gold_p5
         ' 
-        nud_gold_p5.Location = New Point(440, 208)
+        nud_gold_p5.Location = New Point(400, 208)
         nud_gold_p5.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_gold_p5.Name = "nud_gold_p5"
         nud_gold_p5.Size = New Size(55, 23)
@@ -1495,7 +1661,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_gold_p4
         ' 
-        nud_gold_p4.Location = New Point(440, 176)
+        nud_gold_p4.Location = New Point(400, 176)
         nud_gold_p4.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_gold_p4.Name = "nud_gold_p4"
         nud_gold_p4.Size = New Size(55, 23)
@@ -1504,7 +1670,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_gold_p3
         ' 
-        nud_gold_p3.Location = New Point(440, 144)
+        nud_gold_p3.Location = New Point(400, 144)
         nud_gold_p3.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_gold_p3.Name = "nud_gold_p3"
         nud_gold_p3.Size = New Size(55, 23)
@@ -1513,7 +1679,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_gold_p2
         ' 
-        nud_gold_p2.Location = New Point(440, 112)
+        nud_gold_p2.Location = New Point(400, 112)
         nud_gold_p2.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_gold_p2.Name = "nud_gold_p2"
         nud_gold_p2.Size = New Size(55, 23)
@@ -1523,7 +1689,7 @@ Partial Class frm_scenario_maker
         ' lb_gold
         ' 
         lb_gold.AutoSize = True
-        lb_gold.Location = New Point(440, 16)
+        lb_gold.Location = New Point(400, 16)
         lb_gold.Name = "lb_gold"
         lb_gold.Size = New Size(32, 15)
         lb_gold.TabIndex = 137
@@ -1532,7 +1698,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_gold_p1
         ' 
-        nud_gold_p1.Location = New Point(440, 80)
+        nud_gold_p1.Location = New Point(400, 80)
         nud_gold_p1.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_gold_p1.Name = "nud_gold_p1"
         nud_gold_p1.Size = New Size(55, 23)
@@ -1541,7 +1707,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_stone_gaia
         ' 
-        nud_stone_gaia.Location = New Point(376, 48)
+        nud_stone_gaia.Location = New Point(336, 48)
         nud_stone_gaia.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_stone_gaia.Name = "nud_stone_gaia"
         nud_stone_gaia.Size = New Size(55, 23)
@@ -1550,7 +1716,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_stone_p8
         ' 
-        nud_stone_p8.Location = New Point(376, 304)
+        nud_stone_p8.Location = New Point(336, 304)
         nud_stone_p8.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_stone_p8.Name = "nud_stone_p8"
         nud_stone_p8.Size = New Size(55, 23)
@@ -1559,7 +1725,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_stone_p7
         ' 
-        nud_stone_p7.Location = New Point(376, 272)
+        nud_stone_p7.Location = New Point(336, 272)
         nud_stone_p7.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_stone_p7.Name = "nud_stone_p7"
         nud_stone_p7.Size = New Size(55, 23)
@@ -1568,7 +1734,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_stone_p6
         ' 
-        nud_stone_p6.Location = New Point(376, 240)
+        nud_stone_p6.Location = New Point(336, 240)
         nud_stone_p6.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_stone_p6.Name = "nud_stone_p6"
         nud_stone_p6.Size = New Size(55, 23)
@@ -1577,7 +1743,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_stone_p5
         ' 
-        nud_stone_p5.Location = New Point(376, 208)
+        nud_stone_p5.Location = New Point(336, 208)
         nud_stone_p5.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_stone_p5.Name = "nud_stone_p5"
         nud_stone_p5.Size = New Size(55, 23)
@@ -1586,7 +1752,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_stone_p4
         ' 
-        nud_stone_p4.Location = New Point(376, 176)
+        nud_stone_p4.Location = New Point(336, 176)
         nud_stone_p4.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_stone_p4.Name = "nud_stone_p4"
         nud_stone_p4.Size = New Size(55, 23)
@@ -1595,7 +1761,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_stone_p3
         ' 
-        nud_stone_p3.Location = New Point(376, 144)
+        nud_stone_p3.Location = New Point(336, 144)
         nud_stone_p3.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_stone_p3.Name = "nud_stone_p3"
         nud_stone_p3.Size = New Size(55, 23)
@@ -1604,7 +1770,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_stone_p2
         ' 
-        nud_stone_p2.Location = New Point(376, 112)
+        nud_stone_p2.Location = New Point(336, 112)
         nud_stone_p2.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_stone_p2.Name = "nud_stone_p2"
         nud_stone_p2.Size = New Size(55, 23)
@@ -1614,7 +1780,7 @@ Partial Class frm_scenario_maker
         ' lb_stone
         ' 
         lb_stone.AutoSize = True
-        lb_stone.Location = New Point(376, 16)
+        lb_stone.Location = New Point(336, 16)
         lb_stone.Name = "lb_stone"
         lb_stone.Size = New Size(37, 15)
         lb_stone.TabIndex = 127
@@ -1623,7 +1789,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_stone_p1
         ' 
-        nud_stone_p1.Location = New Point(376, 80)
+        nud_stone_p1.Location = New Point(336, 80)
         nud_stone_p1.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_stone_p1.Name = "nud_stone_p1"
         nud_stone_p1.Size = New Size(55, 23)
@@ -1632,7 +1798,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_wood_gaia
         ' 
-        nud_wood_gaia.Location = New Point(312, 48)
+        nud_wood_gaia.Location = New Point(272, 48)
         nud_wood_gaia.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_wood_gaia.Name = "nud_wood_gaia"
         nud_wood_gaia.Size = New Size(55, 23)
@@ -1641,7 +1807,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_wood_p8
         ' 
-        nud_wood_p8.Location = New Point(312, 304)
+        nud_wood_p8.Location = New Point(272, 304)
         nud_wood_p8.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_wood_p8.Name = "nud_wood_p8"
         nud_wood_p8.Size = New Size(55, 23)
@@ -1650,7 +1816,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_wood_p7
         ' 
-        nud_wood_p7.Location = New Point(312, 272)
+        nud_wood_p7.Location = New Point(272, 272)
         nud_wood_p7.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_wood_p7.Name = "nud_wood_p7"
         nud_wood_p7.Size = New Size(55, 23)
@@ -1659,7 +1825,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_wood_p6
         ' 
-        nud_wood_p6.Location = New Point(312, 240)
+        nud_wood_p6.Location = New Point(272, 240)
         nud_wood_p6.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_wood_p6.Name = "nud_wood_p6"
         nud_wood_p6.Size = New Size(55, 23)
@@ -1668,7 +1834,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_wood_p5
         ' 
-        nud_wood_p5.Location = New Point(312, 208)
+        nud_wood_p5.Location = New Point(272, 208)
         nud_wood_p5.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_wood_p5.Name = "nud_wood_p5"
         nud_wood_p5.Size = New Size(55, 23)
@@ -1677,7 +1843,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_wood_p4
         ' 
-        nud_wood_p4.Location = New Point(312, 176)
+        nud_wood_p4.Location = New Point(272, 176)
         nud_wood_p4.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_wood_p4.Name = "nud_wood_p4"
         nud_wood_p4.Size = New Size(55, 23)
@@ -1686,7 +1852,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_wood_p3
         ' 
-        nud_wood_p3.Location = New Point(312, 144)
+        nud_wood_p3.Location = New Point(272, 144)
         nud_wood_p3.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_wood_p3.Name = "nud_wood_p3"
         nud_wood_p3.Size = New Size(55, 23)
@@ -1695,7 +1861,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_wood_p2
         ' 
-        nud_wood_p2.Location = New Point(312, 112)
+        nud_wood_p2.Location = New Point(272, 112)
         nud_wood_p2.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_wood_p2.Name = "nud_wood_p2"
         nud_wood_p2.Size = New Size(55, 23)
@@ -1705,7 +1871,7 @@ Partial Class frm_scenario_maker
         ' lb_wood
         ' 
         lb_wood.AutoSize = True
-        lb_wood.Location = New Point(312, 16)
+        lb_wood.Location = New Point(272, 16)
         lb_wood.Name = "lb_wood"
         lb_wood.Size = New Size(39, 15)
         lb_wood.TabIndex = 117
@@ -1714,7 +1880,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_wood_p1
         ' 
-        nud_wood_p1.Location = New Point(312, 80)
+        nud_wood_p1.Location = New Point(272, 80)
         nud_wood_p1.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_wood_p1.Name = "nud_wood_p1"
         nud_wood_p1.Size = New Size(55, 23)
@@ -1723,7 +1889,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_food_gaia
         ' 
-        nud_food_gaia.Location = New Point(248, 48)
+        nud_food_gaia.Location = New Point(208, 48)
         nud_food_gaia.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_food_gaia.Name = "nud_food_gaia"
         nud_food_gaia.Size = New Size(55, 23)
@@ -1732,7 +1898,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_food_p8
         ' 
-        nud_food_p8.Location = New Point(248, 304)
+        nud_food_p8.Location = New Point(208, 304)
         nud_food_p8.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_food_p8.Name = "nud_food_p8"
         nud_food_p8.Size = New Size(55, 23)
@@ -1741,7 +1907,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_food_p7
         ' 
-        nud_food_p7.Location = New Point(248, 272)
+        nud_food_p7.Location = New Point(208, 272)
         nud_food_p7.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_food_p7.Name = "nud_food_p7"
         nud_food_p7.Size = New Size(55, 23)
@@ -1750,7 +1916,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_food_p6
         ' 
-        nud_food_p6.Location = New Point(248, 240)
+        nud_food_p6.Location = New Point(208, 240)
         nud_food_p6.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_food_p6.Name = "nud_food_p6"
         nud_food_p6.Size = New Size(55, 23)
@@ -1759,7 +1925,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_food_p5
         ' 
-        nud_food_p5.Location = New Point(248, 208)
+        nud_food_p5.Location = New Point(208, 208)
         nud_food_p5.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_food_p5.Name = "nud_food_p5"
         nud_food_p5.Size = New Size(55, 23)
@@ -1768,7 +1934,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_food_p4
         ' 
-        nud_food_p4.Location = New Point(248, 176)
+        nud_food_p4.Location = New Point(208, 176)
         nud_food_p4.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_food_p4.Name = "nud_food_p4"
         nud_food_p4.Size = New Size(55, 23)
@@ -1777,7 +1943,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_food_p3
         ' 
-        nud_food_p3.Location = New Point(248, 144)
+        nud_food_p3.Location = New Point(208, 144)
         nud_food_p3.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_food_p3.Name = "nud_food_p3"
         nud_food_p3.Size = New Size(55, 23)
@@ -1786,7 +1952,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_food_p2
         ' 
-        nud_food_p2.Location = New Point(248, 112)
+        nud_food_p2.Location = New Point(208, 112)
         nud_food_p2.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_food_p2.Name = "nud_food_p2"
         nud_food_p2.Size = New Size(55, 23)
@@ -1796,7 +1962,7 @@ Partial Class frm_scenario_maker
         ' lb_food
         ' 
         lb_food.AutoSize = True
-        lb_food.Location = New Point(248, 16)
+        lb_food.Location = New Point(208, 16)
         lb_food.Name = "lb_food"
         lb_food.Size = New Size(34, 15)
         lb_food.TabIndex = 107
@@ -1805,7 +1971,7 @@ Partial Class frm_scenario_maker
         ' 
         ' nud_food_p1
         ' 
-        nud_food_p1.Location = New Point(248, 80)
+        nud_food_p1.Location = New Point(208, 80)
         nud_food_p1.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
         nud_food_p1.Name = "nud_food_p1"
         nud_food_p1.Size = New Size(55, 23)
@@ -2973,70 +3139,15 @@ Partial Class frm_scenario_maker
         ofd_aoe2de_path.Filter = """Age of Empires 2 DE""|*.exe"
         ofd_aoe2de_path.InitialDirectory = """C:\Program Files (x86)\Steam\steamapps\common\AoE2DE"""
         ' 
-        ' lbx_layer_terrain
+        ' cbx_use_layers
         ' 
-        lbx_layer_terrain.FormattingEnabled = True
-        lbx_layer_terrain.ItemHeight = 15
-        lbx_layer_terrain.Items.AddRange(New Object() {"Beach", "Beach (Non-Navigable)", "Beach (Non-Navigable), Wet Gravel", "Beach (Non-Navigable), Wet Rock", "Beach (Non-Navigable), Wet Sand", "Beach, Ice", "Beach, Vegetation", "Beach, Wet", "Beach, Wet Gravel", "Beach, Wet Rock", "Beach, White", "Beach, White, Vegetation", "Black", "Desert, Cracked", "Desert, Quicksand", "Desert, Sand", "Dirt 1", "Dirt 2", "Dirt 3", "Dirt 4", "Dirt, Mud", "Dirt, Savannah", "Farm", "Farm, 0%", "Farm, 33%", "Farm, 67%", "Farm, Dead", "Forest, Acacia", "Forest, Autumn", "Forest, Autumn Snow", "Forest, Bamboo", "Forest, Baobab", "Forest, Birch", "Forest, Bush", "Forest, Dead", "Forest, Dragon Tree", "Forest, Jungle", "Forest, Mangrove", "Forest, Mediterranean", "Forest, Oak", "Forest, Oak Bush", "Forest, Palm Desert", "Forest, Palm Grass", "Forest, Pine", "Forest, Pine Snow", "Forest, Rainforest", "Forest, Reeds", "Forest, Reeds (Beach)", "Forest, Reeds (Shallow)", "Grass 1", "Grass 2", "Grass 3", "Grass, Dry", "Grass, Foundation", "Grass, Jungle", "Grass, Jungle (Rainforest)", "Grass, Other", "Gravel, Default", "Gravel, Desert", "Ice", "Ice, Navigable", "Rice Farm", "Rice Farm, 0%", "Rice Farm, 33%", "Rice Farm, 66%", "Rice Farm, Dead", "Road", "Road, Broken", "Road, Fungus", "Road, Gravel", "Rock 1", "Shallows", "Shallows, Azure", "Shallows, Mangrove", "Snow", "Snow, Foundation", "Snow, Light", "Snow, Strong", "Swamp, Bogland", "Swamp, Shallows", "Underbrush", "Underbrush, Jungle", "Underbrush, Leaves", "Underbrush, Snow", "Water 2D, Bridge", "Water 2D, Shoreless", "Water, Azure", "Water, Brown", "Water, Deep", "Water, Deep Ocean", "Water, Green", "Water, Medium", "Water, Shallow"})
-        lbx_layer_terrain.Location = New Point(232, 32)
-        lbx_layer_terrain.Name = "lbx_layer_terrain"
-        lbx_layer_terrain.Size = New Size(216, 469)
-        lbx_layer_terrain.TabIndex = 7
-        ' 
-        ' lbl_base_terrain
-        ' 
-        lbl_base_terrain.AutoSize = True
-        lbl_base_terrain.Location = New Point(8, 8)
-        lbl_base_terrain.Name = "lbl_base_terrain"
-        lbl_base_terrain.Size = New Size(69, 15)
-        lbl_base_terrain.TabIndex = 8
-        lbl_base_terrain.Text = "Base Terrain"
-        ' 
-        ' lbl_layer_terrain
-        ' 
-        lbl_layer_terrain.AutoSize = True
-        lbl_layer_terrain.Location = New Point(232, 8)
-        lbl_layer_terrain.Name = "lbl_layer_terrain"
-        lbl_layer_terrain.Size = New Size(73, 15)
-        lbl_layer_terrain.TabIndex = 9
-        lbl_layer_terrain.Text = "Layer Terrain"
-        ' 
-        ' lbl_elevation
-        ' 
-        lbl_elevation.AutoSize = True
-        lbl_elevation.Location = New Point(568, 8)
-        lbl_elevation.Name = "lbl_elevation"
-        lbl_elevation.Size = New Size(55, 15)
-        lbl_elevation.TabIndex = 10
-        lbl_elevation.Text = "Elevation"
-        ' 
-        ' lbl_x_terrain
-        ' 
-        lbl_x_terrain.AutoSize = True
-        lbl_x_terrain.Location = New Point(456, 8)
-        lbl_x_terrain.Name = "lbl_x_terrain"
-        lbl_x_terrain.Size = New Size(14, 15)
-        lbl_x_terrain.TabIndex = 11
-        lbl_x_terrain.Text = "X"
-        ' 
-        ' lbx_y_terrain
-        ' 
-        lbx_y_terrain.FormattingEnabled = True
-        lbx_y_terrain.ItemHeight = 15
-        lbx_y_terrain.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326", "327", "328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353", "354", "355", "356", "357", "358", "359", "360", "361", "362", "363", "364", "365", "366", "367", "368", "369", "370", "371", "372", "373", "374", "375", "376", "377", "378", "379", "380", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "410", "411", "412", "413", "414", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "425", "426", "427", "428", "429", "430", "431", "432", "433", "434", "435", "436", "437", "438", "439", "440", "441", "442", "443", "444", "445", "446", "447", "448", "449", "450", "451", "452", "453", "454", "455", "456", "457", "458", "459", "460", "461", "462", "463", "464", "465", "466", "467", "468", "469", "470", "471", "472", "473", "474", "475", "476", "477", "478", "479"})
-        lbx_y_terrain.Location = New Point(512, 32)
-        lbx_y_terrain.Name = "lbx_y_terrain"
-        lbx_y_terrain.Size = New Size(48, 469)
-        lbx_y_terrain.TabIndex = 12
-        ' 
-        ' lbl_y_terrain
-        ' 
-        lbl_y_terrain.AutoSize = True
-        lbl_y_terrain.Location = New Point(512, 8)
-        lbl_y_terrain.Name = "lbl_y_terrain"
-        lbl_y_terrain.Size = New Size(14, 15)
-        lbl_y_terrain.TabIndex = 13
-        lbl_y_terrain.Text = "Y"
+        cbx_use_layers.AutoSize = True
+        cbx_use_layers.Location = New Point(664, 64)
+        cbx_use_layers.Name = "cbx_use_layers"
+        cbx_use_layers.Size = New Size(105, 19)
+        cbx_use_layers.TabIndex = 14
+        cbx_use_layers.Text = "Layering Mode"
+        cbx_use_layers.UseVisualStyleBackColor = True
         ' 
         ' frm_scenario_maker
         ' 
@@ -3044,7 +3155,9 @@ Partial Class frm_scenario_maker
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1184, 561)
         Controls.Add(tc_main)
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        MaximizeBox = False
         Name = "frm_scenario_maker"
         Text = "AoE2DE Scenario Maker"
         tc_main.ResumeLayout(False)
@@ -3383,4 +3496,14 @@ Partial Class frm_scenario_maker
     Public WithEvents lbx_y_terrain As ListBox
     Public WithEvents lbl_x_terrain As Label
     Public WithEvents lbl_y_terrain As Label
+    Public WithEvents cbx_gaia_ai_personality As ComboBox
+    Public WithEvents cbx_p1_ai_personality As ComboBox
+    Public WithEvents cbx_p8_ai_personality As ComboBox
+    Public WithEvents cbx_p7_ai_personality As ComboBox
+    Public WithEvents cbx_p6_ai_personality As ComboBox
+    Public WithEvents cbx_p5_ai_personality As ComboBox
+    Public WithEvents cbx_p4_ai_personality As ComboBox
+    Public WithEvents cbx_p3_ai_personality As ComboBox
+    Public WithEvents cbx_p2_ai_personality As ComboBox
+    Public WithEvents cbx_use_layers As CheckBox
 End Class
