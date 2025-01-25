@@ -352,29 +352,29 @@ Partial Class frm_scenario_maker
         rbn_standard = New RadioButton()
         tp_options = New TabPage()
         tp_messages = New TabPage()
+        tbx_scout_string_id = New TextBox()
+        tbx_history_string_id = New TextBox()
+        tbx_loss_string_id = New TextBox()
+        tbx_victory_string_id = New TextBox()
+        tbx_hints_string_id = New TextBox()
+        tbx_instructions_string_id = New TextBox()
+        tbx_scout = New TextBox()
+        tbx_history = New TextBox()
+        tbx_loss = New TextBox()
+        tbx_victory = New TextBox()
+        tbx_hints = New TextBox()
+        tbx_instructions = New TextBox()
         tp_cinematics = New TabPage()
+        cbx_instructions_cinematic = New ComboBox()
+        cbx_loss_cinematic = New ComboBox()
+        cbx_victory_cinematic = New ComboBox()
+        cbx_pregame_cinematic = New ComboBox()
         tp_triggers = New TabPage()
         tp_about = New TabPage()
         lbl_aoe2de_sm = New Label()
         ofd_scenario = New OpenFileDialog()
         sfd_scenario = New SaveFileDialog()
         ofd_aoe2de_path = New OpenFileDialog()
-        tbx_instructions = New TextBox()
-        tbx_hints = New TextBox()
-        tbx_victory = New TextBox()
-        tbx_loss = New TextBox()
-        tbx_history = New TextBox()
-        tbx_scout = New TextBox()
-        tbx_instructions_string_id = New TextBox()
-        tbx_hints_string_id = New TextBox()
-        tbx_victory_string_id = New TextBox()
-        tbx_loss_string_id = New TextBox()
-        tbx_history_string_id = New TextBox()
-        tbx_scout_string_id = New TextBox()
-        cbx_pregame_cinematic = New ComboBox()
-        cbx_victory_cinematic = New ComboBox()
-        cbx_loss_cinematic = New ComboBox()
-        cbx_instructions_cinematic = New ComboBox()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
@@ -3885,6 +3885,114 @@ Partial Class frm_scenario_maker
         tp_messages.Text = "Messages"
         tp_messages.UseVisualStyleBackColor = True
         ' 
+        ' tbx_scout_string_id
+        ' 
+        tbx_scout_string_id.Location = New Point(1048, 40)
+        tbx_scout_string_id.Name = "tbx_scout_string_id"
+        tbx_scout_string_id.Size = New Size(200, 23)
+        tbx_scout_string_id.TabIndex = 11
+        ' 
+        ' tbx_history_string_id
+        ' 
+        tbx_history_string_id.Location = New Point(840, 40)
+        tbx_history_string_id.Name = "tbx_history_string_id"
+        tbx_history_string_id.Size = New Size(200, 23)
+        tbx_history_string_id.TabIndex = 10
+        ' 
+        ' tbx_loss_string_id
+        ' 
+        tbx_loss_string_id.Location = New Point(632, 40)
+        tbx_loss_string_id.Name = "tbx_loss_string_id"
+        tbx_loss_string_id.Size = New Size(200, 23)
+        tbx_loss_string_id.TabIndex = 9
+        ' 
+        ' tbx_victory_string_id
+        ' 
+        tbx_victory_string_id.Location = New Point(424, 40)
+        tbx_victory_string_id.Name = "tbx_victory_string_id"
+        tbx_victory_string_id.Size = New Size(200, 23)
+        tbx_victory_string_id.TabIndex = 8
+        ' 
+        ' tbx_hints_string_id
+        ' 
+        tbx_hints_string_id.Location = New Point(216, 40)
+        tbx_hints_string_id.Name = "tbx_hints_string_id"
+        tbx_hints_string_id.Size = New Size(200, 23)
+        tbx_hints_string_id.TabIndex = 7
+        ' 
+        ' tbx_instructions_string_id
+        ' 
+        tbx_instructions_string_id.Location = New Point(8, 40)
+        tbx_instructions_string_id.Name = "tbx_instructions_string_id"
+        tbx_instructions_string_id.Size = New Size(200, 23)
+        tbx_instructions_string_id.TabIndex = 6
+        ' 
+        ' tbx_scout
+        ' 
+        tbx_scout.AcceptsReturn = True
+        tbx_scout.Location = New Point(1048, 72)
+        tbx_scout.MaxLength = 4096
+        tbx_scout.Multiline = True
+        tbx_scout.Name = "tbx_scout"
+        tbx_scout.Size = New Size(200, 432)
+        tbx_scout.TabIndex = 5
+        tbx_scout.Text = "Scout"
+        ' 
+        ' tbx_history
+        ' 
+        tbx_history.AcceptsReturn = True
+        tbx_history.Location = New Point(840, 72)
+        tbx_history.MaxLength = 4096
+        tbx_history.Multiline = True
+        tbx_history.Name = "tbx_history"
+        tbx_history.Size = New Size(200, 432)
+        tbx_history.TabIndex = 4
+        tbx_history.Text = "History"
+        ' 
+        ' tbx_loss
+        ' 
+        tbx_loss.AcceptsReturn = True
+        tbx_loss.Location = New Point(632, 72)
+        tbx_loss.MaxLength = 4096
+        tbx_loss.Multiline = True
+        tbx_loss.Name = "tbx_loss"
+        tbx_loss.Size = New Size(200, 432)
+        tbx_loss.TabIndex = 3
+        tbx_loss.Text = "Loss"
+        ' 
+        ' tbx_victory
+        ' 
+        tbx_victory.AcceptsReturn = True
+        tbx_victory.Location = New Point(424, 72)
+        tbx_victory.MaxLength = 4096
+        tbx_victory.Multiline = True
+        tbx_victory.Name = "tbx_victory"
+        tbx_victory.Size = New Size(200, 432)
+        tbx_victory.TabIndex = 2
+        tbx_victory.Text = "Victory"
+        ' 
+        ' tbx_hints
+        ' 
+        tbx_hints.AcceptsReturn = True
+        tbx_hints.Location = New Point(216, 72)
+        tbx_hints.MaxLength = 4096
+        tbx_hints.Multiline = True
+        tbx_hints.Name = "tbx_hints"
+        tbx_hints.Size = New Size(200, 432)
+        tbx_hints.TabIndex = 1
+        tbx_hints.Text = "Hints"
+        ' 
+        ' tbx_instructions
+        ' 
+        tbx_instructions.AcceptsReturn = True
+        tbx_instructions.Location = New Point(8, 72)
+        tbx_instructions.MaxLength = 4096
+        tbx_instructions.Multiline = True
+        tbx_instructions.Name = "tbx_instructions"
+        tbx_instructions.Size = New Size(200, 432)
+        tbx_instructions.TabIndex = 0
+        tbx_instructions.Text = "Instructions"
+        ' 
         ' tp_cinematics
         ' 
         tp_cinematics.Controls.Add(cbx_instructions_cinematic)
@@ -3898,6 +4006,46 @@ Partial Class frm_scenario_maker
         tp_cinematics.TabIndex = 8
         tp_cinematics.Text = "Cinematics"
         tp_cinematics.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_instructions_cinematic
+        ' 
+        cbx_instructions_cinematic.FormattingEnabled = True
+        cbx_instructions_cinematic.Items.AddRange(New Object() {"None"})
+        cbx_instructions_cinematic.Location = New Point(392, 8)
+        cbx_instructions_cinematic.Name = "cbx_instructions_cinematic"
+        cbx_instructions_cinematic.Size = New Size(121, 23)
+        cbx_instructions_cinematic.TabIndex = 3
+        cbx_instructions_cinematic.Text = "Instructions Map"
+        ' 
+        ' cbx_loss_cinematic
+        ' 
+        cbx_loss_cinematic.FormattingEnabled = True
+        cbx_loss_cinematic.Items.AddRange(New Object() {"None", "aoeiide_titlevideo.wmv"})
+        cbx_loss_cinematic.Location = New Point(264, 8)
+        cbx_loss_cinematic.Name = "cbx_loss_cinematic"
+        cbx_loss_cinematic.Size = New Size(121, 23)
+        cbx_loss_cinematic.TabIndex = 2
+        cbx_loss_cinematic.Text = "Loss"
+        ' 
+        ' cbx_victory_cinematic
+        ' 
+        cbx_victory_cinematic.FormattingEnabled = True
+        cbx_victory_cinematic.Items.AddRange(New Object() {"None", "aoeiide_titlevideo.wmv"})
+        cbx_victory_cinematic.Location = New Point(136, 8)
+        cbx_victory_cinematic.Name = "cbx_victory_cinematic"
+        cbx_victory_cinematic.Size = New Size(121, 23)
+        cbx_victory_cinematic.TabIndex = 1
+        cbx_victory_cinematic.Text = "Victory"
+        ' 
+        ' cbx_pregame_cinematic
+        ' 
+        cbx_pregame_cinematic.FormattingEnabled = True
+        cbx_pregame_cinematic.Items.AddRange(New Object() {"None", "aoeiide_titlevideo.wmv"})
+        cbx_pregame_cinematic.Location = New Point(8, 8)
+        cbx_pregame_cinematic.Name = "cbx_pregame_cinematic"
+        cbx_pregame_cinematic.Size = New Size(121, 23)
+        cbx_pregame_cinematic.TabIndex = 0
+        cbx_pregame_cinematic.Text = "Pregame"
         ' 
         ' tp_triggers
         ' 
@@ -3949,154 +4097,6 @@ Partial Class frm_scenario_maker
         ofd_aoe2de_path.FileName = "AoE2DE_s.exe"
         ofd_aoe2de_path.Filter = """Age of Empires 2 DE""|*.exe"
         ofd_aoe2de_path.InitialDirectory = """C:\Program Files (x86)\Steam\steamapps\common\AoE2DE"""
-        ' 
-        ' tbx_instructions
-        ' 
-        tbx_instructions.AcceptsReturn = True
-        tbx_instructions.Location = New Point(8, 72)
-        tbx_instructions.MaxLength = 4096
-        tbx_instructions.Multiline = True
-        tbx_instructions.Name = "tbx_instructions"
-        tbx_instructions.Size = New Size(200, 432)
-        tbx_instructions.TabIndex = 0
-        tbx_instructions.Text = "Instructions"
-        ' 
-        ' tbx_hints
-        ' 
-        tbx_hints.AcceptsReturn = True
-        tbx_hints.Location = New Point(216, 72)
-        tbx_hints.MaxLength = 4096
-        tbx_hints.Multiline = True
-        tbx_hints.Name = "tbx_hints"
-        tbx_hints.Size = New Size(200, 432)
-        tbx_hints.TabIndex = 1
-        tbx_hints.Text = "Hints"
-        ' 
-        ' tbx_victory
-        ' 
-        tbx_victory.AcceptsReturn = True
-        tbx_victory.Location = New Point(424, 72)
-        tbx_victory.MaxLength = 4096
-        tbx_victory.Multiline = True
-        tbx_victory.Name = "tbx_victory"
-        tbx_victory.Size = New Size(200, 432)
-        tbx_victory.TabIndex = 2
-        tbx_victory.Text = "Victory"
-        ' 
-        ' tbx_loss
-        ' 
-        tbx_loss.AcceptsReturn = True
-        tbx_loss.Location = New Point(632, 72)
-        tbx_loss.MaxLength = 4096
-        tbx_loss.Multiline = True
-        tbx_loss.Name = "tbx_loss"
-        tbx_loss.Size = New Size(200, 432)
-        tbx_loss.TabIndex = 3
-        tbx_loss.Text = "Loss"
-        ' 
-        ' tbx_history
-        ' 
-        tbx_history.AcceptsReturn = True
-        tbx_history.Location = New Point(840, 72)
-        tbx_history.MaxLength = 4096
-        tbx_history.Multiline = True
-        tbx_history.Name = "tbx_history"
-        tbx_history.Size = New Size(200, 432)
-        tbx_history.TabIndex = 4
-        tbx_history.Text = "History"
-        ' 
-        ' tbx_scout
-        ' 
-        tbx_scout.AcceptsReturn = True
-        tbx_scout.Location = New Point(1048, 72)
-        tbx_scout.MaxLength = 4096
-        tbx_scout.Multiline = True
-        tbx_scout.Name = "tbx_scout"
-        tbx_scout.Size = New Size(200, 432)
-        tbx_scout.TabIndex = 5
-        tbx_scout.Text = "Scout"
-        ' 
-        ' tbx_instructions_string_id
-        ' 
-        tbx_instructions_string_id.Location = New Point(8, 40)
-        tbx_instructions_string_id.Name = "tbx_instructions_string_id"
-        tbx_instructions_string_id.Size = New Size(200, 23)
-        tbx_instructions_string_id.TabIndex = 6
-        ' 
-        ' tbx_hints_string_id
-        ' 
-        tbx_hints_string_id.Location = New Point(216, 40)
-        tbx_hints_string_id.Name = "tbx_hints_string_id"
-        tbx_hints_string_id.Size = New Size(200, 23)
-        tbx_hints_string_id.TabIndex = 7
-        ' 
-        ' tbx_victory_string_id
-        ' 
-        tbx_victory_string_id.Location = New Point(424, 40)
-        tbx_victory_string_id.Name = "tbx_victory_string_id"
-        tbx_victory_string_id.Size = New Size(200, 23)
-        tbx_victory_string_id.TabIndex = 8
-        ' 
-        ' tbx_loss_string_id
-        ' 
-        tbx_loss_string_id.Location = New Point(632, 40)
-        tbx_loss_string_id.Name = "tbx_loss_string_id"
-        tbx_loss_string_id.Size = New Size(200, 23)
-        tbx_loss_string_id.TabIndex = 9
-        ' 
-        ' tbx_history_string_id
-        ' 
-        tbx_history_string_id.Location = New Point(840, 40)
-        tbx_history_string_id.Name = "tbx_history_string_id"
-        tbx_history_string_id.Size = New Size(200, 23)
-        tbx_history_string_id.TabIndex = 10
-        ' 
-        ' tbx_scout_string_id
-        ' 
-        tbx_scout_string_id.Location = New Point(1048, 40)
-        tbx_scout_string_id.Name = "tbx_scout_string_id"
-        tbx_scout_string_id.Size = New Size(200, 23)
-        tbx_scout_string_id.TabIndex = 11
-        ' 
-        ' cbx_pregame_cinematic
-        ' 
-        cbx_pregame_cinematic.FormattingEnabled = True
-        cbx_pregame_cinematic.Items.AddRange(New Object() {"None", "aoeiide_titlevideo.wmv"})
-        cbx_pregame_cinematic.Location = New Point(8, 8)
-        cbx_pregame_cinematic.Name = "cbx_pregame_cinematic"
-        cbx_pregame_cinematic.Size = New Size(121, 23)
-        cbx_pregame_cinematic.TabIndex = 0
-        cbx_pregame_cinematic.Text = "Pregame"
-        ' 
-        ' cbx_victory_cinematic
-        ' 
-        cbx_victory_cinematic.FormattingEnabled = True
-        cbx_victory_cinematic.Items.AddRange(New Object() {"None", "aoeiide_titlevideo.wmv"})
-        cbx_victory_cinematic.Location = New Point(136, 8)
-        cbx_victory_cinematic.Name = "cbx_victory_cinematic"
-        cbx_victory_cinematic.Size = New Size(121, 23)
-        cbx_victory_cinematic.TabIndex = 1
-        cbx_victory_cinematic.Text = "Victory"
-        ' 
-        ' cbx_loss_cinematic
-        ' 
-        cbx_loss_cinematic.FormattingEnabled = True
-        cbx_loss_cinematic.Items.AddRange(New Object() {"None", "aoeiide_titlevideo.wmv"})
-        cbx_loss_cinematic.Location = New Point(264, 8)
-        cbx_loss_cinematic.Name = "cbx_loss_cinematic"
-        cbx_loss_cinematic.Size = New Size(121, 23)
-        cbx_loss_cinematic.TabIndex = 2
-        cbx_loss_cinematic.Text = "Loss"
-        ' 
-        ' cbx_instructions_cinematic
-        ' 
-        cbx_instructions_cinematic.FormattingEnabled = True
-        cbx_instructions_cinematic.Items.AddRange(New Object() {"None"})
-        cbx_instructions_cinematic.Location = New Point(392, 8)
-        cbx_instructions_cinematic.Name = "cbx_instructions_cinematic"
-        cbx_instructions_cinematic.Size = New Size(121, 23)
-        cbx_instructions_cinematic.TabIndex = 3
-        cbx_instructions_cinematic.Text = "Instructions Map"
         ' 
         ' frm_scenario_maker
         ' 

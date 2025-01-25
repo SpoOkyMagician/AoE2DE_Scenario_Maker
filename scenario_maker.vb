@@ -1129,4 +1129,22 @@
 
     End Sub
 
+    ' [TABS: CINEMATICS CODE]
+
+    Public Sub cbx_pregame_cinematic_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_pregame_cinematic.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_victory_cinematic_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_victory_cinematic.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_loss_cinematic_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_loss_cinematic.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_instructions_cinematic_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_instructions_cinematic.SelectedIndexChanged
+
+    End Sub
+
 End Class
