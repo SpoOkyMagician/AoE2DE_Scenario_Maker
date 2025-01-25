@@ -1,4 +1,10 @@
-﻿Public Class frm_scenario_maker
+﻿Imports System
+Imports System.IO
+Imports System.IO.Compression
+
+Public Class frm_scenario_maker
+
+    ' ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     ' let's initialize these variables globally so we don't have to worry about scope...
     ' note: I made everything public as well...
@@ -37,7 +43,84 @@
     ' space for triggers...
     ' space for about...? (may not need.)
 
-    ' [APPLICATION LOAD CODE]
+    ' ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    ' here is an example function call that I would use in a seperate program. also, here is where I got/found the code. many thanks.
+
+    ' source: http://pont.ist/vbnet-compress-decompress-byte-array/
+
+    ' F_Compress_File("D:\scenario_tests\_ALL_SCENARIO_STUFF_OBJECTS_MINUS_HEADER_EDIT_TRIGGERS.aoe2scenario", "D:\scenario_tests\_ALL_SCENARIO_STUFF_OBJECTS_MINUS_HEADER_EDIT_TRIGGERS_OUTPUT.aoe2scenario")
+    ' F_Decompress_File("D:\scenario_tests\_ALL_SCENARIO_STUFF_OBJECTS_MINUS_HEADER_OUTPUT.aoe2scenario", "D:\scenario_tests\_ALL_SCENARIO_STUFF_OBJECTS_MINUS_HEADER.aoe2scenario") ' we need to reverse this...
+
+    ' Rough Explanation: When a scenario is created in AoE2DE, it is compressed. You will have to decompress it to view it's real contents.
+    ' First, you will have to remove the 'header' section. (You do need to save this. It is still important. Although, it may change depending on what you change.)
+    ' You can refer to this: https://github.com/KSneijders/AoE2ScenarioParser/tree/fc1444956e21fd949158365ecd597f5b98afeeed/AoE2ScenarioParser/versions/DE
+    ' You may want to use a hex editor of some kind. I use HxD: https://mh-nexus.de/en/hxd/
+    ' I am also going to include a file called: BYTE_NOTES.txt (This is a bit useful if you need some help with how this works. You may need to do research if you do not.)
+    ' the 'header' section is generally a bit after the creators name so, you can see this visually in a text editor.
+    ' If you remove this section of the bytes, you can then decompress the scenario and see it's actual content.
+    ' Note: Yes, you will still see data/bytes in the file afterwords. That is normal. From here, you would have to follow the format, make changes carefully,
+    ' and re-add the 'header' section. (If you change anything related to the header in there, you will also have to change those bytes too...)
+    ' Once you are done with this, you can compress the scenario and then add the header back in to the top of the file.
+    ' You should be able to load the scenario. If you made any mistakes, you may not be able to.
+
+    Function F_Decompress_File(my_in_file As String, my_out_file As String) As Object
+
+        Dim toDecompress As Byte()
+        Dim nowDecompressed As Byte()
+        toDecompress = File.ReadAllBytes(my_in_file)
+
+        Using inputStream As New MemoryStream(toDecompress)
+
+            Using outputStream As New MemoryStream()
+
+                Using decompressionStream As New DeflateStream(inputStream, CompressionMode.Decompress)
+
+                    decompressionStream.CopyTo(outputStream)
+
+                End Using
+
+                nowDecompressed = outputStream.ToArray
+
+            End Using
+
+        End Using
+
+        File.WriteAllBytes(my_out_file, nowDecompressed)
+        Return Nothing
+
+    End Function
+
+    Function F_Compress_File(my_in_file As String, my_out_file As String) As Object
+
+        Dim toCompress As Byte()
+        Dim nowCompressed As Byte()
+        toCompress = File.ReadAllBytes(my_in_file)
+
+        Using inputStream As New MemoryStream(toCompress)
+
+            Using outputStream As New MemoryStream()
+
+                Using compressionStream As New DeflateStream(outputStream, CompressionMode.Compress)
+
+                    inputStream.CopyTo(compressionStream)
+
+                End Using
+
+                nowCompressed = outputStream.ToArray()
+                File.WriteAllBytes(my_out_file, nowCompressed)
+
+            End Using
+
+        End Using
+
+        Return Nothing
+
+    End Function
+
+    ' ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    ' [APPLICATION LOAD CODE] ------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Public Sub frm_scenario_maker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' on startup, be sure to define all your variables and reset all gui to a vaild minimum scenario...
@@ -49,7 +132,7 @@
         End Try
     End Sub
 
-    ' [TAB: FILE CODE]
+    ' [TAB: FILE CODE] -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Public Sub btn_new_scenario_Click(sender As Object, e As EventArgs) Handles btn_new_scenario.Click
         ' on clicking new, be sure to define all your variables and reset all gui to a vaild minimum scenario...
@@ -93,7 +176,7 @@
         End Try
     End Sub
 
-    ' [TAB: MAP CODE]
+    ' [TAB: MAP CODE] --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Public Sub cbx_map_size_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_map_size.SelectedIndexChanged
 
@@ -123,7 +206,7 @@
 
     End Sub
 
-    ' [TAB: TERRAIN CODE]
+    ' [TAB: TERRAIN CODE] ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Public Sub lbx_base_terrain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_base_terrain.SelectedIndexChanged
 
@@ -157,7 +240,7 @@
 
     End Sub
 
-    ' [TAB: PLAYERS CODE]
+    ' [TAB: PLAYERS CODE] ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Public Sub cbx_total_players_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_total_players.SelectedIndexChanged
 
@@ -739,7 +822,7 @@
 
     End Sub
 
-    ' [TABS: UNITS CODE]
+    ' [TABS: UNITS CODE] -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Public Sub lbx_objects_1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_objects_1.SelectedIndexChanged
 
@@ -749,7 +832,7 @@
 
     End Sub
 
-    ' [TABS: DIPLOMACY CODE]
+    ' [TABS: DIPLOMACY CODE] -------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Public Sub btn_p1_to_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p2_diplo.Click
 
@@ -1055,7 +1138,7 @@
 
     End Sub
 
-    ' [TABS: VICTORY CODE]
+    ' [TABS: VICTORY CODE] ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Public Sub rbn_standard_CheckedChanged(sender As Object, e As EventArgs) Handles rbn_standard.CheckedChanged
 
@@ -1129,7 +1212,7 @@
 
     End Sub
 
-    ' [TABS: CINEMATICS CODE]
+    ' [TABS: CINEMATICS CODE] ------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Public Sub cbx_pregame_cinematic_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_pregame_cinematic.SelectedIndexChanged
 
@@ -1146,5 +1229,7 @@
     Public Sub cbx_instructions_cinematic_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_instructions_cinematic.SelectedIndexChanged
 
     End Sub
+
+    ' ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 End Class
