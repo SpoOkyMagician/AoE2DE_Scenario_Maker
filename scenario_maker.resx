@@ -117,6 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lbl_important_note_terrain.Text" xml:space="preserve">
+    <value>Important Note: For your sanity sake, DO NOT USE THIS UNLESS YOU HAVE TO!
+You are limited to 32766 characters and may break placed terrains.
+I would not use this at all until a better solution is found...</value>
+  </data>
+  <data name="lbl_important_note_units.Text" xml:space="preserve">
+    <value>Important Note: For your sanity sake, DO NOT USE THIS UNLESS YOU HAVE TO!
+You are limited to 32766 characters and may break placed objects.
+I would not use this at all until a better solution is found...</value>
+  </data>
   <metadata name="ofd_scenario.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
