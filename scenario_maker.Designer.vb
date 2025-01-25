@@ -371,6 +371,10 @@ Partial Class frm_scenario_maker
         tbx_loss_string_id = New TextBox()
         tbx_history_string_id = New TextBox()
         tbx_scout_string_id = New TextBox()
+        cbx_pregame_cinematic = New ComboBox()
+        cbx_victory_cinematic = New ComboBox()
+        cbx_loss_cinematic = New ComboBox()
+        cbx_instructions_cinematic = New ComboBox()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
@@ -435,6 +439,7 @@ Partial Class frm_scenario_maker
         tp_diplomacy.SuspendLayout()
         tp_victory.SuspendLayout()
         tp_messages.SuspendLayout()
+        tp_cinematics.SuspendLayout()
         tp_about.SuspendLayout()
         SuspendLayout()
         ' 
@@ -3882,6 +3887,10 @@ Partial Class frm_scenario_maker
         ' 
         ' tp_cinematics
         ' 
+        tp_cinematics.Controls.Add(cbx_instructions_cinematic)
+        tp_cinematics.Controls.Add(cbx_loss_cinematic)
+        tp_cinematics.Controls.Add(cbx_victory_cinematic)
+        tp_cinematics.Controls.Add(cbx_pregame_cinematic)
         tp_cinematics.Location = New Point(4, 24)
         tp_cinematics.Name = "tp_cinematics"
         tp_cinematics.Padding = New Padding(3)
@@ -4049,6 +4058,46 @@ Partial Class frm_scenario_maker
         tbx_scout_string_id.Size = New Size(200, 23)
         tbx_scout_string_id.TabIndex = 11
         ' 
+        ' cbx_pregame_cinematic
+        ' 
+        cbx_pregame_cinematic.FormattingEnabled = True
+        cbx_pregame_cinematic.Items.AddRange(New Object() {"None", "aoeiide_titlevideo.wmv"})
+        cbx_pregame_cinematic.Location = New Point(8, 8)
+        cbx_pregame_cinematic.Name = "cbx_pregame_cinematic"
+        cbx_pregame_cinematic.Size = New Size(121, 23)
+        cbx_pregame_cinematic.TabIndex = 0
+        cbx_pregame_cinematic.Text = "Pregame"
+        ' 
+        ' cbx_victory_cinematic
+        ' 
+        cbx_victory_cinematic.FormattingEnabled = True
+        cbx_victory_cinematic.Items.AddRange(New Object() {"None", "aoeiide_titlevideo.wmv"})
+        cbx_victory_cinematic.Location = New Point(136, 8)
+        cbx_victory_cinematic.Name = "cbx_victory_cinematic"
+        cbx_victory_cinematic.Size = New Size(121, 23)
+        cbx_victory_cinematic.TabIndex = 1
+        cbx_victory_cinematic.Text = "Victory"
+        ' 
+        ' cbx_loss_cinematic
+        ' 
+        cbx_loss_cinematic.FormattingEnabled = True
+        cbx_loss_cinematic.Items.AddRange(New Object() {"None", "aoeiide_titlevideo.wmv"})
+        cbx_loss_cinematic.Location = New Point(264, 8)
+        cbx_loss_cinematic.Name = "cbx_loss_cinematic"
+        cbx_loss_cinematic.Size = New Size(121, 23)
+        cbx_loss_cinematic.TabIndex = 2
+        cbx_loss_cinematic.Text = "Loss"
+        ' 
+        ' cbx_instructions_cinematic
+        ' 
+        cbx_instructions_cinematic.FormattingEnabled = True
+        cbx_instructions_cinematic.Items.AddRange(New Object() {"None"})
+        cbx_instructions_cinematic.Location = New Point(392, 8)
+        cbx_instructions_cinematic.Name = "cbx_instructions_cinematic"
+        cbx_instructions_cinematic.Size = New Size(121, 23)
+        cbx_instructions_cinematic.TabIndex = 3
+        cbx_instructions_cinematic.Text = "Instructions Map"
+        ' 
         ' frm_scenario_maker
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -4132,6 +4181,7 @@ Partial Class frm_scenario_maker
         tp_victory.PerformLayout()
         tp_messages.ResumeLayout(False)
         tp_messages.PerformLayout()
+        tp_cinematics.ResumeLayout(False)
         tp_about.ResumeLayout(False)
         tp_about.PerformLayout()
         ResumeLayout(False)
@@ -4486,4 +4536,8 @@ Partial Class frm_scenario_maker
     Public WithEvents tbx_hints_string_id As TextBox
     Public WithEvents tbx_instructions_string_id As TextBox
     Public WithEvents tbx_scout_string_id As TextBox
+    Public WithEvents cbx_instructions_cinematic As ComboBox
+    Public WithEvents cbx_loss_cinematic As ComboBox
+    Public WithEvents cbx_victory_cinematic As ComboBox
+    Public WithEvents cbx_pregame_cinematic As ComboBox
 End Class
