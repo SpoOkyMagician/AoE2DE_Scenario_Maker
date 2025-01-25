@@ -369,12 +369,26 @@ Partial Class frm_scenario_maker
         cbx_loss_cinematic = New ComboBox()
         cbx_victory_cinematic = New ComboBox()
         cbx_pregame_cinematic = New ComboBox()
-        tp_triggers = New TabPage()
+        tp_trigger = New TabPage()
         tp_about = New TabPage()
         lbl_aoe2de_sm = New Label()
         ofd_scenario = New OpenFileDialog()
         sfd_scenario = New SaveFileDialog()
         ofd_aoe2de_path = New OpenFileDialog()
+        lbx_trigger_conditions = New ListBox()
+        lbx_trigger_effects = New ListBox()
+        tbx_trigger_name = New TextBox()
+        cbx_trigger_starting_state = New CheckBox()
+        cbx_trigger_looping = New CheckBox()
+        tbx_trigger_description = New TextBox()
+        tbx_trigger_short_description = New TextBox()
+        tbx_trigger_description_string_id = New TextBox()
+        tbx_trigger_short_description_string_id = New TextBox()
+        cbx_trigger_display_as_objective = New CheckBox()
+        cbx_trigger_display_on_screen = New CheckBox()
+        lbx_created_trigger = New ListBox()
+        btn_trigger_add_condition = New Button()
+        btn_trigger_add_effect = New Button()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
@@ -440,6 +454,7 @@ Partial Class frm_scenario_maker
         tp_victory.SuspendLayout()
         tp_messages.SuspendLayout()
         tp_cinematics.SuspendLayout()
+        tp_trigger.SuspendLayout()
         tp_about.SuspendLayout()
         SuspendLayout()
         ' 
@@ -455,7 +470,7 @@ Partial Class frm_scenario_maker
         tc_main.Controls.Add(tp_options)
         tc_main.Controls.Add(tp_messages)
         tc_main.Controls.Add(tp_cinematics)
-        tc_main.Controls.Add(tp_triggers)
+        tc_main.Controls.Add(tp_trigger)
         tc_main.Controls.Add(tp_about)
         tc_main.ImeMode = ImeMode.NoControl
         tc_main.Location = New Point(12, 12)
@@ -662,6 +677,7 @@ Partial Class frm_scenario_maker
         lbx_placed_terrains.ItemHeight = 15
         lbx_placed_terrains.Location = New Point(664, 32)
         lbx_placed_terrains.Name = "lbx_placed_terrains"
+        lbx_placed_terrains.ScrollAlwaysVisible = True
         lbx_placed_terrains.Size = New Size(152, 469)
         lbx_placed_terrains.TabIndex = 16
         ' 
@@ -2584,6 +2600,7 @@ Partial Class frm_scenario_maker
         lbx_placed_objects.ItemHeight = 15
         lbx_placed_objects.Location = New Point(600, 32)
         lbx_placed_objects.Name = "lbx_placed_objects"
+        lbx_placed_objects.ScrollAlwaysVisible = True
         lbx_placed_objects.Size = New Size(152, 469)
         lbx_placed_objects.TabIndex = 15
         ' 
@@ -3934,6 +3951,7 @@ Partial Class frm_scenario_maker
         tbx_scout.MaxLength = 4096
         tbx_scout.Multiline = True
         tbx_scout.Name = "tbx_scout"
+        tbx_scout.ScrollBars = ScrollBars.Vertical
         tbx_scout.Size = New Size(200, 432)
         tbx_scout.TabIndex = 5
         tbx_scout.Text = "Scout"
@@ -3945,6 +3963,7 @@ Partial Class frm_scenario_maker
         tbx_history.MaxLength = 4096
         tbx_history.Multiline = True
         tbx_history.Name = "tbx_history"
+        tbx_history.ScrollBars = ScrollBars.Vertical
         tbx_history.Size = New Size(200, 432)
         tbx_history.TabIndex = 4
         tbx_history.Text = "History"
@@ -3956,6 +3975,7 @@ Partial Class frm_scenario_maker
         tbx_loss.MaxLength = 4096
         tbx_loss.Multiline = True
         tbx_loss.Name = "tbx_loss"
+        tbx_loss.ScrollBars = ScrollBars.Vertical
         tbx_loss.Size = New Size(200, 432)
         tbx_loss.TabIndex = 3
         tbx_loss.Text = "Loss"
@@ -3967,6 +3987,7 @@ Partial Class frm_scenario_maker
         tbx_victory.MaxLength = 4096
         tbx_victory.Multiline = True
         tbx_victory.Name = "tbx_victory"
+        tbx_victory.ScrollBars = ScrollBars.Vertical
         tbx_victory.Size = New Size(200, 432)
         tbx_victory.TabIndex = 2
         tbx_victory.Text = "Victory"
@@ -3978,6 +3999,7 @@ Partial Class frm_scenario_maker
         tbx_hints.MaxLength = 4096
         tbx_hints.Multiline = True
         tbx_hints.Name = "tbx_hints"
+        tbx_hints.ScrollBars = ScrollBars.Vertical
         tbx_hints.Size = New Size(200, 432)
         tbx_hints.TabIndex = 1
         tbx_hints.Text = "Hints"
@@ -3989,6 +4011,7 @@ Partial Class frm_scenario_maker
         tbx_instructions.MaxLength = 4096
         tbx_instructions.Multiline = True
         tbx_instructions.Name = "tbx_instructions"
+        tbx_instructions.ScrollBars = ScrollBars.Vertical
         tbx_instructions.Size = New Size(200, 432)
         tbx_instructions.TabIndex = 0
         tbx_instructions.Text = "Instructions"
@@ -4047,15 +4070,29 @@ Partial Class frm_scenario_maker
         cbx_pregame_cinematic.TabIndex = 0
         cbx_pregame_cinematic.Text = "Pregame"
         ' 
-        ' tp_triggers
+        ' tp_trigger
         ' 
-        tp_triggers.Location = New Point(4, 24)
-        tp_triggers.Name = "tp_triggers"
-        tp_triggers.Padding = New Padding(3)
-        tp_triggers.Size = New Size(1428, 509)
-        tp_triggers.TabIndex = 9
-        tp_triggers.Text = "Triggers"
-        tp_triggers.UseVisualStyleBackColor = True
+        tp_trigger.Controls.Add(btn_trigger_add_effect)
+        tp_trigger.Controls.Add(btn_trigger_add_condition)
+        tp_trigger.Controls.Add(lbx_created_trigger)
+        tp_trigger.Controls.Add(cbx_trigger_display_on_screen)
+        tp_trigger.Controls.Add(cbx_trigger_display_as_objective)
+        tp_trigger.Controls.Add(tbx_trigger_short_description_string_id)
+        tp_trigger.Controls.Add(tbx_trigger_description_string_id)
+        tp_trigger.Controls.Add(tbx_trigger_short_description)
+        tp_trigger.Controls.Add(tbx_trigger_description)
+        tp_trigger.Controls.Add(cbx_trigger_looping)
+        tp_trigger.Controls.Add(cbx_trigger_starting_state)
+        tp_trigger.Controls.Add(tbx_trigger_name)
+        tp_trigger.Controls.Add(lbx_trigger_effects)
+        tp_trigger.Controls.Add(lbx_trigger_conditions)
+        tp_trigger.Location = New Point(4, 24)
+        tp_trigger.Name = "tp_trigger"
+        tp_trigger.Padding = New Padding(3)
+        tp_trigger.Size = New Size(1428, 509)
+        tp_trigger.TabIndex = 9
+        tp_trigger.Text = "Trigger"
+        tp_trigger.UseVisualStyleBackColor = True
         ' 
         ' tp_about
         ' 
@@ -4097,6 +4134,145 @@ Partial Class frm_scenario_maker
         ofd_aoe2de_path.FileName = "AoE2DE_s.exe"
         ofd_aoe2de_path.Filter = """Age of Empires 2 DE""|*.exe"
         ofd_aoe2de_path.InitialDirectory = """C:\Program Files (x86)\Steam\steamapps\common\AoE2DE"""
+        ' 
+        ' lbx_trigger_conditions
+        ' 
+        lbx_trigger_conditions.FormattingEnabled = True
+        lbx_trigger_conditions.ItemHeight = 15
+        lbx_trigger_conditions.Items.AddRange(New Object() {"None", "Accumulate Attribute", "AI Signal", "Bring Object to Area", "Bring Object to Object", "Building is Trading", "Capture Object", "Chance", "Condition Joiner", "Condition Separator", "Destroy Object", "Difficulty Level", "Diplomacy State", "Display Timer Triggered", "Multiplayer AI Signal", "Object Has Action", "Object Has Target", "Object HP", "Object Not Visible", "Object Selected", "Object Selected (Multiplayer)", "Object Visible", "Object Visible (Multiplayer)", "Objects in Area", "Own Fewer Objects", "Own Objects", "Player Defeated", "Research Technology", "Researching Tech", "Script Call", "Technology State", "Timer", "Units Garrisoned", "Variable Value", "Victory Timer"})
+        lbx_trigger_conditions.Location = New Point(8, 32)
+        lbx_trigger_conditions.Name = "lbx_trigger_conditions"
+        lbx_trigger_conditions.Size = New Size(216, 469)
+        lbx_trigger_conditions.TabIndex = 0
+        ' 
+        ' lbx_trigger_effects
+        ' 
+        lbx_trigger_effects.FormattingEnabled = True
+        lbx_trigger_effects.ItemHeight = 15
+        lbx_trigger_effects.Items.AddRange(New Object() {"None", "Acknowledge AI Signal", "Acknowledge AI Signal (Multiplayer)", "Activate Trigger", "AI Script Goal", "Attack Move", "Change Civilization Name", "Change Color Mood", "Change Diplomacy", "Change Object Armor", "Change Object Attack", "Change Object Caption", "Change Object Civilization Name", "Change Object Cost", "Change Object Description", "Change Object HP", "Change Object Icon", "Change Object Name", "Change Object Player Color", "Change Object Player Name", "Change Object Range", "Change Object Speed", "Change Object Stance", "Change Ownership", "Change Player Color", "Change Player Name", "Change Technology Cost", "Change Technology Description", "Change Technology Hotkey", "Change Technology Icon", "Change Technology Location", "Change Technology Name", "Change Technology Research Time", "Change Train Location", "Change Variable", "Change View", "Clear Instructions", "Clear Timer", "Create Garrisoned Object", "Create Object", "Create Object Armor", "Create Object Attack", "Damage Object", "Deactivate Trigger", "Declare Victory", "Delete Key", "Disable Object Deletion", "Disable Object Selection", "Disable Technology Stacking", "Disable Unit Targeting", "Display Instructions", "Display Timer", "Enable Object Deletion", "Enable Object Selection", "Enable Technology Stacking", "Enable Unit Targeting", "Enable/Disable Object", "Enable/Disable Technology", "Freeze Object", "Heal Object", "Initiate Research", "Kill Object", "Load Key Value", "Lock Gate", "Modify Attribute", "Modify Attribute By Variable", "Modify Resource", "Modify Resource By Variable", "Modify Variable By Attribute", "Modify Variable By Resource", "Patrol", "Place Foundation", "Play Sound", "Remove Object", "Replace Object", "Research Technology", "Script Call", "Send Chat", "Set Building Gather Point", "Set Object Cost", "Set Player Visibility", "Stop Object", "Store Key Value", "Task Object", "Teleport Object", "Train Unit", "Tribute", "Unload", "Unlock Gate", "Use Advanced Buttons"})
+        lbx_trigger_effects.Location = New Point(232, 32)
+        lbx_trigger_effects.Name = "lbx_trigger_effects"
+        lbx_trigger_effects.Size = New Size(216, 469)
+        lbx_trigger_effects.TabIndex = 1
+        ' 
+        ' tbx_trigger_name
+        ' 
+        tbx_trigger_name.Location = New Point(456, 32)
+        tbx_trigger_name.MaxLength = 240
+        tbx_trigger_name.Name = "tbx_trigger_name"
+        tbx_trigger_name.Size = New Size(184, 23)
+        tbx_trigger_name.TabIndex = 2
+        tbx_trigger_name.Text = "Trigger Name"
+        ' 
+        ' cbx_trigger_starting_state
+        ' 
+        cbx_trigger_starting_state.AutoSize = True
+        cbx_trigger_starting_state.Location = New Point(456, 64)
+        cbx_trigger_starting_state.Name = "cbx_trigger_starting_state"
+        cbx_trigger_starting_state.Size = New Size(135, 19)
+        cbx_trigger_starting_state.TabIndex = 3
+        cbx_trigger_starting_state.Text = "Trigger Starting State"
+        cbx_trigger_starting_state.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_trigger_looping
+        ' 
+        cbx_trigger_looping.AutoSize = True
+        cbx_trigger_looping.Location = New Point(456, 88)
+        cbx_trigger_looping.Name = "cbx_trigger_looping"
+        cbx_trigger_looping.Size = New Size(109, 19)
+        cbx_trigger_looping.TabIndex = 4
+        cbx_trigger_looping.Text = "Trigger Looping"
+        cbx_trigger_looping.UseVisualStyleBackColor = True
+        ' 
+        ' tbx_trigger_description
+        ' 
+        tbx_trigger_description.AcceptsReturn = True
+        tbx_trigger_description.Location = New Point(648, 88)
+        tbx_trigger_description.MaxLength = 4095
+        tbx_trigger_description.Multiline = True
+        tbx_trigger_description.Name = "tbx_trigger_description"
+        tbx_trigger_description.ScrollBars = ScrollBars.Vertical
+        tbx_trigger_description.Size = New Size(200, 416)
+        tbx_trigger_description.TabIndex = 5
+        tbx_trigger_description.Text = "Trigger Description"
+        ' 
+        ' tbx_trigger_short_description
+        ' 
+        tbx_trigger_short_description.AcceptsReturn = True
+        tbx_trigger_short_description.Location = New Point(856, 88)
+        tbx_trigger_short_description.MaxLength = 240
+        tbx_trigger_short_description.Multiline = True
+        tbx_trigger_short_description.Name = "tbx_trigger_short_description"
+        tbx_trigger_short_description.ScrollBars = ScrollBars.Vertical
+        tbx_trigger_short_description.Size = New Size(200, 416)
+        tbx_trigger_short_description.TabIndex = 6
+        tbx_trigger_short_description.Text = "Short Description"
+        ' 
+        ' tbx_trigger_description_string_id
+        ' 
+        tbx_trigger_description_string_id.Location = New Point(648, 32)
+        tbx_trigger_description_string_id.MaxLength = 240
+        tbx_trigger_description_string_id.Name = "tbx_trigger_description_string_id"
+        tbx_trigger_description_string_id.Size = New Size(200, 23)
+        tbx_trigger_description_string_id.TabIndex = 7
+        tbx_trigger_description_string_id.Text = "Trigger Description String ID"
+        ' 
+        ' tbx_trigger_short_description_string_id
+        ' 
+        tbx_trigger_short_description_string_id.Location = New Point(856, 32)
+        tbx_trigger_short_description_string_id.MaxLength = 240
+        tbx_trigger_short_description_string_id.Name = "tbx_trigger_short_description_string_id"
+        tbx_trigger_short_description_string_id.Size = New Size(200, 23)
+        tbx_trigger_short_description_string_id.TabIndex = 8
+        tbx_trigger_short_description_string_id.Text = "Short Description String ID"
+        ' 
+        ' cbx_trigger_display_as_objective
+        ' 
+        cbx_trigger_display_as_objective.AutoSize = True
+        cbx_trigger_display_as_objective.Location = New Point(648, 64)
+        cbx_trigger_display_as_objective.Name = "cbx_trigger_display_as_objective"
+        cbx_trigger_display_as_objective.Size = New Size(131, 19)
+        cbx_trigger_display_as_objective.TabIndex = 9
+        cbx_trigger_display_as_objective.Text = "Display as Objective"
+        cbx_trigger_display_as_objective.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_trigger_display_on_screen
+        ' 
+        cbx_trigger_display_on_screen.AutoSize = True
+        cbx_trigger_display_on_screen.Location = New Point(856, 64)
+        cbx_trigger_display_on_screen.Name = "cbx_trigger_display_on_screen"
+        cbx_trigger_display_on_screen.Size = New Size(119, 19)
+        cbx_trigger_display_on_screen.TabIndex = 10
+        cbx_trigger_display_on_screen.Text = "Display on Screen"
+        cbx_trigger_display_on_screen.UseVisualStyleBackColor = True
+        ' 
+        ' lbx_created_trigger
+        ' 
+        lbx_created_trigger.FormattingEnabled = True
+        lbx_created_trigger.ItemHeight = 15
+        lbx_created_trigger.Location = New Point(1064, 32)
+        lbx_created_trigger.Name = "lbx_created_trigger"
+        lbx_created_trigger.ScrollAlwaysVisible = True
+        lbx_created_trigger.Size = New Size(352, 469)
+        lbx_created_trigger.TabIndex = 16
+        ' 
+        ' btn_trigger_add_condition
+        ' 
+        btn_trigger_add_condition.Location = New Point(456, 112)
+        btn_trigger_add_condition.Name = "btn_trigger_add_condition"
+        btn_trigger_add_condition.Size = New Size(184, 23)
+        btn_trigger_add_condition.TabIndex = 17
+        btn_trigger_add_condition.Text = "Add Condition"
+        btn_trigger_add_condition.UseVisualStyleBackColor = True
+        ' 
+        ' btn_trigger_add_effect
+        ' 
+        btn_trigger_add_effect.Location = New Point(456, 144)
+        btn_trigger_add_effect.Name = "btn_trigger_add_effect"
+        btn_trigger_add_effect.Size = New Size(184, 23)
+        btn_trigger_add_effect.TabIndex = 18
+        btn_trigger_add_effect.Text = "Add Effect"
+        btn_trigger_add_effect.UseVisualStyleBackColor = True
         ' 
         ' frm_scenario_maker
         ' 
@@ -4182,6 +4358,8 @@ Partial Class frm_scenario_maker
         tp_messages.ResumeLayout(False)
         tp_messages.PerformLayout()
         tp_cinematics.ResumeLayout(False)
+        tp_trigger.ResumeLayout(False)
+        tp_trigger.PerformLayout()
         tp_about.ResumeLayout(False)
         tp_about.PerformLayout()
         ResumeLayout(False)
@@ -4324,7 +4502,7 @@ Partial Class frm_scenario_maker
     Public WithEvents tp_options As TabPage
     Public WithEvents tp_messages As TabPage
     Public WithEvents tp_cinematics As TabPage
-    Public WithEvents tp_triggers As TabPage
+    Public WithEvents tp_trigger As TabPage
     Friend WithEvents tp_about As TabPage
     Public WithEvents cbx_unit_player As ComboBox
     Public WithEvents lbl_middle As Label
@@ -4540,4 +4718,18 @@ Partial Class frm_scenario_maker
     Public WithEvents cbx_loss_cinematic As ComboBox
     Public WithEvents cbx_victory_cinematic As ComboBox
     Public WithEvents cbx_pregame_cinematic As ComboBox
+    Public WithEvents lbx_trigger_conditions As ListBox
+    Public WithEvents lbx_trigger_effects As ListBox
+    Public WithEvents cbx_trigger_looping As CheckBox
+    Public WithEvents cbx_trigger_starting_state As CheckBox
+    Public WithEvents tbx_trigger_name As TextBox
+    Public WithEvents tbx_trigger_description As TextBox
+    Public WithEvents tbx_trigger_short_description As TextBox
+    Public WithEvents tbx_trigger_short_description_string_id As TextBox
+    Public WithEvents tbx_trigger_description_string_id As TextBox
+    Public WithEvents cbx_trigger_display_on_screen As CheckBox
+    Public WithEvents cbx_trigger_display_as_objective As CheckBox
+    Public WithEvents btn_trigger_add_effect As Button
+    Public WithEvents btn_trigger_add_condition As Button
+    Public WithEvents lbx_created_trigger As ListBox
 End Class
