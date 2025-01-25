@@ -1055,4 +1055,78 @@
 
     End Sub
 
+    ' [TABS: VICTORY CODE]
+
+    Public Sub rbn_standard_CheckedChanged(sender As Object, e As EventArgs) Handles rbn_standard.CheckedChanged
+
+    End Sub
+
+    Public Sub rbn_conquest_CheckedChanged(sender As Object, e As EventArgs) Handles rbn_conquest.CheckedChanged
+
+    End Sub
+
+    Public Sub rbn_score_CheckedChanged(sender As Object, e As EventArgs) Handles rbn_score.CheckedChanged
+
+    End Sub
+
+    Public Sub rbn_time_limit_CheckedChanged(sender As Object, e As EventArgs) Handles rbn_time_limit.CheckedChanged
+
+    End Sub
+
+    Public Sub rbn_custom_CheckedChanged(sender As Object, e As EventArgs) Handles rbn_custom.CheckedChanged
+
+    End Sub
+
+    Public Sub rbn_secondary_game_mode_CheckedChanged(sender As Object, e As EventArgs) Handles rbn_secondary_game_mode.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_score_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_score.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_time_limit_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_time_limit.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_conquest_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_conquest.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_exploration_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_exploration.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_relics_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_relics.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_all_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_all.CheckedChanged
+
+    End Sub
+
+    Public Sub tbx_exploration_total_TextChanged(sender As Object, e As EventArgs) Handles tbx_exploration_total.TextChanged
+
+    End Sub
+
+    Public Sub tbx_relics_total_TextChanged(sender As Object, e As EventArgs) Handles tbx_relics_total.TextChanged
+
+    End Sub
+
+    Public Sub cbx_empire_wars_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_empire_wars.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_sudden_death_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_sudden_death.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_regicide_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_regicide.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_king_of_the_hill_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_king_of_the_hill.CheckedChanged
+
+    End Sub
+
 End Class

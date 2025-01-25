@@ -332,6 +332,24 @@ Partial Class frm_scenario_maker
         lbl_middle = New Label()
         btn_p1_to_p2_diplo = New Button()
         tp_victory = New TabPage()
+        cbx_king_of_the_hill = New CheckBox()
+        cbx_regicide = New CheckBox()
+        cbx_sudden_death = New CheckBox()
+        cbx_empire_wars = New CheckBox()
+        rbn_secondary_game_mode = New RadioButton()
+        tbx_relics_total = New TextBox()
+        tbx_exploration_total = New TextBox()
+        cbx_all = New CheckBox()
+        cbx_relics = New CheckBox()
+        cbx_exploration = New CheckBox()
+        cbx_conquest = New CheckBox()
+        rbn_custom = New RadioButton()
+        cbx_time_limit = New ComboBox()
+        rbn_time_limit = New RadioButton()
+        cbx_score = New ComboBox()
+        rbn_score = New RadioButton()
+        rbn_conquest = New RadioButton()
+        rbn_standard = New RadioButton()
         tp_options = New TabPage()
         tp_messages = New TabPage()
         tp_cinematics = New TabPage()
@@ -403,6 +421,7 @@ Partial Class frm_scenario_maker
         CType(nud_p1_food, ComponentModel.ISupportInitialize).BeginInit()
         tp_units.SuspendLayout()
         tp_diplomacy.SuspendLayout()
+        tp_victory.SuspendLayout()
         tp_about.SuspendLayout()
         SuspendLayout()
         ' 
@@ -3610,6 +3629,24 @@ Partial Class frm_scenario_maker
         ' 
         ' tp_victory
         ' 
+        tp_victory.Controls.Add(cbx_king_of_the_hill)
+        tp_victory.Controls.Add(cbx_regicide)
+        tp_victory.Controls.Add(cbx_sudden_death)
+        tp_victory.Controls.Add(cbx_empire_wars)
+        tp_victory.Controls.Add(rbn_secondary_game_mode)
+        tp_victory.Controls.Add(tbx_relics_total)
+        tp_victory.Controls.Add(tbx_exploration_total)
+        tp_victory.Controls.Add(cbx_all)
+        tp_victory.Controls.Add(cbx_relics)
+        tp_victory.Controls.Add(cbx_exploration)
+        tp_victory.Controls.Add(cbx_conquest)
+        tp_victory.Controls.Add(rbn_custom)
+        tp_victory.Controls.Add(cbx_time_limit)
+        tp_victory.Controls.Add(rbn_time_limit)
+        tp_victory.Controls.Add(cbx_score)
+        tp_victory.Controls.Add(rbn_score)
+        tp_victory.Controls.Add(rbn_conquest)
+        tp_victory.Controls.Add(rbn_standard)
         tp_victory.Location = New Point(4, 24)
         tp_victory.Name = "tp_victory"
         tp_victory.Padding = New Padding(3)
@@ -3617,6 +3654,186 @@ Partial Class frm_scenario_maker
         tp_victory.TabIndex = 5
         tp_victory.Text = "Victory"
         tp_victory.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_king_of_the_hill
+        ' 
+        cbx_king_of_the_hill.AutoSize = True
+        cbx_king_of_the_hill.Location = New Point(488, 112)
+        cbx_king_of_the_hill.Name = "cbx_king_of_the_hill"
+        cbx_king_of_the_hill.Size = New Size(105, 19)
+        cbx_king_of_the_hill.TabIndex = 17
+        cbx_king_of_the_hill.Text = "King of the Hill"
+        cbx_king_of_the_hill.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_regicide
+        ' 
+        cbx_regicide.AutoSize = True
+        cbx_regicide.Location = New Point(488, 88)
+        cbx_regicide.Name = "cbx_regicide"
+        cbx_regicide.Size = New Size(71, 19)
+        cbx_regicide.TabIndex = 16
+        cbx_regicide.Text = "Regicide"
+        cbx_regicide.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_sudden_death
+        ' 
+        cbx_sudden_death.AutoSize = True
+        cbx_sudden_death.Location = New Point(488, 64)
+        cbx_sudden_death.Name = "cbx_sudden_death"
+        cbx_sudden_death.Size = New Size(100, 19)
+        cbx_sudden_death.TabIndex = 15
+        cbx_sudden_death.Text = "Sudden Death"
+        cbx_sudden_death.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_empire_wars
+        ' 
+        cbx_empire_wars.AutoSize = True
+        cbx_empire_wars.Location = New Point(488, 40)
+        cbx_empire_wars.Name = "cbx_empire_wars"
+        cbx_empire_wars.Size = New Size(92, 19)
+        cbx_empire_wars.TabIndex = 14
+        cbx_empire_wars.Text = "Empire Wars"
+        cbx_empire_wars.UseVisualStyleBackColor = True
+        ' 
+        ' rbn_secondary_game_mode
+        ' 
+        rbn_secondary_game_mode.AutoSize = True
+        rbn_secondary_game_mode.Location = New Point(8, 160)
+        rbn_secondary_game_mode.Name = "rbn_secondary_game_mode"
+        rbn_secondary_game_mode.Size = New Size(148, 19)
+        rbn_secondary_game_mode.TabIndex = 13
+        rbn_secondary_game_mode.Text = "Secondary Game Mode"
+        rbn_secondary_game_mode.UseVisualStyleBackColor = True
+        ' 
+        ' tbx_relics_total
+        ' 
+        tbx_relics_total.Location = New Point(440, 88)
+        tbx_relics_total.MaxLength = 3
+        tbx_relics_total.Name = "tbx_relics_total"
+        tbx_relics_total.Size = New Size(40, 23)
+        tbx_relics_total.TabIndex = 12
+        tbx_relics_total.Text = "0"
+        ' 
+        ' tbx_exploration_total
+        ' 
+        tbx_exploration_total.Location = New Point(440, 64)
+        tbx_exploration_total.MaxLength = 3
+        tbx_exploration_total.Name = "tbx_exploration_total"
+        tbx_exploration_total.Size = New Size(40, 23)
+        tbx_exploration_total.TabIndex = 11
+        tbx_exploration_total.Text = "0"
+        ' 
+        ' cbx_all
+        ' 
+        cbx_all.AutoSize = True
+        cbx_all.Location = New Point(352, 112)
+        cbx_all.Name = "cbx_all"
+        cbx_all.Size = New Size(45, 19)
+        cbx_all.TabIndex = 10
+        cbx_all.Text = "All?"
+        cbx_all.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_relics
+        ' 
+        cbx_relics.AutoSize = True
+        cbx_relics.Location = New Point(352, 88)
+        cbx_relics.Name = "cbx_relics"
+        cbx_relics.Size = New Size(56, 19)
+        cbx_relics.TabIndex = 9
+        cbx_relics.Text = "Relics"
+        cbx_relics.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_exploration
+        ' 
+        cbx_exploration.AutoSize = True
+        cbx_exploration.Location = New Point(352, 64)
+        cbx_exploration.Name = "cbx_exploration"
+        cbx_exploration.Size = New Size(86, 19)
+        cbx_exploration.TabIndex = 8
+        cbx_exploration.Text = "Exploration"
+        cbx_exploration.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_conquest
+        ' 
+        cbx_conquest.AutoSize = True
+        cbx_conquest.Location = New Point(352, 40)
+        cbx_conquest.Name = "cbx_conquest"
+        cbx_conquest.Size = New Size(77, 19)
+        cbx_conquest.TabIndex = 7
+        cbx_conquest.Text = "Conquest"
+        cbx_conquest.UseVisualStyleBackColor = True
+        ' 
+        ' rbn_custom
+        ' 
+        rbn_custom.AutoSize = True
+        rbn_custom.Location = New Point(8, 136)
+        rbn_custom.Name = "rbn_custom"
+        rbn_custom.Size = New Size(67, 19)
+        rbn_custom.TabIndex = 6
+        rbn_custom.Text = "Custom"
+        rbn_custom.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_time_limit
+        ' 
+        cbx_time_limit.FormattingEnabled = True
+        cbx_time_limit.Items.AddRange(New Object() {"300 Years (25 Minutes)", "500 Years (40 Minutes)", "700 Years (1 Hour)", "900 Years (1 Hour, 15 Minutes)", "1100 Years (1 Hour, 30 Minutes)", "1300 Years (1 Hour, 45 Minutes)", "1500 Years (2 Hours)"})
+        cbx_time_limit.Location = New Point(152, 40)
+        cbx_time_limit.Name = "cbx_time_limit"
+        cbx_time_limit.Size = New Size(192, 23)
+        cbx_time_limit.TabIndex = 5
+        cbx_time_limit.Text = "Time Limit"
+        ' 
+        ' rbn_time_limit
+        ' 
+        rbn_time_limit.AutoSize = True
+        rbn_time_limit.Location = New Point(8, 112)
+        rbn_time_limit.Name = "rbn_time_limit"
+        rbn_time_limit.Size = New Size(81, 19)
+        rbn_time_limit.TabIndex = 4
+        rbn_time_limit.Text = "Time Limit"
+        rbn_time_limit.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_score
+        ' 
+        cbx_score.FormattingEnabled = True
+        cbx_score.Items.AddRange(New Object() {"4000", "5000", "6000", "7000", "8000", "9000", "10000", "11000", "12000", "13000", "14000"})
+        cbx_score.Location = New Point(88, 40)
+        cbx_score.Name = "cbx_score"
+        cbx_score.Size = New Size(56, 23)
+        cbx_score.TabIndex = 3
+        cbx_score.Text = "Score"
+        ' 
+        ' rbn_score
+        ' 
+        rbn_score.AutoSize = True
+        rbn_score.Location = New Point(8, 88)
+        rbn_score.Name = "rbn_score"
+        rbn_score.Size = New Size(54, 19)
+        rbn_score.TabIndex = 2
+        rbn_score.Text = "Score"
+        rbn_score.UseVisualStyleBackColor = True
+        ' 
+        ' rbn_conquest
+        ' 
+        rbn_conquest.AutoSize = True
+        rbn_conquest.Location = New Point(8, 64)
+        rbn_conquest.Name = "rbn_conquest"
+        rbn_conquest.Size = New Size(76, 19)
+        rbn_conquest.TabIndex = 1
+        rbn_conquest.Text = "Conquest"
+        rbn_conquest.UseVisualStyleBackColor = True
+        ' 
+        ' rbn_standard
+        ' 
+        rbn_standard.AutoSize = True
+        rbn_standard.Checked = True
+        rbn_standard.Location = New Point(8, 40)
+        rbn_standard.Name = "rbn_standard"
+        rbn_standard.Size = New Size(72, 19)
+        rbn_standard.TabIndex = 0
+        rbn_standard.TabStop = True
+        rbn_standard.Text = "Standard"
+        rbn_standard.UseVisualStyleBackColor = True
         ' 
         ' tp_options
         ' 
@@ -3778,6 +3995,8 @@ Partial Class frm_scenario_maker
         tp_units.PerformLayout()
         tp_diplomacy.ResumeLayout(False)
         tp_diplomacy.PerformLayout()
+        tp_victory.ResumeLayout(False)
+        tp_victory.PerformLayout()
         tp_about.ResumeLayout(False)
         tp_about.PerformLayout()
         ResumeLayout(False)
@@ -4102,4 +4321,22 @@ Partial Class frm_scenario_maker
     Public WithEvents lbx_placed_terrains As ListBox
     Public WithEvents lbl_important_note_units As Label
     Public WithEvents lbl_important_note_terrain As Label
+    Public WithEvents rbn_standard As RadioButton
+    Public WithEvents rbn_conquest As RadioButton
+    Public WithEvents cbx_score As ComboBox
+    Public WithEvents rbn_score As RadioButton
+    Public WithEvents cbx_time_limit As ComboBox
+    Public WithEvents rbn_time_limit As RadioButton
+    Public WithEvents rbn_custom As RadioButton
+    Public WithEvents tbx_exploration_total As TextBox
+    Public WithEvents cbx_all As CheckBox
+    Public WithEvents cbx_relics As CheckBox
+    Public WithEvents cbx_exploration As CheckBox
+    Public WithEvents cbx_conquest As CheckBox
+    Public WithEvents tbx_relics_total As TextBox
+    Public WithEvents rbn_secondary_game_mode As RadioButton
+    Public WithEvents cbx_regicide As CheckBox
+    Public WithEvents cbx_sudden_death As CheckBox
+    Public WithEvents cbx_empire_wars As CheckBox
+    Public WithEvents cbx_king_of_the_hill As CheckBox
 End Class
