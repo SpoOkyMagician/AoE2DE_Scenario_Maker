@@ -145,7 +145,11 @@
 
     End Sub
 
-    Public Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Public Sub lbx_placed_terrains_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_placed_terrains.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub btn_set_terrain_Click(sender As Object, e As EventArgs) Handles btn_set_terrain.Click
 
     End Sub
 
@@ -732,6 +736,322 @@
     End Sub
 
     Public Sub cbx_p8_lock_personality_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p8_lock_personality.CheckedChanged
+
+    End Sub
+
+    ' [TABS: UNITS CODE]
+
+    Public Sub lbx_objects_1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_objects_1.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub lbx_objects_2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_objects_2.SelectedIndexChanged
+
+    End Sub
+
+    ' [TABS: DIPLOMACY CODE]
+
+    Public Sub btn_p1_to_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p2_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p1_to_p3_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p3_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p1_to_p4_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p4_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p1_to_p5_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p5_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p1_to_p6_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p6_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p1_to_p7_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p7_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p1_to_p8_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p8_diplo.Click
+
+    End Sub
+
+    Public Sub cbx_p1_av_me_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p1_av_me.CheckedChanged
+
+    End Sub
+
+    Public Sub btn_p2_to_p1_diplo_Click(sender As Object, e As EventArgs) Handles btn_p2_to_p1_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p2_to_p3_diplo_Click(sender As Object, e As EventArgs) Handles btn_p2_to_p3_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p2_to_p4_diplo_Click(sender As Object, e As EventArgs) Handles btn_p2_to_p4_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p2_to_p5_diplo_Click(sender As Object, e As EventArgs) Handles btn_p2_to_p5_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p2_to_p6_diplo_Click(sender As Object, e As EventArgs) Handles btn_p2_to_p6_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p2_to_p7_diplo_Click(sender As Object, e As EventArgs) Handles btn_p2_to_p7_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p2_to_p8_diplo_Click(sender As Object, e As EventArgs) Handles btn_p2_to_p8_diplo.Click
+
+    End Sub
+
+    Public Sub cbx_p2_av_me_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p2_av_me.CheckedChanged
+
+    End Sub
+
+    Public Sub btn_p3_to_p1_diplo_Click(sender As Object, e As EventArgs) Handles btn_p3_to_p1_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p3_to_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p3_to_p2_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p3_to_p4_diplo_Click(sender As Object, e As EventArgs) Handles btn_p3_to_p4_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p3_to_p5_diplo_Click(sender As Object, e As EventArgs) Handles btn_p3_to_p5_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p3_to_p6_diplo_Click(sender As Object, e As EventArgs) Handles btn_p3_to_p6_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p3_to_p7_diplo_Click(sender As Object, e As EventArgs) Handles btn_p3_to_p7_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p3_to_p8_diplo_Click(sender As Object, e As EventArgs) Handles btn_p3_to_p8_diplo.Click
+
+    End Sub
+
+    Public Sub cbx_p3_av_me_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p3_av_me.CheckedChanged
+
+    End Sub
+
+    Public Sub btn_p4_to_p1_diplo_Click(sender As Object, e As EventArgs) Handles btn_p4_to_p1_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p4_to_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p4_to_p2_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p4_to_p3_diplo_Click(sender As Object, e As EventArgs) Handles btn_p4_to_p3_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p4_to_p5_diplo_Click(sender As Object, e As EventArgs) Handles btn_p4_to_p5_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p4_to_p6_diplo_Click(sender As Object, e As EventArgs) Handles btn_p4_to_p6_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p4_to_p7_diplo_Click(sender As Object, e As EventArgs) Handles btn_p4_to_p7_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p4_to_p8_diplo_Click(sender As Object, e As EventArgs) Handles btn_p4_to_p8_diplo.Click
+
+    End Sub
+
+    Public Sub cbx_p4_av_me_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p4_av_me.CheckedChanged
+
+    End Sub
+
+    Public Sub btn_p5_to_p1_diplo_Click(sender As Object, e As EventArgs) Handles btn_p5_to_p1_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p5_to_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p5_to_p2_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p5_to_p3_diplo_Click(sender As Object, e As EventArgs) Handles btn_p5_to_p3_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p5_to_p4_diplo_Click(sender As Object, e As EventArgs) Handles btn_p5_to_p4_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p5_to_p6_diplo_Click(sender As Object, e As EventArgs) Handles btn_p5_to_p6_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p5_to_p7_diplo_Click(sender As Object, e As EventArgs) Handles btn_p5_to_p7_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p5_to_p8_diplo_Click(sender As Object, e As EventArgs) Handles btn_p5_to_p8_diplo.Click
+
+    End Sub
+
+    Public Sub cbx_p5_av_me_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p5_av_me.CheckedChanged
+
+    End Sub
+
+    Public Sub btn_p6_to_p1_diplo_Click(sender As Object, e As EventArgs) Handles btn_p6_to_p1_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p6_to_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p6_to_p2_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p6_to_p3_diplo_Click(sender As Object, e As EventArgs) Handles btn_p6_to_p3_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p6_to_p4_diplo_Click(sender As Object, e As EventArgs) Handles btn_p6_to_p4_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p6_to_p5_diplo_Click(sender As Object, e As EventArgs) Handles btn_p6_to_p5_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p6_to_p7_diplo_Click(sender As Object, e As EventArgs) Handles btn_p6_to_p7_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p6_to_p8_diplo_Click(sender As Object, e As EventArgs) Handles btn_p6_to_p8_diplo.Click
+
+    End Sub
+
+    Public Sub cbx_p6_av_me_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p6_av_me.CheckedChanged
+
+    End Sub
+
+    Public Sub btn_p7_to_p1_diplo_Click(sender As Object, e As EventArgs) Handles btn_p7_to_p1_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p7_to_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p7_to_p2_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p7_to_p3_diplo_Click(sender As Object, e As EventArgs) Handles btn_p7_to_p3_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p7_to_p4_diplo_Click(sender As Object, e As EventArgs) Handles btn_p7_to_p4_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p7_to_p5_diplo_Click(sender As Object, e As EventArgs) Handles btn_p7_to_p5_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p7_to_p6_diplo_Click(sender As Object, e As EventArgs) Handles btn_p7_to_p6_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p7_to_p8_diplo_Click(sender As Object, e As EventArgs) Handles btn_p7_to_p8_diplo.Click
+
+    End Sub
+
+    Public Sub cbx_p7_av_me_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p7_av_me.CheckedChanged
+
+    End Sub
+
+    Public Sub btn_p8_to_p1_diplo_Click(sender As Object, e As EventArgs) Handles btn_p8_to_p1_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p8_to_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p8_to_p2_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p8_to_p3_diplo_Click(sender As Object, e As EventArgs) Handles btn_p8_to_p3_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p8_to_p4_diplo_Click(sender As Object, e As EventArgs) Handles btn_p8_to_p4_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p8_to_p5_diplo_Click(sender As Object, e As EventArgs) Handles btn_p8_to_p5_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p8_to_p6_diplo_Click(sender As Object, e As EventArgs) Handles btn_p8_to_p6_diplo.Click
+
+    End Sub
+
+    Public Sub btn_p8_to_p7_diplo_Click(sender As Object, e As EventArgs) Handles btn_p8_to_p7_diplo.Click
+
+    End Sub
+
+    Public Sub cbx_p8_av_me_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p8_av_me.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p1_av_them_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p1_av_them.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p2_av_them_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p2_av_them.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p3_av_them_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p3_av_them.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p4_av_them_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p4_av_them.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p5_av_them_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p5_av_them.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p6_av_them_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p6_av_them.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p7_av_them_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p7_av_them.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_p8_av_them_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_p8_av_them.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_max_teams_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_max_teams.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_lock_teams_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_lock_teams.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_choose_teams_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_choose_teams.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_random_starting_points_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_random_starting_points.CheckedChanged
 
     End Sub
 

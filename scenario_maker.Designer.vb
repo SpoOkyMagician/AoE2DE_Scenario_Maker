@@ -40,6 +40,8 @@ Partial Class frm_scenario_maker
         cbx_color_mood = New ComboBox()
         cbx_ai_map_type = New ComboBox()
         tp_terrain = New TabPage()
+        lbl_important_note_terrain = New Label()
+        lbx_placed_terrains = New ListBox()
         cbx_use_layers = New CheckBox()
         lbl_y_terrain = New Label()
         lbx_y_terrain = New ListBox()
@@ -49,7 +51,7 @@ Partial Class frm_scenario_maker
         lbl_base_terrain = New Label()
         lbx_layer_terrain = New ListBox()
         lbx_elevation = New ListBox()
-        Button1 = New Button()
+        btn_set_terrain = New Button()
         lbx_x_terrain = New ListBox()
         lbx_base_terrain = New ListBox()
         tp_players = New TabPage()
@@ -222,6 +224,7 @@ Partial Class frm_scenario_maker
         nud_p1_food = New NumericUpDown()
         cbx_total_players = New ComboBox()
         tp_units = New TabPage()
+        lbl_important_note_units = New Label()
         lbx_objects_2 = New ListBox()
         lbx_placed_objects = New ListBox()
         lbx_map_y = New ListBox()
@@ -338,9 +341,6 @@ Partial Class frm_scenario_maker
         ofd_scenario = New OpenFileDialog()
         sfd_scenario = New SaveFileDialog()
         ofd_aoe2de_path = New OpenFileDialog()
-        lbl_important_note_units = New Label()
-        lbx_placed_terrains = New ListBox()
-        lbl_important_note_terrain = New Label()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
@@ -599,7 +599,7 @@ Partial Class frm_scenario_maker
         tp_terrain.Controls.Add(lbl_base_terrain)
         tp_terrain.Controls.Add(lbx_layer_terrain)
         tp_terrain.Controls.Add(lbx_elevation)
-        tp_terrain.Controls.Add(Button1)
+        tp_terrain.Controls.Add(btn_set_terrain)
         tp_terrain.Controls.Add(lbx_x_terrain)
         tp_terrain.Controls.Add(lbx_base_terrain)
         tp_terrain.Location = New Point(4, 24)
@@ -608,6 +608,25 @@ Partial Class frm_scenario_maker
         tp_terrain.TabIndex = 11
         tp_terrain.Text = "Terrain"
         tp_terrain.UseVisualStyleBackColor = True
+        ' 
+        ' lbl_important_note_terrain
+        ' 
+        lbl_important_note_terrain.AutoSize = True
+        lbl_important_note_terrain.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lbl_important_note_terrain.Location = New Point(824, 88)
+        lbl_important_note_terrain.Name = "lbl_important_note_terrain"
+        lbl_important_note_terrain.Size = New Size(562, 63)
+        lbl_important_note_terrain.TabIndex = 18
+        lbl_important_note_terrain.Text = resources.GetString("lbl_important_note_terrain.Text")
+        ' 
+        ' lbx_placed_terrains
+        ' 
+        lbx_placed_terrains.FormattingEnabled = True
+        lbx_placed_terrains.ItemHeight = 15
+        lbx_placed_terrains.Location = New Point(664, 32)
+        lbx_placed_terrains.Name = "lbx_placed_terrains"
+        lbx_placed_terrains.Size = New Size(152, 469)
+        lbx_placed_terrains.TabIndex = 16
         ' 
         ' cbx_use_layers
         ' 
@@ -694,14 +713,14 @@ Partial Class frm_scenario_maker
         lbx_elevation.Size = New Size(88, 109)
         lbx_elevation.TabIndex = 6
         ' 
-        ' Button1
+        ' btn_set_terrain
         ' 
-        Button1.Location = New Point(824, 32)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(75, 25)
-        Button1.TabIndex = 5
-        Button1.Text = "Set"
-        Button1.UseVisualStyleBackColor = True
+        btn_set_terrain.Location = New Point(824, 32)
+        btn_set_terrain.Name = "btn_set_terrain"
+        btn_set_terrain.Size = New Size(75, 25)
+        btn_set_terrain.TabIndex = 5
+        btn_set_terrain.Text = "Set"
+        btn_set_terrain.UseVisualStyleBackColor = True
         ' 
         ' lbx_x_terrain
         ' 
@@ -2502,6 +2521,16 @@ Partial Class frm_scenario_maker
         tp_units.Text = "Units"
         tp_units.UseVisualStyleBackColor = True
         ' 
+        ' lbl_important_note_units
+        ' 
+        lbl_important_note_units.AutoSize = True
+        lbl_important_note_units.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lbl_important_note_units.Location = New Point(760, 128)
+        lbl_important_note_units.Name = "lbl_important_note_units"
+        lbl_important_note_units.Size = New Size(562, 63)
+        lbl_important_note_units.TabIndex = 17
+        lbl_important_note_units.Text = resources.GetString("lbl_important_note_units.Text")
+        ' 
         ' lbx_objects_2
         ' 
         lbx_objects_2.FormattingEnabled = True
@@ -3670,35 +3699,6 @@ Partial Class frm_scenario_maker
         ofd_aoe2de_path.Filter = """Age of Empires 2 DE""|*.exe"
         ofd_aoe2de_path.InitialDirectory = """C:\Program Files (x86)\Steam\steamapps\common\AoE2DE"""
         ' 
-        ' lbl_important_note_units
-        ' 
-        lbl_important_note_units.AutoSize = True
-        lbl_important_note_units.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lbl_important_note_units.Location = New Point(760, 128)
-        lbl_important_note_units.Name = "lbl_important_note_units"
-        lbl_important_note_units.Size = New Size(562, 63)
-        lbl_important_note_units.TabIndex = 17
-        lbl_important_note_units.Text = resources.GetString("lbl_important_note_units.Text")
-        ' 
-        ' lbx_placed_terrains
-        ' 
-        lbx_placed_terrains.FormattingEnabled = True
-        lbx_placed_terrains.ItemHeight = 15
-        lbx_placed_terrains.Location = New Point(664, 32)
-        lbx_placed_terrains.Name = "lbx_placed_terrains"
-        lbx_placed_terrains.Size = New Size(152, 469)
-        lbx_placed_terrains.TabIndex = 16
-        ' 
-        ' lbl_important_note_terrain
-        ' 
-        lbl_important_note_terrain.AutoSize = True
-        lbl_important_note_terrain.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lbl_important_note_terrain.Location = New Point(824, 88)
-        lbl_important_note_terrain.Name = "lbl_important_note_terrain"
-        lbl_important_note_terrain.Size = New Size(562, 63)
-        lbl_important_note_terrain.TabIndex = 18
-        lbl_important_note_terrain.Text = resources.GetString("lbl_important_note_terrain.Text")
-        ' 
         ' frm_scenario_maker
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -4035,7 +4035,7 @@ Partial Class frm_scenario_maker
     Public WithEvents ofd_aoe2de_path As OpenFileDialog
     Public WithEvents tbx_script_filename As TextBox
     Friend WithEvents lbl_aoe2de_sm As Label
-    Public WithEvents Button1 As Button
+    Public WithEvents btn_set_terrain As Button
     Public WithEvents lbx_x_terrain As ListBox
     Public WithEvents lbx_base_terrain As ListBox
     Public WithEvents lbx_elevation As ListBox
