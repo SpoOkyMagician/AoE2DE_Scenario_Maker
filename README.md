@@ -21,4 +21,10 @@ Note: At the bare minimum, I want to have a working GUI that maybe someone can t
 
 I may release a build of it later. For now, I will just leave the source code up.<br>
 
-Special Thanks: https://docs.google.com/spreadsheets/d/1llyn7FWKEtmss_WE-6hinMItpsV-h-6qsY8xBlkxUzw/edit?gid=193837369#gid=193837369 (This saved me so much work with the units.)
+Special Thanks: https://docs.google.com/spreadsheets/d/1llyn7FWKEtmss_WE-6hinMItpsV-h-6qsY8xBlkxUzw/edit?gid=193837369#gid=193837369 (This saved me so much work with the units.)<br>
+
+Instructions: You will need Microsoft Visual Studio 2022 Community to test this. ( https://visualstudio.microsoft.com/downloads/ )<br>
+1: Click the "Green Code Button" on Github and acquire the source code. (If you choose zip, you need to right click it and choose "Unblock".)<br>
+2: In the files, open the "AoE2DE_Scenario_Maker.sln" file with "Microsoft Visual Studio 2022 Community".<br>
+3: Once the project opens, you can Click/Choose the "Debug/Release" Option as you want and Click the "Green Play Button". (AoE2DE_Scenario_Maker)
+4: You can close the New Window once complete or click the "Red Square Stop Button" in "Microsoft Visual Studio 2022 Community".
