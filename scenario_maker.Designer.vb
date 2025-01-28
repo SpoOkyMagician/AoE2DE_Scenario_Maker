@@ -32,6 +32,8 @@ Partial Class frm_scenario_maker
         btn_save = New Button()
         btn_load = New Button()
         tp_map = New TabPage()
+        lbl_script_filename = New Label()
+        lbl_color_mood = New Label()
         lbl_ai_map_type = New Label()
         lbl_default_terrain = New Label()
         lbl_custom_map_size = New Label()
@@ -44,6 +46,7 @@ Partial Class frm_scenario_maker
         cbx_color_mood = New ComboBox()
         cbx_ai_map_type = New ComboBox()
         tp_terrain = New TabPage()
+        lbl_placed_terrains = New Label()
         lbl_important_note_terrain = New Label()
         lbx_placed_terrains = New ListBox()
         cbx_use_layers = New CheckBox()
@@ -227,17 +230,24 @@ Partial Class frm_scenario_maker
         lb_food = New Label()
         nud_p1_food = New NumericUpDown()
         cbx_total_players = New ComboBox()
-        tp_units = New TabPage()
+        tp_objects = New TabPage()
+        lbl_object_player = New Label()
+        lbl_placed_objects = New Label()
+        lbl_object_y = New Label()
+        lbl_object_x = New Label()
+        lbl_object_list_b = New Label()
+        lbl_object_list_a = New Label()
         lbl_important_note_units = New Label()
         lbx_objects_2 = New ListBox()
         lbx_placed_objects = New ListBox()
         lbx_map_y = New ListBox()
         lbx_map_x = New ListBox()
-        cbx_unit_player = New ComboBox()
+        cbx_object_player = New ComboBox()
         btn_remove_unit = New Button()
         btn_create_unit = New Button()
         lbx_objects_1 = New ListBox()
         tp_diplomacy = New TabPage()
+        lbl_max_teams = New Label()
         cbx_random_starting_points = New CheckBox()
         cbx_choose_teams = New CheckBox()
         cbx_lock_teams = New CheckBox()
@@ -336,6 +346,10 @@ Partial Class frm_scenario_maker
         lbl_middle = New Label()
         btn_p1_to_p2_diplo = New Button()
         tp_victory = New TabPage()
+        lbl_percentage = New Label()
+        lbl_time_limit = New Label()
+        lbl_score = New Label()
+        lbl_victory_condition = New Label()
         cbx_king_of_the_hill = New CheckBox()
         cbx_regicide = New CheckBox()
         cbx_sudden_death = New CheckBox()
@@ -355,9 +369,14 @@ Partial Class frm_scenario_maker
         rbn_conquest = New RadioButton()
         rbn_standard = New RadioButton()
         tp_options = New TabPage()
+        lbl_testing_difficulty = New Label()
+        lbl_options_player = New Label()
+        lbl_disabled_techs = New Label()
+        lbl_disabled_buildings = New Label()
+        lbl_disabled_units = New Label()
         btn_camera_view = New Button()
-        ListBox1 = New ListBox()
-        ListBox2 = New ListBox()
+        lbx_view_y = New ListBox()
+        lbx_view_x = New ListBox()
         cbx_testing_difficulty = New ComboBox()
         cbx_lock_co_op_alliances = New CheckBox()
         cbx_villager_force_drop = New CheckBox()
@@ -368,6 +387,12 @@ Partial Class frm_scenario_maker
         clb_disabled_buildings = New CheckedListBox()
         clb_disabled_units = New CheckedListBox()
         tp_messages = New TabPage()
+        lbl_scout_string_id = New Label()
+        lbl_history_string_id = New Label()
+        lbl_loss_string_id = New Label()
+        lbl_victory_string_id = New Label()
+        lbl_hints_string_id = New Label()
+        lbl_instructions_string_id = New Label()
         tbx_scout_string_id = New TextBox()
         tbx_history_string_id = New TextBox()
         tbx_loss_string_id = New TextBox()
@@ -381,11 +406,18 @@ Partial Class frm_scenario_maker
         tbx_hints = New TextBox()
         tbx_instructions = New TextBox()
         tp_cinematics = New TabPage()
+        lbl_scenario_instructions_map = New Label()
+        lbl_loss_cinematics = New Label()
+        lbl_victory_cinematics = New Label()
+        lbl_pregame_cinematics = New Label()
         cbx_instructions_cinematic = New ComboBox()
         cbx_loss_cinematic = New ComboBox()
         cbx_victory_cinematic = New ComboBox()
         cbx_pregame_cinematic = New ComboBox()
         tp_trigger = New TabPage()
+        lbl_created_trigger = New Label()
+        lbl_trigger_effects = New Label()
+        lbl_trigger_conditions = New Label()
         btn_trigger_add_effect = New Button()
         btn_trigger_add_condition = New Button()
         lbx_created_trigger = New ListBox()
@@ -405,9 +437,6 @@ Partial Class frm_scenario_maker
         ofd_scenario = New OpenFileDialog()
         sfd_scenario = New SaveFileDialog()
         ofd_aoe2de_path = New OpenFileDialog()
-        lbl_color_mood = New Label()
-        lbl_script_filename = New Label()
-        lbl_placed_terrains = New Label()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
@@ -468,7 +497,7 @@ Partial Class frm_scenario_maker
         CType(nud_p3_food, ComponentModel.ISupportInitialize).BeginInit()
         CType(nud_p2_food, ComponentModel.ISupportInitialize).BeginInit()
         CType(nud_p1_food, ComponentModel.ISupportInitialize).BeginInit()
-        tp_units.SuspendLayout()
+        tp_objects.SuspendLayout()
         tp_diplomacy.SuspendLayout()
         tp_victory.SuspendLayout()
         tp_options.SuspendLayout()
@@ -484,7 +513,7 @@ Partial Class frm_scenario_maker
         tc_main.Controls.Add(tp_map)
         tc_main.Controls.Add(tp_terrain)
         tc_main.Controls.Add(tp_players)
-        tc_main.Controls.Add(tp_units)
+        tc_main.Controls.Add(tp_objects)
         tc_main.Controls.Add(tp_diplomacy)
         tc_main.Controls.Add(tp_victory)
         tc_main.Controls.Add(tp_options)
@@ -592,6 +621,26 @@ Partial Class frm_scenario_maker
         tp_map.TabIndex = 0
         tp_map.Text = "Map"
         tp_map.UseVisualStyleBackColor = True
+        ' 
+        ' lbl_script_filename
+        ' 
+        lbl_script_filename.AutoSize = True
+        lbl_script_filename.Location = New Point(960, 8)
+        lbl_script_filename.Name = "lbl_script_filename"
+        lbl_script_filename.RightToLeft = RightToLeft.No
+        lbl_script_filename.Size = New Size(88, 15)
+        lbl_script_filename.TabIndex = 18
+        lbl_script_filename.Text = "Script Filename"
+        ' 
+        ' lbl_color_mood
+        ' 
+        lbl_color_mood.AutoSize = True
+        lbl_color_mood.Location = New Point(712, 8)
+        lbl_color_mood.Name = "lbl_color_mood"
+        lbl_color_mood.RightToLeft = RightToLeft.No
+        lbl_color_mood.Size = New Size(71, 15)
+        lbl_color_mood.TabIndex = 17
+        lbl_color_mood.Text = "Color Mood"
         ' 
         ' lbl_ai_map_type
         ' 
@@ -727,6 +776,15 @@ Partial Class frm_scenario_maker
         tp_terrain.TabIndex = 11
         tp_terrain.Text = "Terrain"
         tp_terrain.UseVisualStyleBackColor = True
+        ' 
+        ' lbl_placed_terrains
+        ' 
+        lbl_placed_terrains.AutoSize = True
+        lbl_placed_terrains.Location = New Point(664, 8)
+        lbl_placed_terrains.Name = "lbl_placed_terrains"
+        lbl_placed_terrains.Size = New Size(85, 15)
+        lbl_placed_terrains.TabIndex = 19
+        lbl_placed_terrains.Text = "Placed Terrains"
         ' 
         ' lbl_important_note_terrain
         ' 
@@ -2622,30 +2680,96 @@ Partial Class frm_scenario_maker
         cbx_total_players.Size = New Size(88, 23)
         cbx_total_players.TabIndex = 105
         ' 
-        ' tp_units
+        ' tp_objects
         ' 
-        tp_units.Controls.Add(lbl_important_note_units)
-        tp_units.Controls.Add(lbx_objects_2)
-        tp_units.Controls.Add(lbx_placed_objects)
-        tp_units.Controls.Add(lbx_map_y)
-        tp_units.Controls.Add(lbx_map_x)
-        tp_units.Controls.Add(cbx_unit_player)
-        tp_units.Controls.Add(btn_remove_unit)
-        tp_units.Controls.Add(btn_create_unit)
-        tp_units.Controls.Add(lbx_objects_1)
-        tp_units.Location = New Point(4, 24)
-        tp_units.Name = "tp_units"
-        tp_units.Padding = New Padding(3)
-        tp_units.Size = New Size(1448, 524)
-        tp_units.TabIndex = 3
-        tp_units.Text = "Units"
-        tp_units.UseVisualStyleBackColor = True
+        tp_objects.Controls.Add(lbl_object_player)
+        tp_objects.Controls.Add(lbl_placed_objects)
+        tp_objects.Controls.Add(lbl_object_y)
+        tp_objects.Controls.Add(lbl_object_x)
+        tp_objects.Controls.Add(lbl_object_list_b)
+        tp_objects.Controls.Add(lbl_object_list_a)
+        tp_objects.Controls.Add(lbl_important_note_units)
+        tp_objects.Controls.Add(lbx_objects_2)
+        tp_objects.Controls.Add(lbx_placed_objects)
+        tp_objects.Controls.Add(lbx_map_y)
+        tp_objects.Controls.Add(lbx_map_x)
+        tp_objects.Controls.Add(cbx_object_player)
+        tp_objects.Controls.Add(btn_remove_unit)
+        tp_objects.Controls.Add(btn_create_unit)
+        tp_objects.Controls.Add(lbx_objects_1)
+        tp_objects.Location = New Point(4, 24)
+        tp_objects.Name = "tp_objects"
+        tp_objects.Padding = New Padding(3)
+        tp_objects.Size = New Size(1448, 524)
+        tp_objects.TabIndex = 3
+        tp_objects.Text = "Objects"
+        tp_objects.UseVisualStyleBackColor = True
+        ' 
+        ' lbl_object_player
+        ' 
+        lbl_object_player.AutoSize = True
+        lbl_object_player.Location = New Point(760, 8)
+        lbl_object_player.Name = "lbl_object_player"
+        lbl_object_player.Size = New Size(39, 15)
+        lbl_object_player.TabIndex = 229
+        lbl_object_player.Text = "Player"
+        lbl_object_player.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lbl_placed_objects
+        ' 
+        lbl_placed_objects.AutoSize = True
+        lbl_placed_objects.Location = New Point(600, 8)
+        lbl_placed_objects.Name = "lbl_placed_objects"
+        lbl_placed_objects.Size = New Size(85, 15)
+        lbl_placed_objects.TabIndex = 228
+        lbl_placed_objects.Text = "Placed Objects"
+        lbl_placed_objects.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lbl_object_y
+        ' 
+        lbl_object_y.AutoSize = True
+        lbl_object_y.Location = New Point(544, 8)
+        lbl_object_y.Name = "lbl_object_y"
+        lbl_object_y.Size = New Size(14, 15)
+        lbl_object_y.TabIndex = 227
+        lbl_object_y.Text = "Y"
+        lbl_object_y.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lbl_object_x
+        ' 
+        lbl_object_x.AutoSize = True
+        lbl_object_x.Location = New Point(488, 8)
+        lbl_object_x.Name = "lbl_object_x"
+        lbl_object_x.Size = New Size(14, 15)
+        lbl_object_x.TabIndex = 226
+        lbl_object_x.Text = "X"
+        lbl_object_x.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lbl_object_list_b
+        ' 
+        lbl_object_list_b.AutoSize = True
+        lbl_object_list_b.Location = New Point(248, 8)
+        lbl_object_list_b.Name = "lbl_object_list_b"
+        lbl_object_list_b.Size = New Size(81, 15)
+        lbl_object_list_b.TabIndex = 225
+        lbl_object_list_b.Text = "Object List (B)"
+        lbl_object_list_b.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lbl_object_list_a
+        ' 
+        lbl_object_list_a.AutoSize = True
+        lbl_object_list_a.Location = New Point(8, 8)
+        lbl_object_list_a.Name = "lbl_object_list_a"
+        lbl_object_list_a.Size = New Size(82, 15)
+        lbl_object_list_a.TabIndex = 224
+        lbl_object_list_a.Text = "Object List (A)"
+        lbl_object_list_a.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' lbl_important_note_units
         ' 
         lbl_important_note_units.AutoSize = True
         lbl_important_note_units.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lbl_important_note_units.Location = New Point(760, 128)
+        lbl_important_note_units.Location = New Point(760, 96)
         lbl_important_note_units.Name = "lbl_important_note_units"
         lbl_important_note_units.Size = New Size(562, 63)
         lbl_important_note_units.TabIndex = 17
@@ -2691,19 +2815,19 @@ Partial Class frm_scenario_maker
         lbx_map_x.Size = New Size(48, 469)
         lbx_map_x.TabIndex = 13
         ' 
-        ' cbx_unit_player
+        ' cbx_object_player
         ' 
-        cbx_unit_player.DropDownStyle = ComboBoxStyle.DropDownList
-        cbx_unit_player.FormattingEnabled = True
-        cbx_unit_player.Items.AddRange(New Object() {"Gaia", "Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8"})
-        cbx_unit_player.Location = New Point(760, 96)
-        cbx_unit_player.Name = "cbx_unit_player"
-        cbx_unit_player.Size = New Size(121, 23)
-        cbx_unit_player.TabIndex = 4
+        cbx_object_player.DropDownStyle = ComboBoxStyle.DropDownList
+        cbx_object_player.FormattingEnabled = True
+        cbx_object_player.Items.AddRange(New Object() {"Gaia", "Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8"})
+        cbx_object_player.Location = New Point(760, 32)
+        cbx_object_player.Name = "cbx_object_player"
+        cbx_object_player.Size = New Size(121, 23)
+        cbx_object_player.TabIndex = 4
         ' 
         ' btn_remove_unit
         ' 
-        btn_remove_unit.Location = New Point(760, 64)
+        btn_remove_unit.Location = New Point(888, 64)
         btn_remove_unit.Name = "btn_remove_unit"
         btn_remove_unit.Size = New Size(75, 25)
         btn_remove_unit.TabIndex = 3
@@ -2712,7 +2836,7 @@ Partial Class frm_scenario_maker
         ' 
         ' btn_create_unit
         ' 
-        btn_create_unit.Location = New Point(760, 32)
+        btn_create_unit.Location = New Point(888, 32)
         btn_create_unit.Name = "btn_create_unit"
         btn_create_unit.Size = New Size(75, 25)
         btn_create_unit.TabIndex = 2
@@ -2731,6 +2855,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tp_diplomacy
         ' 
+        tp_diplomacy.Controls.Add(lbl_max_teams)
         tp_diplomacy.Controls.Add(cbx_random_starting_points)
         tp_diplomacy.Controls.Add(cbx_choose_teams)
         tp_diplomacy.Controls.Add(cbx_lock_teams)
@@ -2835,6 +2960,15 @@ Partial Class frm_scenario_maker
         tp_diplomacy.TabIndex = 4
         tp_diplomacy.Text = "Diplomacy"
         tp_diplomacy.UseVisualStyleBackColor = True
+        ' 
+        ' lbl_max_teams
+        ' 
+        lbl_max_teams.AutoSize = True
+        lbl_max_teams.Location = New Point(648, 24)
+        lbl_max_teams.Name = "lbl_max_teams"
+        lbl_max_teams.Size = New Size(66, 15)
+        lbl_max_teams.TabIndex = 100
+        lbl_max_teams.Text = "Max Teams"
         ' 
         ' cbx_random_starting_points
         ' 
@@ -3731,6 +3865,10 @@ Partial Class frm_scenario_maker
         ' 
         ' tp_victory
         ' 
+        tp_victory.Controls.Add(lbl_percentage)
+        tp_victory.Controls.Add(lbl_time_limit)
+        tp_victory.Controls.Add(lbl_score)
+        tp_victory.Controls.Add(lbl_victory_condition)
         tp_victory.Controls.Add(cbx_king_of_the_hill)
         tp_victory.Controls.Add(cbx_regicide)
         tp_victory.Controls.Add(cbx_sudden_death)
@@ -3757,10 +3895,46 @@ Partial Class frm_scenario_maker
         tp_victory.Text = "Victory"
         tp_victory.UseVisualStyleBackColor = True
         ' 
+        ' lbl_percentage
+        ' 
+        lbl_percentage.AutoSize = True
+        lbl_percentage.Location = New Point(512, 8)
+        lbl_percentage.Name = "lbl_percentage"
+        lbl_percentage.Size = New Size(17, 15)
+        lbl_percentage.TabIndex = 104
+        lbl_percentage.Text = "%"
+        ' 
+        ' lbl_time_limit
+        ' 
+        lbl_time_limit.AutoSize = True
+        lbl_time_limit.Location = New Point(224, 8)
+        lbl_time_limit.Name = "lbl_time_limit"
+        lbl_time_limit.Size = New Size(63, 15)
+        lbl_time_limit.TabIndex = 103
+        lbl_time_limit.Text = "Time Limit"
+        ' 
+        ' lbl_score
+        ' 
+        lbl_score.AutoSize = True
+        lbl_score.Location = New Point(160, 8)
+        lbl_score.Name = "lbl_score"
+        lbl_score.Size = New Size(36, 15)
+        lbl_score.TabIndex = 102
+        lbl_score.Text = "Score"
+        ' 
+        ' lbl_victory_condition
+        ' 
+        lbl_victory_condition.AutoSize = True
+        lbl_victory_condition.Location = New Point(8, 8)
+        lbl_victory_condition.Name = "lbl_victory_condition"
+        lbl_victory_condition.Size = New Size(100, 15)
+        lbl_victory_condition.TabIndex = 101
+        lbl_victory_condition.Text = "Victory Condition"
+        ' 
         ' cbx_king_of_the_hill
         ' 
         cbx_king_of_the_hill.AutoSize = True
-        cbx_king_of_the_hill.Location = New Point(488, 112)
+        cbx_king_of_the_hill.Location = New Point(560, 104)
         cbx_king_of_the_hill.Name = "cbx_king_of_the_hill"
         cbx_king_of_the_hill.Size = New Size(105, 19)
         cbx_king_of_the_hill.TabIndex = 17
@@ -3770,7 +3944,7 @@ Partial Class frm_scenario_maker
         ' cbx_regicide
         ' 
         cbx_regicide.AutoSize = True
-        cbx_regicide.Location = New Point(488, 88)
+        cbx_regicide.Location = New Point(560, 80)
         cbx_regicide.Name = "cbx_regicide"
         cbx_regicide.Size = New Size(71, 19)
         cbx_regicide.TabIndex = 16
@@ -3780,7 +3954,7 @@ Partial Class frm_scenario_maker
         ' cbx_sudden_death
         ' 
         cbx_sudden_death.AutoSize = True
-        cbx_sudden_death.Location = New Point(488, 64)
+        cbx_sudden_death.Location = New Point(560, 56)
         cbx_sudden_death.Name = "cbx_sudden_death"
         cbx_sudden_death.Size = New Size(100, 19)
         cbx_sudden_death.TabIndex = 15
@@ -3790,7 +3964,7 @@ Partial Class frm_scenario_maker
         ' cbx_empire_wars
         ' 
         cbx_empire_wars.AutoSize = True
-        cbx_empire_wars.Location = New Point(488, 40)
+        cbx_empire_wars.Location = New Point(560, 32)
         cbx_empire_wars.Name = "cbx_empire_wars"
         cbx_empire_wars.Size = New Size(92, 19)
         cbx_empire_wars.TabIndex = 14
@@ -3800,7 +3974,7 @@ Partial Class frm_scenario_maker
         ' rbn_secondary_game_mode
         ' 
         rbn_secondary_game_mode.AutoSize = True
-        rbn_secondary_game_mode.Location = New Point(8, 160)
+        rbn_secondary_game_mode.Location = New Point(8, 152)
         rbn_secondary_game_mode.Name = "rbn_secondary_game_mode"
         rbn_secondary_game_mode.Size = New Size(148, 19)
         rbn_secondary_game_mode.TabIndex = 13
@@ -3809,7 +3983,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_relics_total
         ' 
-        tbx_relics_total.Location = New Point(440, 88)
+        tbx_relics_total.Location = New Point(512, 80)
         tbx_relics_total.MaxLength = 3
         tbx_relics_total.Name = "tbx_relics_total"
         tbx_relics_total.Size = New Size(40, 23)
@@ -3818,7 +3992,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tbx_exploration_total
         ' 
-        tbx_exploration_total.Location = New Point(440, 64)
+        tbx_exploration_total.Location = New Point(512, 56)
         tbx_exploration_total.MaxLength = 3
         tbx_exploration_total.Name = "tbx_exploration_total"
         tbx_exploration_total.Size = New Size(40, 23)
@@ -3828,7 +4002,7 @@ Partial Class frm_scenario_maker
         ' cbx_all
         ' 
         cbx_all.AutoSize = True
-        cbx_all.Location = New Point(352, 112)
+        cbx_all.Location = New Point(424, 104)
         cbx_all.Name = "cbx_all"
         cbx_all.Size = New Size(45, 19)
         cbx_all.TabIndex = 10
@@ -3838,7 +4012,7 @@ Partial Class frm_scenario_maker
         ' cbx_relics
         ' 
         cbx_relics.AutoSize = True
-        cbx_relics.Location = New Point(352, 88)
+        cbx_relics.Location = New Point(424, 80)
         cbx_relics.Name = "cbx_relics"
         cbx_relics.Size = New Size(56, 19)
         cbx_relics.TabIndex = 9
@@ -3848,7 +4022,7 @@ Partial Class frm_scenario_maker
         ' cbx_exploration
         ' 
         cbx_exploration.AutoSize = True
-        cbx_exploration.Location = New Point(352, 64)
+        cbx_exploration.Location = New Point(424, 56)
         cbx_exploration.Name = "cbx_exploration"
         cbx_exploration.Size = New Size(86, 19)
         cbx_exploration.TabIndex = 8
@@ -3858,7 +4032,7 @@ Partial Class frm_scenario_maker
         ' cbx_conquest
         ' 
         cbx_conquest.AutoSize = True
-        cbx_conquest.Location = New Point(352, 40)
+        cbx_conquest.Location = New Point(424, 32)
         cbx_conquest.Name = "cbx_conquest"
         cbx_conquest.Size = New Size(77, 19)
         cbx_conquest.TabIndex = 7
@@ -3868,7 +4042,7 @@ Partial Class frm_scenario_maker
         ' rbn_custom
         ' 
         rbn_custom.AutoSize = True
-        rbn_custom.Location = New Point(8, 136)
+        rbn_custom.Location = New Point(8, 128)
         rbn_custom.Name = "rbn_custom"
         rbn_custom.Size = New Size(67, 19)
         rbn_custom.TabIndex = 6
@@ -3880,7 +4054,7 @@ Partial Class frm_scenario_maker
         cbx_time_limit.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_time_limit.FormattingEnabled = True
         cbx_time_limit.Items.AddRange(New Object() {"300 Years (25 Minutes)", "500 Years (40 Minutes)", "700 Years (1 Hour)", "900 Years (1 Hour, 15 Minutes)", "1100 Years (1 Hour, 30 Minutes)", "1300 Years (1 Hour, 45 Minutes)", "1500 Years (2 Hours)"})
-        cbx_time_limit.Location = New Point(152, 40)
+        cbx_time_limit.Location = New Point(224, 32)
         cbx_time_limit.Name = "cbx_time_limit"
         cbx_time_limit.Size = New Size(192, 23)
         cbx_time_limit.TabIndex = 5
@@ -3888,7 +4062,7 @@ Partial Class frm_scenario_maker
         ' rbn_time_limit
         ' 
         rbn_time_limit.AutoSize = True
-        rbn_time_limit.Location = New Point(8, 112)
+        rbn_time_limit.Location = New Point(8, 104)
         rbn_time_limit.Name = "rbn_time_limit"
         rbn_time_limit.Size = New Size(81, 19)
         rbn_time_limit.TabIndex = 4
@@ -3900,7 +4074,7 @@ Partial Class frm_scenario_maker
         cbx_score.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_score.FormattingEnabled = True
         cbx_score.Items.AddRange(New Object() {"4000", "5000", "6000", "7000", "8000", "9000", "10000", "11000", "12000", "13000", "14000"})
-        cbx_score.Location = New Point(88, 40)
+        cbx_score.Location = New Point(160, 32)
         cbx_score.Name = "cbx_score"
         cbx_score.Size = New Size(56, 23)
         cbx_score.TabIndex = 3
@@ -3908,7 +4082,7 @@ Partial Class frm_scenario_maker
         ' rbn_score
         ' 
         rbn_score.AutoSize = True
-        rbn_score.Location = New Point(8, 88)
+        rbn_score.Location = New Point(8, 80)
         rbn_score.Name = "rbn_score"
         rbn_score.Size = New Size(54, 19)
         rbn_score.TabIndex = 2
@@ -3918,7 +4092,7 @@ Partial Class frm_scenario_maker
         ' rbn_conquest
         ' 
         rbn_conquest.AutoSize = True
-        rbn_conquest.Location = New Point(8, 64)
+        rbn_conquest.Location = New Point(8, 56)
         rbn_conquest.Name = "rbn_conquest"
         rbn_conquest.Size = New Size(76, 19)
         rbn_conquest.TabIndex = 1
@@ -3929,7 +4103,7 @@ Partial Class frm_scenario_maker
         ' 
         rbn_standard.AutoSize = True
         rbn_standard.Checked = True
-        rbn_standard.Location = New Point(8, 40)
+        rbn_standard.Location = New Point(8, 32)
         rbn_standard.Name = "rbn_standard"
         rbn_standard.Size = New Size(72, 19)
         rbn_standard.TabIndex = 0
@@ -3939,9 +4113,14 @@ Partial Class frm_scenario_maker
         ' 
         ' tp_options
         ' 
+        tp_options.Controls.Add(lbl_testing_difficulty)
+        tp_options.Controls.Add(lbl_options_player)
+        tp_options.Controls.Add(lbl_disabled_techs)
+        tp_options.Controls.Add(lbl_disabled_buildings)
+        tp_options.Controls.Add(lbl_disabled_units)
         tp_options.Controls.Add(btn_camera_view)
-        tp_options.Controls.Add(ListBox1)
-        tp_options.Controls.Add(ListBox2)
+        tp_options.Controls.Add(lbx_view_y)
+        tp_options.Controls.Add(lbx_view_x)
         tp_options.Controls.Add(cbx_testing_difficulty)
         tp_options.Controls.Add(cbx_lock_co_op_alliances)
         tp_options.Controls.Add(cbx_villager_force_drop)
@@ -3959,6 +4138,51 @@ Partial Class frm_scenario_maker
         tp_options.Text = "Options"
         tp_options.UseVisualStyleBackColor = True
         ' 
+        ' lbl_testing_difficulty
+        ' 
+        lbl_testing_difficulty.AutoSize = True
+        lbl_testing_difficulty.Location = New Point(904, 8)
+        lbl_testing_difficulty.Name = "lbl_testing_difficulty"
+        lbl_testing_difficulty.Size = New Size(95, 15)
+        lbl_testing_difficulty.TabIndex = 106
+        lbl_testing_difficulty.Text = "Testing Difficulty"
+        ' 
+        ' lbl_options_player
+        ' 
+        lbl_options_player.AutoSize = True
+        lbl_options_player.Location = New Point(632, 8)
+        lbl_options_player.Name = "lbl_options_player"
+        lbl_options_player.Size = New Size(39, 15)
+        lbl_options_player.TabIndex = 105
+        lbl_options_player.Text = "Player"
+        ' 
+        ' lbl_disabled_techs
+        ' 
+        lbl_disabled_techs.AutoSize = True
+        lbl_disabled_techs.Location = New Point(424, 8)
+        lbl_disabled_techs.Name = "lbl_disabled_techs"
+        lbl_disabled_techs.Size = New Size(84, 15)
+        lbl_disabled_techs.TabIndex = 104
+        lbl_disabled_techs.Text = "Disabled Techs"
+        ' 
+        ' lbl_disabled_buildings
+        ' 
+        lbl_disabled_buildings.AutoSize = True
+        lbl_disabled_buildings.Location = New Point(216, 8)
+        lbl_disabled_buildings.Name = "lbl_disabled_buildings"
+        lbl_disabled_buildings.Size = New Size(104, 15)
+        lbl_disabled_buildings.TabIndex = 103
+        lbl_disabled_buildings.Text = "Disabled Buildings"
+        ' 
+        ' lbl_disabled_units
+        ' 
+        lbl_disabled_units.AutoSize = True
+        lbl_disabled_units.Location = New Point(8, 8)
+        lbl_disabled_units.Name = "lbl_disabled_units"
+        lbl_disabled_units.Size = New Size(82, 15)
+        lbl_disabled_units.TabIndex = 102
+        lbl_disabled_units.Text = "Disabled Units"
+        ' 
         ' btn_camera_view
         ' 
         btn_camera_view.Location = New Point(1144, 32)
@@ -3968,32 +4192,32 @@ Partial Class frm_scenario_maker
         btn_camera_view.Text = "Set View"
         btn_camera_view.UseVisualStyleBackColor = True
         ' 
-        ' ListBox1
+        ' lbx_view_y
         ' 
-        ListBox1.FormattingEnabled = True
-        ListBox1.ItemHeight = 15
-        ListBox1.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326", "327", "328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353", "354", "355", "356", "357", "358", "359", "360", "361", "362", "363", "364", "365", "366", "367", "368", "369", "370", "371", "372", "373", "374", "375", "376", "377", "378", "379", "380", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "410", "411", "412", "413", "414", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "425", "426", "427", "428", "429", "430", "431", "432", "433", "434", "435", "436", "437", "438", "439", "440", "441", "442", "443", "444", "445", "446", "447", "448", "449", "450", "451", "452", "453", "454", "455", "456", "457", "458", "459", "460", "461", "462", "463", "464", "465", "466", "467", "468", "469", "470", "471", "472", "473", "474", "475", "476", "477", "478", "479"})
-        ListBox1.Location = New Point(1088, 32)
-        ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(48, 469)
-        ListBox1.TabIndex = 14
+        lbx_view_y.FormattingEnabled = True
+        lbx_view_y.ItemHeight = 15
+        lbx_view_y.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326", "327", "328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353", "354", "355", "356", "357", "358", "359", "360", "361", "362", "363", "364", "365", "366", "367", "368", "369", "370", "371", "372", "373", "374", "375", "376", "377", "378", "379", "380", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "410", "411", "412", "413", "414", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "425", "426", "427", "428", "429", "430", "431", "432", "433", "434", "435", "436", "437", "438", "439", "440", "441", "442", "443", "444", "445", "446", "447", "448", "449", "450", "451", "452", "453", "454", "455", "456", "457", "458", "459", "460", "461", "462", "463", "464", "465", "466", "467", "468", "469", "470", "471", "472", "473", "474", "475", "476", "477", "478", "479"})
+        lbx_view_y.Location = New Point(1088, 32)
+        lbx_view_y.Name = "lbx_view_y"
+        lbx_view_y.Size = New Size(48, 484)
+        lbx_view_y.TabIndex = 14
         ' 
-        ' ListBox2
+        ' lbx_view_x
         ' 
-        ListBox2.FormattingEnabled = True
-        ListBox2.ItemHeight = 15
-        ListBox2.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326", "327", "328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353", "354", "355", "356", "357", "358", "359", "360", "361", "362", "363", "364", "365", "366", "367", "368", "369", "370", "371", "372", "373", "374", "375", "376", "377", "378", "379", "380", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "410", "411", "412", "413", "414", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "425", "426", "427", "428", "429", "430", "431", "432", "433", "434", "435", "436", "437", "438", "439", "440", "441", "442", "443", "444", "445", "446", "447", "448", "449", "450", "451", "452", "453", "454", "455", "456", "457", "458", "459", "460", "461", "462", "463", "464", "465", "466", "467", "468", "469", "470", "471", "472", "473", "474", "475", "476", "477", "478", "479"})
-        ListBox2.Location = New Point(1032, 32)
-        ListBox2.Name = "ListBox2"
-        ListBox2.Size = New Size(48, 469)
-        ListBox2.TabIndex = 13
+        lbx_view_x.FormattingEnabled = True
+        lbx_view_x.ItemHeight = 15
+        lbx_view_x.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326", "327", "328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353", "354", "355", "356", "357", "358", "359", "360", "361", "362", "363", "364", "365", "366", "367", "368", "369", "370", "371", "372", "373", "374", "375", "376", "377", "378", "379", "380", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "410", "411", "412", "413", "414", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "425", "426", "427", "428", "429", "430", "431", "432", "433", "434", "435", "436", "437", "438", "439", "440", "441", "442", "443", "444", "445", "446", "447", "448", "449", "450", "451", "452", "453", "454", "455", "456", "457", "458", "459", "460", "461", "462", "463", "464", "465", "466", "467", "468", "469", "470", "471", "472", "473", "474", "475", "476", "477", "478", "479"})
+        lbx_view_x.Location = New Point(1032, 32)
+        lbx_view_x.Name = "lbx_view_x"
+        lbx_view_x.Size = New Size(48, 484)
+        lbx_view_x.TabIndex = 13
         ' 
         ' cbx_testing_difficulty
         ' 
         cbx_testing_difficulty.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_testing_difficulty.FormattingEnabled = True
         cbx_testing_difficulty.Items.AddRange(New Object() {"Easiest", "Standard", "Moderate", "Hard", "Hardest", "Extreme"})
-        cbx_testing_difficulty.Location = New Point(904, 40)
+        cbx_testing_difficulty.Location = New Point(904, 32)
         cbx_testing_difficulty.Name = "cbx_testing_difficulty"
         cbx_testing_difficulty.Size = New Size(121, 23)
         cbx_testing_difficulty.TabIndex = 8
@@ -4001,7 +4225,7 @@ Partial Class frm_scenario_maker
         ' cbx_lock_co_op_alliances
         ' 
         cbx_lock_co_op_alliances.AutoSize = True
-        cbx_lock_co_op_alliances.Location = New Point(760, 112)
+        cbx_lock_co_op_alliances.Location = New Point(760, 104)
         cbx_lock_co_op_alliances.Name = "cbx_lock_co_op_alliances"
         cbx_lock_co_op_alliances.Size = New Size(140, 19)
         cbx_lock_co_op_alliances.TabIndex = 7
@@ -4011,7 +4235,7 @@ Partial Class frm_scenario_maker
         ' cbx_villager_force_drop
         ' 
         cbx_villager_force_drop.AutoSize = True
-        cbx_villager_force_drop.Location = New Point(760, 88)
+        cbx_villager_force_drop.Location = New Point(760, 80)
         cbx_villager_force_drop.Name = "cbx_villager_force_drop"
         cbx_villager_force_drop.Size = New Size(126, 19)
         cbx_villager_force_drop.TabIndex = 6
@@ -4021,7 +4245,7 @@ Partial Class frm_scenario_maker
         ' cbx_collide_and_correcting
         ' 
         cbx_collide_and_correcting.AutoSize = True
-        cbx_collide_and_correcting.Location = New Point(760, 64)
+        cbx_collide_and_correcting.Location = New Point(760, 56)
         cbx_collide_and_correcting.Name = "cbx_collide_and_correcting"
         cbx_collide_and_correcting.Size = New Size(145, 19)
         cbx_collide_and_correcting.TabIndex = 5
@@ -4031,7 +4255,7 @@ Partial Class frm_scenario_maker
         ' cbx_full_tech_tree
         ' 
         cbx_full_tech_tree.AutoSize = True
-        cbx_full_tech_tree.Location = New Point(760, 40)
+        cbx_full_tech_tree.Location = New Point(760, 32)
         cbx_full_tech_tree.Name = "cbx_full_tech_tree"
         cbx_full_tech_tree.Size = New Size(96, 19)
         cbx_full_tech_tree.TabIndex = 4
@@ -4043,7 +4267,7 @@ Partial Class frm_scenario_maker
         cbx_disabled_player.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_disabled_player.FormattingEnabled = True
         cbx_disabled_player.Items.AddRange(New Object() {"Gaia", "Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8"})
-        cbx_disabled_player.Location = New Point(632, 40)
+        cbx_disabled_player.Location = New Point(632, 32)
         cbx_disabled_player.Name = "cbx_disabled_player"
         cbx_disabled_player.Size = New Size(121, 23)
         cbx_disabled_player.TabIndex = 3
@@ -4051,29 +4275,35 @@ Partial Class frm_scenario_maker
         ' clb_disabled_techs
         ' 
         clb_disabled_techs.FormattingEnabled = True
-        clb_disabled_techs.Location = New Point(424, 40)
+        clb_disabled_techs.Location = New Point(424, 32)
         clb_disabled_techs.Name = "clb_disabled_techs"
-        clb_disabled_techs.Size = New Size(200, 454)
+        clb_disabled_techs.Size = New Size(200, 472)
         clb_disabled_techs.TabIndex = 2
         ' 
         ' clb_disabled_buildings
         ' 
         clb_disabled_buildings.FormattingEnabled = True
-        clb_disabled_buildings.Location = New Point(216, 40)
+        clb_disabled_buildings.Location = New Point(216, 32)
         clb_disabled_buildings.Name = "clb_disabled_buildings"
-        clb_disabled_buildings.Size = New Size(200, 454)
+        clb_disabled_buildings.Size = New Size(200, 472)
         clb_disabled_buildings.TabIndex = 1
         ' 
         ' clb_disabled_units
         ' 
         clb_disabled_units.FormattingEnabled = True
-        clb_disabled_units.Location = New Point(8, 40)
+        clb_disabled_units.Location = New Point(8, 32)
         clb_disabled_units.Name = "clb_disabled_units"
-        clb_disabled_units.Size = New Size(200, 454)
+        clb_disabled_units.Size = New Size(200, 472)
         clb_disabled_units.TabIndex = 0
         ' 
         ' tp_messages
         ' 
+        tp_messages.Controls.Add(lbl_scout_string_id)
+        tp_messages.Controls.Add(lbl_history_string_id)
+        tp_messages.Controls.Add(lbl_loss_string_id)
+        tp_messages.Controls.Add(lbl_victory_string_id)
+        tp_messages.Controls.Add(lbl_hints_string_id)
+        tp_messages.Controls.Add(lbl_instructions_string_id)
         tp_messages.Controls.Add(tbx_scout_string_id)
         tp_messages.Controls.Add(tbx_history_string_id)
         tp_messages.Controls.Add(tbx_loss_string_id)
@@ -4094,44 +4324,98 @@ Partial Class frm_scenario_maker
         tp_messages.Text = "Messages"
         tp_messages.UseVisualStyleBackColor = True
         ' 
+        ' lbl_scout_string_id
+        ' 
+        lbl_scout_string_id.AutoSize = True
+        lbl_scout_string_id.Location = New Point(1048, 8)
+        lbl_scout_string_id.Name = "lbl_scout_string_id"
+        lbl_scout_string_id.Size = New Size(93, 15)
+        lbl_scout_string_id.TabIndex = 108
+        lbl_scout_string_id.Text = "String ID / Scout"
+        ' 
+        ' lbl_history_string_id
+        ' 
+        lbl_history_string_id.AutoSize = True
+        lbl_history_string_id.Location = New Point(840, 8)
+        lbl_history_string_id.Name = "lbl_history_string_id"
+        lbl_history_string_id.Size = New Size(101, 15)
+        lbl_history_string_id.TabIndex = 107
+        lbl_history_string_id.Text = "String ID / History"
+        ' 
+        ' lbl_loss_string_id
+        ' 
+        lbl_loss_string_id.AutoSize = True
+        lbl_loss_string_id.Location = New Point(632, 8)
+        lbl_loss_string_id.Name = "lbl_loss_string_id"
+        lbl_loss_string_id.Size = New Size(86, 15)
+        lbl_loss_string_id.TabIndex = 106
+        lbl_loss_string_id.Text = "String ID / Loss"
+        ' 
+        ' lbl_victory_string_id
+        ' 
+        lbl_victory_string_id.AutoSize = True
+        lbl_victory_string_id.Location = New Point(424, 8)
+        lbl_victory_string_id.Name = "lbl_victory_string_id"
+        lbl_victory_string_id.Size = New Size(100, 15)
+        lbl_victory_string_id.TabIndex = 105
+        lbl_victory_string_id.Text = "String ID / Victory"
+        ' 
+        ' lbl_hints_string_id
+        ' 
+        lbl_hints_string_id.AutoSize = True
+        lbl_hints_string_id.Location = New Point(216, 8)
+        lbl_hints_string_id.Name = "lbl_hints_string_id"
+        lbl_hints_string_id.Size = New Size(91, 15)
+        lbl_hints_string_id.TabIndex = 104
+        lbl_hints_string_id.Text = "String ID / Hints"
+        ' 
+        ' lbl_instructions_string_id
+        ' 
+        lbl_instructions_string_id.AutoSize = True
+        lbl_instructions_string_id.Location = New Point(8, 8)
+        lbl_instructions_string_id.Name = "lbl_instructions_string_id"
+        lbl_instructions_string_id.Size = New Size(125, 15)
+        lbl_instructions_string_id.TabIndex = 103
+        lbl_instructions_string_id.Text = "String ID / Instructions"
+        ' 
         ' tbx_scout_string_id
         ' 
-        tbx_scout_string_id.Location = New Point(1048, 40)
+        tbx_scout_string_id.Location = New Point(1048, 32)
         tbx_scout_string_id.Name = "tbx_scout_string_id"
         tbx_scout_string_id.Size = New Size(200, 23)
         tbx_scout_string_id.TabIndex = 11
         ' 
         ' tbx_history_string_id
         ' 
-        tbx_history_string_id.Location = New Point(840, 40)
+        tbx_history_string_id.Location = New Point(840, 32)
         tbx_history_string_id.Name = "tbx_history_string_id"
         tbx_history_string_id.Size = New Size(200, 23)
         tbx_history_string_id.TabIndex = 10
         ' 
         ' tbx_loss_string_id
         ' 
-        tbx_loss_string_id.Location = New Point(632, 40)
+        tbx_loss_string_id.Location = New Point(632, 32)
         tbx_loss_string_id.Name = "tbx_loss_string_id"
         tbx_loss_string_id.Size = New Size(200, 23)
         tbx_loss_string_id.TabIndex = 9
         ' 
         ' tbx_victory_string_id
         ' 
-        tbx_victory_string_id.Location = New Point(424, 40)
+        tbx_victory_string_id.Location = New Point(424, 32)
         tbx_victory_string_id.Name = "tbx_victory_string_id"
         tbx_victory_string_id.Size = New Size(200, 23)
         tbx_victory_string_id.TabIndex = 8
         ' 
         ' tbx_hints_string_id
         ' 
-        tbx_hints_string_id.Location = New Point(216, 40)
+        tbx_hints_string_id.Location = New Point(216, 32)
         tbx_hints_string_id.Name = "tbx_hints_string_id"
         tbx_hints_string_id.Size = New Size(200, 23)
         tbx_hints_string_id.TabIndex = 7
         ' 
         ' tbx_instructions_string_id
         ' 
-        tbx_instructions_string_id.Location = New Point(8, 40)
+        tbx_instructions_string_id.Location = New Point(8, 32)
         tbx_instructions_string_id.Name = "tbx_instructions_string_id"
         tbx_instructions_string_id.Size = New Size(200, 23)
         tbx_instructions_string_id.TabIndex = 6
@@ -4139,77 +4423,81 @@ Partial Class frm_scenario_maker
         ' tbx_scout
         ' 
         tbx_scout.AcceptsReturn = True
-        tbx_scout.Location = New Point(1048, 72)
+        tbx_scout.Location = New Point(1048, 64)
         tbx_scout.MaxLength = 4096
         tbx_scout.Multiline = True
         tbx_scout.Name = "tbx_scout"
         tbx_scout.ScrollBars = ScrollBars.Vertical
-        tbx_scout.Size = New Size(200, 432)
+        tbx_scout.Size = New Size(200, 448)
         tbx_scout.TabIndex = 5
-        tbx_scout.Text = "Scout"
+        tbx_scout.Text = "Scout Message"
         ' 
         ' tbx_history
         ' 
         tbx_history.AcceptsReturn = True
-        tbx_history.Location = New Point(840, 72)
+        tbx_history.Location = New Point(840, 64)
         tbx_history.MaxLength = 4096
         tbx_history.Multiline = True
         tbx_history.Name = "tbx_history"
         tbx_history.ScrollBars = ScrollBars.Vertical
-        tbx_history.Size = New Size(200, 432)
+        tbx_history.Size = New Size(200, 448)
         tbx_history.TabIndex = 4
-        tbx_history.Text = "History"
+        tbx_history.Text = "History Message"
         ' 
         ' tbx_loss
         ' 
         tbx_loss.AcceptsReturn = True
-        tbx_loss.Location = New Point(632, 72)
+        tbx_loss.Location = New Point(632, 64)
         tbx_loss.MaxLength = 4096
         tbx_loss.Multiline = True
         tbx_loss.Name = "tbx_loss"
         tbx_loss.ScrollBars = ScrollBars.Vertical
-        tbx_loss.Size = New Size(200, 432)
+        tbx_loss.Size = New Size(200, 448)
         tbx_loss.TabIndex = 3
-        tbx_loss.Text = "Loss"
+        tbx_loss.Text = "Loss Message"
         ' 
         ' tbx_victory
         ' 
         tbx_victory.AcceptsReturn = True
-        tbx_victory.Location = New Point(424, 72)
+        tbx_victory.Location = New Point(424, 64)
         tbx_victory.MaxLength = 4096
         tbx_victory.Multiline = True
         tbx_victory.Name = "tbx_victory"
         tbx_victory.ScrollBars = ScrollBars.Vertical
-        tbx_victory.Size = New Size(200, 432)
+        tbx_victory.Size = New Size(200, 448)
         tbx_victory.TabIndex = 2
-        tbx_victory.Text = "Victory"
+        tbx_victory.Text = "Victory Message"
         ' 
         ' tbx_hints
         ' 
         tbx_hints.AcceptsReturn = True
-        tbx_hints.Location = New Point(216, 72)
+        tbx_hints.Location = New Point(216, 64)
         tbx_hints.MaxLength = 4096
         tbx_hints.Multiline = True
         tbx_hints.Name = "tbx_hints"
         tbx_hints.ScrollBars = ScrollBars.Vertical
-        tbx_hints.Size = New Size(200, 432)
+        tbx_hints.Size = New Size(200, 448)
         tbx_hints.TabIndex = 1
-        tbx_hints.Text = "Hints"
+        tbx_hints.Text = "Hints Message"
         ' 
         ' tbx_instructions
         ' 
         tbx_instructions.AcceptsReturn = True
-        tbx_instructions.Location = New Point(8, 72)
+        tbx_instructions.Location = New Point(8, 64)
         tbx_instructions.MaxLength = 4096
         tbx_instructions.Multiline = True
         tbx_instructions.Name = "tbx_instructions"
         tbx_instructions.ScrollBars = ScrollBars.Vertical
-        tbx_instructions.Size = New Size(200, 432)
+        tbx_instructions.Size = New Size(200, 448)
         tbx_instructions.TabIndex = 0
-        tbx_instructions.Text = "Instructions"
+        tbx_instructions.Text = "Instructions Message"
         ' 
         ' tp_cinematics
         ' 
+        tp_cinematics.Controls.Add(lbl_scenario_instructions_map)
+        tp_cinematics.Controls.Add(lbl_loss_cinematics)
+        tp_cinematics.Controls.Add(lbl_victory_cinematics)
+        tp_cinematics.Controls.Add(lbl_pregame_cinematics)
         tp_cinematics.Controls.Add(cbx_instructions_cinematic)
         tp_cinematics.Controls.Add(cbx_loss_cinematic)
         tp_cinematics.Controls.Add(cbx_victory_cinematic)
@@ -4222,12 +4510,48 @@ Partial Class frm_scenario_maker
         tp_cinematics.Text = "Cinematics"
         tp_cinematics.UseVisualStyleBackColor = True
         ' 
+        ' lbl_scenario_instructions_map
+        ' 
+        lbl_scenario_instructions_map.AutoSize = True
+        lbl_scenario_instructions_map.Location = New Point(392, 8)
+        lbl_scenario_instructions_map.Name = "lbl_scenario_instructions_map"
+        lbl_scenario_instructions_map.Size = New Size(144, 15)
+        lbl_scenario_instructions_map.TabIndex = 107
+        lbl_scenario_instructions_map.Text = "Scenario Instructions Map"
+        ' 
+        ' lbl_loss_cinematics
+        ' 
+        lbl_loss_cinematics.AutoSize = True
+        lbl_loss_cinematics.Location = New Point(264, 8)
+        lbl_loss_cinematics.Name = "lbl_loss_cinematics"
+        lbl_loss_cinematics.Size = New Size(92, 15)
+        lbl_loss_cinematics.TabIndex = 106
+        lbl_loss_cinematics.Text = "Loss Cinematics"
+        ' 
+        ' lbl_victory_cinematics
+        ' 
+        lbl_victory_cinematics.AutoSize = True
+        lbl_victory_cinematics.Location = New Point(136, 8)
+        lbl_victory_cinematics.Name = "lbl_victory_cinematics"
+        lbl_victory_cinematics.Size = New Size(106, 15)
+        lbl_victory_cinematics.TabIndex = 105
+        lbl_victory_cinematics.Text = "Victory Cinematics"
+        ' 
+        ' lbl_pregame_cinematics
+        ' 
+        lbl_pregame_cinematics.AutoSize = True
+        lbl_pregame_cinematics.Location = New Point(8, 8)
+        lbl_pregame_cinematics.Name = "lbl_pregame_cinematics"
+        lbl_pregame_cinematics.Size = New Size(116, 15)
+        lbl_pregame_cinematics.TabIndex = 104
+        lbl_pregame_cinematics.Text = "Pregame Cinematics"
+        ' 
         ' cbx_instructions_cinematic
         ' 
         cbx_instructions_cinematic.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_instructions_cinematic.FormattingEnabled = True
         cbx_instructions_cinematic.Items.AddRange(New Object() {"None"})
-        cbx_instructions_cinematic.Location = New Point(392, 8)
+        cbx_instructions_cinematic.Location = New Point(392, 32)
         cbx_instructions_cinematic.Name = "cbx_instructions_cinematic"
         cbx_instructions_cinematic.Size = New Size(121, 23)
         cbx_instructions_cinematic.TabIndex = 3
@@ -4237,7 +4561,7 @@ Partial Class frm_scenario_maker
         cbx_loss_cinematic.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_loss_cinematic.FormattingEnabled = True
         cbx_loss_cinematic.Items.AddRange(New Object() {"None", "aoeiide_titlevideo.wmv"})
-        cbx_loss_cinematic.Location = New Point(264, 8)
+        cbx_loss_cinematic.Location = New Point(264, 32)
         cbx_loss_cinematic.Name = "cbx_loss_cinematic"
         cbx_loss_cinematic.Size = New Size(121, 23)
         cbx_loss_cinematic.TabIndex = 2
@@ -4247,7 +4571,7 @@ Partial Class frm_scenario_maker
         cbx_victory_cinematic.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_victory_cinematic.FormattingEnabled = True
         cbx_victory_cinematic.Items.AddRange(New Object() {"None", "aoeiide_titlevideo.wmv"})
-        cbx_victory_cinematic.Location = New Point(136, 8)
+        cbx_victory_cinematic.Location = New Point(136, 32)
         cbx_victory_cinematic.Name = "cbx_victory_cinematic"
         cbx_victory_cinematic.Size = New Size(121, 23)
         cbx_victory_cinematic.TabIndex = 1
@@ -4257,13 +4581,16 @@ Partial Class frm_scenario_maker
         cbx_pregame_cinematic.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_pregame_cinematic.FormattingEnabled = True
         cbx_pregame_cinematic.Items.AddRange(New Object() {"None", "aoeiide_titlevideo.wmv"})
-        cbx_pregame_cinematic.Location = New Point(8, 8)
+        cbx_pregame_cinematic.Location = New Point(8, 32)
         cbx_pregame_cinematic.Name = "cbx_pregame_cinematic"
         cbx_pregame_cinematic.Size = New Size(121, 23)
         cbx_pregame_cinematic.TabIndex = 0
         ' 
         ' tp_trigger
         ' 
+        tp_trigger.Controls.Add(lbl_created_trigger)
+        tp_trigger.Controls.Add(lbl_trigger_effects)
+        tp_trigger.Controls.Add(lbl_trigger_conditions)
         tp_trigger.Controls.Add(btn_trigger_add_effect)
         tp_trigger.Controls.Add(btn_trigger_add_condition)
         tp_trigger.Controls.Add(lbx_created_trigger)
@@ -4285,6 +4612,33 @@ Partial Class frm_scenario_maker
         tp_trigger.TabIndex = 9
         tp_trigger.Text = "Trigger"
         tp_trigger.UseVisualStyleBackColor = True
+        ' 
+        ' lbl_created_trigger
+        ' 
+        lbl_created_trigger.AutoSize = True
+        lbl_created_trigger.Location = New Point(1064, 8)
+        lbl_created_trigger.Name = "lbl_created_trigger"
+        lbl_created_trigger.Size = New Size(87, 15)
+        lbl_created_trigger.TabIndex = 110
+        lbl_created_trigger.Text = "Created Trigger"
+        ' 
+        ' lbl_trigger_effects
+        ' 
+        lbl_trigger_effects.AutoSize = True
+        lbl_trigger_effects.Location = New Point(232, 8)
+        lbl_trigger_effects.Name = "lbl_trigger_effects"
+        lbl_trigger_effects.Size = New Size(42, 15)
+        lbl_trigger_effects.TabIndex = 109
+        lbl_trigger_effects.Text = "Effects"
+        ' 
+        ' lbl_trigger_conditions
+        ' 
+        lbl_trigger_conditions.AutoSize = True
+        lbl_trigger_conditions.Location = New Point(8, 8)
+        lbl_trigger_conditions.Name = "lbl_trigger_conditions"
+        lbl_trigger_conditions.Size = New Size(65, 15)
+        lbl_trigger_conditions.TabIndex = 108
+        lbl_trigger_conditions.Text = "Conditions"
         ' 
         ' btn_trigger_add_effect
         ' 
@@ -4466,35 +4820,6 @@ Partial Class frm_scenario_maker
         ofd_aoe2de_path.Filter = """Age of Empires 2 DE""|*.exe"
         ofd_aoe2de_path.InitialDirectory = """C:\Program Files (x86)\Steam\steamapps\common\AoE2DE"""
         ' 
-        ' lbl_color_mood
-        ' 
-        lbl_color_mood.AutoSize = True
-        lbl_color_mood.Location = New Point(712, 8)
-        lbl_color_mood.Name = "lbl_color_mood"
-        lbl_color_mood.RightToLeft = RightToLeft.No
-        lbl_color_mood.Size = New Size(71, 15)
-        lbl_color_mood.TabIndex = 17
-        lbl_color_mood.Text = "Color Mood"
-        ' 
-        ' lbl_script_filename
-        ' 
-        lbl_script_filename.AutoSize = True
-        lbl_script_filename.Location = New Point(960, 8)
-        lbl_script_filename.Name = "lbl_script_filename"
-        lbl_script_filename.RightToLeft = RightToLeft.No
-        lbl_script_filename.Size = New Size(88, 15)
-        lbl_script_filename.TabIndex = 18
-        lbl_script_filename.Text = "Script Filename"
-        ' 
-        ' lbl_placed_terrains
-        ' 
-        lbl_placed_terrains.AutoSize = True
-        lbl_placed_terrains.Location = New Point(664, 8)
-        lbl_placed_terrains.Name = "lbl_placed_terrains"
-        lbl_placed_terrains.Size = New Size(85, 15)
-        lbl_placed_terrains.TabIndex = 19
-        lbl_placed_terrains.Text = "Placed Terrains"
-        ' 
         ' frm_scenario_maker
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -4570,8 +4895,8 @@ Partial Class frm_scenario_maker
         CType(nud_p3_food, ComponentModel.ISupportInitialize).EndInit()
         CType(nud_p2_food, ComponentModel.ISupportInitialize).EndInit()
         CType(nud_p1_food, ComponentModel.ISupportInitialize).EndInit()
-        tp_units.ResumeLayout(False)
-        tp_units.PerformLayout()
+        tp_objects.ResumeLayout(False)
+        tp_objects.PerformLayout()
         tp_diplomacy.ResumeLayout(False)
         tp_diplomacy.PerformLayout()
         tp_victory.ResumeLayout(False)
@@ -4581,6 +4906,7 @@ Partial Class frm_scenario_maker
         tp_messages.ResumeLayout(False)
         tp_messages.PerformLayout()
         tp_cinematics.ResumeLayout(False)
+        tp_cinematics.PerformLayout()
         tp_trigger.ResumeLayout(False)
         tp_trigger.PerformLayout()
         tp_about.ResumeLayout(False)
@@ -4716,7 +5042,7 @@ Partial Class frm_scenario_maker
     Public WithEvents cbx_gaia_ai As CheckBox
     Public WithEvents lbl_player_type As Label
     Public WithEvents btn_new_scenario As Button
-    Public WithEvents tp_units As TabPage
+    Public WithEvents tp_objects As TabPage
     Public WithEvents lbx_objects_1 As ListBox
     Public WithEvents btn_remove_unit As Button
     Public WithEvents btn_create_unit As Button
@@ -4727,7 +5053,7 @@ Partial Class frm_scenario_maker
     Public WithEvents tp_cinematics As TabPage
     Public WithEvents tp_trigger As TabPage
     Friend WithEvents tp_about As TabPage
-    Public WithEvents cbx_unit_player As ComboBox
+    Public WithEvents cbx_object_player As ComboBox
     Public WithEvents lbl_middle As Label
     Public WithEvents lbl_p7_me As Label
     Public WithEvents lbl_p6_me As Label
@@ -4964,8 +5290,8 @@ Partial Class frm_scenario_maker
     Public WithEvents cbx_lock_co_op_alliances As CheckBox
     Public WithEvents cbx_villager_force_drop As CheckBox
     Public WithEvents cbx_testing_difficulty As ComboBox
-    Public WithEvents ListBox1 As ListBox
-    Public WithEvents ListBox2 As ListBox
+    Public WithEvents lbx_view_y As ListBox
+    Public WithEvents lbx_view_x As ListBox
     Public WithEvents btn_camera_view As Button
     Friend WithEvents CheckBox2 As CheckBox
     Public WithEvents lbl_custom_map_size As Label
@@ -4975,4 +5301,33 @@ Partial Class frm_scenario_maker
     Public WithEvents lbl_color_mood As Label
     Public WithEvents lbl_script_filename As Label
     Public WithEvents lbl_placed_terrains As Label
+    Public WithEvents lbl_object_list_b As Label
+    Public WithEvents lbl_object_list_a As Label
+    Public WithEvents lbl_object_player As Label
+    Public WithEvents lbl_placed_objects As Label
+    Public WithEvents lbl_object_y As Label
+    Public WithEvents lbl_object_x As Label
+    Public WithEvents lbl_max_teams As Label
+    Public WithEvents lbl_victory_condition As Label
+    Public WithEvents lbl_score As Label
+    Public WithEvents lbl_percentage As Label
+    Public WithEvents lbl_time_limit As Label
+    Public WithEvents lbl_disabled_buildings As Label
+    Public WithEvents lbl_disabled_units As Label
+    Public WithEvents lbl_disabled_techs As Label
+    Public WithEvents lbl_testing_difficulty As Label
+    Public WithEvents lbl_options_player As Label
+    Public WithEvents lbl_scout_string_id As Label
+    Public WithEvents lbl_history_string_id As Label
+    Public WithEvents lbl_loss_string_id As Label
+    Public WithEvents lbl_victory_string_id As Label
+    Public WithEvents lbl_hints_string_id As Label
+    Public WithEvents lbl_instructions_string_id As Label
+    Public WithEvents lbl_scenario_instructions_map As Label
+    Public WithEvents lbl_loss_cinematics As Label
+    Public WithEvents lbl_victory_cinematics As Label
+    Public WithEvents lbl_pregame_cinematics As Label
+    Public WithEvents lbl_trigger_effects As Label
+    Public WithEvents lbl_trigger_conditions As Label
+    Public WithEvents lbl_created_trigger As Label
 End Class

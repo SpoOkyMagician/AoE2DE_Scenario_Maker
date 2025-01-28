@@ -198,11 +198,11 @@ Public Class frm_scenario_maker
 
     End Sub
 
-    Public Sub cbx_team_positions_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_team_positions.CheckedChanged
+    Public Sub tbx_script_filename_TextChanged(sender As Object, e As EventArgs) Handles tbx_script_filename.TextChanged
 
     End Sub
 
-    Public Sub tbx_script_filename_TextChanged(sender As Object, e As EventArgs) Handles tbx_script_filename.TextChanged
+    Public Sub cbx_team_positions_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_team_positions.CheckedChanged
 
     End Sub
 
@@ -822,13 +822,37 @@ Public Class frm_scenario_maker
 
     End Sub
 
-    ' [TABS: UNITS CODE] -----------------------------------------------------------------------------------------------------------------------------------------------------------
+    ' [TABS: OBJECTS CODE] -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Public Sub lbx_objects_1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_objects_1.SelectedIndexChanged
 
     End Sub
 
     Public Sub lbx_objects_2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_objects_2.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub lbx_map_x_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_map_x.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub lbx_map_y_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_map_y.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub lbx_placed_objects_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_placed_objects.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_object_player_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_object_player.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub btn_create_unit_Click(sender As Object, e As EventArgs) Handles btn_create_unit.Click
+
+    End Sub
+
+    Public Sub btn_remove_unit_Click(sender As Object, e As EventArgs) Handles btn_remove_unit.Click
 
     End Sub
 
@@ -1212,7 +1236,107 @@ Public Class frm_scenario_maker
 
     End Sub
 
-    ' [TABS: CINEMATICS CODE] ------------------------------------------------------------------------------------------------------------------------------------------------------
+    ' [TABS: OPTIONS CODE] ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    Public Sub clb_disabled_units_SelectedIndexChanged(sender As Object, e As EventArgs) Handles clb_disabled_units.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub clb_disabled_buildings_SelectedIndexChanged(sender As Object, e As EventArgs) Handles clb_disabled_buildings.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub clb_disabled_techs_SelectedIndexChanged(sender As Object, e As EventArgs) Handles clb_disabled_techs.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_disabled_player_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_disabled_player.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub cbx_full_tech_tree_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_full_tech_tree.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_collide_and_correcting_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_collide_and_correcting.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_villager_force_drop_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_villager_force_drop.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_lock_co_op_alliances_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_lock_co_op_alliances.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_testing_difficulty_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_testing_difficulty.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub lbx_view_x_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_view_x.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub lbx_view_y_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_view_y.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub btn_camera_view_Click(sender As Object, e As EventArgs) Handles btn_camera_view.Click
+
+    End Sub
+
+    ' [TABS: MESSAGES CODE] ---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    Public Sub tbx_instructions_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_instructions_string_id.TextChanged
+
+    End Sub
+
+    Public Sub tbx_instructions_TextChanged(sender As Object, e As EventArgs) Handles tbx_instructions.TextChanged
+
+    End Sub
+
+    Public Sub tbx_hints_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_hints_string_id.TextChanged
+
+    End Sub
+
+    Public Sub tbx_hints_TextChanged(sender As Object, e As EventArgs) Handles tbx_hints.TextChanged
+
+    End Sub
+
+    Public Sub tbx_victory_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_victory_string_id.TextChanged
+
+    End Sub
+
+    Public Sub tbx_victory_TextChanged(sender As Object, e As EventArgs) Handles tbx_victory.TextChanged
+
+    End Sub
+
+    Public Sub tbx_loss_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_loss_string_id.TextChanged
+
+    End Sub
+
+    Public Sub tbx_loss_TextChanged(sender As Object, e As EventArgs) Handles tbx_loss.TextChanged
+
+    End Sub
+
+    Public Sub tbx_history_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_history_string_id.TextChanged
+
+    End Sub
+
+    Public Sub tbx_history_TextChanged(sender As Object, e As EventArgs) Handles tbx_history.TextChanged
+
+    End Sub
+
+    Public Sub tbx_scout_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_scout_string_id.TextChanged
+
+    End Sub
+
+    Public Sub tbx_scout_TextChanged(sender As Object, e As EventArgs) Handles tbx_scout.TextChanged
+
+    End Sub
+
+    ' [TABS: CINEMATICS CODE] -------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Public Sub cbx_pregame_cinematic_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_pregame_cinematic.SelectedIndexChanged
 
@@ -1227,6 +1351,64 @@ Public Class frm_scenario_maker
     End Sub
 
     Public Sub cbx_instructions_cinematic_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_instructions_cinematic.SelectedIndexChanged
+
+    End Sub
+
+    ' [TABS: TRIGGER CODE] ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    Public Sub lbx_trigger_conditions_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_trigger_conditions.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub lbx_trigger_effects_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_trigger_effects.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub tbx_trigger_name_TextChanged(sender As Object, e As EventArgs) Handles tbx_trigger_name.TextChanged
+
+    End Sub
+
+    Public Sub cbx_trigger_starting_state_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_trigger_starting_state.CheckedChanged
+
+    End Sub
+
+    Public Sub cbx_trigger_looping_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_trigger_looping.CheckedChanged
+
+    End Sub
+
+    Public Sub btn_trigger_add_condition_Click(sender As Object, e As EventArgs) Handles btn_trigger_add_condition.Click
+
+    End Sub
+
+    Public Sub btn_trigger_add_effect_Click(sender As Object, e As EventArgs) Handles btn_trigger_add_effect.Click
+
+    End Sub
+
+    Public Sub tbx_trigger_description_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_trigger_description_string_id.TextChanged
+
+    End Sub
+
+    Public Sub cbx_trigger_display_as_objective_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_trigger_display_as_objective.CheckedChanged
+
+    End Sub
+
+    Public Sub tbx_trigger_description_TextChanged(sender As Object, e As EventArgs) Handles tbx_trigger_description.TextChanged
+
+    End Sub
+
+    Public Sub tbx_trigger_short_description_string_id_TextChanged(sender As Object, e As EventArgs) Handles tbx_trigger_short_description_string_id.TextChanged
+
+    End Sub
+
+    Public Sub cbx_trigger_display_on_screen_CheckedChanged(sender As Object, e As EventArgs) Handles cbx_trigger_display_on_screen.CheckedChanged
+
+    End Sub
+
+    Public Sub tbx_trigger_short_description_TextChanged(sender As Object, e As EventArgs) Handles tbx_trigger_short_description.TextChanged
+
+    End Sub
+
+    Public Sub lbx_created_trigger_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbx_created_trigger.SelectedIndexChanged
 
     End Sub
 
