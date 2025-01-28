@@ -19,11 +19,15 @@ Note: I do not know if I will actually include the code to save/load/etc. I just
 
 Note: At the bare minimum, I want to have a working GUI that maybe someone can take over if needed. (Obviously I intend it to be a "Trigger Studios" type Application. Focusing on Triggers. It would be nice if the 'scenario parser' team could be involved but, that is up to them. Maybe some day. Assuming it can even be included.) I will try to include as much code as I can to help someone finish it if need be. I will be slowly working on it every day. It's made in Visual Basic. So, if you know VB, feel free to look at the source code. If you want to try it out, you can but, remember, it's not even remotely finished. (There is 'some' code in it already though.)<br>
 
-I may release a build of it later. For now, I will just leave the source code up.<br>
-
 Special Thanks: https://docs.google.com/spreadsheets/d/1llyn7FWKEtmss_WE-6hinMItpsV-h-6qsY8xBlkxUzw/edit?gid=193837369#gid=193837369 (This saved me so much work with the units.)<br>
 
-Instructions: You will need Microsoft Visual Studio 2022 Community to test this. ( https://visualstudio.microsoft.com/downloads/ )<br><br>
+Zip Instructions:<br><br>
+1: Click here: https://github.com/SpoOkyMagician/AoE2DE_Scenario_Maker/releases/tag/preview <br>
+2: Click "Download: AoE2DE_SM.zip" Link. <br>
+3: Unzip. <br>
+4: Run Setup.exe / AoE2DE_Scenario_Maker.exe <br>
+
+Source Code Instructions: You will need Microsoft Visual Studio 2022 Community to test this. ( https://visualstudio.microsoft.com/downloads/ )<br><br>
 1: Click the "Green Code Button" on Github and acquire the source code. (If you choose zip, you need to right click it and choose "Unblock".)<br>
 2: In the files, open the "AoE2DE_Scenario_Maker.sln" file with "Microsoft Visual Studio 2022 Community".<br>
 3: Once the project opens, you can Click/Choose the "Debug/Release" Option as you want and Click the "Green Play Button". (AoE2DE_Scenario_Maker)<br>
