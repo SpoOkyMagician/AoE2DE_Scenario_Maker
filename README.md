@@ -17,12 +17,14 @@ Note: I do not know if I will actually include the code to save/load/etc. I just
 ![Alt text](sm_11.png?raw=true "Screenshot")
 ![Alt text](sm_12.png?raw=true "Screenshot")<br>
 
-Note: At the bare minimum, I want to have a working GUI that maybe someone can take over if needed. (Obviously I intend it to be a "Trigger Studios" type Application. Focusing on Triggers. It would be nice if the 'scenario parser' team could be involved but, that is up to them. Maybe some day. Assuming it can even be included.) I will try to include as much code as I can to help someone finish it if need be. I will be slowly working on it every day. It's made in Visual Basic. So, if you know VB, feel free to look at the source code. If you want to try it out, you can but, remember, it's not even remotely finished. (There is 'some' code in it already though.) You will need "microsoft visual studio community 2022" to open/run it. ( https://visualstudio.microsoft.com/downloads/ ) I may provide builds later if it gets finished.<br>
-
-1: Download it on the Github. (Click the "green code button" and acquire as you can. Zip is fine.)<br>
-2: Open it with the "AoE2DE_Scenario_Maker.sln" file.<br>
-3: Once opened, you can click the 'green play icon' (AoE2DE_Scenario_Maker) at the top to start it. You can stop it by closing the created new window or clicking the 'red stop icon' in MVSC. (Although, there is not much to be seen yet so, I would not bother unless you already have it or just really want to see it.)<br>
+Note: At the bare minimum, I want to have a working GUI that maybe someone can take over if needed. (Obviously I intend it to be a "Trigger Studios" type Application. Focusing on Triggers. It would be nice if the 'scenario parser' team could be involved but, that is up to them. Maybe some day. Assuming it can even be included.) I will try to include as much code as I can to help someone finish it if need be. I will be slowly working on it every day. It's made in Visual Basic. So, if you know VB, feel free to look at the source code. If you want to try it out, you can but, remember, it's not even remotely finished. (There is 'some' code in it already though.)<br>
 
 I may release a build of it later. For now, I will just leave the source code up.<br>
 
-Special Thanks: https://docs.google.com/spreadsheets/d/1llyn7FWKEtmss_WE-6hinMItpsV-h-6qsY8xBlkxUzw/edit?gid=193837369#gid=193837369 (This saved me so much work with the units.)
+Special Thanks: https://docs.google.com/spreadsheets/d/1llyn7FWKEtmss_WE-6hinMItpsV-h-6qsY8xBlkxUzw/edit?gid=193837369#gid=193837369 (This saved me so much work with the units.)<br>
+
+Instructions: You will need Microsoft Visual Studio 2022 Community to test this. ( https://visualstudio.microsoft.com/downloads/ )<br><br>
+1: Click the "Green Code Button" on Github and acquire the source code. (If you choose zip, you need to right click it and choose "Unblock".)<br>
+2: In the files, open the "AoE2DE_Scenario_Maker.sln" file with "Microsoft Visual Studio 2022 Community".<br>
+3: Once the project opens, you can Click/Choose the "Debug/Release" Option as you want and Click the "Green Play Button". (AoE2DE_Scenario_Maker)<br>
+4: You can close the New Window once complete or click the "Red Square Stop Button" in "Microsoft Visual Studio 2022 Community".
