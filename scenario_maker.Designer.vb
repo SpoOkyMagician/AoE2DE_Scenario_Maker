@@ -351,6 +351,18 @@ Partial Class frm_scenario_maker
         rbn_conquest = New RadioButton()
         rbn_standard = New RadioButton()
         tp_options = New TabPage()
+        btn_camera_view = New Button()
+        ListBox1 = New ListBox()
+        ListBox2 = New ListBox()
+        cbx_testing_difficulty = New ComboBox()
+        cbx_lock_co_op_alliances = New CheckBox()
+        cbx_villager_force_drop = New CheckBox()
+        cbx_collide_and_correcting = New CheckBox()
+        cbx_full_tech_tree = New CheckBox()
+        cbx_disabled_player = New ComboBox()
+        clb_disabled_techs = New CheckedListBox()
+        clb_disabled_buildings = New CheckedListBox()
+        clb_disabled_units = New CheckedListBox()
         tp_messages = New TabPage()
         tbx_scout_string_id = New TextBox()
         tbx_history_string_id = New TextBox()
@@ -389,18 +401,6 @@ Partial Class frm_scenario_maker
         ofd_scenario = New OpenFileDialog()
         sfd_scenario = New SaveFileDialog()
         ofd_aoe2de_path = New OpenFileDialog()
-        clb_disabled_units = New CheckedListBox()
-        clb_disabled_buildings = New CheckedListBox()
-        clb_disabled_techs = New CheckedListBox()
-        cbx_disabled_player = New ComboBox()
-        cbx_full_tech_tree = New CheckBox()
-        cbx_collide_and_correcting = New CheckBox()
-        cbx_villager_force_drop = New CheckBox()
-        cbx_lock_co_op_alliances = New CheckBox()
-        cbx_testing_difficulty = New ComboBox()
-        ListBox1 = New ListBox()
-        ListBox2 = New ListBox()
-        btn_camera_view = New Button()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
@@ -503,7 +503,7 @@ Partial Class frm_scenario_maker
         tp_file.Location = New Point(4, 24)
         tp_file.Name = "tp_file"
         tp_file.Padding = New Padding(3)
-        tp_file.Size = New Size(1428, 509)
+        tp_file.Size = New Size(1448, 524)
         tp_file.TabIndex = 2
         tp_file.Text = "File"
         tp_file.UseVisualStyleBackColor = True
@@ -575,7 +575,7 @@ Partial Class frm_scenario_maker
         tp_map.Location = New Point(4, 24)
         tp_map.Name = "tp_map"
         tp_map.Padding = New Padding(3)
-        tp_map.Size = New Size(1428, 509)
+        tp_map.Size = New Size(1448, 524)
         tp_map.TabIndex = 0
         tp_map.Text = "Map"
         tp_map.UseVisualStyleBackColor = True
@@ -590,13 +590,14 @@ Partial Class frm_scenario_maker
         ' 
         ' cbx_map_size
         ' 
+        cbx_map_size.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_map_size.FormattingEnabled = True
+        cbx_map_size.ImeMode = ImeMode.NoControl
         cbx_map_size.Items.AddRange(New Object() {"Miniature (1 Player)", "Tiny (2 Players)", "Small (3 Players)", "Medium (4 Players)", "Normal (6 Players)", "Large (8 Players)", "Huge", "Giant", "Massive", "Enormous", "Colossal", "Incredible", "Monstrous", "Ludicrous", "Custom"})
         cbx_map_size.Location = New Point(8, 8)
         cbx_map_size.Name = "cbx_map_size"
         cbx_map_size.Size = New Size(152, 23)
         cbx_map_size.TabIndex = 6
-        cbx_map_size.Text = "Map Size"
         ' 
         ' nud_mwh_size
         ' 
@@ -623,33 +624,33 @@ Partial Class frm_scenario_maker
         ' 
         ' cbx_default_terrain
         ' 
+        cbx_default_terrain.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_default_terrain.FormattingEnabled = True
         cbx_default_terrain.Items.AddRange(New Object() {"Beach", "Beach (Non-Navigable)", "Beach (Non-Navigable), Wet Gravel", "Beach (Non-Navigable), Wet Rock", "Beach (Non-Navigable), Wet Sand", "Beach, Ice", "Beach, Vegetation", "Beach, Wet", "Beach, Wet Gravel", "Beach, Wet Rock", "Beach, White", "Beach, White, Vegetation", "Black", "Desert, Cracked", "Desert, Quicksand", "Desert, Sand", "Dirt 1", "Dirt 2", "Dirt 3", "Dirt 4", "Dirt, Mud", "Dirt, Savannah", "Farm", "Farm, 0%", "Farm, 33%", "Farm, 67%", "Farm, Dead", "Forest, Acacia", "Forest, Autumn", "Forest, Autumn Snow", "Forest, Bamboo", "Forest, Baobab", "Forest, Birch", "Forest, Bush", "Forest, Dead", "Forest, Dragon Tree", "Forest, Jungle", "Forest, Mangrove", "Forest, Mediterranean", "Forest, Oak", "Forest, Oak Bush", "Forest, Palm Desert", "Forest, Palm Grass", "Forest, Pine", "Forest, Pine Snow", "Forest, Rainforest", "Forest, Reeds", "Forest, Reeds (Beach)", "Forest, Reeds (Shallows)", "Grass 1", "Grass 2", "Grass 3", "Grass, Dry", "Grass, Foundation", "Grass, Jungle", "Grass, Jungle (Rainforest)", "Grass, Other", "Gravel, Default", "Gravel, Desert", "Ice", "Ice, Navigable", "Rice Farm", "Rice Farm, 0%", "Rice Farm, 33%", "Rice Farm, 66%", "Rice Farm, Dead", "Road", "Road, Broken", "Road, Fungus", "Road, Gravel", "Rock 1", "Shallows", "Shallows, Azure", "Shallows, Mangrove", "Snow", "Snow, Foundation", "Snow, Light", "Snow, Strong", "Swamp, Bogland", "Swamp, Shallows", "Underbrush", "Underbrush, Jungle", "Underbrush, Leaves", "Underbrush, Snow", "Water 2D, Bridge", "Water 2D, Shoreless", "Water, Azure", "Water, Brown", "Water, Deep", "Water, Deep Ocean", "Water, Green", "Water, Medium", "Water, Shallow"})
         cbx_default_terrain.Location = New Point(8, 40)
         cbx_default_terrain.Name = "cbx_default_terrain"
         cbx_default_terrain.Size = New Size(243, 23)
         cbx_default_terrain.TabIndex = 8
-        cbx_default_terrain.Text = "Default Terrain"
         ' 
         ' cbx_color_mood
         ' 
+        cbx_color_mood.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_color_mood.FormattingEnabled = True
         cbx_color_mood.Items.AddRange(New Object() {"Default", "Autumn", "Desert", "Jungle", "Winter", "Night"})
         cbx_color_mood.Location = New Point(8, 104)
         cbx_color_mood.Name = "cbx_color_mood"
         cbx_color_mood.Size = New Size(243, 23)
         cbx_color_mood.TabIndex = 10
-        cbx_color_mood.Text = "Color Mood"
         ' 
         ' cbx_ai_map_type
         ' 
+        cbx_ai_map_type.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_ai_map_type.FormattingEnabled = True
         cbx_ai_map_type.Items.AddRange(New Object() {"Acclivity", "Acropolis", "African Clearing", "Aftermath", "Alpine Lakes", "Amazon Tunnel", "Arabia", "Archipelago", "Arena", "Atacama", "BR Battle On Ice", "BR El Dorado", "BR Fall of Axum", "BR Fall of Rome", "BR Majapahit Empire", "Baltic", "Black Forest", "Bog Islands", "Bogland", "Budapest", "Cenotes", "City of Lakes", "Coastal", "Coastal Forest", "Continental", "Crater", "Crater Lake", "Crossroads", "CtR Monsoon", "CtR Pyramid Descent", "CtR Random", "CtR Spiral", "Enclosed", "Eruption", "Fortress", "Four Lakes", "Frigid Lake", "Ghost Lake", "Gold Rush", "Golden Pit", "Golden Swamp", "Greenland", "Haboob", "Hamburger", "Hideout", "Highland", "Hill Fort", "Islands", "Kawasan", "Kilimanjaro", "Land Madness", "Land Nomad", "Lombardia", "Lowland", "Mangrove Jungle", "Marketplace", "Meadow", "Mediterranean", "MegaRandom", "Michi", "Migration", "Mongolia", "Morass", "Mountain Pass", "Mountain Range", "Mountain Ridge", "Nile Delta", "Nomad", "Northern Isles", "Oasis", "Pacific Islands", "Ravines", "Ring Fortress", "Rivers", "Runestones", "Sacred Springs", "Salt Marsh", "Sandbank", "Scandanavia", "Seize The Mountain", "Serengeti", "Shoals", "Socotra", "Steppe", "Team Islands", "Team Moats", "Valley", "Volcano Island", "Wade", "Water Nomad", "Wolf Hill", "Yucatan"})
         cbx_ai_map_type.Location = New Point(8, 72)
         cbx_ai_map_type.Name = "cbx_ai_map_type"
         cbx_ai_map_type.Size = New Size(243, 23)
         cbx_ai_map_type.TabIndex = 9
-        cbx_ai_map_type.Text = "AI Map Type"
         ' 
         ' tp_terrain
         ' 
@@ -669,7 +670,7 @@ Partial Class frm_scenario_maker
         tp_terrain.Controls.Add(lbx_base_terrain)
         tp_terrain.Location = New Point(4, 24)
         tp_terrain.Name = "tp_terrain"
-        tp_terrain.Size = New Size(1428, 509)
+        tp_terrain.Size = New Size(1448, 524)
         tp_terrain.TabIndex = 11
         tp_terrain.Text = "Terrain"
         tp_terrain.UseVisualStyleBackColor = True
@@ -981,7 +982,7 @@ Partial Class frm_scenario_maker
         tp_players.Location = New Point(4, 24)
         tp_players.Name = "tp_players"
         tp_players.Padding = New Padding(3)
-        tp_players.Size = New Size(1428, 509)
+        tp_players.Size = New Size(1448, 524)
         tp_players.TabIndex = 1
         tp_players.Text = "Players"
         tp_players.UseVisualStyleBackColor = True
@@ -1168,93 +1169,93 @@ Partial Class frm_scenario_maker
         ' 
         ' cbx_p8_architecture
         ' 
+        cbx_p8_architecture.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p8_architecture.FormattingEnabled = True
         cbx_p8_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p8_architecture.Location = New Point(1128, 304)
         cbx_p8_architecture.Name = "cbx_p8_architecture"
         cbx_p8_architecture.Size = New Size(104, 23)
         cbx_p8_architecture.TabIndex = 254
-        cbx_p8_architecture.Text = "Civilization"
         ' 
         ' cbx_p7_architecture
         ' 
+        cbx_p7_architecture.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p7_architecture.FormattingEnabled = True
         cbx_p7_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p7_architecture.Location = New Point(1128, 272)
         cbx_p7_architecture.Name = "cbx_p7_architecture"
         cbx_p7_architecture.Size = New Size(104, 23)
         cbx_p7_architecture.TabIndex = 253
-        cbx_p7_architecture.Text = "Civilization"
         ' 
         ' cbx_p6_architecture
         ' 
+        cbx_p6_architecture.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p6_architecture.FormattingEnabled = True
         cbx_p6_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p6_architecture.Location = New Point(1128, 240)
         cbx_p6_architecture.Name = "cbx_p6_architecture"
         cbx_p6_architecture.Size = New Size(104, 23)
         cbx_p6_architecture.TabIndex = 252
-        cbx_p6_architecture.Text = "Civilization"
         ' 
         ' cbx_p5_architecture
         ' 
+        cbx_p5_architecture.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p5_architecture.FormattingEnabled = True
         cbx_p5_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p5_architecture.Location = New Point(1128, 208)
         cbx_p5_architecture.Name = "cbx_p5_architecture"
         cbx_p5_architecture.Size = New Size(104, 23)
         cbx_p5_architecture.TabIndex = 251
-        cbx_p5_architecture.Text = "Civilization"
         ' 
         ' cbx_p4_architecture
         ' 
+        cbx_p4_architecture.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p4_architecture.FormattingEnabled = True
         cbx_p4_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p4_architecture.Location = New Point(1128, 176)
         cbx_p4_architecture.Name = "cbx_p4_architecture"
         cbx_p4_architecture.Size = New Size(104, 23)
         cbx_p4_architecture.TabIndex = 250
-        cbx_p4_architecture.Text = "Civilization"
         ' 
         ' cbx_p3_architecture
         ' 
+        cbx_p3_architecture.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p3_architecture.FormattingEnabled = True
         cbx_p3_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p3_architecture.Location = New Point(1128, 144)
         cbx_p3_architecture.Name = "cbx_p3_architecture"
         cbx_p3_architecture.Size = New Size(104, 23)
         cbx_p3_architecture.TabIndex = 249
-        cbx_p3_architecture.Text = "Civilization"
         ' 
         ' cbx_p2_architecture
         ' 
+        cbx_p2_architecture.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p2_architecture.FormattingEnabled = True
         cbx_p2_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p2_architecture.Location = New Point(1128, 112)
         cbx_p2_architecture.Name = "cbx_p2_architecture"
         cbx_p2_architecture.Size = New Size(104, 23)
         cbx_p2_architecture.TabIndex = 248
-        cbx_p2_architecture.Text = "Civilization"
         ' 
         ' cbx_p1_architecture
         ' 
+        cbx_p1_architecture.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p1_architecture.FormattingEnabled = True
         cbx_p1_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p1_architecture.Location = New Point(1128, 80)
         cbx_p1_architecture.Name = "cbx_p1_architecture"
         cbx_p1_architecture.Size = New Size(104, 23)
         cbx_p1_architecture.TabIndex = 247
-        cbx_p1_architecture.Text = "Civilization"
         ' 
         ' cbx_gaia_architecture
         ' 
+        cbx_gaia_architecture.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_gaia_architecture.FormattingEnabled = True
         cbx_gaia_architecture.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_gaia_architecture.Location = New Point(1128, 48)
         cbx_gaia_architecture.Name = "cbx_gaia_architecture"
         cbx_gaia_architecture.Size = New Size(104, 23)
         cbx_gaia_architecture.TabIndex = 246
-        cbx_gaia_architecture.Text = "Civilization"
         ' 
         ' lbl_architecture
         ' 
@@ -1278,93 +1279,93 @@ Partial Class frm_scenario_maker
         ' 
         ' cbx_p8_civilization
         ' 
+        cbx_p8_civilization.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p8_civilization.FormattingEnabled = True
         cbx_p8_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p8_civilization.Location = New Point(1016, 304)
         cbx_p8_civilization.Name = "cbx_p8_civilization"
         cbx_p8_civilization.Size = New Size(104, 23)
         cbx_p8_civilization.TabIndex = 243
-        cbx_p8_civilization.Text = "Civilization"
         ' 
         ' cbx_p7_civilization
         ' 
+        cbx_p7_civilization.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p7_civilization.FormattingEnabled = True
         cbx_p7_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p7_civilization.Location = New Point(1016, 272)
         cbx_p7_civilization.Name = "cbx_p7_civilization"
         cbx_p7_civilization.Size = New Size(104, 23)
         cbx_p7_civilization.TabIndex = 242
-        cbx_p7_civilization.Text = "Civilization"
         ' 
         ' cbx_p6_civilization
         ' 
+        cbx_p6_civilization.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p6_civilization.FormattingEnabled = True
         cbx_p6_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p6_civilization.Location = New Point(1016, 240)
         cbx_p6_civilization.Name = "cbx_p6_civilization"
         cbx_p6_civilization.Size = New Size(104, 23)
         cbx_p6_civilization.TabIndex = 241
-        cbx_p6_civilization.Text = "Civilization"
         ' 
         ' cbx_p5_civilization
         ' 
+        cbx_p5_civilization.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p5_civilization.FormattingEnabled = True
         cbx_p5_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p5_civilization.Location = New Point(1016, 208)
         cbx_p5_civilization.Name = "cbx_p5_civilization"
         cbx_p5_civilization.Size = New Size(104, 23)
         cbx_p5_civilization.TabIndex = 240
-        cbx_p5_civilization.Text = "Civilization"
         ' 
         ' cbx_p4_civilization
         ' 
+        cbx_p4_civilization.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p4_civilization.FormattingEnabled = True
         cbx_p4_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p4_civilization.Location = New Point(1016, 176)
         cbx_p4_civilization.Name = "cbx_p4_civilization"
         cbx_p4_civilization.Size = New Size(104, 23)
         cbx_p4_civilization.TabIndex = 239
-        cbx_p4_civilization.Text = "Civilization"
         ' 
         ' cbx_p3_civilization
         ' 
+        cbx_p3_civilization.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p3_civilization.FormattingEnabled = True
         cbx_p3_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p3_civilization.Location = New Point(1016, 144)
         cbx_p3_civilization.Name = "cbx_p3_civilization"
         cbx_p3_civilization.Size = New Size(104, 23)
         cbx_p3_civilization.TabIndex = 238
-        cbx_p3_civilization.Text = "Civilization"
         ' 
         ' cbx_p2_civilization
         ' 
+        cbx_p2_civilization.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p2_civilization.FormattingEnabled = True
         cbx_p2_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p2_civilization.Location = New Point(1016, 112)
         cbx_p2_civilization.Name = "cbx_p2_civilization"
         cbx_p2_civilization.Size = New Size(104, 23)
         cbx_p2_civilization.TabIndex = 237
-        cbx_p2_civilization.Text = "Civilization"
         ' 
         ' cbx_p1_civilization
         ' 
+        cbx_p1_civilization.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p1_civilization.FormattingEnabled = True
         cbx_p1_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_p1_civilization.Location = New Point(1016, 80)
         cbx_p1_civilization.Name = "cbx_p1_civilization"
         cbx_p1_civilization.Size = New Size(104, 23)
         cbx_p1_civilization.TabIndex = 236
-        cbx_p1_civilization.Text = "Civilization"
         ' 
         ' cbx_gaia_civilization
         ' 
+        cbx_gaia_civilization.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_gaia_civilization.FormattingEnabled = True
         cbx_gaia_civilization.Items.AddRange(New Object() {"Achaemenids", "Armenians", "Athenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians", "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks", "Georgians", "Goths", "Gurjaras", "Hindustanis", "Huns", "Incas", "Italians", "Japanese", "Khmer", "Koreans", "Lithuanians", "Magyars", "Malay", "Malians", "Mayans", "Mongols", "Persians", "Poles", "Portuguese", "Romans", "Saracens", "Sicilians", "Slavs", "Spanish", "Spartans", "Tatars", "Teutons", "Turks", "Vietnamese", "Vikings", "Full Random", "Random"})
         cbx_gaia_civilization.Location = New Point(1016, 48)
         cbx_gaia_civilization.Name = "cbx_gaia_civilization"
         cbx_gaia_civilization.Size = New Size(104, 23)
         cbx_gaia_civilization.TabIndex = 235
-        cbx_gaia_civilization.Text = "Civilization"
         ' 
         ' lbl_ai_personality
         ' 
@@ -1378,102 +1379,102 @@ Partial Class frm_scenario_maker
         ' 
         ' cbx_p8_ai_personality
         ' 
+        cbx_p8_ai_personality.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p8_ai_personality.FormattingEnabled = True
         cbx_p8_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
         cbx_p8_ai_personality.Location = New Point(896, 304)
         cbx_p8_ai_personality.Name = "cbx_p8_ai_personality"
         cbx_p8_ai_personality.Size = New Size(112, 23)
         cbx_p8_ai_personality.TabIndex = 233
-        cbx_p8_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_p7_ai_personality
         ' 
+        cbx_p7_ai_personality.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p7_ai_personality.FormattingEnabled = True
         cbx_p7_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
         cbx_p7_ai_personality.Location = New Point(896, 272)
         cbx_p7_ai_personality.Name = "cbx_p7_ai_personality"
         cbx_p7_ai_personality.Size = New Size(112, 23)
         cbx_p7_ai_personality.TabIndex = 232
-        cbx_p7_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_p6_ai_personality
         ' 
+        cbx_p6_ai_personality.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p6_ai_personality.FormattingEnabled = True
         cbx_p6_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
         cbx_p6_ai_personality.Location = New Point(896, 240)
         cbx_p6_ai_personality.Name = "cbx_p6_ai_personality"
         cbx_p6_ai_personality.Size = New Size(112, 23)
         cbx_p6_ai_personality.TabIndex = 231
-        cbx_p6_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_p5_ai_personality
         ' 
+        cbx_p5_ai_personality.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p5_ai_personality.FormattingEnabled = True
         cbx_p5_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
         cbx_p5_ai_personality.Location = New Point(896, 208)
         cbx_p5_ai_personality.Name = "cbx_p5_ai_personality"
         cbx_p5_ai_personality.Size = New Size(112, 23)
         cbx_p5_ai_personality.TabIndex = 230
-        cbx_p5_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_p4_ai_personality
         ' 
+        cbx_p4_ai_personality.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p4_ai_personality.FormattingEnabled = True
         cbx_p4_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
         cbx_p4_ai_personality.Location = New Point(896, 176)
         cbx_p4_ai_personality.Name = "cbx_p4_ai_personality"
         cbx_p4_ai_personality.Size = New Size(112, 23)
         cbx_p4_ai_personality.TabIndex = 229
-        cbx_p4_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_p3_ai_personality
         ' 
+        cbx_p3_ai_personality.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p3_ai_personality.FormattingEnabled = True
         cbx_p3_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
         cbx_p3_ai_personality.Location = New Point(896, 144)
         cbx_p3_ai_personality.Name = "cbx_p3_ai_personality"
         cbx_p3_ai_personality.Size = New Size(112, 23)
         cbx_p3_ai_personality.TabIndex = 228
-        cbx_p3_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_p2_ai_personality
         ' 
+        cbx_p2_ai_personality.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p2_ai_personality.FormattingEnabled = True
         cbx_p2_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
         cbx_p2_ai_personality.Location = New Point(896, 112)
         cbx_p2_ai_personality.Name = "cbx_p2_ai_personality"
         cbx_p2_ai_personality.Size = New Size(112, 23)
         cbx_p2_ai_personality.TabIndex = 227
-        cbx_p2_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_gaia_ai_personality
         ' 
+        cbx_gaia_ai_personality.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_gaia_ai_personality.FormattingEnabled = True
         cbx_gaia_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
         cbx_gaia_ai_personality.Location = New Point(896, 48)
         cbx_gaia_ai_personality.Name = "cbx_gaia_ai_personality"
         cbx_gaia_ai_personality.Size = New Size(112, 23)
         cbx_gaia_ai_personality.TabIndex = 226
-        cbx_gaia_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_p1_ai_personality
         ' 
+        cbx_p1_ai_personality.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p1_ai_personality.FormattingEnabled = True
         cbx_p1_ai_personality.Items.AddRange(New Object() {"None", "Standard (Promi)", "Standard (HD)", "Standard (CD)"})
         cbx_p1_ai_personality.Location = New Point(896, 80)
         cbx_p1_ai_personality.Name = "cbx_p1_ai_personality"
         cbx_p1_ai_personality.Size = New Size(112, 23)
         cbx_p1_ai_personality.TabIndex = 225
-        cbx_p1_ai_personality.Text = "AI Personality"
         ' 
         ' cbx_gaia_age
         ' 
+        cbx_gaia_age.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_gaia_age.FormattingEnabled = True
         cbx_gaia_age.Location = New Point(104, 48)
         cbx_gaia_age.Name = "cbx_gaia_age"
         cbx_gaia_age.Size = New Size(100, 23)
         cbx_gaia_age.TabIndex = 224
-        cbx_gaia_age.Text = "Starting Age"
         ' 
         ' lbl_age
         ' 
@@ -1487,75 +1488,75 @@ Partial Class frm_scenario_maker
         ' 
         ' cbx_p8_age
         ' 
+        cbx_p8_age.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p8_age.FormattingEnabled = True
         cbx_p8_age.Location = New Point(104, 304)
         cbx_p8_age.Name = "cbx_p8_age"
         cbx_p8_age.Size = New Size(100, 23)
         cbx_p8_age.TabIndex = 222
-        cbx_p8_age.Text = "Starting Age"
         ' 
         ' cbx_p7_age
         ' 
+        cbx_p7_age.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p7_age.FormattingEnabled = True
         cbx_p7_age.Location = New Point(104, 272)
         cbx_p7_age.Name = "cbx_p7_age"
         cbx_p7_age.Size = New Size(100, 23)
         cbx_p7_age.TabIndex = 221
-        cbx_p7_age.Text = "Starting Age"
         ' 
         ' cbx_p6_age
         ' 
+        cbx_p6_age.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p6_age.FormattingEnabled = True
         cbx_p6_age.Location = New Point(104, 240)
         cbx_p6_age.Name = "cbx_p6_age"
         cbx_p6_age.Size = New Size(100, 23)
         cbx_p6_age.TabIndex = 220
-        cbx_p6_age.Text = "Starting Age"
         ' 
         ' cbx_p5_age
         ' 
+        cbx_p5_age.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p5_age.FormattingEnabled = True
         cbx_p5_age.Location = New Point(104, 208)
         cbx_p5_age.Name = "cbx_p5_age"
         cbx_p5_age.Size = New Size(100, 23)
         cbx_p5_age.TabIndex = 219
-        cbx_p5_age.Text = "Starting Age"
         ' 
         ' cbx_p4_age
         ' 
+        cbx_p4_age.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p4_age.FormattingEnabled = True
         cbx_p4_age.Location = New Point(104, 176)
         cbx_p4_age.Name = "cbx_p4_age"
         cbx_p4_age.Size = New Size(100, 23)
         cbx_p4_age.TabIndex = 218
-        cbx_p4_age.Text = "Starting Age"
         ' 
         ' cbx_p3_age
         ' 
+        cbx_p3_age.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p3_age.FormattingEnabled = True
         cbx_p3_age.Location = New Point(104, 144)
         cbx_p3_age.Name = "cbx_p3_age"
         cbx_p3_age.Size = New Size(100, 23)
         cbx_p3_age.TabIndex = 217
-        cbx_p3_age.Text = "Starting Age"
         ' 
         ' cbx_p2_age
         ' 
+        cbx_p2_age.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p2_age.FormattingEnabled = True
         cbx_p2_age.Location = New Point(104, 112)
         cbx_p2_age.Name = "cbx_p2_age"
         cbx_p2_age.Size = New Size(100, 23)
         cbx_p2_age.TabIndex = 216
-        cbx_p2_age.Text = "Starting Age"
         ' 
         ' cbx_p1_age
         ' 
+        cbx_p1_age.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p1_age.FormattingEnabled = True
         cbx_p1_age.Location = New Point(104, 80)
         cbx_p1_age.Name = "cbx_p1_age"
         cbx_p1_age.Size = New Size(100, 23)
         cbx_p1_age.TabIndex = 215
-        cbx_p1_age.Text = "Starting Age"
         ' 
         ' lbl_player_type
         ' 
@@ -1823,83 +1824,83 @@ Partial Class frm_scenario_maker
         ' 
         ' cbx_p8_color
         ' 
+        cbx_p8_color.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p8_color.FormattingEnabled = True
         cbx_p8_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
         cbx_p8_color.Location = New Point(568, 304)
         cbx_p8_color.Name = "cbx_p8_color"
         cbx_p8_color.Size = New Size(75, 23)
         cbx_p8_color.TabIndex = 184
-        cbx_p8_color.Text = "Color"
         ' 
         ' cbx_p7_color
         ' 
+        cbx_p7_color.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p7_color.FormattingEnabled = True
         cbx_p7_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
         cbx_p7_color.Location = New Point(568, 272)
         cbx_p7_color.Name = "cbx_p7_color"
         cbx_p7_color.Size = New Size(75, 23)
         cbx_p7_color.TabIndex = 183
-        cbx_p7_color.Text = "Color"
         ' 
         ' cbx_p6_color
         ' 
+        cbx_p6_color.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p6_color.FormattingEnabled = True
         cbx_p6_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
         cbx_p6_color.Location = New Point(568, 240)
         cbx_p6_color.Name = "cbx_p6_color"
         cbx_p6_color.Size = New Size(75, 23)
         cbx_p6_color.TabIndex = 182
-        cbx_p6_color.Text = "Color"
         ' 
         ' cbx_p5_color
         ' 
+        cbx_p5_color.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p5_color.FormattingEnabled = True
         cbx_p5_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
         cbx_p5_color.Location = New Point(568, 208)
         cbx_p5_color.Name = "cbx_p5_color"
         cbx_p5_color.Size = New Size(75, 23)
         cbx_p5_color.TabIndex = 181
-        cbx_p5_color.Text = "Color"
         ' 
         ' cbx_p4_color
         ' 
+        cbx_p4_color.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p4_color.FormattingEnabled = True
         cbx_p4_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
         cbx_p4_color.Location = New Point(568, 176)
         cbx_p4_color.Name = "cbx_p4_color"
         cbx_p4_color.Size = New Size(75, 23)
         cbx_p4_color.TabIndex = 180
-        cbx_p4_color.Text = "Color"
         ' 
         ' cbx_p3_color
         ' 
+        cbx_p3_color.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p3_color.FormattingEnabled = True
         cbx_p3_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
         cbx_p3_color.Location = New Point(568, 144)
         cbx_p3_color.Name = "cbx_p3_color"
         cbx_p3_color.Size = New Size(75, 23)
         cbx_p3_color.TabIndex = 179
-        cbx_p3_color.Text = "Color"
         ' 
         ' cbx_p2_color
         ' 
+        cbx_p2_color.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p2_color.FormattingEnabled = True
         cbx_p2_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
         cbx_p2_color.Location = New Point(568, 112)
         cbx_p2_color.Name = "cbx_p2_color"
         cbx_p2_color.Size = New Size(75, 23)
         cbx_p2_color.TabIndex = 178
-        cbx_p2_color.Text = "Color"
         ' 
         ' cbx_p1_color
         ' 
+        cbx_p1_color.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_p1_color.FormattingEnabled = True
         cbx_p1_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
         cbx_p1_color.Location = New Point(568, 80)
         cbx_p1_color.Name = "cbx_p1_color"
         cbx_p1_color.Size = New Size(75, 23)
         cbx_p1_color.TabIndex = 177
-        cbx_p1_color.Text = "Color"
         ' 
         ' lb_color
         ' 
@@ -1913,13 +1914,13 @@ Partial Class frm_scenario_maker
         ' 
         ' cbx_gaia_color
         ' 
+        cbx_gaia_color.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_gaia_color.FormattingEnabled = True
         cbx_gaia_color.Items.AddRange(New Object() {"Blue", "Red", "Green", "Yellow", "Cyan", "Purple", "Gray", "Orange"})
         cbx_gaia_color.Location = New Point(568, 48)
         cbx_gaia_color.Name = "cbx_gaia_color"
         cbx_gaia_color.Size = New Size(75, 23)
         cbx_gaia_color.TabIndex = 175
-        cbx_gaia_color.Text = "Color"
         ' 
         ' lb_player_8
         ' 
@@ -2582,7 +2583,7 @@ Partial Class frm_scenario_maker
         tp_units.Location = New Point(4, 24)
         tp_units.Name = "tp_units"
         tp_units.Padding = New Padding(3)
-        tp_units.Size = New Size(1428, 509)
+        tp_units.Size = New Size(1448, 524)
         tp_units.TabIndex = 3
         tp_units.Text = "Units"
         tp_units.UseVisualStyleBackColor = True
@@ -2639,13 +2640,13 @@ Partial Class frm_scenario_maker
         ' 
         ' cbx_unit_player
         ' 
+        cbx_unit_player.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_unit_player.FormattingEnabled = True
         cbx_unit_player.Items.AddRange(New Object() {"Gaia", "Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8"})
         cbx_unit_player.Location = New Point(760, 96)
         cbx_unit_player.Name = "cbx_unit_player"
         cbx_unit_player.Size = New Size(121, 23)
         cbx_unit_player.TabIndex = 4
-        cbx_unit_player.Text = "Player"
         ' 
         ' btn_remove_unit
         ' 
@@ -2777,7 +2778,7 @@ Partial Class frm_scenario_maker
         tp_diplomacy.Location = New Point(4, 24)
         tp_diplomacy.Name = "tp_diplomacy"
         tp_diplomacy.Padding = New Padding(3)
-        tp_diplomacy.Size = New Size(1428, 509)
+        tp_diplomacy.Size = New Size(1448, 524)
         tp_diplomacy.TabIndex = 4
         tp_diplomacy.Text = "Diplomacy"
         tp_diplomacy.UseVisualStyleBackColor = True
@@ -2814,13 +2815,13 @@ Partial Class frm_scenario_maker
         ' 
         ' cbx_max_teams
         ' 
+        cbx_max_teams.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_max_teams.FormattingEnabled = True
         cbx_max_teams.Items.AddRange(New Object() {"2 Teams", "3 Teams", "4 Teams"})
         cbx_max_teams.Location = New Point(649, 43)
         cbx_max_teams.Name = "cbx_max_teams"
         cbx_max_teams.Size = New Size(121, 23)
         cbx_max_teams.TabIndex = 96
-        cbx_max_teams.Text = "Max Teams"
         ' 
         ' cbx_p8_av_them
         ' 
@@ -3698,7 +3699,7 @@ Partial Class frm_scenario_maker
         tp_victory.Location = New Point(4, 24)
         tp_victory.Name = "tp_victory"
         tp_victory.Padding = New Padding(3)
-        tp_victory.Size = New Size(1428, 509)
+        tp_victory.Size = New Size(1448, 524)
         tp_victory.TabIndex = 5
         tp_victory.Text = "Victory"
         tp_victory.UseVisualStyleBackColor = True
@@ -3823,13 +3824,13 @@ Partial Class frm_scenario_maker
         ' 
         ' cbx_time_limit
         ' 
+        cbx_time_limit.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_time_limit.FormattingEnabled = True
         cbx_time_limit.Items.AddRange(New Object() {"300 Years (25 Minutes)", "500 Years (40 Minutes)", "700 Years (1 Hour)", "900 Years (1 Hour, 15 Minutes)", "1100 Years (1 Hour, 30 Minutes)", "1300 Years (1 Hour, 45 Minutes)", "1500 Years (2 Hours)"})
         cbx_time_limit.Location = New Point(152, 40)
         cbx_time_limit.Name = "cbx_time_limit"
         cbx_time_limit.Size = New Size(192, 23)
         cbx_time_limit.TabIndex = 5
-        cbx_time_limit.Text = "Time Limit"
         ' 
         ' rbn_time_limit
         ' 
@@ -3843,13 +3844,13 @@ Partial Class frm_scenario_maker
         ' 
         ' cbx_score
         ' 
+        cbx_score.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_score.FormattingEnabled = True
         cbx_score.Items.AddRange(New Object() {"4000", "5000", "6000", "7000", "8000", "9000", "10000", "11000", "12000", "13000", "14000"})
         cbx_score.Location = New Point(88, 40)
         cbx_score.Name = "cbx_score"
         cbx_score.Size = New Size(56, 23)
         cbx_score.TabIndex = 3
-        cbx_score.Text = "Score"
         ' 
         ' rbn_score
         ' 
@@ -3905,6 +3906,119 @@ Partial Class frm_scenario_maker
         tp_options.Text = "Options"
         tp_options.UseVisualStyleBackColor = True
         ' 
+        ' btn_camera_view
+        ' 
+        btn_camera_view.Location = New Point(1144, 32)
+        btn_camera_view.Name = "btn_camera_view"
+        btn_camera_view.Size = New Size(75, 23)
+        btn_camera_view.TabIndex = 15
+        btn_camera_view.Text = "Set View"
+        btn_camera_view.UseVisualStyleBackColor = True
+        ' 
+        ' ListBox1
+        ' 
+        ListBox1.FormattingEnabled = True
+        ListBox1.ItemHeight = 15
+        ListBox1.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326", "327", "328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353", "354", "355", "356", "357", "358", "359", "360", "361", "362", "363", "364", "365", "366", "367", "368", "369", "370", "371", "372", "373", "374", "375", "376", "377", "378", "379", "380", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "410", "411", "412", "413", "414", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "425", "426", "427", "428", "429", "430", "431", "432", "433", "434", "435", "436", "437", "438", "439", "440", "441", "442", "443", "444", "445", "446", "447", "448", "449", "450", "451", "452", "453", "454", "455", "456", "457", "458", "459", "460", "461", "462", "463", "464", "465", "466", "467", "468", "469", "470", "471", "472", "473", "474", "475", "476", "477", "478", "479"})
+        ListBox1.Location = New Point(1088, 32)
+        ListBox1.Name = "ListBox1"
+        ListBox1.Size = New Size(48, 469)
+        ListBox1.TabIndex = 14
+        ' 
+        ' ListBox2
+        ' 
+        ListBox2.FormattingEnabled = True
+        ListBox2.ItemHeight = 15
+        ListBox2.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326", "327", "328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353", "354", "355", "356", "357", "358", "359", "360", "361", "362", "363", "364", "365", "366", "367", "368", "369", "370", "371", "372", "373", "374", "375", "376", "377", "378", "379", "380", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "410", "411", "412", "413", "414", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "425", "426", "427", "428", "429", "430", "431", "432", "433", "434", "435", "436", "437", "438", "439", "440", "441", "442", "443", "444", "445", "446", "447", "448", "449", "450", "451", "452", "453", "454", "455", "456", "457", "458", "459", "460", "461", "462", "463", "464", "465", "466", "467", "468", "469", "470", "471", "472", "473", "474", "475", "476", "477", "478", "479"})
+        ListBox2.Location = New Point(1032, 32)
+        ListBox2.Name = "ListBox2"
+        ListBox2.Size = New Size(48, 469)
+        ListBox2.TabIndex = 13
+        ' 
+        ' cbx_testing_difficulty
+        ' 
+        cbx_testing_difficulty.DropDownStyle = ComboBoxStyle.DropDownList
+        cbx_testing_difficulty.FormattingEnabled = True
+        cbx_testing_difficulty.Items.AddRange(New Object() {"Easiest", "Standard", "Moderate", "Hard", "Hardest", "Extreme"})
+        cbx_testing_difficulty.Location = New Point(904, 40)
+        cbx_testing_difficulty.Name = "cbx_testing_difficulty"
+        cbx_testing_difficulty.Size = New Size(121, 23)
+        cbx_testing_difficulty.TabIndex = 8
+        ' 
+        ' cbx_lock_co_op_alliances
+        ' 
+        cbx_lock_co_op_alliances.AutoSize = True
+        cbx_lock_co_op_alliances.Location = New Point(760, 112)
+        cbx_lock_co_op_alliances.Name = "cbx_lock_co_op_alliances"
+        cbx_lock_co_op_alliances.Size = New Size(140, 19)
+        cbx_lock_co_op_alliances.TabIndex = 7
+        cbx_lock_co_op_alliances.Text = "Lock Co-Op Alliances"
+        cbx_lock_co_op_alliances.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_villager_force_drop
+        ' 
+        cbx_villager_force_drop.AutoSize = True
+        cbx_villager_force_drop.Location = New Point(760, 88)
+        cbx_villager_force_drop.Name = "cbx_villager_force_drop"
+        cbx_villager_force_drop.Size = New Size(126, 19)
+        cbx_villager_force_drop.TabIndex = 6
+        cbx_villager_force_drop.Text = "Villager Force Drop"
+        cbx_villager_force_drop.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_collide_and_correcting
+        ' 
+        cbx_collide_and_correcting.AutoSize = True
+        cbx_collide_and_correcting.Location = New Point(760, 64)
+        cbx_collide_and_correcting.Name = "cbx_collide_and_correcting"
+        cbx_collide_and_correcting.Size = New Size(145, 19)
+        cbx_collide_and_correcting.TabIndex = 5
+        cbx_collide_and_correcting.Text = "Collide and Correcting"
+        cbx_collide_and_correcting.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_full_tech_tree
+        ' 
+        cbx_full_tech_tree.AutoSize = True
+        cbx_full_tech_tree.Location = New Point(760, 40)
+        cbx_full_tech_tree.Name = "cbx_full_tech_tree"
+        cbx_full_tech_tree.Size = New Size(96, 19)
+        cbx_full_tech_tree.TabIndex = 4
+        cbx_full_tech_tree.Text = "Full Tech Tree"
+        cbx_full_tech_tree.UseVisualStyleBackColor = True
+        ' 
+        ' cbx_disabled_player
+        ' 
+        cbx_disabled_player.DropDownStyle = ComboBoxStyle.DropDownList
+        cbx_disabled_player.FormattingEnabled = True
+        cbx_disabled_player.Items.AddRange(New Object() {"Gaia", "Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8"})
+        cbx_disabled_player.Location = New Point(632, 40)
+        cbx_disabled_player.Name = "cbx_disabled_player"
+        cbx_disabled_player.Size = New Size(121, 23)
+        cbx_disabled_player.TabIndex = 3
+        ' 
+        ' clb_disabled_techs
+        ' 
+        clb_disabled_techs.FormattingEnabled = True
+        clb_disabled_techs.Location = New Point(424, 40)
+        clb_disabled_techs.Name = "clb_disabled_techs"
+        clb_disabled_techs.Size = New Size(200, 454)
+        clb_disabled_techs.TabIndex = 2
+        ' 
+        ' clb_disabled_buildings
+        ' 
+        clb_disabled_buildings.FormattingEnabled = True
+        clb_disabled_buildings.Location = New Point(216, 40)
+        clb_disabled_buildings.Name = "clb_disabled_buildings"
+        clb_disabled_buildings.Size = New Size(200, 454)
+        clb_disabled_buildings.TabIndex = 1
+        ' 
+        ' clb_disabled_units
+        ' 
+        clb_disabled_units.FormattingEnabled = True
+        clb_disabled_units.Location = New Point(8, 40)
+        clb_disabled_units.Name = "clb_disabled_units"
+        clb_disabled_units.Size = New Size(200, 454)
+        clb_disabled_units.TabIndex = 0
+        ' 
         ' tp_messages
         ' 
         tp_messages.Controls.Add(tbx_scout_string_id)
@@ -3922,7 +4036,7 @@ Partial Class frm_scenario_maker
         tp_messages.Location = New Point(4, 24)
         tp_messages.Name = "tp_messages"
         tp_messages.Padding = New Padding(3)
-        tp_messages.Size = New Size(1428, 509)
+        tp_messages.Size = New Size(1448, 524)
         tp_messages.TabIndex = 7
         tp_messages.Text = "Messages"
         tp_messages.UseVisualStyleBackColor = True
@@ -4050,50 +4164,50 @@ Partial Class frm_scenario_maker
         tp_cinematics.Location = New Point(4, 24)
         tp_cinematics.Name = "tp_cinematics"
         tp_cinematics.Padding = New Padding(3)
-        tp_cinematics.Size = New Size(1428, 509)
+        tp_cinematics.Size = New Size(1448, 524)
         tp_cinematics.TabIndex = 8
         tp_cinematics.Text = "Cinematics"
         tp_cinematics.UseVisualStyleBackColor = True
         ' 
         ' cbx_instructions_cinematic
         ' 
+        cbx_instructions_cinematic.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_instructions_cinematic.FormattingEnabled = True
         cbx_instructions_cinematic.Items.AddRange(New Object() {"None"})
         cbx_instructions_cinematic.Location = New Point(392, 8)
         cbx_instructions_cinematic.Name = "cbx_instructions_cinematic"
         cbx_instructions_cinematic.Size = New Size(121, 23)
         cbx_instructions_cinematic.TabIndex = 3
-        cbx_instructions_cinematic.Text = "Instructions Map"
         ' 
         ' cbx_loss_cinematic
         ' 
+        cbx_loss_cinematic.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_loss_cinematic.FormattingEnabled = True
         cbx_loss_cinematic.Items.AddRange(New Object() {"None", "aoeiide_titlevideo.wmv"})
         cbx_loss_cinematic.Location = New Point(264, 8)
         cbx_loss_cinematic.Name = "cbx_loss_cinematic"
         cbx_loss_cinematic.Size = New Size(121, 23)
         cbx_loss_cinematic.TabIndex = 2
-        cbx_loss_cinematic.Text = "Loss"
         ' 
         ' cbx_victory_cinematic
         ' 
+        cbx_victory_cinematic.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_victory_cinematic.FormattingEnabled = True
         cbx_victory_cinematic.Items.AddRange(New Object() {"None", "aoeiide_titlevideo.wmv"})
         cbx_victory_cinematic.Location = New Point(136, 8)
         cbx_victory_cinematic.Name = "cbx_victory_cinematic"
         cbx_victory_cinematic.Size = New Size(121, 23)
         cbx_victory_cinematic.TabIndex = 1
-        cbx_victory_cinematic.Text = "Victory"
         ' 
         ' cbx_pregame_cinematic
         ' 
+        cbx_pregame_cinematic.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_pregame_cinematic.FormattingEnabled = True
         cbx_pregame_cinematic.Items.AddRange(New Object() {"None", "aoeiide_titlevideo.wmv"})
         cbx_pregame_cinematic.Location = New Point(8, 8)
         cbx_pregame_cinematic.Name = "cbx_pregame_cinematic"
         cbx_pregame_cinematic.Size = New Size(121, 23)
         cbx_pregame_cinematic.TabIndex = 0
-        cbx_pregame_cinematic.Text = "Pregame"
         ' 
         ' tp_trigger
         ' 
@@ -4114,7 +4228,7 @@ Partial Class frm_scenario_maker
         tp_trigger.Location = New Point(4, 24)
         tp_trigger.Name = "tp_trigger"
         tp_trigger.Padding = New Padding(3)
-        tp_trigger.Size = New Size(1428, 509)
+        tp_trigger.Size = New Size(1448, 524)
         tp_trigger.TabIndex = 9
         tp_trigger.Text = "Trigger"
         tp_trigger.UseVisualStyleBackColor = True
@@ -4264,7 +4378,7 @@ Partial Class frm_scenario_maker
         tp_about.Location = New Point(4, 24)
         tp_about.Name = "tp_about"
         tp_about.Padding = New Padding(3)
-        tp_about.Size = New Size(1428, 509)
+        tp_about.Size = New Size(1448, 524)
         tp_about.TabIndex = 10
         tp_about.Text = "About"
         tp_about.UseVisualStyleBackColor = True
@@ -4277,7 +4391,7 @@ Partial Class frm_scenario_maker
         lbl_aoe2de_sm.Name = "lbl_aoe2de_sm"
         lbl_aoe2de_sm.Size = New Size(523, 90)
         lbl_aoe2de_sm.TabIndex = 0
-        lbl_aoe2de_sm.Text = "Age of Empires 2 DE Scenario Maker" & vbCrLf & "Version: 0.0.2" & vbCrLf & "Created By: Jeremy ""SpoOkyMagician"" Levegood"
+        lbl_aoe2de_sm.Text = "Age of Empires 2 DE Scenario Maker" & vbCrLf & "Version: 0.0.3" & vbCrLf & "Created By: Jeremy ""SpoOkyMagician"" Levegood"
         ' 
         ' ofd_scenario
         ' 
@@ -4298,119 +4412,6 @@ Partial Class frm_scenario_maker
         ofd_aoe2de_path.FileName = "AoE2DE_s.exe"
         ofd_aoe2de_path.Filter = """Age of Empires 2 DE""|*.exe"
         ofd_aoe2de_path.InitialDirectory = """C:\Program Files (x86)\Steam\steamapps\common\AoE2DE"""
-        ' 
-        ' clb_disabled_units
-        ' 
-        clb_disabled_units.FormattingEnabled = True
-        clb_disabled_units.Location = New Point(8, 40)
-        clb_disabled_units.Name = "clb_disabled_units"
-        clb_disabled_units.Size = New Size(200, 454)
-        clb_disabled_units.TabIndex = 0
-        ' 
-        ' clb_disabled_buildings
-        ' 
-        clb_disabled_buildings.FormattingEnabled = True
-        clb_disabled_buildings.Location = New Point(216, 40)
-        clb_disabled_buildings.Name = "clb_disabled_buildings"
-        clb_disabled_buildings.Size = New Size(200, 454)
-        clb_disabled_buildings.TabIndex = 1
-        ' 
-        ' clb_disabled_techs
-        ' 
-        clb_disabled_techs.FormattingEnabled = True
-        clb_disabled_techs.Location = New Point(424, 40)
-        clb_disabled_techs.Name = "clb_disabled_techs"
-        clb_disabled_techs.Size = New Size(200, 454)
-        clb_disabled_techs.TabIndex = 2
-        ' 
-        ' cbx_disabled_player
-        ' 
-        cbx_disabled_player.FormattingEnabled = True
-        cbx_disabled_player.Items.AddRange(New Object() {"Gaia", "Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8"})
-        cbx_disabled_player.Location = New Point(632, 40)
-        cbx_disabled_player.Name = "cbx_disabled_player"
-        cbx_disabled_player.Size = New Size(121, 23)
-        cbx_disabled_player.TabIndex = 3
-        cbx_disabled_player.Text = "Player"
-        ' 
-        ' cbx_full_tech_tree
-        ' 
-        cbx_full_tech_tree.AutoSize = True
-        cbx_full_tech_tree.Location = New Point(760, 40)
-        cbx_full_tech_tree.Name = "cbx_full_tech_tree"
-        cbx_full_tech_tree.Size = New Size(96, 19)
-        cbx_full_tech_tree.TabIndex = 4
-        cbx_full_tech_tree.Text = "Full Tech Tree"
-        cbx_full_tech_tree.UseVisualStyleBackColor = True
-        ' 
-        ' cbx_collide_and_correcting
-        ' 
-        cbx_collide_and_correcting.AutoSize = True
-        cbx_collide_and_correcting.Location = New Point(760, 64)
-        cbx_collide_and_correcting.Name = "cbx_collide_and_correcting"
-        cbx_collide_and_correcting.Size = New Size(145, 19)
-        cbx_collide_and_correcting.TabIndex = 5
-        cbx_collide_and_correcting.Text = "Collide and Correcting"
-        cbx_collide_and_correcting.UseVisualStyleBackColor = True
-        ' 
-        ' cbx_villager_force_drop
-        ' 
-        cbx_villager_force_drop.AutoSize = True
-        cbx_villager_force_drop.Location = New Point(760, 88)
-        cbx_villager_force_drop.Name = "cbx_villager_force_drop"
-        cbx_villager_force_drop.Size = New Size(126, 19)
-        cbx_villager_force_drop.TabIndex = 6
-        cbx_villager_force_drop.Text = "Villager Force Drop"
-        cbx_villager_force_drop.UseVisualStyleBackColor = True
-        ' 
-        ' cbx_lock_co_op_alliances
-        ' 
-        cbx_lock_co_op_alliances.AutoSize = True
-        cbx_lock_co_op_alliances.Location = New Point(760, 112)
-        cbx_lock_co_op_alliances.Name = "cbx_lock_co_op_alliances"
-        cbx_lock_co_op_alliances.Size = New Size(140, 19)
-        cbx_lock_co_op_alliances.TabIndex = 7
-        cbx_lock_co_op_alliances.Text = "Lock Co-Op Alliances"
-        cbx_lock_co_op_alliances.UseVisualStyleBackColor = True
-        ' 
-        ' cbx_testing_difficulty
-        ' 
-        cbx_testing_difficulty.FormattingEnabled = True
-        cbx_testing_difficulty.Items.AddRange(New Object() {"Easiest", "Standard", "Moderate", "Hard", "Hardest", "Extreme"})
-        cbx_testing_difficulty.Location = New Point(904, 40)
-        cbx_testing_difficulty.Name = "cbx_testing_difficulty"
-        cbx_testing_difficulty.Size = New Size(121, 23)
-        cbx_testing_difficulty.TabIndex = 8
-        cbx_testing_difficulty.Text = "Testing Difficulty"
-        ' 
-        ' ListBox1
-        ' 
-        ListBox1.FormattingEnabled = True
-        ListBox1.ItemHeight = 15
-        ListBox1.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326", "327", "328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353", "354", "355", "356", "357", "358", "359", "360", "361", "362", "363", "364", "365", "366", "367", "368", "369", "370", "371", "372", "373", "374", "375", "376", "377", "378", "379", "380", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "410", "411", "412", "413", "414", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "425", "426", "427", "428", "429", "430", "431", "432", "433", "434", "435", "436", "437", "438", "439", "440", "441", "442", "443", "444", "445", "446", "447", "448", "449", "450", "451", "452", "453", "454", "455", "456", "457", "458", "459", "460", "461", "462", "463", "464", "465", "466", "467", "468", "469", "470", "471", "472", "473", "474", "475", "476", "477", "478", "479"})
-        ListBox1.Location = New Point(1088, 32)
-        ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(48, 469)
-        ListBox1.TabIndex = 14
-        ' 
-        ' ListBox2
-        ' 
-        ListBox2.FormattingEnabled = True
-        ListBox2.ItemHeight = 15
-        ListBox2.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "318", "319", "320", "321", "322", "323", "324", "325", "326", "327", "328", "329", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "340", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "353", "354", "355", "356", "357", "358", "359", "360", "361", "362", "363", "364", "365", "366", "367", "368", "369", "370", "371", "372", "373", "374", "375", "376", "377", "378", "379", "380", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "410", "411", "412", "413", "414", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "425", "426", "427", "428", "429", "430", "431", "432", "433", "434", "435", "436", "437", "438", "439", "440", "441", "442", "443", "444", "445", "446", "447", "448", "449", "450", "451", "452", "453", "454", "455", "456", "457", "458", "459", "460", "461", "462", "463", "464", "465", "466", "467", "468", "469", "470", "471", "472", "473", "474", "475", "476", "477", "478", "479"})
-        ListBox2.Location = New Point(1032, 32)
-        ListBox2.Name = "ListBox2"
-        ListBox2.Size = New Size(48, 469)
-        ListBox2.TabIndex = 13
-        ' 
-        ' btn_camera_view
-        ' 
-        btn_camera_view.Location = New Point(1144, 32)
-        btn_camera_view.Name = "btn_camera_view"
-        btn_camera_view.Size = New Size(75, 23)
-        btn_camera_view.TabIndex = 15
-        btn_camera_view.Text = "Set View"
-        btn_camera_view.UseVisualStyleBackColor = True
         ' 
         ' frm_scenario_maker
         ' 
