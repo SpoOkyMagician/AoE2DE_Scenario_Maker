@@ -32,6 +32,10 @@ Partial Class frm_scenario_maker
         btn_save = New Button()
         btn_load = New Button()
         tp_map = New TabPage()
+        lbl_ai_map_type = New Label()
+        lbl_default_terrain = New Label()
+        lbl_custom_map_size = New Label()
+        lbl_map_size = New Label()
         tbx_script_filename = New TextBox()
         cbx_map_size = New ComboBox()
         nud_mwh_size = New NumericUpDown()
@@ -401,6 +405,9 @@ Partial Class frm_scenario_maker
         ofd_scenario = New OpenFileDialog()
         sfd_scenario = New SaveFileDialog()
         ofd_aoe2de_path = New OpenFileDialog()
+        lbl_color_mood = New Label()
+        lbl_script_filename = New Label()
+        lbl_placed_terrains = New Label()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
@@ -565,6 +572,12 @@ Partial Class frm_scenario_maker
         ' tp_map
         ' 
         tp_map.AutoScroll = True
+        tp_map.Controls.Add(lbl_script_filename)
+        tp_map.Controls.Add(lbl_color_mood)
+        tp_map.Controls.Add(lbl_ai_map_type)
+        tp_map.Controls.Add(lbl_default_terrain)
+        tp_map.Controls.Add(lbl_custom_map_size)
+        tp_map.Controls.Add(lbl_map_size)
         tp_map.Controls.Add(tbx_script_filename)
         tp_map.Controls.Add(cbx_map_size)
         tp_map.Controls.Add(nud_mwh_size)
@@ -580,9 +593,48 @@ Partial Class frm_scenario_maker
         tp_map.Text = "Map"
         tp_map.UseVisualStyleBackColor = True
         ' 
+        ' lbl_ai_map_type
+        ' 
+        lbl_ai_map_type.AutoSize = True
+        lbl_ai_map_type.Location = New Point(464, 8)
+        lbl_ai_map_type.Name = "lbl_ai_map_type"
+        lbl_ai_map_type.RightToLeft = RightToLeft.No
+        lbl_ai_map_type.Size = New Size(72, 15)
+        lbl_ai_map_type.TabIndex = 16
+        lbl_ai_map_type.Text = "AI Map Type"
+        ' 
+        ' lbl_default_terrain
+        ' 
+        lbl_default_terrain.AutoSize = True
+        lbl_default_terrain.Location = New Point(216, 8)
+        lbl_default_terrain.Name = "lbl_default_terrain"
+        lbl_default_terrain.RightToLeft = RightToLeft.No
+        lbl_default_terrain.Size = New Size(83, 15)
+        lbl_default_terrain.TabIndex = 15
+        lbl_default_terrain.Text = "Default Terrain"
+        ' 
+        ' lbl_custom_map_size
+        ' 
+        lbl_custom_map_size.AutoSize = True
+        lbl_custom_map_size.Location = New Point(160, 8)
+        lbl_custom_map_size.Name = "lbl_custom_map_size"
+        lbl_custom_map_size.RightToLeft = RightToLeft.No
+        lbl_custom_map_size.Size = New Size(49, 15)
+        lbl_custom_map_size.TabIndex = 14
+        lbl_custom_map_size.Text = "Custom"
+        ' 
+        ' lbl_map_size
+        ' 
+        lbl_map_size.AutoSize = True
+        lbl_map_size.Location = New Point(8, 8)
+        lbl_map_size.Name = "lbl_map_size"
+        lbl_map_size.Size = New Size(54, 15)
+        lbl_map_size.TabIndex = 13
+        lbl_map_size.Text = "Map Size"
+        ' 
         ' tbx_script_filename
         ' 
-        tbx_script_filename.Location = New Point(8, 160)
+        tbx_script_filename.Location = New Point(960, 32)
         tbx_script_filename.Name = "tbx_script_filename"
         tbx_script_filename.Size = New Size(240, 23)
         tbx_script_filename.TabIndex = 12
@@ -594,7 +646,7 @@ Partial Class frm_scenario_maker
         cbx_map_size.FormattingEnabled = True
         cbx_map_size.ImeMode = ImeMode.NoControl
         cbx_map_size.Items.AddRange(New Object() {"Miniature (1 Player)", "Tiny (2 Players)", "Small (3 Players)", "Medium (4 Players)", "Normal (6 Players)", "Large (8 Players)", "Huge", "Giant", "Massive", "Enormous", "Colossal", "Incredible", "Monstrous", "Ludicrous", "Custom"})
-        cbx_map_size.Location = New Point(8, 8)
+        cbx_map_size.Location = New Point(8, 32)
         cbx_map_size.Name = "cbx_map_size"
         cbx_map_size.Size = New Size(152, 23)
         cbx_map_size.TabIndex = 6
@@ -602,7 +654,7 @@ Partial Class frm_scenario_maker
         ' nud_mwh_size
         ' 
         nud_mwh_size.Enabled = False
-        nud_mwh_size.Location = New Point(168, 8)
+        nud_mwh_size.Location = New Point(168, 32)
         nud_mwh_size.Maximum = New Decimal(New Integer() {480, 0, 0, 0})
         nud_mwh_size.Minimum = New Decimal(New Integer() {36, 0, 0, 0})
         nud_mwh_size.Name = "nud_mwh_size"
@@ -615,7 +667,7 @@ Partial Class frm_scenario_maker
         cbx_team_positions.AutoSize = True
         cbx_team_positions.Checked = True
         cbx_team_positions.CheckState = CheckState.Checked
-        cbx_team_positions.Location = New Point(8, 136)
+        cbx_team_positions.Location = New Point(1208, 32)
         cbx_team_positions.Name = "cbx_team_positions"
         cbx_team_positions.Size = New Size(105, 19)
         cbx_team_positions.TabIndex = 11
@@ -627,7 +679,7 @@ Partial Class frm_scenario_maker
         cbx_default_terrain.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_default_terrain.FormattingEnabled = True
         cbx_default_terrain.Items.AddRange(New Object() {"Beach", "Beach (Non-Navigable)", "Beach (Non-Navigable), Wet Gravel", "Beach (Non-Navigable), Wet Rock", "Beach (Non-Navigable), Wet Sand", "Beach, Ice", "Beach, Vegetation", "Beach, Wet", "Beach, Wet Gravel", "Beach, Wet Rock", "Beach, White", "Beach, White, Vegetation", "Black", "Desert, Cracked", "Desert, Quicksand", "Desert, Sand", "Dirt 1", "Dirt 2", "Dirt 3", "Dirt 4", "Dirt, Mud", "Dirt, Savannah", "Farm", "Farm, 0%", "Farm, 33%", "Farm, 67%", "Farm, Dead", "Forest, Acacia", "Forest, Autumn", "Forest, Autumn Snow", "Forest, Bamboo", "Forest, Baobab", "Forest, Birch", "Forest, Bush", "Forest, Dead", "Forest, Dragon Tree", "Forest, Jungle", "Forest, Mangrove", "Forest, Mediterranean", "Forest, Oak", "Forest, Oak Bush", "Forest, Palm Desert", "Forest, Palm Grass", "Forest, Pine", "Forest, Pine Snow", "Forest, Rainforest", "Forest, Reeds", "Forest, Reeds (Beach)", "Forest, Reeds (Shallows)", "Grass 1", "Grass 2", "Grass 3", "Grass, Dry", "Grass, Foundation", "Grass, Jungle", "Grass, Jungle (Rainforest)", "Grass, Other", "Gravel, Default", "Gravel, Desert", "Ice", "Ice, Navigable", "Rice Farm", "Rice Farm, 0%", "Rice Farm, 33%", "Rice Farm, 66%", "Rice Farm, Dead", "Road", "Road, Broken", "Road, Fungus", "Road, Gravel", "Rock 1", "Shallows", "Shallows, Azure", "Shallows, Mangrove", "Snow", "Snow, Foundation", "Snow, Light", "Snow, Strong", "Swamp, Bogland", "Swamp, Shallows", "Underbrush", "Underbrush, Jungle", "Underbrush, Leaves", "Underbrush, Snow", "Water 2D, Bridge", "Water 2D, Shoreless", "Water, Azure", "Water, Brown", "Water, Deep", "Water, Deep Ocean", "Water, Green", "Water, Medium", "Water, Shallow"})
-        cbx_default_terrain.Location = New Point(8, 40)
+        cbx_default_terrain.Location = New Point(216, 32)
         cbx_default_terrain.Name = "cbx_default_terrain"
         cbx_default_terrain.Size = New Size(243, 23)
         cbx_default_terrain.TabIndex = 8
@@ -637,7 +689,7 @@ Partial Class frm_scenario_maker
         cbx_color_mood.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_color_mood.FormattingEnabled = True
         cbx_color_mood.Items.AddRange(New Object() {"Default", "Autumn", "Desert", "Jungle", "Winter", "Night"})
-        cbx_color_mood.Location = New Point(8, 104)
+        cbx_color_mood.Location = New Point(712, 32)
         cbx_color_mood.Name = "cbx_color_mood"
         cbx_color_mood.Size = New Size(243, 23)
         cbx_color_mood.TabIndex = 10
@@ -647,13 +699,14 @@ Partial Class frm_scenario_maker
         cbx_ai_map_type.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_ai_map_type.FormattingEnabled = True
         cbx_ai_map_type.Items.AddRange(New Object() {"Acclivity", "Acropolis", "African Clearing", "Aftermath", "Alpine Lakes", "Amazon Tunnel", "Arabia", "Archipelago", "Arena", "Atacama", "BR Battle On Ice", "BR El Dorado", "BR Fall of Axum", "BR Fall of Rome", "BR Majapahit Empire", "Baltic", "Black Forest", "Bog Islands", "Bogland", "Budapest", "Cenotes", "City of Lakes", "Coastal", "Coastal Forest", "Continental", "Crater", "Crater Lake", "Crossroads", "CtR Monsoon", "CtR Pyramid Descent", "CtR Random", "CtR Spiral", "Enclosed", "Eruption", "Fortress", "Four Lakes", "Frigid Lake", "Ghost Lake", "Gold Rush", "Golden Pit", "Golden Swamp", "Greenland", "Haboob", "Hamburger", "Hideout", "Highland", "Hill Fort", "Islands", "Kawasan", "Kilimanjaro", "Land Madness", "Land Nomad", "Lombardia", "Lowland", "Mangrove Jungle", "Marketplace", "Meadow", "Mediterranean", "MegaRandom", "Michi", "Migration", "Mongolia", "Morass", "Mountain Pass", "Mountain Range", "Mountain Ridge", "Nile Delta", "Nomad", "Northern Isles", "Oasis", "Pacific Islands", "Ravines", "Ring Fortress", "Rivers", "Runestones", "Sacred Springs", "Salt Marsh", "Sandbank", "Scandanavia", "Seize The Mountain", "Serengeti", "Shoals", "Socotra", "Steppe", "Team Islands", "Team Moats", "Valley", "Volcano Island", "Wade", "Water Nomad", "Wolf Hill", "Yucatan"})
-        cbx_ai_map_type.Location = New Point(8, 72)
+        cbx_ai_map_type.Location = New Point(464, 32)
         cbx_ai_map_type.Name = "cbx_ai_map_type"
         cbx_ai_map_type.Size = New Size(243, 23)
         cbx_ai_map_type.TabIndex = 9
         ' 
         ' tp_terrain
         ' 
+        tp_terrain.Controls.Add(lbl_placed_terrains)
         tp_terrain.Controls.Add(lbl_important_note_terrain)
         tp_terrain.Controls.Add(lbx_placed_terrains)
         tp_terrain.Controls.Add(cbx_use_layers)
@@ -2561,13 +2614,13 @@ Partial Class frm_scenario_maker
         ' 
         ' cbx_total_players
         ' 
+        cbx_total_players.DropDownStyle = ComboBoxStyle.DropDownList
         cbx_total_players.FormattingEnabled = True
         cbx_total_players.Items.AddRange(New Object() {"1 Player", "2 Players", "3 Players", "4 Players", "5 Players", "6 Players", "7 Players", "8 Players"})
         cbx_total_players.Location = New Point(8, 16)
         cbx_total_players.Name = "cbx_total_players"
         cbx_total_players.Size = New Size(88, 23)
         cbx_total_players.TabIndex = 105
-        cbx_total_players.Text = "Total Players"
         ' 
         ' tp_units
         ' 
@@ -4413,6 +4466,35 @@ Partial Class frm_scenario_maker
         ofd_aoe2de_path.Filter = """Age of Empires 2 DE""|*.exe"
         ofd_aoe2de_path.InitialDirectory = """C:\Program Files (x86)\Steam\steamapps\common\AoE2DE"""
         ' 
+        ' lbl_color_mood
+        ' 
+        lbl_color_mood.AutoSize = True
+        lbl_color_mood.Location = New Point(712, 8)
+        lbl_color_mood.Name = "lbl_color_mood"
+        lbl_color_mood.RightToLeft = RightToLeft.No
+        lbl_color_mood.Size = New Size(71, 15)
+        lbl_color_mood.TabIndex = 17
+        lbl_color_mood.Text = "Color Mood"
+        ' 
+        ' lbl_script_filename
+        ' 
+        lbl_script_filename.AutoSize = True
+        lbl_script_filename.Location = New Point(960, 8)
+        lbl_script_filename.Name = "lbl_script_filename"
+        lbl_script_filename.RightToLeft = RightToLeft.No
+        lbl_script_filename.Size = New Size(88, 15)
+        lbl_script_filename.TabIndex = 18
+        lbl_script_filename.Text = "Script Filename"
+        ' 
+        ' lbl_placed_terrains
+        ' 
+        lbl_placed_terrains.AutoSize = True
+        lbl_placed_terrains.Location = New Point(664, 8)
+        lbl_placed_terrains.Name = "lbl_placed_terrains"
+        lbl_placed_terrains.Size = New Size(85, 15)
+        lbl_placed_terrains.TabIndex = 19
+        lbl_placed_terrains.Text = "Placed Terrains"
+        ' 
         ' frm_scenario_maker
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -4886,4 +4968,11 @@ Partial Class frm_scenario_maker
     Public WithEvents ListBox2 As ListBox
     Public WithEvents btn_camera_view As Button
     Friend WithEvents CheckBox2 As CheckBox
+    Public WithEvents lbl_custom_map_size As Label
+    Public WithEvents lbl_map_size As Label
+    Public WithEvents lbl_default_terrain As Label
+    Public WithEvents lbl_ai_map_type As Label
+    Public WithEvents lbl_color_mood As Label
+    Public WithEvents lbl_script_filename As Label
+    Public WithEvents lbl_placed_terrains As Label
 End Class
