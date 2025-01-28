@@ -22,10 +22,10 @@ Note: At the bare minimum, I want to have a working GUI that maybe someone can t
 Special Thanks: https://docs.google.com/spreadsheets/d/1llyn7FWKEtmss_WE-6hinMItpsV-h-6qsY8xBlkxUzw/edit?gid=193837369#gid=193837369 (This saved me so much work with the units.)<br>
 
 Zip Instructions:<br><br>
-1: Click here: https://github.com/SpoOkyMagician/AoE2DE_Scenario_Maker/releases/tag/preview
-2: Click "Download: AoE2DE_SM.zip" Link.
-3: Unzip.
-4: Run Setup.exe / AoE2DE_Scenario_Maker.exe
+1: Click here: https://github.com/SpoOkyMagician/AoE2DE_Scenario_Maker/releases/tag/preview <br>
+2: Click "Download: AoE2DE_SM.zip" Link. <br>
+3: Unzip. <br>
+4: Run Setup.exe / AoE2DE_Scenario_Maker.exe <br>
 
 Source Code Instructions: You will need Microsoft Visual Studio 2022 Community to test this. ( https://visualstudio.microsoft.com/downloads/ )<br><br>
 1: Click the "Green Code Button" on Github and acquire the source code. (If you choose zip, you need to right click it and choose "Unblock".)<br>
