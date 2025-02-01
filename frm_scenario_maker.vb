@@ -117,6 +117,185 @@ Public Class frm_scenario_maker
 
     End Function
 
+    Function check_map_size() As Object
+
+        lbx_x_terrain.Items.Clear()
+        lbx_y_terrain.Items.Clear()
+        lbx_map_x.Items.Clear()
+        lbx_map_y.Items.Clear()
+        lbx_view_x.Items.Clear()
+        lbx_view_y.Items.Clear()
+
+        If cbx_map_size.SelectedIndex = 0 Then
+
+            For i As Integer = 0 To 79
+                lbx_x_terrain.Items.Add("" + i.ToString)
+                lbx_y_terrain.Items.Add("" + i.ToString)
+                lbx_map_x.Items.Add("" + i.ToString)
+                lbx_map_y.Items.Add("" + i.ToString)
+                lbx_view_x.Items.Add("" + i.ToString)
+                lbx_view_y.Items.Add("" + i.ToString)
+            Next
+
+        ElseIf cbx_map_size.SelectedIndex = 1 Then
+
+            For i As Integer = 0 To 119
+                lbx_x_terrain.Items.Add("" + i.ToString)
+                lbx_y_terrain.Items.Add("" + i.ToString)
+                lbx_map_x.Items.Add("" + i.ToString)
+                lbx_map_y.Items.Add("" + i.ToString)
+                lbx_view_x.Items.Add("" + i.ToString)
+                lbx_view_y.Items.Add("" + i.ToString)
+            Next
+
+        ElseIf cbx_map_size.SelectedIndex = 2 Then
+
+            For i As Integer = 0 To 143
+                lbx_x_terrain.Items.Add("" + i.ToString)
+                lbx_y_terrain.Items.Add("" + i.ToString)
+                lbx_map_x.Items.Add("" + i.ToString)
+                lbx_map_y.Items.Add("" + i.ToString)
+                lbx_view_x.Items.Add("" + i.ToString)
+                lbx_view_y.Items.Add("" + i.ToString)
+            Next
+
+        ElseIf cbx_map_size.SelectedIndex = 3 Then
+
+            For i As Integer = 0 To 167
+                lbx_x_terrain.Items.Add("" + i.ToString)
+                lbx_y_terrain.Items.Add("" + i.ToString)
+                lbx_map_x.Items.Add("" + i.ToString)
+                lbx_map_y.Items.Add("" + i.ToString)
+                lbx_view_x.Items.Add("" + i.ToString)
+                lbx_view_y.Items.Add("" + i.ToString)
+            Next
+
+        ElseIf cbx_map_size.SelectedIndex = 4 Then
+
+            For i As Integer = 0 To 199
+                lbx_x_terrain.Items.Add("" + i.ToString)
+                lbx_y_terrain.Items.Add("" + i.ToString)
+                lbx_map_x.Items.Add("" + i.ToString)
+                lbx_map_y.Items.Add("" + i.ToString)
+                lbx_view_x.Items.Add("" + i.ToString)
+                lbx_view_y.Items.Add("" + i.ToString)
+            Next
+
+        ElseIf cbx_map_size.SelectedIndex = 5 Then
+
+            For i As Integer = 0 To 219
+                lbx_x_terrain.Items.Add("" + i.ToString)
+                lbx_y_terrain.Items.Add("" + i.ToString)
+                lbx_map_x.Items.Add("" + i.ToString)
+                lbx_map_y.Items.Add("" + i.ToString)
+                lbx_view_x.Items.Add("" + i.ToString)
+                lbx_view_y.Items.Add("" + i.ToString)
+            Next
+
+        ElseIf cbx_map_size.SelectedIndex = 6 Then
+
+            For i As Integer = 0 To 239
+                lbx_x_terrain.Items.Add("" + i.ToString)
+                lbx_y_terrain.Items.Add("" + i.ToString)
+                lbx_map_x.Items.Add("" + i.ToString)
+                lbx_map_y.Items.Add("" + i.ToString)
+                lbx_view_x.Items.Add("" + i.ToString)
+                lbx_view_y.Items.Add("" + i.ToString)
+            Next
+
+        ElseIf cbx_map_size.SelectedIndex = 7 Then
+
+            For i As Integer = 0 To 251
+                lbx_x_terrain.Items.Add("" + i.ToString)
+                lbx_y_terrain.Items.Add("" + i.ToString)
+                lbx_map_x.Items.Add("" + i.ToString)
+                lbx_map_y.Items.Add("" + i.ToString)
+                lbx_view_x.Items.Add("" + i.ToString)
+                lbx_view_y.Items.Add("" + i.ToString)
+            Next
+
+        ElseIf cbx_map_size.SelectedIndex = 8 Then
+
+            For i As Integer = 0 To 275
+                lbx_x_terrain.Items.Add("" + i.ToString)
+                lbx_y_terrain.Items.Add("" + i.ToString)
+                lbx_map_x.Items.Add("" + i.ToString)
+                lbx_map_y.Items.Add("" + i.ToString)
+                lbx_view_x.Items.Add("" + i.ToString)
+                lbx_view_y.Items.Add("" + i.ToString)
+            Next
+
+        ElseIf cbx_map_size.SelectedIndex = 9 Then
+
+            For i As Integer = 0 To 299
+                lbx_x_terrain.Items.Add("" + i.ToString)
+                lbx_y_terrain.Items.Add("" + i.ToString)
+                lbx_map_x.Items.Add("" + i.ToString)
+                lbx_map_y.Items.Add("" + i.ToString)
+                lbx_view_x.Items.Add("" + i.ToString)
+                lbx_view_y.Items.Add("" + i.ToString)
+            Next
+
+        ElseIf cbx_map_size.SelectedIndex = 10 Then
+
+            For i As Integer = 0 To 319
+                lbx_x_terrain.Items.Add("" + i.ToString)
+                lbx_y_terrain.Items.Add("" + i.ToString)
+                lbx_map_x.Items.Add("" + i.ToString)
+                lbx_map_y.Items.Add("" + i.ToString)
+                lbx_view_x.Items.Add("" + i.ToString)
+                lbx_view_y.Items.Add("" + i.ToString)
+            Next
+
+        ElseIf cbx_map_size.SelectedIndex = 11 Then
+
+            For i As Integer = 0 To 359
+                lbx_x_terrain.Items.Add("" + i.ToString)
+                lbx_y_terrain.Items.Add("" + i.ToString)
+                lbx_map_x.Items.Add("" + i.ToString)
+                lbx_map_y.Items.Add("" + i.ToString)
+                lbx_view_x.Items.Add("" + i.ToString)
+                lbx_view_y.Items.Add("" + i.ToString)
+            Next
+
+        ElseIf cbx_map_size.SelectedIndex = 12 Then
+
+            For i As Integer = 0 To 399
+                lbx_x_terrain.Items.Add("" + i.ToString)
+                lbx_y_terrain.Items.Add("" + i.ToString)
+                lbx_map_x.Items.Add("" + i.ToString)
+                lbx_map_y.Items.Add("" + i.ToString)
+                lbx_view_x.Items.Add("" + i.ToString)
+                lbx_view_y.Items.Add("" + i.ToString)
+            Next
+
+        ElseIf cbx_map_size.SelectedIndex = 13 Then
+
+            For i As Integer = 0 To 479
+                lbx_x_terrain.Items.Add("" + i.ToString)
+                lbx_y_terrain.Items.Add("" + i.ToString)
+                lbx_map_x.Items.Add("" + i.ToString)
+                lbx_map_y.Items.Add("" + i.ToString)
+                lbx_view_x.Items.Add("" + i.ToString)
+                lbx_view_y.Items.Add("" + i.ToString)
+            Next
+
+        ElseIf cbx_map_size.SelectedIndex = 14 Then
+
+            For i As Integer = 0 To nud_mwh_size.Value
+                lbx_x_terrain.Items.Add("" + i.ToString)
+                lbx_y_terrain.Items.Add("" + i.ToString)
+                lbx_map_x.Items.Add("" + i.ToString)
+                lbx_map_y.Items.Add("" + i.ToString)
+                lbx_view_x.Items.Add("" + i.ToString)
+                lbx_view_y.Items.Add("" + i.ToString)
+            Next
+
+        End If
+
+        Return Nothing
+
+    End Function
     ' ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     ' [APPLICATION LOAD CODE] ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -137,9 +316,12 @@ Public Class frm_scenario_maker
         ' on clicking new, be sure to define all your variables and reset all gui to a vaild minimum scenario...
         Try
             ' varables/GUI stuff goes here...
+            cbx_map_size.SelectedIndex = 13
+            cbx_ai_map_type.SelectedIndex = 6
+            cbx_color_mood.SelectedIndex = 0
 
         Catch ex As Exception
-            MessageBox.Show("An error occured while trying to create variables. Hard Drive/Memory Full?")
+            MessageBox.Show("An error occured while trying to create/setup new scenario. Hard Drive/Memory Full?")
         End Try
     End Sub
     Public Sub btn_save_Click(sender As Object, e As EventArgs) Handles btn_save.Click
@@ -178,11 +360,17 @@ Public Class frm_scenario_maker
     ' [TAB: MAP CODE] --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Public Sub cbx_map_size_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_map_size.SelectedIndexChanged
-
+        If cbx_map_size.SelectedIndex = 14 Then
+            nud_mwh_size.Enabled = True
+        Else
+            nud_mwh_size.Enabled = False
+        End If
+        check_map_size()
+        cbx_default_terrain.SelectedIndex = 56
     End Sub
 
     Public Sub nud_mwh_size_ValueChanged(sender As Object, e As EventArgs) Handles nud_mwh_size.ValueChanged
-
+        check_map_size()
     End Sub
 
     Public Sub cbx_default_terrain_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_default_terrain.SelectedIndexChanged
