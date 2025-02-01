@@ -84,17 +84,21 @@ Public Class frm_scenario_maker
 
         Try
 
-            ' what happened?
+            ' pop up a message box explaining what happened and try to create a file outputting the error as well in the programs directory.
 
-            MessageBox.Show(ex.ToString)
+            MessageBox.Show(ex.ToString, "Runtime Error")
             File.WriteAllText(".\error.txt", ex.ToString)
 
         Catch another_ex As Exception
+
             ' just give up...
+
+            Return Nothing
+            Me.Close()
+
         End Try
 
         Return Nothing
-
         Me.Close()
 
     End Function

@@ -4782,7 +4782,7 @@ Partial Class frm_scenario_maker
         lbl_aoe2de_sm.Name = "lbl_aoe2de_sm"
         lbl_aoe2de_sm.Size = New Size(523, 90)
         lbl_aoe2de_sm.TabIndex = 0
-        lbl_aoe2de_sm.Text = "Age of Empires 2 DE Scenario Maker" & vbCrLf & "Version: 0.0.4" & vbCrLf & "Created By: Jeremy ""SpoOkyMagician"" Levegood"
+        lbl_aoe2de_sm.Text = "Age of Empires 2 DE Scenario Maker" & vbCrLf & "Version: 0.0.5" & vbCrLf & "Created By: Jeremy ""SpoOkyMagician"" Levegood"
         ' 
         ' ofd_scenario
         ' 
