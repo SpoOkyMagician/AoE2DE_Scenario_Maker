@@ -21,7 +21,7 @@ Note: At the bare minimum, I want to have a working GUI that maybe someone can t
 
 Special Thanks: https://docs.google.com/spreadsheets/d/1llyn7FWKEtmss_WE-6hinMItpsV-h-6qsY8xBlkxUzw/edit?gid=193837369#gid=193837369 (This saved me so much work with the units.)<br>
 
-Zip Instructions:<br><br>
+Release Instructions:<br><br>
 1: Click here: https://github.com/SpoOkyMagician/AoE2DE_Scenario_Maker/releases/tag/preview <br>
 2: Click "Download: AoE2DE_SM.zip" Link. <br>
 3: Unzip. <br>
