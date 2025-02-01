@@ -5314,4 +5314,5 @@ Partial Class frm_scenario_maker
     Public WithEvents lbl_trigger_effects As Label
     Public WithEvents lbl_trigger_conditions As Label
     Public WithEvents lbl_created_trigger As Label
+    Friend WithEvents Button1 As Button
 End Class
