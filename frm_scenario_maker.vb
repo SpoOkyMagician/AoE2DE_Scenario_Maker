@@ -3987,7 +3987,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p1_to_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p2_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p1_to_p2_diplo.Text = "Enemy" And clicked = False Then
+                btn_p1_to_p2_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p1_to_p2_diplo.Text = "Neutral" And clicked = False Then
+                btn_p1_to_p2_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p1_to_p2_diplo.Text = "Ally" And clicked = False Then
+                btn_p1_to_p2_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -3998,7 +4009,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p1_to_p3_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p3_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p1_to_p3_diplo.Text = "Enemy" And clicked = False Then
+                btn_p1_to_p3_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p1_to_p3_diplo.Text = "Neutral" And clicked = False Then
+                btn_p1_to_p3_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p1_to_p3_diplo.Text = "Ally" And clicked = False Then
+                btn_p1_to_p3_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4009,7 +4031,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p1_to_p4_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p4_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p1_to_p4_diplo.Text = "Enemy" And clicked = False Then
+                btn_p1_to_p4_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p1_to_p4_diplo.Text = "Neutral" And clicked = False Then
+                btn_p1_to_p4_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p1_to_p4_diplo.Text = "Ally" And clicked = False Then
+                btn_p1_to_p4_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4020,7 +4053,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p1_to_p5_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p5_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p1_to_p5_diplo.Text = "Enemy" And clicked = False Then
+                btn_p1_to_p5_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p1_to_p5_diplo.Text = "Neutral" And clicked = False Then
+                btn_p1_to_p5_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p1_to_p5_diplo.Text = "Ally" And clicked = False Then
+                btn_p1_to_p5_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4031,7 +4075,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p1_to_p6_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p6_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p1_to_p6_diplo.Text = "Enemy" And clicked = False Then
+                btn_p1_to_p6_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p1_to_p6_diplo.Text = "Neutral" And clicked = False Then
+                btn_p1_to_p6_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p1_to_p6_diplo.Text = "Ally" And clicked = False Then
+                btn_p1_to_p6_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4042,7 +4097,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p1_to_p7_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p7_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p1_to_p7_diplo.Text = "Enemy" And clicked = False Then
+                btn_p1_to_p7_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p1_to_p7_diplo.Text = "Neutral" And clicked = False Then
+                btn_p1_to_p7_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p1_to_p7_diplo.Text = "Ally" And clicked = False Then
+                btn_p1_to_p7_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4053,7 +4119,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p1_to_p8_diplo_Click(sender As Object, e As EventArgs) Handles btn_p1_to_p8_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p1_to_p8_diplo.Text = "Enemy" And clicked = False Then
+                btn_p1_to_p8_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p1_to_p8_diplo.Text = "Neutral" And clicked = False Then
+                btn_p1_to_p8_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p1_to_p8_diplo.Text = "Ally" And clicked = False Then
+                btn_p1_to_p8_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4075,7 +4152,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p2_to_p1_diplo_Click(sender As Object, e As EventArgs) Handles btn_p2_to_p1_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p2_to_p1_diplo.Text = "Enemy" And clicked = False Then
+                btn_p2_to_p1_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p2_to_p1_diplo.Text = "Neutral" And clicked = False Then
+                btn_p2_to_p1_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p2_to_p1_diplo.Text = "Ally" And clicked = False Then
+                btn_p2_to_p1_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4086,7 +4174,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p2_to_p3_diplo_Click(sender As Object, e As EventArgs) Handles btn_p2_to_p3_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p2_to_p3_diplo.Text = "Enemy" And clicked = False Then
+                btn_p2_to_p3_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p2_to_p3_diplo.Text = "Neutral" And clicked = False Then
+                btn_p2_to_p3_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p2_to_p3_diplo.Text = "Ally" And clicked = False Then
+                btn_p2_to_p3_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4097,7 +4196,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p2_to_p4_diplo_Click(sender As Object, e As EventArgs) Handles btn_p2_to_p4_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p2_to_p4_diplo.Text = "Enemy" And clicked = False Then
+                btn_p2_to_p4_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p2_to_p4_diplo.Text = "Neutral" And clicked = False Then
+                btn_p2_to_p4_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p2_to_p4_diplo.Text = "Ally" And clicked = False Then
+                btn_p2_to_p4_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4108,7 +4218,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p2_to_p5_diplo_Click(sender As Object, e As EventArgs) Handles btn_p2_to_p5_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p2_to_p5_diplo.Text = "Enemy" And clicked = False Then
+                btn_p2_to_p5_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p2_to_p5_diplo.Text = "Neutral" And clicked = False Then
+                btn_p2_to_p5_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p2_to_p5_diplo.Text = "Ally" And clicked = False Then
+                btn_p2_to_p5_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4119,7 +4240,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p2_to_p6_diplo_Click(sender As Object, e As EventArgs) Handles btn_p2_to_p6_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p2_to_p6_diplo.Text = "Enemy" And clicked = False Then
+                btn_p2_to_p6_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p2_to_p6_diplo.Text = "Neutral" And clicked = False Then
+                btn_p2_to_p6_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p2_to_p6_diplo.Text = "Ally" And clicked = False Then
+                btn_p2_to_p6_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4130,7 +4262,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p2_to_p7_diplo_Click(sender As Object, e As EventArgs) Handles btn_p2_to_p7_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p2_to_p7_diplo.Text = "Enemy" And clicked = False Then
+                btn_p2_to_p7_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p2_to_p7_diplo.Text = "Neutral" And clicked = False Then
+                btn_p2_to_p7_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p2_to_p7_diplo.Text = "Ally" And clicked = False Then
+                btn_p2_to_p7_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4141,7 +4284,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p2_to_p8_diplo_Click(sender As Object, e As EventArgs) Handles btn_p2_to_p8_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p2_to_p8_diplo.Text = "Enemy" And clicked = False Then
+                btn_p2_to_p8_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p2_to_p8_diplo.Text = "Neutral" And clicked = False Then
+                btn_p2_to_p8_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p2_to_p8_diplo.Text = "Ally" And clicked = False Then
+                btn_p2_to_p8_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4163,7 +4317,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p3_to_p1_diplo_Click(sender As Object, e As EventArgs) Handles btn_p3_to_p1_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p3_to_p1_diplo.Text = "Enemy" And clicked = False Then
+                btn_p3_to_p1_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p3_to_p1_diplo.Text = "Neutral" And clicked = False Then
+                btn_p3_to_p1_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p3_to_p1_diplo.Text = "Ally" And clicked = False Then
+                btn_p3_to_p1_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4174,7 +4339,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p3_to_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p3_to_p2_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p3_to_p2_diplo.Text = "Enemy" And clicked = False Then
+                btn_p3_to_p2_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p3_to_p2_diplo.Text = "Neutral" And clicked = False Then
+                btn_p3_to_p2_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p3_to_p2_diplo.Text = "Ally" And clicked = False Then
+                btn_p3_to_p2_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4185,7 +4361,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p3_to_p4_diplo_Click(sender As Object, e As EventArgs) Handles btn_p3_to_p4_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p3_to_p4_diplo.Text = "Enemy" And clicked = False Then
+                btn_p3_to_p4_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p3_to_p4_diplo.Text = "Neutral" And clicked = False Then
+                btn_p3_to_p4_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p3_to_p4_diplo.Text = "Ally" And clicked = False Then
+                btn_p3_to_p4_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4196,7 +4383,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p3_to_p5_diplo_Click(sender As Object, e As EventArgs) Handles btn_p3_to_p5_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p3_to_p5_diplo.Text = "Enemy" And clicked = False Then
+                btn_p3_to_p5_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p3_to_p5_diplo.Text = "Neutral" And clicked = False Then
+                btn_p3_to_p5_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p3_to_p5_diplo.Text = "Ally" And clicked = False Then
+                btn_p3_to_p5_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4207,7 +4405,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p3_to_p6_diplo_Click(sender As Object, e As EventArgs) Handles btn_p3_to_p6_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p3_to_p6_diplo.Text = "Enemy" And clicked = False Then
+                btn_p3_to_p6_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p3_to_p6_diplo.Text = "Neutral" And clicked = False Then
+                btn_p3_to_p6_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p3_to_p6_diplo.Text = "Ally" And clicked = False Then
+                btn_p3_to_p6_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4218,7 +4427,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p3_to_p7_diplo_Click(sender As Object, e As EventArgs) Handles btn_p3_to_p7_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p3_to_p7_diplo.Text = "Enemy" And clicked = False Then
+                btn_p3_to_p7_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p3_to_p7_diplo.Text = "Neutral" And clicked = False Then
+                btn_p3_to_p7_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p3_to_p7_diplo.Text = "Ally" And clicked = False Then
+                btn_p3_to_p7_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4229,7 +4449,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p3_to_p8_diplo_Click(sender As Object, e As EventArgs) Handles btn_p3_to_p8_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p3_to_p8_diplo.Text = "Enemy" And clicked = False Then
+                btn_p3_to_p8_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p3_to_p8_diplo.Text = "Neutral" And clicked = False Then
+                btn_p3_to_p8_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p3_to_p8_diplo.Text = "Ally" And clicked = False Then
+                btn_p3_to_p8_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4251,7 +4482,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p4_to_p1_diplo_Click(sender As Object, e As EventArgs) Handles btn_p4_to_p1_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p4_to_p1_diplo.Text = "Enemy" And clicked = False Then
+                btn_p4_to_p1_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p4_to_p1_diplo.Text = "Neutral" And clicked = False Then
+                btn_p4_to_p1_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p4_to_p1_diplo.Text = "Ally" And clicked = False Then
+                btn_p4_to_p1_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4262,7 +4504,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p4_to_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p4_to_p2_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p4_to_p2_diplo.Text = "Enemy" And clicked = False Then
+                btn_p4_to_p2_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p4_to_p2_diplo.Text = "Neutral" And clicked = False Then
+                btn_p4_to_p2_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p4_to_p2_diplo.Text = "Ally" And clicked = False Then
+                btn_p4_to_p2_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4273,7 +4526,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p4_to_p3_diplo_Click(sender As Object, e As EventArgs) Handles btn_p4_to_p3_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p4_to_p3_diplo.Text = "Enemy" And clicked = False Then
+                btn_p4_to_p3_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p4_to_p3_diplo.Text = "Neutral" And clicked = False Then
+                btn_p4_to_p3_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p4_to_p3_diplo.Text = "Ally" And clicked = False Then
+                btn_p4_to_p3_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4284,7 +4548,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p4_to_p5_diplo_Click(sender As Object, e As EventArgs) Handles btn_p4_to_p5_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p4_to_p5_diplo.Text = "Enemy" And clicked = False Then
+                btn_p4_to_p5_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p4_to_p5_diplo.Text = "Neutral" And clicked = False Then
+                btn_p4_to_p5_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p4_to_p5_diplo.Text = "Ally" And clicked = False Then
+                btn_p4_to_p5_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4295,7 +4570,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p4_to_p6_diplo_Click(sender As Object, e As EventArgs) Handles btn_p4_to_p6_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p4_to_p6_diplo.Text = "Enemy" And clicked = False Then
+                btn_p4_to_p6_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p4_to_p6_diplo.Text = "Neutral" And clicked = False Then
+                btn_p4_to_p6_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p4_to_p6_diplo.Text = "Ally" And clicked = False Then
+                btn_p4_to_p6_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4306,7 +4592,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p4_to_p7_diplo_Click(sender As Object, e As EventArgs) Handles btn_p4_to_p7_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p4_to_p7_diplo.Text = "Enemy" And clicked = False Then
+                btn_p4_to_p7_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p4_to_p7_diplo.Text = "Neutral" And clicked = False Then
+                btn_p4_to_p7_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p4_to_p7_diplo.Text = "Ally" And clicked = False Then
+                btn_p4_to_p7_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4317,7 +4614,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p4_to_p8_diplo_Click(sender As Object, e As EventArgs) Handles btn_p4_to_p8_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p4_to_p8_diplo.Text = "Enemy" And clicked = False Then
+                btn_p4_to_p8_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p4_to_p8_diplo.Text = "Neutral" And clicked = False Then
+                btn_p4_to_p8_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p4_to_p8_diplo.Text = "Ally" And clicked = False Then
+                btn_p4_to_p8_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4339,7 +4647,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p5_to_p1_diplo_Click(sender As Object, e As EventArgs) Handles btn_p5_to_p1_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p5_to_p1_diplo.Text = "Enemy" And clicked = False Then
+                btn_p5_to_p1_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p5_to_p1_diplo.Text = "Neutral" And clicked = False Then
+                btn_p5_to_p1_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p5_to_p1_diplo.Text = "Ally" And clicked = False Then
+                btn_p5_to_p1_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4350,7 +4669,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p5_to_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p5_to_p2_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p5_to_p2_diplo.Text = "Enemy" And clicked = False Then
+                btn_p5_to_p2_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p5_to_p2_diplo.Text = "Neutral" And clicked = False Then
+                btn_p5_to_p2_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p5_to_p2_diplo.Text = "Ally" And clicked = False Then
+                btn_p5_to_p2_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4361,7 +4691,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p5_to_p3_diplo_Click(sender As Object, e As EventArgs) Handles btn_p5_to_p3_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p5_to_p3_diplo.Text = "Enemy" And clicked = False Then
+                btn_p5_to_p3_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p5_to_p3_diplo.Text = "Neutral" And clicked = False Then
+                btn_p5_to_p3_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p5_to_p3_diplo.Text = "Ally" And clicked = False Then
+                btn_p5_to_p3_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4372,7 +4713,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p5_to_p4_diplo_Click(sender As Object, e As EventArgs) Handles btn_p5_to_p4_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p5_to_p4_diplo.Text = "Enemy" And clicked = False Then
+                btn_p5_to_p4_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p5_to_p4_diplo.Text = "Neutral" And clicked = False Then
+                btn_p5_to_p4_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p5_to_p4_diplo.Text = "Ally" And clicked = False Then
+                btn_p5_to_p4_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4383,7 +4735,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p5_to_p6_diplo_Click(sender As Object, e As EventArgs) Handles btn_p5_to_p6_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p5_to_p6_diplo.Text = "Enemy" And clicked = False Then
+                btn_p5_to_p6_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p5_to_p6_diplo.Text = "Neutral" And clicked = False Then
+                btn_p5_to_p6_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p5_to_p6_diplo.Text = "Ally" And clicked = False Then
+                btn_p5_to_p6_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4394,7 +4757,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p5_to_p7_diplo_Click(sender As Object, e As EventArgs) Handles btn_p5_to_p7_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p5_to_p7_diplo.Text = "Enemy" And clicked = False Then
+                btn_p5_to_p7_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p5_to_p7_diplo.Text = "Neutral" And clicked = False Then
+                btn_p5_to_p7_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p5_to_p7_diplo.Text = "Ally" And clicked = False Then
+                btn_p5_to_p7_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4405,7 +4779,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p5_to_p8_diplo_Click(sender As Object, e As EventArgs) Handles btn_p5_to_p8_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p5_to_p8_diplo.Text = "Enemy" And clicked = False Then
+                btn_p5_to_p8_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p5_to_p8_diplo.Text = "Neutral" And clicked = False Then
+                btn_p5_to_p8_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p5_to_p8_diplo.Text = "Ally" And clicked = False Then
+                btn_p5_to_p8_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4427,7 +4812,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p6_to_p1_diplo_Click(sender As Object, e As EventArgs) Handles btn_p6_to_p1_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p6_to_p1_diplo.Text = "Enemy" And clicked = False Then
+                btn_p6_to_p1_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p6_to_p1_diplo.Text = "Neutral" And clicked = False Then
+                btn_p6_to_p1_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p6_to_p1_diplo.Text = "Ally" And clicked = False Then
+                btn_p6_to_p1_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4438,7 +4834,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p6_to_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p6_to_p2_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p6_to_p2_diplo.Text = "Enemy" And clicked = False Then
+                btn_p6_to_p2_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p6_to_p2_diplo.Text = "Neutral" And clicked = False Then
+                btn_p6_to_p2_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p6_to_p2_diplo.Text = "Ally" And clicked = False Then
+                btn_p6_to_p2_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4449,7 +4856,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p6_to_p3_diplo_Click(sender As Object, e As EventArgs) Handles btn_p6_to_p3_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p6_to_p3_diplo.Text = "Enemy" And clicked = False Then
+                btn_p6_to_p3_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p6_to_p3_diplo.Text = "Neutral" And clicked = False Then
+                btn_p6_to_p3_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p6_to_p3_diplo.Text = "Ally" And clicked = False Then
+                btn_p6_to_p3_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4460,7 +4878,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p6_to_p4_diplo_Click(sender As Object, e As EventArgs) Handles btn_p6_to_p4_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p6_to_p4_diplo.Text = "Enemy" And clicked = False Then
+                btn_p6_to_p4_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p6_to_p4_diplo.Text = "Neutral" And clicked = False Then
+                btn_p6_to_p4_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p6_to_p4_diplo.Text = "Ally" And clicked = False Then
+                btn_p6_to_p4_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4471,7 +4900,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p6_to_p5_diplo_Click(sender As Object, e As EventArgs) Handles btn_p6_to_p5_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p6_to_p5_diplo.Text = "Enemy" And clicked = False Then
+                btn_p6_to_p5_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p6_to_p5_diplo.Text = "Neutral" And clicked = False Then
+                btn_p6_to_p5_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p6_to_p5_diplo.Text = "Ally" And clicked = False Then
+                btn_p6_to_p5_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4482,7 +4922,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p6_to_p7_diplo_Click(sender As Object, e As EventArgs) Handles btn_p6_to_p7_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p6_to_p7_diplo.Text = "Enemy" And clicked = False Then
+                btn_p6_to_p7_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p6_to_p7_diplo.Text = "Neutral" And clicked = False Then
+                btn_p6_to_p7_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p6_to_p7_diplo.Text = "Ally" And clicked = False Then
+                btn_p6_to_p7_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4493,7 +4944,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p6_to_p8_diplo_Click(sender As Object, e As EventArgs) Handles btn_p6_to_p8_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p6_to_p8_diplo.Text = "Enemy" And clicked = False Then
+                btn_p6_to_p8_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p6_to_p8_diplo.Text = "Neutral" And clicked = False Then
+                btn_p6_to_p8_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p6_to_p8_diplo.Text = "Ally" And clicked = False Then
+                btn_p6_to_p8_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4515,7 +4977,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p7_to_p1_diplo_Click(sender As Object, e As EventArgs) Handles btn_p7_to_p1_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p7_to_p1_diplo.Text = "Enemy" And clicked = False Then
+                btn_p7_to_p1_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p7_to_p1_diplo.Text = "Neutral" And clicked = False Then
+                btn_p7_to_p1_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p7_to_p1_diplo.Text = "Ally" And clicked = False Then
+                btn_p7_to_p1_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4526,7 +4999,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p7_to_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p7_to_p2_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p7_to_p2_diplo.Text = "Enemy" And clicked = False Then
+                btn_p7_to_p2_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p7_to_p2_diplo.Text = "Neutral" And clicked = False Then
+                btn_p7_to_p2_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p7_to_p2_diplo.Text = "Ally" And clicked = False Then
+                btn_p7_to_p2_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4537,7 +5021,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p7_to_p3_diplo_Click(sender As Object, e As EventArgs) Handles btn_p7_to_p3_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p7_to_p3_diplo.Text = "Enemy" And clicked = False Then
+                btn_p7_to_p3_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p7_to_p3_diplo.Text = "Neutral" And clicked = False Then
+                btn_p7_to_p3_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p7_to_p3_diplo.Text = "Ally" And clicked = False Then
+                btn_p7_to_p3_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4548,7 +5043,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p7_to_p4_diplo_Click(sender As Object, e As EventArgs) Handles btn_p7_to_p4_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p7_to_p4_diplo.Text = "Enemy" And clicked = False Then
+                btn_p7_to_p4_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p7_to_p4_diplo.Text = "Neutral" And clicked = False Then
+                btn_p7_to_p4_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p7_to_p4_diplo.Text = "Ally" And clicked = False Then
+                btn_p7_to_p4_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4559,7 +5065,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p7_to_p5_diplo_Click(sender As Object, e As EventArgs) Handles btn_p7_to_p5_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p7_to_p5_diplo.Text = "Enemy" And clicked = False Then
+                btn_p7_to_p5_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p7_to_p5_diplo.Text = "Neutral" And clicked = False Then
+                btn_p7_to_p5_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p7_to_p5_diplo.Text = "Ally" And clicked = False Then
+                btn_p7_to_p5_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4570,7 +5087,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p7_to_p6_diplo_Click(sender As Object, e As EventArgs) Handles btn_p7_to_p6_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p7_to_p6_diplo.Text = "Enemy" And clicked = False Then
+                btn_p7_to_p6_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p7_to_p6_diplo.Text = "Neutral" And clicked = False Then
+                btn_p7_to_p6_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p7_to_p6_diplo.Text = "Ally" And clicked = False Then
+                btn_p7_to_p6_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4581,7 +5109,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p7_to_p8_diplo_Click(sender As Object, e As EventArgs) Handles btn_p7_to_p8_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p7_to_p8_diplo.Text = "Enemy" And clicked = False Then
+                btn_p7_to_p8_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p7_to_p8_diplo.Text = "Neutral" And clicked = False Then
+                btn_p7_to_p8_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p7_to_p8_diplo.Text = "Ally" And clicked = False Then
+                btn_p7_to_p8_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4603,7 +5142,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p8_to_p1_diplo_Click(sender As Object, e As EventArgs) Handles btn_p8_to_p1_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p8_to_p1_diplo.Text = "Enemy" And clicked = False Then
+                btn_p8_to_p1_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p8_to_p1_diplo.Text = "Neutral" And clicked = False Then
+                btn_p8_to_p1_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p8_to_p1_diplo.Text = "Ally" And clicked = False Then
+                btn_p8_to_p1_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4614,7 +5164,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p8_to_p2_diplo_Click(sender As Object, e As EventArgs) Handles btn_p8_to_p2_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p8_to_p2_diplo.Text = "Enemy" And clicked = False Then
+                btn_p8_to_p2_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p8_to_p2_diplo.Text = "Neutral" And clicked = False Then
+                btn_p8_to_p2_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p8_to_p2_diplo.Text = "Ally" And clicked = False Then
+                btn_p8_to_p2_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4625,7 +5186,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p8_to_p3_diplo_Click(sender As Object, e As EventArgs) Handles btn_p8_to_p3_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p8_to_p3_diplo.Text = "Enemy" And clicked = False Then
+                btn_p8_to_p3_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p8_to_p3_diplo.Text = "Neutral" And clicked = False Then
+                btn_p8_to_p3_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p8_to_p3_diplo.Text = "Ally" And clicked = False Then
+                btn_p8_to_p3_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4636,7 +5208,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p8_to_p4_diplo_Click(sender As Object, e As EventArgs) Handles btn_p8_to_p4_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p8_to_p4_diplo.Text = "Enemy" And clicked = False Then
+                btn_p8_to_p4_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p8_to_p4_diplo.Text = "Neutral" And clicked = False Then
+                btn_p8_to_p4_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p8_to_p4_diplo.Text = "Ally" And clicked = False Then
+                btn_p8_to_p4_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4647,7 +5230,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p8_to_p5_diplo_Click(sender As Object, e As EventArgs) Handles btn_p8_to_p5_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p8_to_p5_diplo.Text = "Enemy" And clicked = False Then
+                btn_p8_to_p5_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p8_to_p5_diplo.Text = "Neutral" And clicked = False Then
+                btn_p8_to_p5_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p8_to_p5_diplo.Text = "Ally" And clicked = False Then
+                btn_p8_to_p5_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4658,7 +5252,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p8_to_p6_diplo_Click(sender As Object, e As EventArgs) Handles btn_p8_to_p6_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p8_to_p6_diplo.Text = "Enemy" And clicked = False Then
+                btn_p8_to_p6_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p8_to_p6_diplo.Text = "Neutral" And clicked = False Then
+                btn_p8_to_p6_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p8_to_p6_diplo.Text = "Ally" And clicked = False Then
+                btn_p8_to_p6_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4669,7 +5274,18 @@ Public Class frm_scenario_maker
     Public Sub btn_p8_to_p7_diplo_Click(sender As Object, e As EventArgs) Handles btn_p8_to_p7_diplo.Click
 
         Try
-
+            Dim clicked As Boolean = False
+            If btn_p8_to_p7_diplo.Text = "Enemy" And clicked = False Then
+                btn_p8_to_p7_diplo.Text = "Neutral"
+                clicked = True
+            ElseIf btn_p8_to_p7_diplo.Text = "Neutral" And clicked = False Then
+                btn_p8_to_p7_diplo.Text = "Ally"
+                clicked = True
+            ElseIf btn_p8_to_p7_diplo.Text = "Ally" And clicked = False Then
+                btn_p8_to_p7_diplo.Text = "Enemy"
+                clicked = True
+            End If
+            clicked = False
         Catch ex As Exception
 
             catch_all_errors(ex)
