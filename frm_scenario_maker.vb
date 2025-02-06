@@ -676,6 +676,14 @@ Public Class frm_scenario_maker
 
                 ' 1 player...
 
+                btn_p1_to_p2_diplo.Enabled = False
+                btn_p1_to_p3_diplo.Enabled = False
+                btn_p1_to_p4_diplo.Enabled = False
+                btn_p1_to_p5_diplo.Enabled = False
+                btn_p1_to_p6_diplo.Enabled = False
+                btn_p1_to_p7_diplo.Enabled = False
+                btn_p1_to_p8_diplo.Enabled = False
+
                 cbx_p2_age.Enabled = False
                 nud_p2_food.Enabled = False
                 nud_p2_wood.Enabled = False
@@ -869,6 +877,14 @@ Public Class frm_scenario_maker
             ElseIf cbx_total_players.SelectedIndex = 1 Then
 
                 ' 2 players...
+
+                btn_p1_to_p2_diplo.Enabled = True
+                btn_p1_to_p3_diplo.Enabled = False
+                btn_p1_to_p4_diplo.Enabled = False
+                btn_p1_to_p5_diplo.Enabled = False
+                btn_p1_to_p6_diplo.Enabled = False
+                btn_p1_to_p7_diplo.Enabled = False
+                btn_p1_to_p8_diplo.Enabled = False
 
                 cbx_p2_age.Enabled = True
                 nud_p2_food.Enabled = True
@@ -1064,6 +1080,14 @@ Public Class frm_scenario_maker
 
                 ' 3 players...
 
+                btn_p1_to_p2_diplo.Enabled = True
+                btn_p1_to_p3_diplo.Enabled = True
+                btn_p1_to_p4_diplo.Enabled = False
+                btn_p1_to_p5_diplo.Enabled = False
+                btn_p1_to_p6_diplo.Enabled = False
+                btn_p1_to_p7_diplo.Enabled = False
+                btn_p1_to_p8_diplo.Enabled = False
+
                 cbx_p2_age.Enabled = True
                 nud_p2_food.Enabled = True
                 nud_p2_wood.Enabled = True
@@ -1257,6 +1281,14 @@ Public Class frm_scenario_maker
             ElseIf cbx_total_players.SelectedIndex = 3 Then
 
                 ' 4 players...
+
+                btn_p1_to_p2_diplo.Enabled = True
+                btn_p1_to_p3_diplo.Enabled = True
+                btn_p1_to_p4_diplo.Enabled = True
+                btn_p1_to_p5_diplo.Enabled = False
+                btn_p1_to_p6_diplo.Enabled = False
+                btn_p1_to_p7_diplo.Enabled = False
+                btn_p1_to_p8_diplo.Enabled = False
 
                 cbx_p2_age.Enabled = True
                 nud_p2_food.Enabled = True
@@ -1452,6 +1484,14 @@ Public Class frm_scenario_maker
 
                 ' 5 players...
 
+                btn_p1_to_p2_diplo.Enabled = True
+                btn_p1_to_p3_diplo.Enabled = True
+                btn_p1_to_p4_diplo.Enabled = True
+                btn_p1_to_p5_diplo.Enabled = True
+                btn_p1_to_p6_diplo.Enabled = False
+                btn_p1_to_p7_diplo.Enabled = False
+                btn_p1_to_p8_diplo.Enabled = False
+
                 cbx_p2_age.Enabled = True
                 nud_p2_food.Enabled = True
                 nud_p2_wood.Enabled = True
@@ -1645,6 +1685,14 @@ Public Class frm_scenario_maker
             ElseIf cbx_total_players.SelectedIndex = 5 Then
 
                 ' 6 players...
+
+                btn_p1_to_p2_diplo.Enabled = True
+                btn_p1_to_p3_diplo.Enabled = True
+                btn_p1_to_p4_diplo.Enabled = True
+                btn_p1_to_p5_diplo.Enabled = True
+                btn_p1_to_p6_diplo.Enabled = True
+                btn_p1_to_p7_diplo.Enabled = False
+                btn_p1_to_p8_diplo.Enabled = False
 
                 cbx_p2_age.Enabled = True
                 nud_p2_food.Enabled = True
@@ -1840,6 +1888,14 @@ Public Class frm_scenario_maker
 
                 ' 7 players...
 
+                btn_p1_to_p2_diplo.Enabled = True
+                btn_p1_to_p3_diplo.Enabled = True
+                btn_p1_to_p4_diplo.Enabled = True
+                btn_p1_to_p5_diplo.Enabled = True
+                btn_p1_to_p6_diplo.Enabled = True
+                btn_p1_to_p7_diplo.Enabled = True
+                btn_p1_to_p8_diplo.Enabled = False
+
                 cbx_p2_age.Enabled = True
                 nud_p2_food.Enabled = True
                 nud_p2_wood.Enabled = True
@@ -2033,6 +2089,14 @@ Public Class frm_scenario_maker
             ElseIf cbx_total_players.SelectedIndex = 7 Then
 
                 ' 8 players...
+
+                btn_p1_to_p2_diplo.Enabled = True
+                btn_p1_to_p3_diplo.Enabled = True
+                btn_p1_to_p4_diplo.Enabled = True
+                btn_p1_to_p5_diplo.Enabled = True
+                btn_p1_to_p6_diplo.Enabled = True
+                btn_p1_to_p7_diplo.Enabled = True
+                btn_p1_to_p8_diplo.Enabled = True
 
                 cbx_p2_age.Enabled = True
                 nud_p2_food.Enabled = True
