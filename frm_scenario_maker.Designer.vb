@@ -432,11 +432,15 @@ Partial Class frm_scenario_maker
         tbx_trigger_name = New TextBox()
         lbx_trigger_effects = New ListBox()
         lbx_trigger_conditions = New ListBox()
+        tp_aoe2_scenario_parser = New TabPage()
+        lbl_python_code = New Label()
+        tbx_python = New TextBox()
         tp_about = New TabPage()
         lbl_aoe2de_sm = New Label()
         ofd_scenario = New OpenFileDialog()
         sfd_scenario = New SaveFileDialog()
         ofd_aoe2de_path = New OpenFileDialog()
+        lbl_experimental = New Label()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
@@ -504,6 +508,7 @@ Partial Class frm_scenario_maker
         tp_messages.SuspendLayout()
         tp_cinematics.SuspendLayout()
         tp_trigger.SuspendLayout()
+        tp_aoe2_scenario_parser.SuspendLayout()
         tp_about.SuspendLayout()
         SuspendLayout()
         ' 
@@ -520,6 +525,7 @@ Partial Class frm_scenario_maker
         tc_main.Controls.Add(tp_messages)
         tc_main.Controls.Add(tp_cinematics)
         tc_main.Controls.Add(tp_trigger)
+        tc_main.Controls.Add(tp_aoe2_scenario_parser)
         tc_main.Controls.Add(tp_about)
         tc_main.ImeMode = ImeMode.NoControl
         tc_main.Location = New Point(0, 8)
@@ -4763,6 +4769,41 @@ Partial Class frm_scenario_maker
         lbx_trigger_conditions.Size = New Size(216, 469)
         lbx_trigger_conditions.TabIndex = 0
         ' 
+        ' tp_aoe2_scenario_parser
+        ' 
+        tp_aoe2_scenario_parser.Controls.Add(lbl_experimental)
+        tp_aoe2_scenario_parser.Controls.Add(lbl_python_code)
+        tp_aoe2_scenario_parser.Controls.Add(tbx_python)
+        tp_aoe2_scenario_parser.Location = New Point(4, 24)
+        tp_aoe2_scenario_parser.Name = "tp_aoe2_scenario_parser"
+        tp_aoe2_scenario_parser.Padding = New Padding(3)
+        tp_aoe2_scenario_parser.Size = New Size(1448, 524)
+        tp_aoe2_scenario_parser.TabIndex = 12
+        tp_aoe2_scenario_parser.Text = "AoE2 Scenario Parser"
+        tp_aoe2_scenario_parser.UseVisualStyleBackColor = True
+        ' 
+        ' lbl_python_code
+        ' 
+        lbl_python_code.AutoSize = True
+        lbl_python_code.Location = New Point(552, 8)
+        lbl_python_code.Name = "lbl_python_code"
+        lbl_python_code.Size = New Size(76, 15)
+        lbl_python_code.TabIndex = 1
+        lbl_python_code.Text = "Python Code"
+        ' 
+        ' tbx_python
+        ' 
+        tbx_python.AcceptsReturn = True
+        tbx_python.Location = New Point(552, 32)
+        tbx_python.MaxLength = Integer.MaxValue
+        tbx_python.Multiline = True
+        tbx_python.Name = "tbx_python"
+        tbx_python.ScrollBars = ScrollBars.Both
+        tbx_python.Size = New Size(888, 488)
+        tbx_python.TabIndex = 0
+        tbx_python.Text = resources.GetString("tbx_python.Text")
+        tbx_python.WordWrap = False
+        ' 
         ' tp_about
         ' 
         tp_about.Controls.Add(lbl_aoe2de_sm)
@@ -4803,6 +4844,15 @@ Partial Class frm_scenario_maker
         ofd_aoe2de_path.FileName = "AoE2DE_s.exe"
         ofd_aoe2de_path.Filter = """Age of Empires 2 DE""|*.exe"
         ofd_aoe2de_path.InitialDirectory = """C:\Program Files (x86)\Steam\steamapps\common\AoE2DE"""
+        ' 
+        ' lbl_experimental
+        ' 
+        lbl_experimental.AutoSize = True
+        lbl_experimental.Location = New Point(8, 8)
+        lbl_experimental.Name = "lbl_experimental"
+        lbl_experimental.Size = New Size(76, 15)
+        lbl_experimental.TabIndex = 2
+        lbl_experimental.Text = "Experimental"
         ' 
         ' frm_scenario_maker
         ' 
@@ -4893,6 +4943,8 @@ Partial Class frm_scenario_maker
         tp_cinematics.PerformLayout()
         tp_trigger.ResumeLayout(False)
         tp_trigger.PerformLayout()
+        tp_aoe2_scenario_parser.ResumeLayout(False)
+        tp_aoe2_scenario_parser.PerformLayout()
         tp_about.ResumeLayout(False)
         tp_about.PerformLayout()
         ResumeLayout(False)
@@ -5315,4 +5367,9 @@ Partial Class frm_scenario_maker
     Public WithEvents lbl_trigger_conditions As Label
     Public WithEvents lbl_created_trigger As Label
     Friend WithEvents Button1 As Button
+    Public WithEvents tp_aoe2_scenario_parser As TabPage
+    Friend WithEvents tp_python As TabPage
+    Public WithEvents tbx_python As TextBox
+    Public WithEvents lbl_python_code As Label
+    Public WithEvents lbl_experimental As Label
 End Class

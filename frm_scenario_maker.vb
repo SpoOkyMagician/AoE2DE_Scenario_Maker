@@ -196,213 +196,219 @@ Public Class frm_scenario_maker
 
     Function check_map_size()
 
-        ' clear all the items from x and y...
+        Try
 
-        lbx_x_terrain.Items.Clear()
-        lbx_y_terrain.Items.Clear()
-        lbx_map_x.Items.Clear()
-        lbx_map_y.Items.Clear()
-        lbx_view_x.Items.Clear()
-        lbx_view_y.Items.Clear()
+            ' clear all the items from x and y...
 
-        ' check which map size is selected...
+            lbx_x_terrain.Items.Clear()
+            lbx_y_terrain.Items.Clear()
+            lbx_map_x.Items.Clear()
+            lbx_map_y.Items.Clear()
+            lbx_view_x.Items.Clear()
+            lbx_view_y.Items.Clear()
 
-        If cbx_map_size.SelectedIndex = 0 Then
+            ' check which map size is selected...
 
-            ' if miniature...
+            If cbx_map_size.SelectedIndex = 0 Then
 
-            For i As Integer = 0 To 79
-                lbx_x_terrain.Items.Add("" + i.ToString)
-                lbx_y_terrain.Items.Add("" + i.ToString)
-                lbx_map_x.Items.Add("" + i.ToString)
-                lbx_map_y.Items.Add("" + i.ToString)
-                lbx_view_x.Items.Add("" + i.ToString)
-                lbx_view_y.Items.Add("" + i.ToString)
-            Next
+                ' if miniature...
 
-        ElseIf cbx_map_size.SelectedIndex = 1 Then
+                For i As Integer = 0 To 79
+                    lbx_x_terrain.Items.Add("" + i.ToString)
+                    lbx_y_terrain.Items.Add("" + i.ToString)
+                    lbx_map_x.Items.Add("" + i.ToString)
+                    lbx_map_y.Items.Add("" + i.ToString)
+                    lbx_view_x.Items.Add("" + i.ToString)
+                    lbx_view_y.Items.Add("" + i.ToString)
+                Next
 
-            ' if tiny...
+            ElseIf cbx_map_size.SelectedIndex = 1 Then
 
-            For i As Integer = 0 To 119
-                lbx_x_terrain.Items.Add("" + i.ToString)
-                lbx_y_terrain.Items.Add("" + i.ToString)
-                lbx_map_x.Items.Add("" + i.ToString)
-                lbx_map_y.Items.Add("" + i.ToString)
-                lbx_view_x.Items.Add("" + i.ToString)
-                lbx_view_y.Items.Add("" + i.ToString)
-            Next
+                ' if tiny...
 
-        ElseIf cbx_map_size.SelectedIndex = 2 Then
+                For i As Integer = 0 To 119
+                    lbx_x_terrain.Items.Add("" + i.ToString)
+                    lbx_y_terrain.Items.Add("" + i.ToString)
+                    lbx_map_x.Items.Add("" + i.ToString)
+                    lbx_map_y.Items.Add("" + i.ToString)
+                    lbx_view_x.Items.Add("" + i.ToString)
+                    lbx_view_y.Items.Add("" + i.ToString)
+                Next
 
-            ' if small...
+            ElseIf cbx_map_size.SelectedIndex = 2 Then
 
-            For i As Integer = 0 To 143
-                lbx_x_terrain.Items.Add("" + i.ToString)
-                lbx_y_terrain.Items.Add("" + i.ToString)
-                lbx_map_x.Items.Add("" + i.ToString)
-                lbx_map_y.Items.Add("" + i.ToString)
-                lbx_view_x.Items.Add("" + i.ToString)
-                lbx_view_y.Items.Add("" + i.ToString)
-            Next
+                ' if small...
 
-        ElseIf cbx_map_size.SelectedIndex = 3 Then
+                For i As Integer = 0 To 143
+                    lbx_x_terrain.Items.Add("" + i.ToString)
+                    lbx_y_terrain.Items.Add("" + i.ToString)
+                    lbx_map_x.Items.Add("" + i.ToString)
+                    lbx_map_y.Items.Add("" + i.ToString)
+                    lbx_view_x.Items.Add("" + i.ToString)
+                    lbx_view_y.Items.Add("" + i.ToString)
+                Next
 
-            ' if medium...
+            ElseIf cbx_map_size.SelectedIndex = 3 Then
 
-            For i As Integer = 0 To 167
-                lbx_x_terrain.Items.Add("" + i.ToString)
-                lbx_y_terrain.Items.Add("" + i.ToString)
-                lbx_map_x.Items.Add("" + i.ToString)
-                lbx_map_y.Items.Add("" + i.ToString)
-                lbx_view_x.Items.Add("" + i.ToString)
-                lbx_view_y.Items.Add("" + i.ToString)
-            Next
+                ' if medium...
 
-        ElseIf cbx_map_size.SelectedIndex = 4 Then
+                For i As Integer = 0 To 167
+                    lbx_x_terrain.Items.Add("" + i.ToString)
+                    lbx_y_terrain.Items.Add("" + i.ToString)
+                    lbx_map_x.Items.Add("" + i.ToString)
+                    lbx_map_y.Items.Add("" + i.ToString)
+                    lbx_view_x.Items.Add("" + i.ToString)
+                    lbx_view_y.Items.Add("" + i.ToString)
+                Next
 
-            ' if normal...
+            ElseIf cbx_map_size.SelectedIndex = 4 Then
 
-            For i As Integer = 0 To 199
-                lbx_x_terrain.Items.Add("" + i.ToString)
-                lbx_y_terrain.Items.Add("" + i.ToString)
-                lbx_map_x.Items.Add("" + i.ToString)
-                lbx_map_y.Items.Add("" + i.ToString)
-                lbx_view_x.Items.Add("" + i.ToString)
-                lbx_view_y.Items.Add("" + i.ToString)
-            Next
+                ' if normal...
 
-        ElseIf cbx_map_size.SelectedIndex = 5 Then
+                For i As Integer = 0 To 199
+                    lbx_x_terrain.Items.Add("" + i.ToString)
+                    lbx_y_terrain.Items.Add("" + i.ToString)
+                    lbx_map_x.Items.Add("" + i.ToString)
+                    lbx_map_y.Items.Add("" + i.ToString)
+                    lbx_view_x.Items.Add("" + i.ToString)
+                    lbx_view_y.Items.Add("" + i.ToString)
+                Next
 
-            ' if large...
+            ElseIf cbx_map_size.SelectedIndex = 5 Then
 
-            For i As Integer = 0 To 219
-                lbx_x_terrain.Items.Add("" + i.ToString)
-                lbx_y_terrain.Items.Add("" + i.ToString)
-                lbx_map_x.Items.Add("" + i.ToString)
-                lbx_map_y.Items.Add("" + i.ToString)
-                lbx_view_x.Items.Add("" + i.ToString)
-                lbx_view_y.Items.Add("" + i.ToString)
-            Next
+                ' if large...
 
-        ElseIf cbx_map_size.SelectedIndex = 6 Then
+                For i As Integer = 0 To 219
+                    lbx_x_terrain.Items.Add("" + i.ToString)
+                    lbx_y_terrain.Items.Add("" + i.ToString)
+                    lbx_map_x.Items.Add("" + i.ToString)
+                    lbx_map_y.Items.Add("" + i.ToString)
+                    lbx_view_x.Items.Add("" + i.ToString)
+                    lbx_view_y.Items.Add("" + i.ToString)
+                Next
 
-            ' if huge...
+            ElseIf cbx_map_size.SelectedIndex = 6 Then
 
-            For i As Integer = 0 To 239
-                lbx_x_terrain.Items.Add("" + i.ToString)
-                lbx_y_terrain.Items.Add("" + i.ToString)
-                lbx_map_x.Items.Add("" + i.ToString)
-                lbx_map_y.Items.Add("" + i.ToString)
-                lbx_view_x.Items.Add("" + i.ToString)
-                lbx_view_y.Items.Add("" + i.ToString)
-            Next
+                ' if huge...
 
-        ElseIf cbx_map_size.SelectedIndex = 7 Then
+                For i As Integer = 0 To 239
+                    lbx_x_terrain.Items.Add("" + i.ToString)
+                    lbx_y_terrain.Items.Add("" + i.ToString)
+                    lbx_map_x.Items.Add("" + i.ToString)
+                    lbx_map_y.Items.Add("" + i.ToString)
+                    lbx_view_x.Items.Add("" + i.ToString)
+                    lbx_view_y.Items.Add("" + i.ToString)
+                Next
 
-            ' if giant...
+            ElseIf cbx_map_size.SelectedIndex = 7 Then
 
-            For i As Integer = 0 To 251
-                lbx_x_terrain.Items.Add("" + i.ToString)
-                lbx_y_terrain.Items.Add("" + i.ToString)
-                lbx_map_x.Items.Add("" + i.ToString)
-                lbx_map_y.Items.Add("" + i.ToString)
-                lbx_view_x.Items.Add("" + i.ToString)
-                lbx_view_y.Items.Add("" + i.ToString)
-            Next
+                ' if giant...
 
-        ElseIf cbx_map_size.SelectedIndex = 8 Then
+                For i As Integer = 0 To 251
+                    lbx_x_terrain.Items.Add("" + i.ToString)
+                    lbx_y_terrain.Items.Add("" + i.ToString)
+                    lbx_map_x.Items.Add("" + i.ToString)
+                    lbx_map_y.Items.Add("" + i.ToString)
+                    lbx_view_x.Items.Add("" + i.ToString)
+                    lbx_view_y.Items.Add("" + i.ToString)
+                Next
 
-            ' if massive...
+            ElseIf cbx_map_size.SelectedIndex = 8 Then
 
-            For i As Integer = 0 To 275
-                lbx_x_terrain.Items.Add("" + i.ToString)
-                lbx_y_terrain.Items.Add("" + i.ToString)
-                lbx_map_x.Items.Add("" + i.ToString)
-                lbx_map_y.Items.Add("" + i.ToString)
-                lbx_view_x.Items.Add("" + i.ToString)
-                lbx_view_y.Items.Add("" + i.ToString)
-            Next
+                ' if massive...
 
-        ElseIf cbx_map_size.SelectedIndex = 9 Then
+                For i As Integer = 0 To 275
+                    lbx_x_terrain.Items.Add("" + i.ToString)
+                    lbx_y_terrain.Items.Add("" + i.ToString)
+                    lbx_map_x.Items.Add("" + i.ToString)
+                    lbx_map_y.Items.Add("" + i.ToString)
+                    lbx_view_x.Items.Add("" + i.ToString)
+                    lbx_view_y.Items.Add("" + i.ToString)
+                Next
 
-            ' if enormous...
+            ElseIf cbx_map_size.SelectedIndex = 9 Then
 
-            For i As Integer = 0 To 299
-                lbx_x_terrain.Items.Add("" + i.ToString)
-                lbx_y_terrain.Items.Add("" + i.ToString)
-                lbx_map_x.Items.Add("" + i.ToString)
-                lbx_map_y.Items.Add("" + i.ToString)
-                lbx_view_x.Items.Add("" + i.ToString)
-                lbx_view_y.Items.Add("" + i.ToString)
-            Next
+                ' if enormous...
 
-        ElseIf cbx_map_size.SelectedIndex = 10 Then
+                For i As Integer = 0 To 299
+                    lbx_x_terrain.Items.Add("" + i.ToString)
+                    lbx_y_terrain.Items.Add("" + i.ToString)
+                    lbx_map_x.Items.Add("" + i.ToString)
+                    lbx_map_y.Items.Add("" + i.ToString)
+                    lbx_view_x.Items.Add("" + i.ToString)
+                    lbx_view_y.Items.Add("" + i.ToString)
+                Next
 
-            ' if colossal...
+            ElseIf cbx_map_size.SelectedIndex = 10 Then
 
-            For i As Integer = 0 To 319
-                lbx_x_terrain.Items.Add("" + i.ToString)
-                lbx_y_terrain.Items.Add("" + i.ToString)
-                lbx_map_x.Items.Add("" + i.ToString)
-                lbx_map_y.Items.Add("" + i.ToString)
-                lbx_view_x.Items.Add("" + i.ToString)
-                lbx_view_y.Items.Add("" + i.ToString)
-            Next
+                ' if colossal...
 
-        ElseIf cbx_map_size.SelectedIndex = 11 Then
+                For i As Integer = 0 To 319
+                    lbx_x_terrain.Items.Add("" + i.ToString)
+                    lbx_y_terrain.Items.Add("" + i.ToString)
+                    lbx_map_x.Items.Add("" + i.ToString)
+                    lbx_map_y.Items.Add("" + i.ToString)
+                    lbx_view_x.Items.Add("" + i.ToString)
+                    lbx_view_y.Items.Add("" + i.ToString)
+                Next
 
-            ' if incredible...
+            ElseIf cbx_map_size.SelectedIndex = 11 Then
 
-            For i As Integer = 0 To 359
-                lbx_x_terrain.Items.Add("" + i.ToString)
-                lbx_y_terrain.Items.Add("" + i.ToString)
-                lbx_map_x.Items.Add("" + i.ToString)
-                lbx_map_y.Items.Add("" + i.ToString)
-                lbx_view_x.Items.Add("" + i.ToString)
-                lbx_view_y.Items.Add("" + i.ToString)
-            Next
+                ' if incredible...
 
-        ElseIf cbx_map_size.SelectedIndex = 12 Then
+                For i As Integer = 0 To 359
+                    lbx_x_terrain.Items.Add("" + i.ToString)
+                    lbx_y_terrain.Items.Add("" + i.ToString)
+                    lbx_map_x.Items.Add("" + i.ToString)
+                    lbx_map_y.Items.Add("" + i.ToString)
+                    lbx_view_x.Items.Add("" + i.ToString)
+                    lbx_view_y.Items.Add("" + i.ToString)
+                Next
 
-            ' if monsterous...
+            ElseIf cbx_map_size.SelectedIndex = 12 Then
 
-            For i As Integer = 0 To 399
-                lbx_x_terrain.Items.Add("" + i.ToString)
-                lbx_y_terrain.Items.Add("" + i.ToString)
-                lbx_map_x.Items.Add("" + i.ToString)
-                lbx_map_y.Items.Add("" + i.ToString)
-                lbx_view_x.Items.Add("" + i.ToString)
-                lbx_view_y.Items.Add("" + i.ToString)
-            Next
+                ' if monsterous...
 
-        ElseIf cbx_map_size.SelectedIndex = 13 Then
+                For i As Integer = 0 To 399
+                    lbx_x_terrain.Items.Add("" + i.ToString)
+                    lbx_y_terrain.Items.Add("" + i.ToString)
+                    lbx_map_x.Items.Add("" + i.ToString)
+                    lbx_map_y.Items.Add("" + i.ToString)
+                    lbx_view_x.Items.Add("" + i.ToString)
+                    lbx_view_y.Items.Add("" + i.ToString)
+                Next
 
-            ' if ludicrous...
+            ElseIf cbx_map_size.SelectedIndex = 13 Then
 
-            For i As Integer = 0 To 479
-                lbx_x_terrain.Items.Add("" + i.ToString)
-                lbx_y_terrain.Items.Add("" + i.ToString)
-                lbx_map_x.Items.Add("" + i.ToString)
-                lbx_map_y.Items.Add("" + i.ToString)
-                lbx_view_x.Items.Add("" + i.ToString)
-                lbx_view_y.Items.Add("" + i.ToString)
-            Next
+                ' if ludicrous...
 
-        ElseIf cbx_map_size.SelectedIndex = 14 Then
+                For i As Integer = 0 To 479
+                    lbx_x_terrain.Items.Add("" + i.ToString)
+                    lbx_y_terrain.Items.Add("" + i.ToString)
+                    lbx_map_x.Items.Add("" + i.ToString)
+                    lbx_map_y.Items.Add("" + i.ToString)
+                    lbx_view_x.Items.Add("" + i.ToString)
+                    lbx_view_y.Items.Add("" + i.ToString)
+                Next
 
-            ' if custom...
+            ElseIf cbx_map_size.SelectedIndex = 14 Then
 
-            For i As Integer = 0 To nud_mwh_size.Value
-                lbx_x_terrain.Items.Add("" + i.ToString)
-                lbx_y_terrain.Items.Add("" + i.ToString)
-                lbx_map_x.Items.Add("" + i.ToString)
-                lbx_map_y.Items.Add("" + i.ToString)
-                lbx_view_x.Items.Add("" + i.ToString)
-                lbx_view_y.Items.Add("" + i.ToString)
-            Next
+                ' if custom...
 
-        End If
+                For i As Integer = 0 To nud_mwh_size.Value
+                    lbx_x_terrain.Items.Add("" + i.ToString)
+                    lbx_y_terrain.Items.Add("" + i.ToString)
+                    lbx_map_x.Items.Add("" + i.ToString)
+                    lbx_map_y.Items.Add("" + i.ToString)
+                    lbx_view_x.Items.Add("" + i.ToString)
+                    lbx_view_y.Items.Add("" + i.ToString)
+                Next
+
+            End If
+
+        Catch ex As Exception
+            catch_all_errors(ex)
+        End Try
 
         ' since i am not returning anything, we return nothing. probably not needed but, whatever.
 
@@ -436,7 +442,9 @@ Public Class frm_scenario_maker
             cbx_map_size.SelectedIndex = 13
             cbx_ai_map_type.SelectedIndex = 6
             cbx_color_mood.SelectedIndex = 0
-
+            cbx_total_players.SelectedIndex = 7
+            tbx_script_filename.Text = ""
+            cbx_total_players.SelectedIndex = 7
         Catch ex As Exception
             catch_all_errors(ex)
         End Try
@@ -663,6 +671,1560 @@ Public Class frm_scenario_maker
     Public Sub cbx_total_players_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_total_players.SelectedIndexChanged
 
         Try
+
+            If cbx_total_players.SelectedIndex = 0 Then
+
+                ' 1 player...
+
+                cbx_p2_age.Enabled = False
+                nud_p2_food.Enabled = False
+                nud_p2_wood.Enabled = False
+                nud_p2_stone.Enabled = False
+                nud_p2_gold.Enabled = False
+                nud_p2_population.Enabled = False
+                nud_p2_priority.Enabled = False
+                cbx_p2_color.Enabled = False
+                tbx_p2_tribe_name.Enabled = False
+                tbx_p2_name_string_id.Enabled = False
+                cbx_p2_ai.Enabled = False
+                cbx_p2_ai_personality.Enabled = False
+                cbx_p2_civilization.Enabled = False
+                cbx_p2_architecture.Enabled = False
+                cbx_p2_lock_civ.Enabled = False
+                cbx_p2_lock_personality.Enabled = False
+
+                cbx_p3_age.Enabled = False
+                nud_p3_food.Enabled = False
+                nud_p3_wood.Enabled = False
+                nud_p3_stone.Enabled = False
+                nud_p3_gold.Enabled = False
+                nud_p3_population.Enabled = False
+                nud_p3_priority.Enabled = False
+                cbx_p3_color.Enabled = False
+                tbx_p3_tribe_name.Enabled = False
+                tbx_p3_name_string_id.Enabled = False
+                cbx_p3_ai.Enabled = False
+                cbx_p3_ai_personality.Enabled = False
+                cbx_p3_civilization.Enabled = False
+                cbx_p3_architecture.Enabled = False
+                cbx_p3_lock_civ.Enabled = False
+                cbx_p3_lock_personality.Enabled = False
+
+                cbx_p4_age.Enabled = False
+                nud_p4_food.Enabled = False
+                nud_p4_wood.Enabled = False
+                nud_p4_stone.Enabled = False
+                nud_p4_gold.Enabled = False
+                nud_p4_population.Enabled = False
+                nud_p4_priority.Enabled = False
+                cbx_p4_color.Enabled = False
+                tbx_p4_tribe_name.Enabled = False
+                tbx_p4_name_string_id.Enabled = False
+                cbx_p4_ai.Enabled = False
+                cbx_p4_ai_personality.Enabled = False
+                cbx_p4_civilization.Enabled = False
+                cbx_p4_architecture.Enabled = False
+                cbx_p4_lock_civ.Enabled = False
+                cbx_p4_lock_personality.Enabled = False
+
+                cbx_p5_age.Enabled = False
+                nud_p5_food.Enabled = False
+                nud_p5_wood.Enabled = False
+                nud_p5_stone.Enabled = False
+                nud_p5_gold.Enabled = False
+                nud_p5_population.Enabled = False
+                nud_p5_priority.Enabled = False
+                cbx_p5_color.Enabled = False
+                tbx_p5_tribe_name.Enabled = False
+                tbx_p5_name_string_id.Enabled = False
+                cbx_p5_ai.Enabled = False
+                cbx_p5_ai_personality.Enabled = False
+                cbx_p5_civilization.Enabled = False
+                cbx_p5_architecture.Enabled = False
+                cbx_p5_lock_civ.Enabled = False
+                cbx_p5_lock_personality.Enabled = False
+
+                cbx_p6_age.Enabled = False
+                nud_p6_food.Enabled = False
+                nud_p6_wood.Enabled = False
+                nud_p6_stone.Enabled = False
+                nud_p6_gold.Enabled = False
+                nud_p6_population.Enabled = False
+                nud_p6_priority.Enabled = False
+                cbx_p6_color.Enabled = False
+                tbx_p6_tribe_name.Enabled = False
+                tbx_p6_name_string_id.Enabled = False
+                cbx_p6_ai.Enabled = False
+                cbx_p6_ai_personality.Enabled = False
+                cbx_p6_civilization.Enabled = False
+                cbx_p6_architecture.Enabled = False
+                cbx_p6_lock_civ.Enabled = False
+                cbx_p6_lock_personality.Enabled = False
+
+                cbx_p7_age.Enabled = False
+                nud_p7_food.Enabled = False
+                nud_p7_wood.Enabled = False
+                nud_p7_stone.Enabled = False
+                nud_p7_gold.Enabled = False
+                nud_p7_population.Enabled = False
+                nud_p7_priority.Enabled = False
+                cbx_p7_color.Enabled = False
+                tbx_p7_tribe_name.Enabled = False
+                tbx_p7_name_string_id.Enabled = False
+                cbx_p7_ai.Enabled = False
+                cbx_p7_ai_personality.Enabled = False
+                cbx_p7_civilization.Enabled = False
+                cbx_p7_architecture.Enabled = False
+                cbx_p7_lock_civ.Enabled = False
+                cbx_p7_lock_personality.Enabled = False
+
+                cbx_p8_age.Enabled = False
+                nud_p8_food.Enabled = False
+                nud_p8_wood.Enabled = False
+                nud_p8_stone.Enabled = False
+                nud_p8_gold.Enabled = False
+                nud_p8_population.Enabled = False
+                nud_p8_priority.Enabled = False
+                cbx_p8_color.Enabled = False
+                tbx_p8_tribe_name.Enabled = False
+                tbx_p8_name_string_id.Enabled = False
+                cbx_p8_ai.Enabled = False
+                cbx_p8_ai_personality.Enabled = False
+                cbx_p8_civilization.Enabled = False
+                cbx_p8_architecture.Enabled = False
+                cbx_p8_lock_civ.Enabled = False
+                cbx_p8_lock_personality.Enabled = False
+
+                btn_p2_to_p1_diplo.Enabled = False
+                btn_p2_to_p3_diplo.Enabled = False
+                btn_p2_to_p4_diplo.Enabled = False
+                btn_p2_to_p5_diplo.Enabled = False
+                btn_p2_to_p6_diplo.Enabled = False
+                btn_p2_to_p7_diplo.Enabled = False
+                btn_p2_to_p8_diplo.Enabled = False
+                cbx_p2_av_me.Enabled = False
+
+                btn_p3_to_p1_diplo.Enabled = False
+                btn_p3_to_p2_diplo.Enabled = False
+                btn_p3_to_p4_diplo.Enabled = False
+                btn_p3_to_p5_diplo.Enabled = False
+                btn_p3_to_p6_diplo.Enabled = False
+                btn_p3_to_p7_diplo.Enabled = False
+                btn_p3_to_p8_diplo.Enabled = False
+                cbx_p3_av_me.Enabled = False
+
+                btn_p4_to_p1_diplo.Enabled = False
+                btn_p4_to_p2_diplo.Enabled = False
+                btn_p4_to_p3_diplo.Enabled = False
+                btn_p4_to_p5_diplo.Enabled = False
+                btn_p4_to_p6_diplo.Enabled = False
+                btn_p4_to_p7_diplo.Enabled = False
+                btn_p4_to_p8_diplo.Enabled = False
+                cbx_p4_av_me.Enabled = False
+
+                btn_p5_to_p1_diplo.Enabled = False
+                btn_p5_to_p2_diplo.Enabled = False
+                btn_p5_to_p3_diplo.Enabled = False
+                btn_p5_to_p4_diplo.Enabled = False
+                btn_p5_to_p6_diplo.Enabled = False
+                btn_p5_to_p7_diplo.Enabled = False
+                btn_p5_to_p8_diplo.Enabled = False
+                cbx_p5_av_me.Enabled = False
+
+                btn_p6_to_p1_diplo.Enabled = False
+                btn_p6_to_p2_diplo.Enabled = False
+                btn_p6_to_p3_diplo.Enabled = False
+                btn_p6_to_p4_diplo.Enabled = False
+                btn_p6_to_p5_diplo.Enabled = False
+                btn_p6_to_p7_diplo.Enabled = False
+                btn_p6_to_p8_diplo.Enabled = False
+                cbx_p6_av_me.Enabled = False
+
+                btn_p7_to_p1_diplo.Enabled = False
+                btn_p7_to_p2_diplo.Enabled = False
+                btn_p7_to_p3_diplo.Enabled = False
+                btn_p7_to_p4_diplo.Enabled = False
+                btn_p7_to_p5_diplo.Enabled = False
+                btn_p7_to_p6_diplo.Enabled = False
+                btn_p7_to_p8_diplo.Enabled = False
+                cbx_p7_av_me.Enabled = False
+
+                btn_p8_to_p1_diplo.Enabled = False
+                btn_p8_to_p2_diplo.Enabled = False
+                btn_p8_to_p3_diplo.Enabled = False
+                btn_p8_to_p4_diplo.Enabled = False
+                btn_p8_to_p5_diplo.Enabled = False
+                btn_p8_to_p6_diplo.Enabled = False
+                btn_p8_to_p7_diplo.Enabled = False
+                cbx_p8_av_me.Enabled = False
+
+                cbx_p2_av_them.Enabled = False
+                cbx_p3_av_them.Enabled = False
+                cbx_p4_av_them.Enabled = False
+                cbx_p5_av_them.Enabled = False
+                cbx_p6_av_them.Enabled = False
+                cbx_p7_av_them.Enabled = False
+                cbx_p8_av_them.Enabled = False
+
+            ElseIf cbx_total_players.SelectedIndex = 1 Then
+
+                ' 2 players...
+
+                cbx_p2_age.Enabled = True
+                nud_p2_food.Enabled = True
+                nud_p2_wood.Enabled = True
+                nud_p2_stone.Enabled = True
+                nud_p2_gold.Enabled = True
+                nud_p2_population.Enabled = True
+                nud_p2_priority.Enabled = True
+                cbx_p2_color.Enabled = True
+                tbx_p2_tribe_name.Enabled = True
+                tbx_p2_name_string_id.Enabled = True
+                cbx_p2_ai.Enabled = True
+                cbx_p2_ai_personality.Enabled = True
+                cbx_p2_civilization.Enabled = True
+                cbx_p2_architecture.Enabled = True
+                cbx_p2_lock_civ.Enabled = True
+                cbx_p2_lock_personality.Enabled = True
+
+                cbx_p3_age.Enabled = False
+                nud_p3_food.Enabled = False
+                nud_p3_wood.Enabled = False
+                nud_p3_stone.Enabled = False
+                nud_p3_gold.Enabled = False
+                nud_p3_population.Enabled = False
+                nud_p3_priority.Enabled = False
+                cbx_p3_color.Enabled = False
+                tbx_p3_tribe_name.Enabled = False
+                tbx_p3_name_string_id.Enabled = False
+                cbx_p3_ai.Enabled = False
+                cbx_p3_ai_personality.Enabled = False
+                cbx_p3_civilization.Enabled = False
+                cbx_p3_architecture.Enabled = False
+                cbx_p3_lock_civ.Enabled = False
+                cbx_p3_lock_personality.Enabled = False
+
+                cbx_p4_age.Enabled = False
+                nud_p4_food.Enabled = False
+                nud_p4_wood.Enabled = False
+                nud_p4_stone.Enabled = False
+                nud_p4_gold.Enabled = False
+                nud_p4_population.Enabled = False
+                nud_p4_priority.Enabled = False
+                cbx_p4_color.Enabled = False
+                tbx_p4_tribe_name.Enabled = False
+                tbx_p4_name_string_id.Enabled = False
+                cbx_p4_ai.Enabled = False
+                cbx_p4_ai_personality.Enabled = False
+                cbx_p4_civilization.Enabled = False
+                cbx_p4_architecture.Enabled = False
+                cbx_p4_lock_civ.Enabled = False
+                cbx_p4_lock_personality.Enabled = False
+
+                cbx_p5_age.Enabled = False
+                nud_p5_food.Enabled = False
+                nud_p5_wood.Enabled = False
+                nud_p5_stone.Enabled = False
+                nud_p5_gold.Enabled = False
+                nud_p5_population.Enabled = False
+                nud_p5_priority.Enabled = False
+                cbx_p5_color.Enabled = False
+                tbx_p5_tribe_name.Enabled = False
+                tbx_p5_name_string_id.Enabled = False
+                cbx_p5_ai.Enabled = False
+                cbx_p5_ai_personality.Enabled = False
+                cbx_p5_civilization.Enabled = False
+                cbx_p5_architecture.Enabled = False
+                cbx_p5_lock_civ.Enabled = False
+                cbx_p5_lock_personality.Enabled = False
+
+                cbx_p6_age.Enabled = False
+                nud_p6_food.Enabled = False
+                nud_p6_wood.Enabled = False
+                nud_p6_stone.Enabled = False
+                nud_p6_gold.Enabled = False
+                nud_p6_population.Enabled = False
+                nud_p6_priority.Enabled = False
+                cbx_p6_color.Enabled = False
+                tbx_p6_tribe_name.Enabled = False
+                tbx_p6_name_string_id.Enabled = False
+                cbx_p6_ai.Enabled = False
+                cbx_p6_ai_personality.Enabled = False
+                cbx_p6_civilization.Enabled = False
+                cbx_p6_architecture.Enabled = False
+                cbx_p6_lock_civ.Enabled = False
+                cbx_p6_lock_personality.Enabled = False
+
+                cbx_p7_age.Enabled = False
+                nud_p7_food.Enabled = False
+                nud_p7_wood.Enabled = False
+                nud_p7_stone.Enabled = False
+                nud_p7_gold.Enabled = False
+                nud_p7_population.Enabled = False
+                nud_p7_priority.Enabled = False
+                cbx_p7_color.Enabled = False
+                tbx_p7_tribe_name.Enabled = False
+                tbx_p7_name_string_id.Enabled = False
+                cbx_p7_ai.Enabled = False
+                cbx_p7_ai_personality.Enabled = False
+                cbx_p7_civilization.Enabled = False
+                cbx_p7_architecture.Enabled = False
+                cbx_p7_lock_civ.Enabled = False
+                cbx_p7_lock_personality.Enabled = False
+
+                cbx_p8_age.Enabled = False
+                nud_p8_food.Enabled = False
+                nud_p8_wood.Enabled = False
+                nud_p8_stone.Enabled = False
+                nud_p8_gold.Enabled = False
+                nud_p8_population.Enabled = False
+                nud_p8_priority.Enabled = False
+                cbx_p8_color.Enabled = False
+                tbx_p8_tribe_name.Enabled = False
+                tbx_p8_name_string_id.Enabled = False
+                cbx_p8_ai.Enabled = False
+                cbx_p8_ai_personality.Enabled = False
+                cbx_p8_civilization.Enabled = False
+                cbx_p8_architecture.Enabled = False
+                cbx_p8_lock_civ.Enabled = False
+                cbx_p8_lock_personality.Enabled = False
+
+                btn_p2_to_p1_diplo.Enabled = True
+                btn_p2_to_p3_diplo.Enabled = True
+                btn_p2_to_p4_diplo.Enabled = True
+                btn_p2_to_p5_diplo.Enabled = True
+                btn_p2_to_p6_diplo.Enabled = True
+                btn_p2_to_p7_diplo.Enabled = True
+                btn_p2_to_p8_diplo.Enabled = True
+                cbx_p2_av_me.Enabled = True
+
+                btn_p3_to_p1_diplo.Enabled = False
+                btn_p3_to_p2_diplo.Enabled = False
+                btn_p3_to_p4_diplo.Enabled = False
+                btn_p3_to_p5_diplo.Enabled = False
+                btn_p3_to_p6_diplo.Enabled = False
+                btn_p3_to_p7_diplo.Enabled = False
+                btn_p3_to_p8_diplo.Enabled = False
+                cbx_p3_av_me.Enabled = False
+
+                btn_p4_to_p1_diplo.Enabled = False
+                btn_p4_to_p2_diplo.Enabled = False
+                btn_p4_to_p3_diplo.Enabled = False
+                btn_p4_to_p5_diplo.Enabled = False
+                btn_p4_to_p6_diplo.Enabled = False
+                btn_p4_to_p7_diplo.Enabled = False
+                btn_p4_to_p8_diplo.Enabled = False
+                cbx_p4_av_me.Enabled = False
+
+                btn_p5_to_p1_diplo.Enabled = False
+                btn_p5_to_p2_diplo.Enabled = False
+                btn_p5_to_p3_diplo.Enabled = False
+                btn_p5_to_p4_diplo.Enabled = False
+                btn_p5_to_p6_diplo.Enabled = False
+                btn_p5_to_p7_diplo.Enabled = False
+                btn_p5_to_p8_diplo.Enabled = False
+                cbx_p5_av_me.Enabled = False
+
+                btn_p6_to_p1_diplo.Enabled = False
+                btn_p6_to_p2_diplo.Enabled = False
+                btn_p6_to_p3_diplo.Enabled = False
+                btn_p6_to_p4_diplo.Enabled = False
+                btn_p6_to_p5_diplo.Enabled = False
+                btn_p6_to_p7_diplo.Enabled = False
+                btn_p6_to_p8_diplo.Enabled = False
+                cbx_p6_av_me.Enabled = False
+
+                btn_p7_to_p1_diplo.Enabled = False
+                btn_p7_to_p2_diplo.Enabled = False
+                btn_p7_to_p3_diplo.Enabled = False
+                btn_p7_to_p4_diplo.Enabled = False
+                btn_p7_to_p5_diplo.Enabled = False
+                btn_p7_to_p6_diplo.Enabled = False
+                btn_p7_to_p8_diplo.Enabled = False
+                cbx_p7_av_me.Enabled = False
+
+                btn_p8_to_p1_diplo.Enabled = False
+                btn_p8_to_p2_diplo.Enabled = False
+                btn_p8_to_p3_diplo.Enabled = False
+                btn_p8_to_p4_diplo.Enabled = False
+                btn_p8_to_p5_diplo.Enabled = False
+                btn_p8_to_p6_diplo.Enabled = False
+                btn_p8_to_p7_diplo.Enabled = False
+                cbx_p8_av_me.Enabled = False
+
+                cbx_p2_av_them.Enabled = True
+                cbx_p3_av_them.Enabled = False
+                cbx_p4_av_them.Enabled = False
+                cbx_p5_av_them.Enabled = False
+                cbx_p6_av_them.Enabled = False
+                cbx_p7_av_them.Enabled = False
+                cbx_p8_av_them.Enabled = False
+
+            ElseIf cbx_total_players.SelectedIndex = 2 Then
+
+                ' 3 players...
+
+                cbx_p2_age.Enabled = True
+                nud_p2_food.Enabled = True
+                nud_p2_wood.Enabled = True
+                nud_p2_stone.Enabled = True
+                nud_p2_gold.Enabled = True
+                nud_p2_population.Enabled = True
+                nud_p2_priority.Enabled = True
+                cbx_p2_color.Enabled = True
+                tbx_p2_tribe_name.Enabled = True
+                tbx_p2_name_string_id.Enabled = True
+                cbx_p2_ai.Enabled = True
+                cbx_p2_ai_personality.Enabled = True
+                cbx_p2_civilization.Enabled = True
+                cbx_p2_architecture.Enabled = True
+                cbx_p2_lock_civ.Enabled = True
+                cbx_p2_lock_personality.Enabled = True
+
+                cbx_p3_age.Enabled = True
+                nud_p3_food.Enabled = True
+                nud_p3_wood.Enabled = True
+                nud_p3_stone.Enabled = True
+                nud_p3_gold.Enabled = True
+                nud_p3_population.Enabled = True
+                nud_p3_priority.Enabled = True
+                cbx_p3_color.Enabled = True
+                tbx_p3_tribe_name.Enabled = True
+                tbx_p3_name_string_id.Enabled = True
+                cbx_p3_ai.Enabled = True
+                cbx_p3_ai_personality.Enabled = True
+                cbx_p3_civilization.Enabled = True
+                cbx_p3_architecture.Enabled = True
+                cbx_p3_lock_civ.Enabled = True
+                cbx_p3_lock_personality.Enabled = True
+
+                cbx_p4_age.Enabled = False
+                nud_p4_food.Enabled = False
+                nud_p4_wood.Enabled = False
+                nud_p4_stone.Enabled = False
+                nud_p4_gold.Enabled = False
+                nud_p4_population.Enabled = False
+                nud_p4_priority.Enabled = False
+                cbx_p4_color.Enabled = False
+                tbx_p4_tribe_name.Enabled = False
+                tbx_p4_name_string_id.Enabled = False
+                cbx_p4_ai.Enabled = False
+                cbx_p4_ai_personality.Enabled = False
+                cbx_p4_civilization.Enabled = False
+                cbx_p4_architecture.Enabled = False
+                cbx_p4_lock_civ.Enabled = False
+                cbx_p4_lock_personality.Enabled = False
+
+                cbx_p5_age.Enabled = False
+                nud_p5_food.Enabled = False
+                nud_p5_wood.Enabled = False
+                nud_p5_stone.Enabled = False
+                nud_p5_gold.Enabled = False
+                nud_p5_population.Enabled = False
+                nud_p5_priority.Enabled = False
+                cbx_p5_color.Enabled = False
+                tbx_p5_tribe_name.Enabled = False
+                tbx_p5_name_string_id.Enabled = False
+                cbx_p5_ai.Enabled = False
+                cbx_p5_ai_personality.Enabled = False
+                cbx_p5_civilization.Enabled = False
+                cbx_p5_architecture.Enabled = False
+                cbx_p5_lock_civ.Enabled = False
+                cbx_p5_lock_personality.Enabled = False
+
+                cbx_p6_age.Enabled = False
+                nud_p6_food.Enabled = False
+                nud_p6_wood.Enabled = False
+                nud_p6_stone.Enabled = False
+                nud_p6_gold.Enabled = False
+                nud_p6_population.Enabled = False
+                nud_p6_priority.Enabled = False
+                cbx_p6_color.Enabled = False
+                tbx_p6_tribe_name.Enabled = False
+                tbx_p6_name_string_id.Enabled = False
+                cbx_p6_ai.Enabled = False
+                cbx_p6_ai_personality.Enabled = False
+                cbx_p6_civilization.Enabled = False
+                cbx_p6_architecture.Enabled = False
+                cbx_p6_lock_civ.Enabled = False
+                cbx_p6_lock_personality.Enabled = False
+
+                cbx_p7_age.Enabled = False
+                nud_p7_food.Enabled = False
+                nud_p7_wood.Enabled = False
+                nud_p7_stone.Enabled = False
+                nud_p7_gold.Enabled = False
+                nud_p7_population.Enabled = False
+                nud_p7_priority.Enabled = False
+                cbx_p7_color.Enabled = False
+                tbx_p7_tribe_name.Enabled = False
+                tbx_p7_name_string_id.Enabled = False
+                cbx_p7_ai.Enabled = False
+                cbx_p7_ai_personality.Enabled = False
+                cbx_p7_civilization.Enabled = False
+                cbx_p7_architecture.Enabled = False
+                cbx_p7_lock_civ.Enabled = False
+                cbx_p7_lock_personality.Enabled = False
+
+                cbx_p8_age.Enabled = False
+                nud_p8_food.Enabled = False
+                nud_p8_wood.Enabled = False
+                nud_p8_stone.Enabled = False
+                nud_p8_gold.Enabled = False
+                nud_p8_population.Enabled = False
+                nud_p8_priority.Enabled = False
+                cbx_p8_color.Enabled = False
+                tbx_p8_tribe_name.Enabled = False
+                tbx_p8_name_string_id.Enabled = False
+                cbx_p8_ai.Enabled = False
+                cbx_p8_ai_personality.Enabled = False
+                cbx_p8_civilization.Enabled = False
+                cbx_p8_architecture.Enabled = False
+                cbx_p8_lock_civ.Enabled = False
+                cbx_p8_lock_personality.Enabled = False
+
+                btn_p2_to_p1_diplo.Enabled = True
+                btn_p2_to_p3_diplo.Enabled = True
+                btn_p2_to_p4_diplo.Enabled = True
+                btn_p2_to_p5_diplo.Enabled = True
+                btn_p2_to_p6_diplo.Enabled = True
+                btn_p2_to_p7_diplo.Enabled = True
+                btn_p2_to_p8_diplo.Enabled = True
+                cbx_p2_av_me.Enabled = True
+
+                btn_p3_to_p1_diplo.Enabled = True
+                btn_p3_to_p2_diplo.Enabled = True
+                btn_p3_to_p4_diplo.Enabled = True
+                btn_p3_to_p5_diplo.Enabled = True
+                btn_p3_to_p6_diplo.Enabled = True
+                btn_p3_to_p7_diplo.Enabled = True
+                btn_p3_to_p8_diplo.Enabled = True
+                cbx_p3_av_me.Enabled = True
+
+                btn_p4_to_p1_diplo.Enabled = False
+                btn_p4_to_p2_diplo.Enabled = False
+                btn_p4_to_p3_diplo.Enabled = False
+                btn_p4_to_p5_diplo.Enabled = False
+                btn_p4_to_p6_diplo.Enabled = False
+                btn_p4_to_p7_diplo.Enabled = False
+                btn_p4_to_p8_diplo.Enabled = False
+                cbx_p4_av_me.Enabled = False
+
+                btn_p5_to_p1_diplo.Enabled = False
+                btn_p5_to_p2_diplo.Enabled = False
+                btn_p5_to_p3_diplo.Enabled = False
+                btn_p5_to_p4_diplo.Enabled = False
+                btn_p5_to_p6_diplo.Enabled = False
+                btn_p5_to_p7_diplo.Enabled = False
+                btn_p5_to_p8_diplo.Enabled = False
+                cbx_p5_av_me.Enabled = False
+
+                btn_p6_to_p1_diplo.Enabled = False
+                btn_p6_to_p2_diplo.Enabled = False
+                btn_p6_to_p3_diplo.Enabled = False
+                btn_p6_to_p4_diplo.Enabled = False
+                btn_p6_to_p5_diplo.Enabled = False
+                btn_p6_to_p7_diplo.Enabled = False
+                btn_p6_to_p8_diplo.Enabled = False
+                cbx_p6_av_me.Enabled = False
+
+                btn_p7_to_p1_diplo.Enabled = False
+                btn_p7_to_p2_diplo.Enabled = False
+                btn_p7_to_p3_diplo.Enabled = False
+                btn_p7_to_p4_diplo.Enabled = False
+                btn_p7_to_p5_diplo.Enabled = False
+                btn_p7_to_p6_diplo.Enabled = False
+                btn_p7_to_p8_diplo.Enabled = False
+                cbx_p7_av_me.Enabled = False
+
+                btn_p8_to_p1_diplo.Enabled = False
+                btn_p8_to_p2_diplo.Enabled = False
+                btn_p8_to_p3_diplo.Enabled = False
+                btn_p8_to_p4_diplo.Enabled = False
+                btn_p8_to_p5_diplo.Enabled = False
+                btn_p8_to_p6_diplo.Enabled = False
+                btn_p8_to_p7_diplo.Enabled = False
+                cbx_p8_av_me.Enabled = False
+
+                cbx_p2_av_them.Enabled = True
+                cbx_p3_av_them.Enabled = True
+                cbx_p4_av_them.Enabled = False
+                cbx_p5_av_them.Enabled = False
+                cbx_p6_av_them.Enabled = False
+                cbx_p7_av_them.Enabled = False
+                cbx_p8_av_them.Enabled = False
+
+            ElseIf cbx_total_players.SelectedIndex = 3 Then
+
+                ' 4 players...
+
+                cbx_p2_age.Enabled = True
+                nud_p2_food.Enabled = True
+                nud_p2_wood.Enabled = True
+                nud_p2_stone.Enabled = True
+                nud_p2_gold.Enabled = True
+                nud_p2_population.Enabled = True
+                nud_p2_priority.Enabled = True
+                cbx_p2_color.Enabled = True
+                tbx_p2_tribe_name.Enabled = True
+                tbx_p2_name_string_id.Enabled = True
+                cbx_p2_ai.Enabled = True
+                cbx_p2_ai_personality.Enabled = True
+                cbx_p2_civilization.Enabled = True
+                cbx_p2_architecture.Enabled = True
+                cbx_p2_lock_civ.Enabled = True
+                cbx_p2_lock_personality.Enabled = True
+
+                cbx_p3_age.Enabled = True
+                nud_p3_food.Enabled = True
+                nud_p3_wood.Enabled = True
+                nud_p3_stone.Enabled = True
+                nud_p3_gold.Enabled = True
+                nud_p3_population.Enabled = True
+                nud_p3_priority.Enabled = True
+                cbx_p3_color.Enabled = True
+                tbx_p3_tribe_name.Enabled = True
+                tbx_p3_name_string_id.Enabled = True
+                cbx_p3_ai.Enabled = True
+                cbx_p3_ai_personality.Enabled = True
+                cbx_p3_civilization.Enabled = True
+                cbx_p3_architecture.Enabled = True
+                cbx_p3_lock_civ.Enabled = True
+                cbx_p3_lock_personality.Enabled = True
+
+                cbx_p4_age.Enabled = True
+                nud_p4_food.Enabled = True
+                nud_p4_wood.Enabled = True
+                nud_p4_stone.Enabled = True
+                nud_p4_gold.Enabled = True
+                nud_p4_population.Enabled = True
+                nud_p4_priority.Enabled = True
+                cbx_p4_color.Enabled = True
+                tbx_p4_tribe_name.Enabled = True
+                tbx_p4_name_string_id.Enabled = True
+                cbx_p4_ai.Enabled = True
+                cbx_p4_ai_personality.Enabled = True
+                cbx_p4_civilization.Enabled = True
+                cbx_p4_architecture.Enabled = True
+                cbx_p4_lock_civ.Enabled = True
+                cbx_p4_lock_personality.Enabled = True
+
+                cbx_p5_age.Enabled = False
+                nud_p5_food.Enabled = False
+                nud_p5_wood.Enabled = False
+                nud_p5_stone.Enabled = False
+                nud_p5_gold.Enabled = False
+                nud_p5_population.Enabled = False
+                nud_p5_priority.Enabled = False
+                cbx_p5_color.Enabled = False
+                tbx_p5_tribe_name.Enabled = False
+                tbx_p5_name_string_id.Enabled = False
+                cbx_p5_ai.Enabled = False
+                cbx_p5_ai_personality.Enabled = False
+                cbx_p5_civilization.Enabled = False
+                cbx_p5_architecture.Enabled = False
+                cbx_p5_lock_civ.Enabled = False
+                cbx_p5_lock_personality.Enabled = False
+
+                cbx_p6_age.Enabled = False
+                nud_p6_food.Enabled = False
+                nud_p6_wood.Enabled = False
+                nud_p6_stone.Enabled = False
+                nud_p6_gold.Enabled = False
+                nud_p6_population.Enabled = False
+                nud_p6_priority.Enabled = False
+                cbx_p6_color.Enabled = False
+                tbx_p6_tribe_name.Enabled = False
+                tbx_p6_name_string_id.Enabled = False
+                cbx_p6_ai.Enabled = False
+                cbx_p6_ai_personality.Enabled = False
+                cbx_p6_civilization.Enabled = False
+                cbx_p6_architecture.Enabled = False
+                cbx_p6_lock_civ.Enabled = False
+                cbx_p6_lock_personality.Enabled = False
+
+                cbx_p7_age.Enabled = False
+                nud_p7_food.Enabled = False
+                nud_p7_wood.Enabled = False
+                nud_p7_stone.Enabled = False
+                nud_p7_gold.Enabled = False
+                nud_p7_population.Enabled = False
+                nud_p7_priority.Enabled = False
+                cbx_p7_color.Enabled = False
+                tbx_p7_tribe_name.Enabled = False
+                tbx_p7_name_string_id.Enabled = False
+                cbx_p7_ai.Enabled = False
+                cbx_p7_ai_personality.Enabled = False
+                cbx_p7_civilization.Enabled = False
+                cbx_p7_architecture.Enabled = False
+                cbx_p7_lock_civ.Enabled = False
+                cbx_p7_lock_personality.Enabled = False
+
+                cbx_p8_age.Enabled = False
+                nud_p8_food.Enabled = False
+                nud_p8_wood.Enabled = False
+                nud_p8_stone.Enabled = False
+                nud_p8_gold.Enabled = False
+                nud_p8_population.Enabled = False
+                nud_p8_priority.Enabled = False
+                cbx_p8_color.Enabled = False
+                tbx_p8_tribe_name.Enabled = False
+                tbx_p8_name_string_id.Enabled = False
+                cbx_p8_ai.Enabled = False
+                cbx_p8_ai_personality.Enabled = False
+                cbx_p8_civilization.Enabled = False
+                cbx_p8_architecture.Enabled = False
+                cbx_p8_lock_civ.Enabled = False
+                cbx_p8_lock_personality.Enabled = False
+
+                btn_p2_to_p1_diplo.Enabled = True
+                btn_p2_to_p3_diplo.Enabled = True
+                btn_p2_to_p4_diplo.Enabled = True
+                btn_p2_to_p5_diplo.Enabled = True
+                btn_p2_to_p6_diplo.Enabled = True
+                btn_p2_to_p7_diplo.Enabled = True
+                btn_p2_to_p8_diplo.Enabled = True
+                cbx_p2_av_me.Enabled = True
+
+                btn_p3_to_p1_diplo.Enabled = True
+                btn_p3_to_p2_diplo.Enabled = True
+                btn_p3_to_p4_diplo.Enabled = True
+                btn_p3_to_p5_diplo.Enabled = True
+                btn_p3_to_p6_diplo.Enabled = True
+                btn_p3_to_p7_diplo.Enabled = True
+                btn_p3_to_p8_diplo.Enabled = True
+                cbx_p3_av_me.Enabled = True
+
+                btn_p4_to_p1_diplo.Enabled = True
+                btn_p4_to_p2_diplo.Enabled = True
+                btn_p4_to_p3_diplo.Enabled = True
+                btn_p4_to_p5_diplo.Enabled = True
+                btn_p4_to_p6_diplo.Enabled = True
+                btn_p4_to_p7_diplo.Enabled = True
+                btn_p4_to_p8_diplo.Enabled = True
+                cbx_p4_av_me.Enabled = True
+
+                btn_p5_to_p1_diplo.Enabled = False
+                btn_p5_to_p2_diplo.Enabled = False
+                btn_p5_to_p3_diplo.Enabled = False
+                btn_p5_to_p4_diplo.Enabled = False
+                btn_p5_to_p6_diplo.Enabled = False
+                btn_p5_to_p7_diplo.Enabled = False
+                btn_p5_to_p8_diplo.Enabled = False
+                cbx_p5_av_me.Enabled = False
+
+                btn_p6_to_p1_diplo.Enabled = False
+                btn_p6_to_p2_diplo.Enabled = False
+                btn_p6_to_p3_diplo.Enabled = False
+                btn_p6_to_p4_diplo.Enabled = False
+                btn_p6_to_p5_diplo.Enabled = False
+                btn_p6_to_p7_diplo.Enabled = False
+                btn_p6_to_p8_diplo.Enabled = False
+                cbx_p6_av_me.Enabled = False
+
+                btn_p7_to_p1_diplo.Enabled = False
+                btn_p7_to_p2_diplo.Enabled = False
+                btn_p7_to_p3_diplo.Enabled = False
+                btn_p7_to_p4_diplo.Enabled = False
+                btn_p7_to_p5_diplo.Enabled = False
+                btn_p7_to_p6_diplo.Enabled = False
+                btn_p7_to_p8_diplo.Enabled = False
+                cbx_p7_av_me.Enabled = False
+
+                btn_p8_to_p1_diplo.Enabled = False
+                btn_p8_to_p2_diplo.Enabled = False
+                btn_p8_to_p3_diplo.Enabled = False
+                btn_p8_to_p4_diplo.Enabled = False
+                btn_p8_to_p5_diplo.Enabled = False
+                btn_p8_to_p6_diplo.Enabled = False
+                btn_p8_to_p7_diplo.Enabled = False
+                cbx_p8_av_me.Enabled = False
+
+                cbx_p2_av_them.Enabled = True
+                cbx_p3_av_them.Enabled = True
+                cbx_p4_av_them.Enabled = True
+                cbx_p5_av_them.Enabled = False
+                cbx_p6_av_them.Enabled = False
+                cbx_p7_av_them.Enabled = False
+                cbx_p8_av_them.Enabled = False
+
+            ElseIf cbx_total_players.SelectedIndex = 4 Then
+
+                ' 5 players...
+
+                cbx_p2_age.Enabled = True
+                nud_p2_food.Enabled = True
+                nud_p2_wood.Enabled = True
+                nud_p2_stone.Enabled = True
+                nud_p2_gold.Enabled = True
+                nud_p2_population.Enabled = True
+                nud_p2_priority.Enabled = True
+                cbx_p2_color.Enabled = True
+                tbx_p2_tribe_name.Enabled = True
+                tbx_p2_name_string_id.Enabled = True
+                cbx_p2_ai.Enabled = True
+                cbx_p2_ai_personality.Enabled = True
+                cbx_p2_civilization.Enabled = True
+                cbx_p2_architecture.Enabled = True
+                cbx_p2_lock_civ.Enabled = True
+                cbx_p2_lock_personality.Enabled = True
+
+                cbx_p3_age.Enabled = True
+                nud_p3_food.Enabled = True
+                nud_p3_wood.Enabled = True
+                nud_p3_stone.Enabled = True
+                nud_p3_gold.Enabled = True
+                nud_p3_population.Enabled = True
+                nud_p3_priority.Enabled = True
+                cbx_p3_color.Enabled = True
+                tbx_p3_tribe_name.Enabled = True
+                tbx_p3_name_string_id.Enabled = True
+                cbx_p3_ai.Enabled = True
+                cbx_p3_ai_personality.Enabled = True
+                cbx_p3_civilization.Enabled = True
+                cbx_p3_architecture.Enabled = True
+                cbx_p3_lock_civ.Enabled = True
+                cbx_p3_lock_personality.Enabled = True
+
+                cbx_p4_age.Enabled = True
+                nud_p4_food.Enabled = True
+                nud_p4_wood.Enabled = True
+                nud_p4_stone.Enabled = True
+                nud_p4_gold.Enabled = True
+                nud_p4_population.Enabled = True
+                nud_p4_priority.Enabled = True
+                cbx_p4_color.Enabled = True
+                tbx_p4_tribe_name.Enabled = True
+                tbx_p4_name_string_id.Enabled = True
+                cbx_p4_ai.Enabled = True
+                cbx_p4_ai_personality.Enabled = True
+                cbx_p4_civilization.Enabled = True
+                cbx_p4_architecture.Enabled = True
+                cbx_p4_lock_civ.Enabled = True
+                cbx_p4_lock_personality.Enabled = True
+
+                cbx_p5_age.Enabled = True
+                nud_p5_food.Enabled = True
+                nud_p5_wood.Enabled = True
+                nud_p5_stone.Enabled = True
+                nud_p5_gold.Enabled = True
+                nud_p5_population.Enabled = True
+                nud_p5_priority.Enabled = True
+                cbx_p5_color.Enabled = True
+                tbx_p5_tribe_name.Enabled = True
+                tbx_p5_name_string_id.Enabled = True
+                cbx_p5_ai.Enabled = True
+                cbx_p5_ai_personality.Enabled = True
+                cbx_p5_civilization.Enabled = True
+                cbx_p5_architecture.Enabled = True
+                cbx_p5_lock_civ.Enabled = True
+                cbx_p5_lock_personality.Enabled = True
+
+                cbx_p6_age.Enabled = False
+                nud_p6_food.Enabled = False
+                nud_p6_wood.Enabled = False
+                nud_p6_stone.Enabled = False
+                nud_p6_gold.Enabled = False
+                nud_p6_population.Enabled = False
+                nud_p6_priority.Enabled = False
+                cbx_p6_color.Enabled = False
+                tbx_p6_tribe_name.Enabled = False
+                tbx_p6_name_string_id.Enabled = False
+                cbx_p6_ai.Enabled = False
+                cbx_p6_ai_personality.Enabled = False
+                cbx_p6_civilization.Enabled = False
+                cbx_p6_architecture.Enabled = False
+                cbx_p6_lock_civ.Enabled = False
+                cbx_p6_lock_personality.Enabled = False
+
+                cbx_p7_age.Enabled = False
+                nud_p7_food.Enabled = False
+                nud_p7_wood.Enabled = False
+                nud_p7_stone.Enabled = False
+                nud_p7_gold.Enabled = False
+                nud_p7_population.Enabled = False
+                nud_p7_priority.Enabled = False
+                cbx_p7_color.Enabled = False
+                tbx_p7_tribe_name.Enabled = False
+                tbx_p7_name_string_id.Enabled = False
+                cbx_p7_ai.Enabled = False
+                cbx_p7_ai_personality.Enabled = False
+                cbx_p7_civilization.Enabled = False
+                cbx_p7_architecture.Enabled = False
+                cbx_p7_lock_civ.Enabled = False
+                cbx_p7_lock_personality.Enabled = False
+
+                cbx_p8_age.Enabled = False
+                nud_p8_food.Enabled = False
+                nud_p8_wood.Enabled = False
+                nud_p8_stone.Enabled = False
+                nud_p8_gold.Enabled = False
+                nud_p8_population.Enabled = False
+                nud_p8_priority.Enabled = False
+                cbx_p8_color.Enabled = False
+                tbx_p8_tribe_name.Enabled = False
+                tbx_p8_name_string_id.Enabled = False
+                cbx_p8_ai.Enabled = False
+                cbx_p8_ai_personality.Enabled = False
+                cbx_p8_civilization.Enabled = False
+                cbx_p8_architecture.Enabled = False
+                cbx_p8_lock_civ.Enabled = False
+                cbx_p8_lock_personality.Enabled = False
+
+                btn_p2_to_p1_diplo.Enabled = True
+                btn_p2_to_p3_diplo.Enabled = True
+                btn_p2_to_p4_diplo.Enabled = True
+                btn_p2_to_p5_diplo.Enabled = True
+                btn_p2_to_p6_diplo.Enabled = True
+                btn_p2_to_p7_diplo.Enabled = True
+                btn_p2_to_p8_diplo.Enabled = True
+                cbx_p2_av_me.Enabled = True
+
+                btn_p3_to_p1_diplo.Enabled = True
+                btn_p3_to_p2_diplo.Enabled = True
+                btn_p3_to_p4_diplo.Enabled = True
+                btn_p3_to_p5_diplo.Enabled = True
+                btn_p3_to_p6_diplo.Enabled = True
+                btn_p3_to_p7_diplo.Enabled = True
+                btn_p3_to_p8_diplo.Enabled = True
+                cbx_p3_av_me.Enabled = True
+
+                btn_p4_to_p1_diplo.Enabled = True
+                btn_p4_to_p2_diplo.Enabled = True
+                btn_p4_to_p3_diplo.Enabled = True
+                btn_p4_to_p5_diplo.Enabled = True
+                btn_p4_to_p6_diplo.Enabled = True
+                btn_p4_to_p7_diplo.Enabled = True
+                btn_p4_to_p8_diplo.Enabled = True
+                cbx_p4_av_me.Enabled = True
+
+                btn_p5_to_p1_diplo.Enabled = True
+                btn_p5_to_p2_diplo.Enabled = True
+                btn_p5_to_p3_diplo.Enabled = True
+                btn_p5_to_p4_diplo.Enabled = True
+                btn_p5_to_p6_diplo.Enabled = True
+                btn_p5_to_p7_diplo.Enabled = True
+                btn_p5_to_p8_diplo.Enabled = True
+                cbx_p5_av_me.Enabled = True
+
+                btn_p6_to_p1_diplo.Enabled = False
+                btn_p6_to_p2_diplo.Enabled = False
+                btn_p6_to_p3_diplo.Enabled = False
+                btn_p6_to_p4_diplo.Enabled = False
+                btn_p6_to_p5_diplo.Enabled = False
+                btn_p6_to_p7_diplo.Enabled = False
+                btn_p6_to_p8_diplo.Enabled = False
+                cbx_p6_av_me.Enabled = False
+
+                btn_p7_to_p1_diplo.Enabled = False
+                btn_p7_to_p2_diplo.Enabled = False
+                btn_p7_to_p3_diplo.Enabled = False
+                btn_p7_to_p4_diplo.Enabled = False
+                btn_p7_to_p5_diplo.Enabled = False
+                btn_p7_to_p6_diplo.Enabled = False
+                btn_p7_to_p8_diplo.Enabled = False
+                cbx_p7_av_me.Enabled = False
+
+                btn_p8_to_p1_diplo.Enabled = False
+                btn_p8_to_p2_diplo.Enabled = False
+                btn_p8_to_p3_diplo.Enabled = False
+                btn_p8_to_p4_diplo.Enabled = False
+                btn_p8_to_p5_diplo.Enabled = False
+                btn_p8_to_p6_diplo.Enabled = False
+                btn_p8_to_p7_diplo.Enabled = False
+                cbx_p8_av_me.Enabled = False
+
+                cbx_p2_av_them.Enabled = True
+                cbx_p3_av_them.Enabled = True
+                cbx_p4_av_them.Enabled = True
+                cbx_p5_av_them.Enabled = True
+                cbx_p6_av_them.Enabled = False
+                cbx_p7_av_them.Enabled = False
+                cbx_p8_av_them.Enabled = False
+
+            ElseIf cbx_total_players.SelectedIndex = 5 Then
+
+                ' 6 players...
+
+                cbx_p2_age.Enabled = True
+                nud_p2_food.Enabled = True
+                nud_p2_wood.Enabled = True
+                nud_p2_stone.Enabled = True
+                nud_p2_gold.Enabled = True
+                nud_p2_population.Enabled = True
+                nud_p2_priority.Enabled = True
+                cbx_p2_color.Enabled = True
+                tbx_p2_tribe_name.Enabled = True
+                tbx_p2_name_string_id.Enabled = True
+                cbx_p2_ai.Enabled = True
+                cbx_p2_ai_personality.Enabled = True
+                cbx_p2_civilization.Enabled = True
+                cbx_p2_architecture.Enabled = True
+                cbx_p2_lock_civ.Enabled = True
+                cbx_p2_lock_personality.Enabled = True
+
+                cbx_p3_age.Enabled = True
+                nud_p3_food.Enabled = True
+                nud_p3_wood.Enabled = True
+                nud_p3_stone.Enabled = True
+                nud_p3_gold.Enabled = True
+                nud_p3_population.Enabled = True
+                nud_p3_priority.Enabled = True
+                cbx_p3_color.Enabled = True
+                tbx_p3_tribe_name.Enabled = True
+                tbx_p3_name_string_id.Enabled = True
+                cbx_p3_ai.Enabled = True
+                cbx_p3_ai_personality.Enabled = True
+                cbx_p3_civilization.Enabled = True
+                cbx_p3_architecture.Enabled = True
+                cbx_p3_lock_civ.Enabled = True
+                cbx_p3_lock_personality.Enabled = True
+
+                cbx_p4_age.Enabled = True
+                nud_p4_food.Enabled = True
+                nud_p4_wood.Enabled = True
+                nud_p4_stone.Enabled = True
+                nud_p4_gold.Enabled = True
+                nud_p4_population.Enabled = True
+                nud_p4_priority.Enabled = True
+                cbx_p4_color.Enabled = True
+                tbx_p4_tribe_name.Enabled = True
+                tbx_p4_name_string_id.Enabled = True
+                cbx_p4_ai.Enabled = True
+                cbx_p4_ai_personality.Enabled = True
+                cbx_p4_civilization.Enabled = True
+                cbx_p4_architecture.Enabled = True
+                cbx_p4_lock_civ.Enabled = True
+                cbx_p4_lock_personality.Enabled = True
+
+                cbx_p5_age.Enabled = True
+                nud_p5_food.Enabled = True
+                nud_p5_wood.Enabled = True
+                nud_p5_stone.Enabled = True
+                nud_p5_gold.Enabled = True
+                nud_p5_population.Enabled = True
+                nud_p5_priority.Enabled = True
+                cbx_p5_color.Enabled = True
+                tbx_p5_tribe_name.Enabled = True
+                tbx_p5_name_string_id.Enabled = True
+                cbx_p5_ai.Enabled = True
+                cbx_p5_ai_personality.Enabled = True
+                cbx_p5_civilization.Enabled = True
+                cbx_p5_architecture.Enabled = True
+                cbx_p5_lock_civ.Enabled = True
+                cbx_p5_lock_personality.Enabled = True
+
+                cbx_p6_age.Enabled = True
+                nud_p6_food.Enabled = True
+                nud_p6_wood.Enabled = True
+                nud_p6_stone.Enabled = True
+                nud_p6_gold.Enabled = True
+                nud_p6_population.Enabled = True
+                nud_p6_priority.Enabled = True
+                cbx_p6_color.Enabled = True
+                tbx_p6_tribe_name.Enabled = True
+                tbx_p6_name_string_id.Enabled = True
+                cbx_p6_ai.Enabled = True
+                cbx_p6_ai_personality.Enabled = True
+                cbx_p6_civilization.Enabled = True
+                cbx_p6_architecture.Enabled = True
+                cbx_p6_lock_civ.Enabled = True
+                cbx_p6_lock_personality.Enabled = True
+
+                cbx_p7_age.Enabled = False
+                nud_p7_food.Enabled = False
+                nud_p7_wood.Enabled = False
+                nud_p7_stone.Enabled = False
+                nud_p7_gold.Enabled = False
+                nud_p7_population.Enabled = False
+                nud_p7_priority.Enabled = False
+                cbx_p7_color.Enabled = False
+                tbx_p7_tribe_name.Enabled = False
+                tbx_p7_name_string_id.Enabled = False
+                cbx_p7_ai.Enabled = False
+                cbx_p7_ai_personality.Enabled = False
+                cbx_p7_civilization.Enabled = False
+                cbx_p7_architecture.Enabled = False
+                cbx_p7_lock_civ.Enabled = False
+                cbx_p7_lock_personality.Enabled = False
+
+                cbx_p8_age.Enabled = False
+                nud_p8_food.Enabled = False
+                nud_p8_wood.Enabled = False
+                nud_p8_stone.Enabled = False
+                nud_p8_gold.Enabled = False
+                nud_p8_population.Enabled = False
+                nud_p8_priority.Enabled = False
+                cbx_p8_color.Enabled = False
+                tbx_p8_tribe_name.Enabled = False
+                tbx_p8_name_string_id.Enabled = False
+                cbx_p8_ai.Enabled = False
+                cbx_p8_ai_personality.Enabled = False
+                cbx_p8_civilization.Enabled = False
+                cbx_p8_architecture.Enabled = False
+                cbx_p8_lock_civ.Enabled = False
+                cbx_p8_lock_personality.Enabled = False
+
+                btn_p2_to_p1_diplo.Enabled = True
+                btn_p2_to_p3_diplo.Enabled = True
+                btn_p2_to_p4_diplo.Enabled = True
+                btn_p2_to_p5_diplo.Enabled = True
+                btn_p2_to_p6_diplo.Enabled = True
+                btn_p2_to_p7_diplo.Enabled = True
+                btn_p2_to_p8_diplo.Enabled = True
+                cbx_p2_av_me.Enabled = True
+
+                btn_p3_to_p1_diplo.Enabled = True
+                btn_p3_to_p2_diplo.Enabled = True
+                btn_p3_to_p4_diplo.Enabled = True
+                btn_p3_to_p5_diplo.Enabled = True
+                btn_p3_to_p6_diplo.Enabled = True
+                btn_p3_to_p7_diplo.Enabled = True
+                btn_p3_to_p8_diplo.Enabled = True
+                cbx_p3_av_me.Enabled = True
+
+                btn_p4_to_p1_diplo.Enabled = True
+                btn_p4_to_p2_diplo.Enabled = True
+                btn_p4_to_p3_diplo.Enabled = True
+                btn_p4_to_p5_diplo.Enabled = True
+                btn_p4_to_p6_diplo.Enabled = True
+                btn_p4_to_p7_diplo.Enabled = True
+                btn_p4_to_p8_diplo.Enabled = True
+                cbx_p4_av_me.Enabled = True
+
+                btn_p5_to_p1_diplo.Enabled = True
+                btn_p5_to_p2_diplo.Enabled = True
+                btn_p5_to_p3_diplo.Enabled = True
+                btn_p5_to_p4_diplo.Enabled = True
+                btn_p5_to_p6_diplo.Enabled = True
+                btn_p5_to_p7_diplo.Enabled = True
+                btn_p5_to_p8_diplo.Enabled = True
+                cbx_p5_av_me.Enabled = True
+
+                btn_p6_to_p1_diplo.Enabled = True
+                btn_p6_to_p2_diplo.Enabled = True
+                btn_p6_to_p3_diplo.Enabled = True
+                btn_p6_to_p4_diplo.Enabled = True
+                btn_p6_to_p5_diplo.Enabled = True
+                btn_p6_to_p7_diplo.Enabled = True
+                btn_p6_to_p8_diplo.Enabled = True
+                cbx_p6_av_me.Enabled = True
+
+                btn_p7_to_p1_diplo.Enabled = False
+                btn_p7_to_p2_diplo.Enabled = False
+                btn_p7_to_p3_diplo.Enabled = False
+                btn_p7_to_p4_diplo.Enabled = False
+                btn_p7_to_p5_diplo.Enabled = False
+                btn_p7_to_p6_diplo.Enabled = False
+                btn_p7_to_p8_diplo.Enabled = False
+                cbx_p7_av_me.Enabled = False
+
+                btn_p8_to_p1_diplo.Enabled = False
+                btn_p8_to_p2_diplo.Enabled = False
+                btn_p8_to_p3_diplo.Enabled = False
+                btn_p8_to_p4_diplo.Enabled = False
+                btn_p8_to_p5_diplo.Enabled = False
+                btn_p8_to_p6_diplo.Enabled = False
+                btn_p8_to_p7_diplo.Enabled = False
+                cbx_p8_av_me.Enabled = False
+
+                cbx_p2_av_them.Enabled = True
+                cbx_p3_av_them.Enabled = True
+                cbx_p4_av_them.Enabled = True
+                cbx_p5_av_them.Enabled = True
+                cbx_p6_av_them.Enabled = True
+                cbx_p7_av_them.Enabled = False
+                cbx_p8_av_them.Enabled = False
+
+            ElseIf cbx_total_players.SelectedIndex = 6 Then
+
+                ' 7 players...
+
+                cbx_p2_age.Enabled = True
+                nud_p2_food.Enabled = True
+                nud_p2_wood.Enabled = True
+                nud_p2_stone.Enabled = True
+                nud_p2_gold.Enabled = True
+                nud_p2_population.Enabled = True
+                nud_p2_priority.Enabled = True
+                cbx_p2_color.Enabled = True
+                tbx_p2_tribe_name.Enabled = True
+                tbx_p2_name_string_id.Enabled = True
+                cbx_p2_ai.Enabled = True
+                cbx_p2_ai_personality.Enabled = True
+                cbx_p2_civilization.Enabled = True
+                cbx_p2_architecture.Enabled = True
+                cbx_p2_lock_civ.Enabled = True
+                cbx_p2_lock_personality.Enabled = True
+
+                cbx_p3_age.Enabled = True
+                nud_p3_food.Enabled = True
+                nud_p3_wood.Enabled = True
+                nud_p3_stone.Enabled = True
+                nud_p3_gold.Enabled = True
+                nud_p3_population.Enabled = True
+                nud_p3_priority.Enabled = True
+                cbx_p3_color.Enabled = True
+                tbx_p3_tribe_name.Enabled = True
+                tbx_p3_name_string_id.Enabled = True
+                cbx_p3_ai.Enabled = True
+                cbx_p3_ai_personality.Enabled = True
+                cbx_p3_civilization.Enabled = True
+                cbx_p3_architecture.Enabled = True
+                cbx_p3_lock_civ.Enabled = True
+                cbx_p3_lock_personality.Enabled = True
+
+                cbx_p4_age.Enabled = True
+                nud_p4_food.Enabled = True
+                nud_p4_wood.Enabled = True
+                nud_p4_stone.Enabled = True
+                nud_p4_gold.Enabled = True
+                nud_p4_population.Enabled = True
+                nud_p4_priority.Enabled = True
+                cbx_p4_color.Enabled = True
+                tbx_p4_tribe_name.Enabled = True
+                tbx_p4_name_string_id.Enabled = True
+                cbx_p4_ai.Enabled = True
+                cbx_p4_ai_personality.Enabled = True
+                cbx_p4_civilization.Enabled = True
+                cbx_p4_architecture.Enabled = True
+                cbx_p4_lock_civ.Enabled = True
+                cbx_p4_lock_personality.Enabled = True
+
+                cbx_p5_age.Enabled = True
+                nud_p5_food.Enabled = True
+                nud_p5_wood.Enabled = True
+                nud_p5_stone.Enabled = True
+                nud_p5_gold.Enabled = True
+                nud_p5_population.Enabled = True
+                nud_p5_priority.Enabled = True
+                cbx_p5_color.Enabled = True
+                tbx_p5_tribe_name.Enabled = True
+                tbx_p5_name_string_id.Enabled = True
+                cbx_p5_ai.Enabled = True
+                cbx_p5_ai_personality.Enabled = True
+                cbx_p5_civilization.Enabled = True
+                cbx_p5_architecture.Enabled = True
+                cbx_p5_lock_civ.Enabled = True
+                cbx_p5_lock_personality.Enabled = True
+
+                cbx_p6_age.Enabled = True
+                nud_p6_food.Enabled = True
+                nud_p6_wood.Enabled = True
+                nud_p6_stone.Enabled = True
+                nud_p6_gold.Enabled = True
+                nud_p6_population.Enabled = True
+                nud_p6_priority.Enabled = True
+                cbx_p6_color.Enabled = True
+                tbx_p6_tribe_name.Enabled = True
+                tbx_p6_name_string_id.Enabled = True
+                cbx_p6_ai.Enabled = True
+                cbx_p6_ai_personality.Enabled = True
+                cbx_p6_civilization.Enabled = True
+                cbx_p6_architecture.Enabled = True
+                cbx_p6_lock_civ.Enabled = True
+                cbx_p6_lock_personality.Enabled = True
+
+                cbx_p7_age.Enabled = True
+                nud_p7_food.Enabled = True
+                nud_p7_wood.Enabled = True
+                nud_p7_stone.Enabled = True
+                nud_p7_gold.Enabled = True
+                nud_p7_population.Enabled = True
+                nud_p7_priority.Enabled = True
+                cbx_p7_color.Enabled = True
+                tbx_p7_tribe_name.Enabled = True
+                tbx_p7_name_string_id.Enabled = True
+                cbx_p7_ai.Enabled = True
+                cbx_p7_ai_personality.Enabled = True
+                cbx_p7_civilization.Enabled = True
+                cbx_p7_architecture.Enabled = True
+                cbx_p7_lock_civ.Enabled = True
+                cbx_p7_lock_personality.Enabled = True
+
+                cbx_p8_age.Enabled = False
+                nud_p8_food.Enabled = False
+                nud_p8_wood.Enabled = False
+                nud_p8_stone.Enabled = False
+                nud_p8_gold.Enabled = False
+                nud_p8_population.Enabled = False
+                nud_p8_priority.Enabled = False
+                cbx_p8_color.Enabled = False
+                tbx_p8_tribe_name.Enabled = False
+                tbx_p8_name_string_id.Enabled = False
+                cbx_p8_ai.Enabled = False
+                cbx_p8_ai_personality.Enabled = False
+                cbx_p8_civilization.Enabled = False
+                cbx_p8_architecture.Enabled = False
+                cbx_p8_lock_civ.Enabled = False
+                cbx_p8_lock_personality.Enabled = False
+
+                btn_p2_to_p1_diplo.Enabled = True
+                btn_p2_to_p3_diplo.Enabled = True
+                btn_p2_to_p4_diplo.Enabled = True
+                btn_p2_to_p5_diplo.Enabled = True
+                btn_p2_to_p6_diplo.Enabled = True
+                btn_p2_to_p7_diplo.Enabled = True
+                btn_p2_to_p8_diplo.Enabled = True
+                cbx_p2_av_me.Enabled = True
+
+                btn_p3_to_p1_diplo.Enabled = True
+                btn_p3_to_p2_diplo.Enabled = True
+                btn_p3_to_p4_diplo.Enabled = True
+                btn_p3_to_p5_diplo.Enabled = True
+                btn_p3_to_p6_diplo.Enabled = True
+                btn_p3_to_p7_diplo.Enabled = True
+                btn_p3_to_p8_diplo.Enabled = True
+                cbx_p3_av_me.Enabled = True
+
+                btn_p4_to_p1_diplo.Enabled = True
+                btn_p4_to_p2_diplo.Enabled = True
+                btn_p4_to_p3_diplo.Enabled = True
+                btn_p4_to_p5_diplo.Enabled = True
+                btn_p4_to_p6_diplo.Enabled = True
+                btn_p4_to_p7_diplo.Enabled = True
+                btn_p4_to_p8_diplo.Enabled = True
+                cbx_p4_av_me.Enabled = True
+
+                btn_p5_to_p1_diplo.Enabled = True
+                btn_p5_to_p2_diplo.Enabled = True
+                btn_p5_to_p3_diplo.Enabled = True
+                btn_p5_to_p4_diplo.Enabled = True
+                btn_p5_to_p6_diplo.Enabled = True
+                btn_p5_to_p7_diplo.Enabled = True
+                btn_p5_to_p8_diplo.Enabled = True
+                cbx_p5_av_me.Enabled = True
+
+                btn_p6_to_p1_diplo.Enabled = True
+                btn_p6_to_p2_diplo.Enabled = True
+                btn_p6_to_p3_diplo.Enabled = True
+                btn_p6_to_p4_diplo.Enabled = True
+                btn_p6_to_p5_diplo.Enabled = True
+                btn_p6_to_p7_diplo.Enabled = True
+                btn_p6_to_p8_diplo.Enabled = True
+                cbx_p6_av_me.Enabled = True
+
+                btn_p7_to_p1_diplo.Enabled = True
+                btn_p7_to_p2_diplo.Enabled = True
+                btn_p7_to_p3_diplo.Enabled = True
+                btn_p7_to_p4_diplo.Enabled = True
+                btn_p7_to_p5_diplo.Enabled = True
+                btn_p7_to_p6_diplo.Enabled = True
+                btn_p7_to_p8_diplo.Enabled = True
+                cbx_p7_av_me.Enabled = True
+
+                btn_p8_to_p1_diplo.Enabled = False
+                btn_p8_to_p2_diplo.Enabled = False
+                btn_p8_to_p3_diplo.Enabled = False
+                btn_p8_to_p4_diplo.Enabled = False
+                btn_p8_to_p5_diplo.Enabled = False
+                btn_p8_to_p6_diplo.Enabled = False
+                btn_p8_to_p7_diplo.Enabled = False
+                cbx_p8_av_me.Enabled = False
+
+                cbx_p2_av_them.Enabled = True
+                cbx_p3_av_them.Enabled = True
+                cbx_p4_av_them.Enabled = True
+                cbx_p5_av_them.Enabled = True
+                cbx_p6_av_them.Enabled = True
+                cbx_p7_av_them.Enabled = True
+                cbx_p8_av_them.Enabled = False
+
+            ElseIf cbx_total_players.SelectedIndex = 7 Then
+
+                ' 8 players...
+
+                cbx_p2_age.Enabled = True
+                nud_p2_food.Enabled = True
+                nud_p2_wood.Enabled = True
+                nud_p2_stone.Enabled = True
+                nud_p2_gold.Enabled = True
+                nud_p2_population.Enabled = True
+                nud_p2_priority.Enabled = True
+                cbx_p2_color.Enabled = True
+                tbx_p2_tribe_name.Enabled = True
+                tbx_p2_name_string_id.Enabled = True
+                cbx_p2_ai.Enabled = True
+                cbx_p2_ai_personality.Enabled = True
+                cbx_p2_civilization.Enabled = True
+                cbx_p2_architecture.Enabled = True
+                cbx_p2_lock_civ.Enabled = True
+                cbx_p2_lock_personality.Enabled = True
+
+                cbx_p3_age.Enabled = True
+                nud_p3_food.Enabled = True
+                nud_p3_wood.Enabled = True
+                nud_p3_stone.Enabled = True
+                nud_p3_gold.Enabled = True
+                nud_p3_population.Enabled = True
+                nud_p3_priority.Enabled = True
+                cbx_p3_color.Enabled = True
+                tbx_p3_tribe_name.Enabled = True
+                tbx_p3_name_string_id.Enabled = True
+                cbx_p3_ai.Enabled = True
+                cbx_p3_ai_personality.Enabled = True
+                cbx_p3_civilization.Enabled = True
+                cbx_p3_architecture.Enabled = True
+                cbx_p3_lock_civ.Enabled = True
+                cbx_p3_lock_personality.Enabled = True
+
+                cbx_p4_age.Enabled = True
+                nud_p4_food.Enabled = True
+                nud_p4_wood.Enabled = True
+                nud_p4_stone.Enabled = True
+                nud_p4_gold.Enabled = True
+                nud_p4_population.Enabled = True
+                nud_p4_priority.Enabled = True
+                cbx_p4_color.Enabled = True
+                tbx_p4_tribe_name.Enabled = True
+                tbx_p4_name_string_id.Enabled = True
+                cbx_p4_ai.Enabled = True
+                cbx_p4_ai_personality.Enabled = True
+                cbx_p4_civilization.Enabled = True
+                cbx_p4_architecture.Enabled = True
+                cbx_p4_lock_civ.Enabled = True
+                cbx_p4_lock_personality.Enabled = True
+
+                cbx_p5_age.Enabled = True
+                nud_p5_food.Enabled = True
+                nud_p5_wood.Enabled = True
+                nud_p5_stone.Enabled = True
+                nud_p5_gold.Enabled = True
+                nud_p5_population.Enabled = True
+                nud_p5_priority.Enabled = True
+                cbx_p5_color.Enabled = True
+                tbx_p5_tribe_name.Enabled = True
+                tbx_p5_name_string_id.Enabled = True
+                cbx_p5_ai.Enabled = True
+                cbx_p5_ai_personality.Enabled = True
+                cbx_p5_civilization.Enabled = True
+                cbx_p5_architecture.Enabled = True
+                cbx_p5_lock_civ.Enabled = True
+                cbx_p5_lock_personality.Enabled = True
+
+                cbx_p6_age.Enabled = True
+                nud_p6_food.Enabled = True
+                nud_p6_wood.Enabled = True
+                nud_p6_stone.Enabled = True
+                nud_p6_gold.Enabled = True
+                nud_p6_population.Enabled = True
+                nud_p6_priority.Enabled = True
+                cbx_p6_color.Enabled = True
+                tbx_p6_tribe_name.Enabled = True
+                tbx_p6_name_string_id.Enabled = True
+                cbx_p6_ai.Enabled = True
+                cbx_p6_ai_personality.Enabled = True
+                cbx_p6_civilization.Enabled = True
+                cbx_p6_architecture.Enabled = True
+                cbx_p6_lock_civ.Enabled = True
+                cbx_p6_lock_personality.Enabled = True
+
+                cbx_p7_age.Enabled = True
+                nud_p7_food.Enabled = True
+                nud_p7_wood.Enabled = True
+                nud_p7_stone.Enabled = True
+                nud_p7_gold.Enabled = True
+                nud_p7_population.Enabled = True
+                nud_p7_priority.Enabled = True
+                cbx_p7_color.Enabled = True
+                tbx_p7_tribe_name.Enabled = True
+                tbx_p7_name_string_id.Enabled = True
+                cbx_p7_ai.Enabled = True
+                cbx_p7_ai_personality.Enabled = True
+                cbx_p7_civilization.Enabled = True
+                cbx_p7_architecture.Enabled = True
+                cbx_p7_lock_civ.Enabled = True
+                cbx_p7_lock_personality.Enabled = True
+
+                cbx_p8_age.Enabled = True
+                nud_p8_food.Enabled = True
+                nud_p8_wood.Enabled = True
+                nud_p8_stone.Enabled = True
+                nud_p8_gold.Enabled = True
+                nud_p8_population.Enabled = True
+                nud_p8_priority.Enabled = True
+                cbx_p8_color.Enabled = True
+                tbx_p8_tribe_name.Enabled = True
+                tbx_p8_name_string_id.Enabled = True
+                cbx_p8_ai.Enabled = True
+                cbx_p8_ai_personality.Enabled = True
+                cbx_p8_civilization.Enabled = True
+                cbx_p8_architecture.Enabled = True
+                cbx_p8_lock_civ.Enabled = True
+                cbx_p8_lock_personality.Enabled = True
+
+                btn_p2_to_p1_diplo.Enabled = True
+                btn_p2_to_p3_diplo.Enabled = True
+                btn_p2_to_p4_diplo.Enabled = True
+                btn_p2_to_p5_diplo.Enabled = True
+                btn_p2_to_p6_diplo.Enabled = True
+                btn_p2_to_p7_diplo.Enabled = True
+                btn_p2_to_p8_diplo.Enabled = True
+                cbx_p2_av_me.Enabled = True
+
+                btn_p3_to_p1_diplo.Enabled = True
+                btn_p3_to_p2_diplo.Enabled = True
+                btn_p3_to_p4_diplo.Enabled = True
+                btn_p3_to_p5_diplo.Enabled = True
+                btn_p3_to_p6_diplo.Enabled = True
+                btn_p3_to_p7_diplo.Enabled = True
+                btn_p3_to_p8_diplo.Enabled = True
+                cbx_p3_av_me.Enabled = True
+
+                btn_p4_to_p1_diplo.Enabled = True
+                btn_p4_to_p2_diplo.Enabled = True
+                btn_p4_to_p3_diplo.Enabled = True
+                btn_p4_to_p5_diplo.Enabled = True
+                btn_p4_to_p6_diplo.Enabled = True
+                btn_p4_to_p7_diplo.Enabled = True
+                btn_p4_to_p8_diplo.Enabled = True
+                cbx_p4_av_me.Enabled = True
+
+                btn_p5_to_p1_diplo.Enabled = True
+                btn_p5_to_p2_diplo.Enabled = True
+                btn_p5_to_p3_diplo.Enabled = True
+                btn_p5_to_p4_diplo.Enabled = True
+                btn_p5_to_p6_diplo.Enabled = True
+                btn_p5_to_p7_diplo.Enabled = True
+                btn_p5_to_p8_diplo.Enabled = True
+                cbx_p5_av_me.Enabled = True
+
+                btn_p6_to_p1_diplo.Enabled = True
+                btn_p6_to_p2_diplo.Enabled = True
+                btn_p6_to_p3_diplo.Enabled = True
+                btn_p6_to_p4_diplo.Enabled = True
+                btn_p6_to_p5_diplo.Enabled = True
+                btn_p6_to_p7_diplo.Enabled = True
+                btn_p6_to_p8_diplo.Enabled = True
+                cbx_p6_av_me.Enabled = True
+
+                btn_p7_to_p1_diplo.Enabled = True
+                btn_p7_to_p2_diplo.Enabled = True
+                btn_p7_to_p3_diplo.Enabled = True
+                btn_p7_to_p4_diplo.Enabled = True
+                btn_p7_to_p5_diplo.Enabled = True
+                btn_p7_to_p6_diplo.Enabled = True
+                btn_p7_to_p8_diplo.Enabled = True
+                cbx_p7_av_me.Enabled = True
+
+                btn_p8_to_p1_diplo.Enabled = True
+                btn_p8_to_p2_diplo.Enabled = True
+                btn_p8_to_p3_diplo.Enabled = True
+                btn_p8_to_p4_diplo.Enabled = True
+                btn_p8_to_p5_diplo.Enabled = True
+                btn_p8_to_p6_diplo.Enabled = True
+                btn_p8_to_p7_diplo.Enabled = True
+                cbx_p8_av_me.Enabled = True
+
+                cbx_p2_av_them.Enabled = True
+                cbx_p3_av_them.Enabled = True
+                cbx_p4_av_them.Enabled = True
+                cbx_p5_av_them.Enabled = True
+                cbx_p6_av_them.Enabled = True
+                cbx_p7_av_them.Enabled = True
+                cbx_p8_av_them.Enabled = True
+
+            End If
 
         Catch ex As Exception
 

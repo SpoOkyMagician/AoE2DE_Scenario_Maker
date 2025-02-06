@@ -1,4 +1,5 @@
 AoE2DE Scenario Maker<br>
+Current Version: 0.0.5<br>
 
 A 'work in progress' application that will be a graphical user interface that let's you create Age of Empires 2 DE Scenarios.<br>
 
