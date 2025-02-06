@@ -49,12 +49,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="BYTE_NOTES.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="My Project\Application.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
