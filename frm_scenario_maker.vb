@@ -60,6 +60,8 @@ Public Class frm_scenario_maker
 
     ' [OPTION GLOBALS]
 
+    ' to do...
+
     ' [MESSAGE GLOBALS]
 
     ' to do...
@@ -69,6 +71,8 @@ Public Class frm_scenario_maker
     ' to do...
 
     ' [TRIGGER GLOBALS]
+
+    ' to do...
 
     ' [ABOUT GLOBALS?]
 
@@ -121,6 +125,7 @@ Public Class frm_scenario_maker
     ' and re-add the 'header' section. (If you change anything related to the header in there, you will also have to change those bytes too...)
     ' Once you are done with this, you can compress the scenario and then add the header back in to the top of the file.
     ' You should be able to load the scenario. If you made any mistakes, you may not be able to.
+    ' note: apparently, the whitespace/formatting is important too. (i experimented with it.) keep it exactly the same! (except your changes of course.)
 
     Function F_Decompress_File(my_in_file As String, my_out_file As String) As Object
 
@@ -424,7 +429,7 @@ Public Class frm_scenario_maker
 
         ' on startup, be sure to define all your variables and reset all gui to a vaild minimum scenario...
         Try
-            ' variables/GUI stuff goes here...
+            ' variables/GUI stuff goes here... you should be able to copy/paste in btn_new_scenario's click event...
 
         Catch ex As Exception
             catch_all_errors(ex)
@@ -437,6 +442,7 @@ Public Class frm_scenario_maker
     Public Sub btn_new_scenario_Click(sender As Object, e As EventArgs) Handles btn_new_scenario.Click
 
         ' on clicking new, be sure to define all your variables and reset all gui to a vaild minimum scenario...
+
         Try
             ' varables/GUI stuff goes here...
             cbx_map_size.SelectedIndex = 13
@@ -452,12 +458,12 @@ Public Class frm_scenario_maker
     End Sub
     Public Sub btn_save_Click(sender As Object, e As EventArgs) Handles btn_save.Click
 
-        ' on click save, this will open the save file dialog window. write code here to save the scenario...
-        sfd_scenario.ShowDialog()
-        ' note: you can use lbl_save_path.Text to show the path if you want or whatever...
         Try
-            ' save scenario code goes here...
+            ' on click save, this will open the save file dialog window. write code here to save the scenario...
+            sfd_scenario.ShowDialog()
 
+            ' note: you can use lbl_save_path.Text to show the path if you want or whatever...
+            lbl_save_path.Text = "Saving: " + ofd_scenario.FileName + "... (this will do nothing right now sorry...)"
         Catch ex As Exception
             catch_all_errors(ex)
         End Try
@@ -465,12 +471,12 @@ Public Class frm_scenario_maker
     End Sub
     Public Sub btn_load_Click(sender As Object, e As EventArgs) Handles btn_load.Click
 
-        ' on click load, this will open the load file dialog window. write code here to load the scenario...
-        ofd_scenario.ShowDialog()
-        ' note: you can use lbl_load_path.Text to show the path if you want or whatever...
         Try
-            ' load scenario code goes here...
+            ' on click load, this will open the load file dialog window. write code here to load the scenario...
+            ofd_scenario.ShowDialog()
 
+            ' note: you can use lbl_load_path.Text to show the path if you want or whatever...
+            lbl_load_path.Text = "Loading: " + ofd_scenario.FileName + "... (this will do nothing right now sorry...)"
         Catch ex As Exception
             catch_all_errors(ex)
         End Try
@@ -478,11 +484,14 @@ Public Class frm_scenario_maker
     End Sub
     Public Sub btn_test_Click(sender As Object, e As EventArgs) Handles btn_test.Click
 
-        ' on click test, this will 'attempt' to load the scenario editor in AoE2DE... (add argument 'EDITOR' and 'SKIPINTRO')
-        ' you will have to find the games executable yourself. I don't want to deal with this personally...
-        ofd_aoe2de_path.ShowDialog()
         Try
+
+            ' on clicking test, this will 'attempt' to load the scenario editor in AoE2DE... (add argument 'EDITOR' and 'SKIPINTRO')
+            ' you will have to find the games executable yourself. I don't want to deal with this personally...
+
+            ofd_aoe2de_path.ShowDialog()
             Process.Start("" + ofd_aoe2de_path.FileName, "EDITOR SKIPINTRO")
+
         Catch ex As Exception
             catch_all_errors(ex)
         End Try
@@ -494,6 +503,8 @@ Public Class frm_scenario_maker
     Public Sub cbx_map_size_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbx_map_size.SelectedIndexChanged
 
         Try
+
+            ' if we select custom map size, enable the size picker. otherwise, disable it...
 
             If cbx_map_size.SelectedIndex = 14 Then
                 nud_mwh_size.Enabled = True
@@ -4815,6 +4826,19 @@ Public Class frm_scenario_maker
 
         Try
 
+            cbx_score.Enabled = False
+            cbx_time_limit.Enabled = False
+            cbx_conquest.Enabled = False
+            cbx_exploration.Enabled = False
+            cbx_relics.Enabled = False
+            cbx_all.Enabled = False
+            tbx_exploration_total.Enabled = False
+            tbx_relics_total.Enabled = False
+            cbx_empire_wars.Enabled = False
+            cbx_sudden_death.Enabled = False
+            cbx_regicide.Enabled = False
+            cbx_king_of_the_hill.Enabled = False
+
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4826,6 +4850,19 @@ Public Class frm_scenario_maker
 
         Try
 
+            cbx_score.Enabled = False
+            cbx_time_limit.Enabled = False
+            cbx_conquest.Enabled = False
+            cbx_exploration.Enabled = False
+            cbx_relics.Enabled = False
+            cbx_all.Enabled = False
+            tbx_exploration_total.Enabled = False
+            tbx_relics_total.Enabled = False
+            cbx_empire_wars.Enabled = False
+            cbx_sudden_death.Enabled = False
+            cbx_regicide.Enabled = False
+            cbx_king_of_the_hill.Enabled = False
+
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4836,7 +4873,18 @@ Public Class frm_scenario_maker
     Public Sub rbn_score_CheckedChanged(sender As Object, e As EventArgs) Handles rbn_score.CheckedChanged
 
         Try
-
+            cbx_score.Enabled = True
+            cbx_time_limit.Enabled = False
+            cbx_conquest.Enabled = False
+            cbx_exploration.Enabled = False
+            cbx_relics.Enabled = False
+            cbx_all.Enabled = False
+            tbx_exploration_total.Enabled = False
+            tbx_relics_total.Enabled = False
+            cbx_empire_wars.Enabled = False
+            cbx_sudden_death.Enabled = False
+            cbx_regicide.Enabled = False
+            cbx_king_of_the_hill.Enabled = False
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4847,6 +4895,19 @@ Public Class frm_scenario_maker
     Public Sub rbn_time_limit_CheckedChanged(sender As Object, e As EventArgs) Handles rbn_time_limit.CheckedChanged
 
         Try
+
+            cbx_score.Enabled = False
+            cbx_time_limit.Enabled = True
+            cbx_conquest.Enabled = False
+            cbx_exploration.Enabled = False
+            cbx_relics.Enabled = False
+            cbx_all.Enabled = False
+            tbx_exploration_total.Enabled = False
+            tbx_relics_total.Enabled = False
+            cbx_empire_wars.Enabled = False
+            cbx_sudden_death.Enabled = False
+            cbx_regicide.Enabled = False
+            cbx_king_of_the_hill.Enabled = False
 
         Catch ex As Exception
 
@@ -4859,6 +4920,19 @@ Public Class frm_scenario_maker
 
         Try
 
+            cbx_score.Enabled = False
+            cbx_time_limit.Enabled = False
+            cbx_conquest.Enabled = True
+            cbx_exploration.Enabled = True
+            cbx_relics.Enabled = True
+            cbx_all.Enabled = True
+            tbx_exploration_total.Enabled = True
+            tbx_relics_total.Enabled = True
+            cbx_empire_wars.Enabled = False
+            cbx_sudden_death.Enabled = False
+            cbx_regicide.Enabled = False
+            cbx_king_of_the_hill.Enabled = False
+
         Catch ex As Exception
 
             catch_all_errors(ex)
@@ -4869,6 +4943,19 @@ Public Class frm_scenario_maker
     Public Sub rbn_secondary_game_mode_CheckedChanged(sender As Object, e As EventArgs) Handles rbn_secondary_game_mode.CheckedChanged
 
         Try
+
+            cbx_score.Enabled = False
+            cbx_time_limit.Enabled = False
+            cbx_conquest.Enabled = False
+            cbx_exploration.Enabled = False
+            cbx_relics.Enabled = False
+            cbx_all.Enabled = False
+            tbx_exploration_total.Enabled = False
+            tbx_relics_total.Enabled = False
+            cbx_empire_wars.Enabled = True
+            cbx_sudden_death.Enabled = True
+            cbx_regicide.Enabled = True
+            cbx_king_of_the_hill.Enabled = True
 
         Catch ex As Exception
 
