@@ -26,12 +26,107 @@
 
   <ItemGroup>
     <None Remove="BYTE_NOTES.txt" />
+    <None Remove="Resources\beach.png" />
+    <None Remove="Resources\beach_ice.png" />
+    <None Remove="Resources\beach_non_navigable.png" />
+    <None Remove="Resources\beach_non_navigable_wet_gravel.png" />
+    <None Remove="Resources\beach_non_navigable_wet_rock.png" />
+    <None Remove="Resources\beach_non_navigable_wet_sand.png" />
+    <None Remove="Resources\beach_vegetation.png" />
+    <None Remove="Resources\beach_wet.png" />
+    <None Remove="Resources\beach_wet_gravel.png" />
+    <None Remove="Resources\beach_wet_rock.png" />
+    <None Remove="Resources\beach_white.png" />
+    <None Remove="Resources\beach_white_vegetation.png" />
+    <None Remove="Resources\black.png" />
+    <None Remove="Resources\desert_cracked.png" />
+    <None Remove="Resources\desert_quicksand.png" />
+    <None Remove="Resources\desert_sand.png" />
+    <None Remove="Resources\dirt_1.png" />
+    <None Remove="Resources\dirt_2.png" />
+    <None Remove="Resources\dirt_3.png" />
+    <None Remove="Resources\dirt_4.png" />
+    <None Remove="Resources\dirt_mud.png" />
+    <None Remove="Resources\dirt_savannah.png" />
+    <None Remove="Resources\farm.png" />
+    <None Remove="Resources\farm_0p.png" />
+    <None Remove="Resources\farm_33p.png" />
+    <None Remove="Resources\farm_67p.png" />
+    <None Remove="Resources\farm_dead.png" />
+    <None Remove="Resources\forest_acacia.png" />
+    <None Remove="Resources\forest_autumn.png" />
+    <None Remove="Resources\forest_autumn_snow.png" />
+    <None Remove="Resources\forest_bamboo.png" />
+    <None Remove="Resources\forest_baobab.png" />
+    <None Remove="Resources\forest_birch.png" />
+    <None Remove="Resources\forest_bush.png" />
+    <None Remove="Resources\forest_dead.png" />
+    <None Remove="Resources\forest_dragon_tree.png" />
+    <None Remove="Resources\forest_jungle.png" />
+    <None Remove="Resources\forest_mangrove.png" />
+    <None Remove="Resources\forest_mediterrane.png" />
+    <None Remove="Resources\forest_oak.png" />
+    <None Remove="Resources\forest_oak_bush.png" />
+    <None Remove="Resources\forest_palm_desert.png" />
+    <None Remove="Resources\forest_palm_grass.png" />
+    <None Remove="Resources\forest_pine.png" />
+    <None Remove="Resources\forest_pine_snow.png" />
+    <None Remove="Resources\forest_rainforest.png" />
+    <None Remove="Resources\forest_reeds.png" />
+    <None Remove="Resources\forest_reeds_beach.png" />
+    <None Remove="Resources\forest_reeds_shallows.png" />
+    <None Remove="Resources\grass_1.png" />
+    <None Remove="Resources\grass_2.png" />
+    <None Remove="Resources\grass_3.png" />
+    <None Remove="Resources\grass_dry.png" />
+    <None Remove="Resources\grass_foundation.png" />
+    <None Remove="Resources\grass_jungle.png" />
+    <None Remove="Resources\grass_jungle_rainforest.png" />
+    <None Remove="Resources\grass_other.png" />
+    <None Remove="Resources\gravel_default.png" />
+    <None Remove="Resources\gravel_desert.png" />
+    <None Remove="Resources\ice.png" />
+    <None Remove="Resources\ice_navigable.png" />
+    <None Remove="Resources\README.md" />
+    <None Remove="Resources\rice_farm.png" />
+    <None Remove="Resources\rice_farm_0p.png" />
+    <None Remove="Resources\rice_farm_33p.png" />
+    <None Remove="Resources\rice_farm_66p.png" />
+    <None Remove="Resources\rice_farm_dead.png" />
+    <None Remove="Resources\road.png" />
+    <None Remove="Resources\road_broken.png" />
+    <None Remove="Resources\road_fungus.png" />
+    <None Remove="Resources\road_gravel.png" />
+    <None Remove="Resources\rock_1.png" />
+    <None Remove="Resources\shallows.png" />
+    <None Remove="Resources\shallows_azure.png" />
+    <None Remove="Resources\shallows_mangrove.png" />
+    <None Remove="Resources\snow.png" />
+    <None Remove="Resources\snow_foundation.png" />
+    <None Remove="Resources\snow_light.png" />
+    <None Remove="Resources\snow_strong.png" />
+    <None Remove="Resources\swamp_bogland.png" />
+    <None Remove="Resources\swamp_shallows.png" />
+    <None Remove="Resources\underbrush.png" />
+    <None Remove="Resources\underbrush_jungle.png" />
+    <None Remove="Resources\underbrush_leaves.png" />
+    <None Remove="Resources\underbrush_snow.png" />
+    <None Remove="Resources\water_2d_bridge.png" />
+    <None Remove="Resources\water_2d_shoreless.png" />
+    <None Remove="Resources\water_azure.png" />
+    <None Remove="Resources\water_brown.png" />
+    <None Remove="Resources\water_deep.png" />
+    <None Remove="Resources\water_deep_ocean.png" />
+    <None Remove="Resources\water_green.png" />
+    <None Remove="Resources\water_medium.png" />
+    <None Remove="Resources\water_shallow.png" />
+    <None Remove="Resources\_invalid.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="icon.ico">
+    <Resource Include="Resources\icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -41,11 +136,110 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="D:\_ART\aoe2de_isometric_stuff\aoe2de_icon\icon.png">
+    <Resource Include="D:\_ART\aoe2de_isometric_stuff\aoe2de_icon\icon.png" Link="Resources\icon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\beach.png" />
+    <Resource Include="Resources\beach_ice.png" />
+    <Resource Include="Resources\beach_non_navigable.png" />
+    <Resource Include="Resources\beach_non_navigable_wet_gravel.png" />
+    <Resource Include="Resources\beach_non_navigable_wet_rock.png" />
+    <Resource Include="Resources\beach_non_navigable_wet_sand.png" />
+    <Resource Include="Resources\beach_vegetation.png" />
+    <Resource Include="Resources\beach_wet.png" />
+    <Resource Include="Resources\beach_wet_gravel.png" />
+    <Resource Include="Resources\beach_wet_rock.png" />
+    <Resource Include="Resources\beach_white.png" />
+    <Resource Include="Resources\beach_white_vegetation.png" />
+    <Resource Include="Resources\black.png" />
+    <Resource Include="Resources\desert_cracked.png" />
+    <Resource Include="Resources\desert_quicksand.png" />
+    <Resource Include="Resources\desert_sand.png" />
+    <Resource Include="Resources\dirt_1.png" />
+    <Resource Include="Resources\dirt_2.png" />
+    <Resource Include="Resources\dirt_3.png" />
+    <Resource Include="Resources\dirt_4.png" />
+    <Resource Include="Resources\dirt_mud.png" />
+    <Resource Include="Resources\dirt_savannah.png" />
+    <Resource Include="Resources\farm.png" />
+    <Resource Include="Resources\farm_0p.png" />
+    <Resource Include="Resources\farm_33p.png" />
+    <Resource Include="Resources\farm_67p.png" />
+    <Resource Include="Resources\farm_dead.png" />
+    <Resource Include="Resources\forest_acacia.png" />
+    <Resource Include="Resources\forest_autumn.png" />
+    <Resource Include="Resources\forest_autumn_snow.png" />
+    <Resource Include="Resources\forest_bamboo.png" />
+    <Resource Include="Resources\forest_baobab.png" />
+    <Resource Include="Resources\forest_birch.png" />
+    <Resource Include="Resources\forest_bush.png" />
+    <Resource Include="Resources\forest_dead.png" />
+    <Resource Include="Resources\forest_dragon_tree.png" />
+    <Resource Include="Resources\forest_jungle.png" />
+    <Resource Include="Resources\forest_mangrove.png" />
+    <Resource Include="Resources\forest_mediterrane.png" />
+    <Resource Include="Resources\forest_oak.png" />
+    <Resource Include="Resources\forest_oak_bush.png" />
+    <Resource Include="Resources\forest_palm_desert.png" />
+    <Resource Include="Resources\forest_palm_grass.png" />
+    <Resource Include="Resources\forest_pine.png" />
+    <Resource Include="Resources\forest_pine_snow.png" />
+    <Resource Include="Resources\forest_rainforest.png" />
+    <Resource Include="Resources\forest_reeds.png" />
+    <Resource Include="Resources\forest_reeds_beach.png" />
+    <Resource Include="Resources\forest_reeds_shallows.png" />
+    <Resource Include="Resources\grass_1.png" />
+    <Resource Include="Resources\grass_2.png" />
+    <Resource Include="Resources\grass_3.png" />
+    <Resource Include="Resources\grass_dry.png" />
+    <Resource Include="Resources\grass_foundation.png" />
+    <Resource Include="Resources\grass_jungle.png" />
+    <Resource Include="Resources\grass_jungle_rainforest.png" />
+    <Resource Include="Resources\grass_other.png" />
+    <Resource Include="Resources\gravel_default.png" />
+    <Resource Include="Resources\gravel_desert.png" />
+    <Resource Include="Resources\ice.png" />
+    <Resource Include="Resources\ice_navigable.png" />
+    <Resource Include="Resources\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\rice_farm.png" />
+    <Resource Include="Resources\rice_farm_0p.png" />
+    <Resource Include="Resources\rice_farm_33p.png" />
+    <Resource Include="Resources\rice_farm_66p.png" />
+    <Resource Include="Resources\rice_farm_dead.png" />
+    <Resource Include="Resources\road.png" />
+    <Resource Include="Resources\road_broken.png" />
+    <Resource Include="Resources\road_fungus.png" />
+    <Resource Include="Resources\road_gravel.png" />
+    <Resource Include="Resources\rock_1.png" />
+    <Resource Include="Resources\shallows.png" />
+    <Resource Include="Resources\shallows_azure.png" />
+    <Resource Include="Resources\shallows_mangrove.png" />
+    <Resource Include="Resources\snow.png" />
+    <Resource Include="Resources\snow_foundation.png" />
+    <Resource Include="Resources\snow_light.png" />
+    <Resource Include="Resources\snow_strong.png" />
+    <Resource Include="Resources\swamp_bogland.png" />
+    <Resource Include="Resources\swamp_shallows.png" />
+    <Resource Include="Resources\underbrush.png" />
+    <Resource Include="Resources\underbrush_jungle.png" />
+    <Resource Include="Resources\underbrush_leaves.png" />
+    <Resource Include="Resources\underbrush_snow.png" />
+    <Resource Include="Resources\water_2d_bridge.png" />
+    <Resource Include="Resources\water_2d_shoreless.png" />
+    <Resource Include="Resources\water_azure.png" />
+    <Resource Include="Resources\water_brown.png" />
+    <Resource Include="Resources\water_deep.png" />
+    <Resource Include="Resources\water_deep_ocean.png" />
+    <Resource Include="Resources\water_green.png" />
+    <Resource Include="Resources\water_medium.png" />
+    <Resource Include="Resources\water_shallow.png" />
+    <Resource Include="Resources\_invalid.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -83,11 +277,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
-    </None>
-    <None Update="README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
