@@ -433,6 +433,7 @@ Partial Class frm_scenario_maker
         lbx_trigger_effects = New ListBox()
         lbx_trigger_conditions = New ListBox()
         tp_aoe2_scenario_parser = New TabPage()
+        lbl_experimental = New Label()
         lbl_python_code = New Label()
         tbx_python = New TextBox()
         tp_about = New TabPage()
@@ -440,7 +441,6 @@ Partial Class frm_scenario_maker
         ofd_scenario = New OpenFileDialog()
         sfd_scenario = New SaveFileDialog()
         ofd_aoe2de_path = New OpenFileDialog()
-        lbl_experimental = New Label()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
@@ -4782,6 +4782,15 @@ Partial Class frm_scenario_maker
         tp_aoe2_scenario_parser.Text = "AoE2 Scenario Parser"
         tp_aoe2_scenario_parser.UseVisualStyleBackColor = True
         ' 
+        ' lbl_experimental
+        ' 
+        lbl_experimental.AutoSize = True
+        lbl_experimental.Location = New Point(8, 8)
+        lbl_experimental.Name = "lbl_experimental"
+        lbl_experimental.Size = New Size(76, 15)
+        lbl_experimental.TabIndex = 2
+        lbl_experimental.Text = "Experimental"
+        ' 
         ' lbl_python_code
         ' 
         lbl_python_code.AutoSize = True
@@ -4844,15 +4853,6 @@ Partial Class frm_scenario_maker
         ofd_aoe2de_path.FileName = "AoE2DE_s.exe"
         ofd_aoe2de_path.Filter = """Age of Empires 2 DE""|*.exe"
         ofd_aoe2de_path.InitialDirectory = """C:\Program Files (x86)\Steam\steamapps\common\AoE2DE"""
-        ' 
-        ' lbl_experimental
-        ' 
-        lbl_experimental.AutoSize = True
-        lbl_experimental.Location = New Point(8, 8)
-        lbl_experimental.Name = "lbl_experimental"
-        lbl_experimental.Size = New Size(76, 15)
-        lbl_experimental.TabIndex = 2
-        lbl_experimental.Text = "Experimental"
         ' 
         ' frm_scenario_maker
         ' 
