@@ -46,6 +46,28 @@ Partial Class frm_scenario_maker
         cbx_color_mood = New ComboBox()
         cbx_ai_map_type = New ComboBox()
         tp_terrain = New TabPage()
+        btn_terrain_dirt_savannah = New Button()
+        btn_terrain_dirt_mud = New Button()
+        btn_terrain_dirt_4 = New Button()
+        btn_terrain_dirt_3 = New Button()
+        btn_terrain_dirt_2 = New Button()
+        btn_terrain_dirt_1 = New Button()
+        btn_terrain_desert_sand = New Button()
+        btn_terrain_desert_quicksand = New Button()
+        btn_terrain_desert_cracked = New Button()
+        btn_terrain_black = New Button()
+        btn_terrain_beach_white_vegetation = New Button()
+        btn_terrain_beach_white = New Button()
+        btn_terrain_beach_wet_rock = New Button()
+        btn_terrain_beach_wet_gravel = New Button()
+        btn_terrain_beach_wet = New Button()
+        btn_terrain_beach_vegetation = New Button()
+        btn_terrain_beach_ice = New Button()
+        btn_terrain_non_navigable_wet_sand = New Button()
+        btn_terrain_beach_non_navigable_wet_rock = New Button()
+        btn_terrain_beach_non_navigable_wet_gravel = New Button()
+        btn_terrain_beach_non_navigable = New Button()
+        btn_terrain_beach = New Button()
         lbl_placed_terrains = New Label()
         lbl_important_note_terrain = New Label()
         lbx_placed_terrains = New ListBox()
@@ -441,28 +463,7 @@ Partial Class frm_scenario_maker
         ofd_scenario = New OpenFileDialog()
         sfd_scenario = New SaveFileDialog()
         ofd_aoe2de_path = New OpenFileDialog()
-        btn_terrain_beach = New Button()
-        btn_terrain_beach_non_navigable = New Button()
-        btn_terrain_beach_non_navigable_wet_gravel = New Button()
-        btn_terrain_beach_non_navigable_wet_rock = New Button()
-        btn_terrain_non_navigable_wet_sand = New Button()
-        btn_terrain_beach_ice = New Button()
-        btn_terrain_beach_vegetation = New Button()
-        btn_terrain_beach_wet = New Button()
-        btn_terrain_beach_wet_gravel = New Button()
-        btn_terrain_beach_wet_rock = New Button()
-        btn_terrain_beach_white = New Button()
-        btn_terrain_beach_white_vegetation = New Button()
-        btn_terrain_black = New Button()
-        btn_terrain_desert_cracked = New Button()
-        btn_terrain_desert_quicksand = New Button()
-        btn_terrain_desert_sand = New Button()
-        btn_terrain_dirt_1 = New Button()
-        btn_terrain_dirt_2 = New Button()
-        btn_terrain_dirt_3 = New Button()
-        btn_terrain_dirt_4 = New Button()
-        btn_terrain_dirt_mud = New Button()
-        btn_terrain_dirt_savannah = New Button()
+        btn_terrain_farm = New Button()
         tc_main.SuspendLayout()
         tp_file.SuspendLayout()
         tp_map.SuspendLayout()
@@ -783,6 +784,7 @@ Partial Class frm_scenario_maker
         ' 
         ' tp_terrain
         ' 
+        tp_terrain.Controls.Add(btn_terrain_farm)
         tp_terrain.Controls.Add(btn_terrain_dirt_savannah)
         tp_terrain.Controls.Add(btn_terrain_dirt_mud)
         tp_terrain.Controls.Add(btn_terrain_dirt_4)
@@ -826,6 +828,314 @@ Partial Class frm_scenario_maker
         tp_terrain.TabIndex = 11
         tp_terrain.Text = "Terrain"
         tp_terrain.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_dirt_savannah
+        ' 
+        btn_terrain_dirt_savannah.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_dirt_savannah.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_dirt_savannah.FlatStyle = FlatStyle.Flat
+        btn_terrain_dirt_savannah.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_dirt_savannah.Image = My.Resources.Resources.dirt_savannah
+        btn_terrain_dirt_savannah.Location = New Point(888, 208)
+        btn_terrain_dirt_savannah.Margin = New Padding(2)
+        btn_terrain_dirt_savannah.Name = "btn_terrain_dirt_savannah"
+        btn_terrain_dirt_savannah.Size = New Size(32, 32)
+        btn_terrain_dirt_savannah.TabIndex = 41
+        btn_terrain_dirt_savannah.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_dirt_mud
+        ' 
+        btn_terrain_dirt_mud.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_dirt_mud.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_dirt_mud.FlatStyle = FlatStyle.Flat
+        btn_terrain_dirt_mud.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_dirt_mud.Image = My.Resources.Resources.dirt_mud
+        btn_terrain_dirt_mud.Location = New Point(888, 176)
+        btn_terrain_dirt_mud.Margin = New Padding(2)
+        btn_terrain_dirt_mud.Name = "btn_terrain_dirt_mud"
+        btn_terrain_dirt_mud.Size = New Size(32, 32)
+        btn_terrain_dirt_mud.TabIndex = 40
+        btn_terrain_dirt_mud.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_dirt_4
+        ' 
+        btn_terrain_dirt_4.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_dirt_4.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_dirt_4.FlatStyle = FlatStyle.Flat
+        btn_terrain_dirt_4.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_dirt_4.Image = My.Resources.Resources.dirt_4
+        btn_terrain_dirt_4.Location = New Point(856, 464)
+        btn_terrain_dirt_4.Margin = New Padding(2)
+        btn_terrain_dirt_4.Name = "btn_terrain_dirt_4"
+        btn_terrain_dirt_4.Size = New Size(32, 32)
+        btn_terrain_dirt_4.TabIndex = 39
+        btn_terrain_dirt_4.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_dirt_3
+        ' 
+        btn_terrain_dirt_3.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_dirt_3.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_dirt_3.FlatStyle = FlatStyle.Flat
+        btn_terrain_dirt_3.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_dirt_3.Image = My.Resources.Resources.dirt_3
+        btn_terrain_dirt_3.Location = New Point(856, 432)
+        btn_terrain_dirt_3.Margin = New Padding(2)
+        btn_terrain_dirt_3.Name = "btn_terrain_dirt_3"
+        btn_terrain_dirt_3.Size = New Size(32, 32)
+        btn_terrain_dirt_3.TabIndex = 38
+        btn_terrain_dirt_3.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_dirt_2
+        ' 
+        btn_terrain_dirt_2.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_dirt_2.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_dirt_2.FlatStyle = FlatStyle.Flat
+        btn_terrain_dirt_2.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_dirt_2.Image = My.Resources.Resources.dirt_2
+        btn_terrain_dirt_2.Location = New Point(856, 400)
+        btn_terrain_dirt_2.Margin = New Padding(2)
+        btn_terrain_dirt_2.Name = "btn_terrain_dirt_2"
+        btn_terrain_dirt_2.Size = New Size(32, 32)
+        btn_terrain_dirt_2.TabIndex = 37
+        btn_terrain_dirt_2.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_dirt_1
+        ' 
+        btn_terrain_dirt_1.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_dirt_1.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_dirt_1.FlatStyle = FlatStyle.Flat
+        btn_terrain_dirt_1.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_dirt_1.Image = My.Resources.Resources.dirt_1
+        btn_terrain_dirt_1.Location = New Point(856, 368)
+        btn_terrain_dirt_1.Margin = New Padding(2)
+        btn_terrain_dirt_1.Name = "btn_terrain_dirt_1"
+        btn_terrain_dirt_1.Size = New Size(32, 32)
+        btn_terrain_dirt_1.TabIndex = 36
+        btn_terrain_dirt_1.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_desert_sand
+        ' 
+        btn_terrain_desert_sand.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_desert_sand.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_desert_sand.FlatStyle = FlatStyle.Flat
+        btn_terrain_desert_sand.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_desert_sand.Image = My.Resources.Resources.desert_sand
+        btn_terrain_desert_sand.Location = New Point(856, 336)
+        btn_terrain_desert_sand.Margin = New Padding(2)
+        btn_terrain_desert_sand.Name = "btn_terrain_desert_sand"
+        btn_terrain_desert_sand.Size = New Size(32, 32)
+        btn_terrain_desert_sand.TabIndex = 35
+        btn_terrain_desert_sand.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_desert_quicksand
+        ' 
+        btn_terrain_desert_quicksand.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_desert_quicksand.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_desert_quicksand.FlatStyle = FlatStyle.Flat
+        btn_terrain_desert_quicksand.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_desert_quicksand.Image = My.Resources.Resources.desert_quicksand
+        btn_terrain_desert_quicksand.Location = New Point(856, 304)
+        btn_terrain_desert_quicksand.Margin = New Padding(2)
+        btn_terrain_desert_quicksand.Name = "btn_terrain_desert_quicksand"
+        btn_terrain_desert_quicksand.Size = New Size(32, 32)
+        btn_terrain_desert_quicksand.TabIndex = 34
+        btn_terrain_desert_quicksand.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_desert_cracked
+        ' 
+        btn_terrain_desert_cracked.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_desert_cracked.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_desert_cracked.FlatStyle = FlatStyle.Flat
+        btn_terrain_desert_cracked.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_desert_cracked.Image = My.Resources.Resources.desert_cracked
+        btn_terrain_desert_cracked.Location = New Point(856, 272)
+        btn_terrain_desert_cracked.Margin = New Padding(2)
+        btn_terrain_desert_cracked.Name = "btn_terrain_desert_cracked"
+        btn_terrain_desert_cracked.Size = New Size(32, 32)
+        btn_terrain_desert_cracked.TabIndex = 33
+        btn_terrain_desert_cracked.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_black
+        ' 
+        btn_terrain_black.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_black.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_black.FlatStyle = FlatStyle.Flat
+        btn_terrain_black.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_black.Image = My.Resources.Resources.black
+        btn_terrain_black.Location = New Point(856, 240)
+        btn_terrain_black.Margin = New Padding(2)
+        btn_terrain_black.Name = "btn_terrain_black"
+        btn_terrain_black.Size = New Size(32, 32)
+        btn_terrain_black.TabIndex = 32
+        btn_terrain_black.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_beach_white_vegetation
+        ' 
+        btn_terrain_beach_white_vegetation.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_beach_white_vegetation.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_beach_white_vegetation.FlatStyle = FlatStyle.Flat
+        btn_terrain_beach_white_vegetation.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_beach_white_vegetation.Image = My.Resources.Resources.beach_white_vegetation
+        btn_terrain_beach_white_vegetation.Location = New Point(856, 208)
+        btn_terrain_beach_white_vegetation.Margin = New Padding(2)
+        btn_terrain_beach_white_vegetation.Name = "btn_terrain_beach_white_vegetation"
+        btn_terrain_beach_white_vegetation.Size = New Size(32, 32)
+        btn_terrain_beach_white_vegetation.TabIndex = 31
+        btn_terrain_beach_white_vegetation.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_beach_white
+        ' 
+        btn_terrain_beach_white.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_beach_white.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_beach_white.FlatStyle = FlatStyle.Flat
+        btn_terrain_beach_white.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_beach_white.Image = My.Resources.Resources.beach_white
+        btn_terrain_beach_white.Location = New Point(856, 176)
+        btn_terrain_beach_white.Margin = New Padding(2)
+        btn_terrain_beach_white.Name = "btn_terrain_beach_white"
+        btn_terrain_beach_white.Size = New Size(32, 32)
+        btn_terrain_beach_white.TabIndex = 30
+        btn_terrain_beach_white.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_beach_wet_rock
+        ' 
+        btn_terrain_beach_wet_rock.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_beach_wet_rock.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_beach_wet_rock.FlatStyle = FlatStyle.Flat
+        btn_terrain_beach_wet_rock.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_beach_wet_rock.Image = My.Resources.Resources.beach_wet_rock
+        btn_terrain_beach_wet_rock.Location = New Point(824, 464)
+        btn_terrain_beach_wet_rock.Margin = New Padding(2)
+        btn_terrain_beach_wet_rock.Name = "btn_terrain_beach_wet_rock"
+        btn_terrain_beach_wet_rock.Size = New Size(32, 32)
+        btn_terrain_beach_wet_rock.TabIndex = 29
+        btn_terrain_beach_wet_rock.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_beach_wet_gravel
+        ' 
+        btn_terrain_beach_wet_gravel.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_beach_wet_gravel.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_beach_wet_gravel.FlatStyle = FlatStyle.Flat
+        btn_terrain_beach_wet_gravel.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_beach_wet_gravel.Image = My.Resources.Resources.beach_wet_gravel
+        btn_terrain_beach_wet_gravel.Location = New Point(824, 432)
+        btn_terrain_beach_wet_gravel.Margin = New Padding(2)
+        btn_terrain_beach_wet_gravel.Name = "btn_terrain_beach_wet_gravel"
+        btn_terrain_beach_wet_gravel.Size = New Size(32, 32)
+        btn_terrain_beach_wet_gravel.TabIndex = 28
+        btn_terrain_beach_wet_gravel.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_beach_wet
+        ' 
+        btn_terrain_beach_wet.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_beach_wet.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_beach_wet.FlatStyle = FlatStyle.Flat
+        btn_terrain_beach_wet.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_beach_wet.Image = My.Resources.Resources.beach_wet
+        btn_terrain_beach_wet.Location = New Point(824, 400)
+        btn_terrain_beach_wet.Margin = New Padding(2)
+        btn_terrain_beach_wet.Name = "btn_terrain_beach_wet"
+        btn_terrain_beach_wet.Size = New Size(32, 32)
+        btn_terrain_beach_wet.TabIndex = 27
+        btn_terrain_beach_wet.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_beach_vegetation
+        ' 
+        btn_terrain_beach_vegetation.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_beach_vegetation.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_beach_vegetation.FlatStyle = FlatStyle.Flat
+        btn_terrain_beach_vegetation.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_beach_vegetation.Image = My.Resources.Resources.beach_vegetation
+        btn_terrain_beach_vegetation.Location = New Point(824, 368)
+        btn_terrain_beach_vegetation.Margin = New Padding(2)
+        btn_terrain_beach_vegetation.Name = "btn_terrain_beach_vegetation"
+        btn_terrain_beach_vegetation.Size = New Size(32, 32)
+        btn_terrain_beach_vegetation.TabIndex = 26
+        btn_terrain_beach_vegetation.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_beach_ice
+        ' 
+        btn_terrain_beach_ice.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_beach_ice.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_beach_ice.FlatStyle = FlatStyle.Flat
+        btn_terrain_beach_ice.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_beach_ice.Image = My.Resources.Resources.beach_ice
+        btn_terrain_beach_ice.Location = New Point(824, 336)
+        btn_terrain_beach_ice.Margin = New Padding(2)
+        btn_terrain_beach_ice.Name = "btn_terrain_beach_ice"
+        btn_terrain_beach_ice.Size = New Size(32, 32)
+        btn_terrain_beach_ice.TabIndex = 25
+        btn_terrain_beach_ice.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_non_navigable_wet_sand
+        ' 
+        btn_terrain_non_navigable_wet_sand.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_non_navigable_wet_sand.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_non_navigable_wet_sand.FlatStyle = FlatStyle.Flat
+        btn_terrain_non_navigable_wet_sand.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_non_navigable_wet_sand.Image = My.Resources.Resources.beach_non_navigable_wet_sand
+        btn_terrain_non_navigable_wet_sand.Location = New Point(824, 304)
+        btn_terrain_non_navigable_wet_sand.Margin = New Padding(2)
+        btn_terrain_non_navigable_wet_sand.Name = "btn_terrain_non_navigable_wet_sand"
+        btn_terrain_non_navigable_wet_sand.Size = New Size(32, 32)
+        btn_terrain_non_navigable_wet_sand.TabIndex = 24
+        btn_terrain_non_navigable_wet_sand.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_beach_non_navigable_wet_rock
+        ' 
+        btn_terrain_beach_non_navigable_wet_rock.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_beach_non_navigable_wet_rock.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_beach_non_navigable_wet_rock.FlatStyle = FlatStyle.Flat
+        btn_terrain_beach_non_navigable_wet_rock.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_beach_non_navigable_wet_rock.Image = My.Resources.Resources.beach_non_navigable_wet_rock
+        btn_terrain_beach_non_navigable_wet_rock.Location = New Point(824, 272)
+        btn_terrain_beach_non_navigable_wet_rock.Margin = New Padding(2)
+        btn_terrain_beach_non_navigable_wet_rock.Name = "btn_terrain_beach_non_navigable_wet_rock"
+        btn_terrain_beach_non_navigable_wet_rock.Size = New Size(32, 32)
+        btn_terrain_beach_non_navigable_wet_rock.TabIndex = 23
+        btn_terrain_beach_non_navigable_wet_rock.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_beach_non_navigable_wet_gravel
+        ' 
+        btn_terrain_beach_non_navigable_wet_gravel.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_beach_non_navigable_wet_gravel.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_beach_non_navigable_wet_gravel.FlatStyle = FlatStyle.Flat
+        btn_terrain_beach_non_navigable_wet_gravel.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_beach_non_navigable_wet_gravel.Image = My.Resources.Resources.beach_non_navigable_wet_gravel
+        btn_terrain_beach_non_navigable_wet_gravel.Location = New Point(824, 240)
+        btn_terrain_beach_non_navigable_wet_gravel.Margin = New Padding(2)
+        btn_terrain_beach_non_navigable_wet_gravel.Name = "btn_terrain_beach_non_navigable_wet_gravel"
+        btn_terrain_beach_non_navigable_wet_gravel.Size = New Size(32, 32)
+        btn_terrain_beach_non_navigable_wet_gravel.TabIndex = 22
+        btn_terrain_beach_non_navigable_wet_gravel.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_beach_non_navigable
+        ' 
+        btn_terrain_beach_non_navigable.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_beach_non_navigable.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_beach_non_navigable.FlatStyle = FlatStyle.Flat
+        btn_terrain_beach_non_navigable.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_beach_non_navigable.Image = My.Resources.Resources.beach_non_navigable
+        btn_terrain_beach_non_navigable.Location = New Point(824, 208)
+        btn_terrain_beach_non_navigable.Margin = New Padding(2)
+        btn_terrain_beach_non_navigable.Name = "btn_terrain_beach_non_navigable"
+        btn_terrain_beach_non_navigable.Size = New Size(32, 32)
+        btn_terrain_beach_non_navigable.TabIndex = 21
+        btn_terrain_beach_non_navigable.UseVisualStyleBackColor = True
+        ' 
+        ' btn_terrain_beach
+        ' 
+        btn_terrain_beach.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_beach.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_beach.FlatStyle = FlatStyle.Flat
+        btn_terrain_beach.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_beach.Image = My.Resources.Resources.beach
+        btn_terrain_beach.Location = New Point(824, 176)
+        btn_terrain_beach.Margin = New Padding(2)
+        btn_terrain_beach.Name = "btn_terrain_beach"
+        btn_terrain_beach.Size = New Size(32, 32)
+        btn_terrain_beach.TabIndex = 20
+        btn_terrain_beach.UseVisualStyleBackColor = True
         ' 
         ' lbl_placed_terrains
         ' 
@@ -4898,313 +5208,19 @@ Partial Class frm_scenario_maker
         ofd_aoe2de_path.Filter = """Age of Empires 2 DE""|*.exe"
         ofd_aoe2de_path.InitialDirectory = """C:\Program Files (x86)\Steam\steamapps\common\AoE2DE"""
         ' 
-        ' btn_terrain_beach
+        ' btn_terrain_farm
         ' 
-        btn_terrain_beach.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_beach.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_beach.FlatStyle = FlatStyle.Flat
-        btn_terrain_beach.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_beach.Image = My.Resources.Resources.beach
-        btn_terrain_beach.Location = New Point(824, 176)
-        btn_terrain_beach.Margin = New Padding(2)
-        btn_terrain_beach.Name = "btn_terrain_beach"
-        btn_terrain_beach.Size = New Size(32, 32)
-        btn_terrain_beach.TabIndex = 20
-        btn_terrain_beach.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_beach_non_navigable
-        ' 
-        btn_terrain_beach_non_navigable.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_beach_non_navigable.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_beach_non_navigable.FlatStyle = FlatStyle.Flat
-        btn_terrain_beach_non_navigable.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_beach_non_navigable.Image = My.Resources.Resources.beach_non_navigable
-        btn_terrain_beach_non_navigable.Location = New Point(824, 208)
-        btn_terrain_beach_non_navigable.Margin = New Padding(2)
-        btn_terrain_beach_non_navigable.Name = "btn_terrain_beach_non_navigable"
-        btn_terrain_beach_non_navigable.Size = New Size(32, 32)
-        btn_terrain_beach_non_navigable.TabIndex = 21
-        btn_terrain_beach_non_navigable.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_beach_non_navigable_wet_gravel
-        ' 
-        btn_terrain_beach_non_navigable_wet_gravel.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_beach_non_navigable_wet_gravel.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_beach_non_navigable_wet_gravel.FlatStyle = FlatStyle.Flat
-        btn_terrain_beach_non_navigable_wet_gravel.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_beach_non_navigable_wet_gravel.Image = My.Resources.Resources.beach_non_navigable_wet_gravel
-        btn_terrain_beach_non_navigable_wet_gravel.Location = New Point(824, 240)
-        btn_terrain_beach_non_navigable_wet_gravel.Margin = New Padding(2)
-        btn_terrain_beach_non_navigable_wet_gravel.Name = "btn_terrain_beach_non_navigable_wet_gravel"
-        btn_terrain_beach_non_navigable_wet_gravel.Size = New Size(32, 32)
-        btn_terrain_beach_non_navigable_wet_gravel.TabIndex = 22
-        btn_terrain_beach_non_navigable_wet_gravel.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_beach_non_navigable_wet_rock
-        ' 
-        btn_terrain_beach_non_navigable_wet_rock.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_beach_non_navigable_wet_rock.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_beach_non_navigable_wet_rock.FlatStyle = FlatStyle.Flat
-        btn_terrain_beach_non_navigable_wet_rock.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_beach_non_navigable_wet_rock.Image = My.Resources.Resources.beach_non_navigable_wet_rock
-        btn_terrain_beach_non_navigable_wet_rock.Location = New Point(824, 272)
-        btn_terrain_beach_non_navigable_wet_rock.Margin = New Padding(2)
-        btn_terrain_beach_non_navigable_wet_rock.Name = "btn_terrain_beach_non_navigable_wet_rock"
-        btn_terrain_beach_non_navigable_wet_rock.Size = New Size(32, 32)
-        btn_terrain_beach_non_navigable_wet_rock.TabIndex = 23
-        btn_terrain_beach_non_navigable_wet_rock.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_non_navigable_wet_sand
-        ' 
-        btn_terrain_non_navigable_wet_sand.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_non_navigable_wet_sand.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_non_navigable_wet_sand.FlatStyle = FlatStyle.Flat
-        btn_terrain_non_navigable_wet_sand.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_non_navigable_wet_sand.Image = My.Resources.Resources.beach_non_navigable_wet_sand
-        btn_terrain_non_navigable_wet_sand.Location = New Point(824, 304)
-        btn_terrain_non_navigable_wet_sand.Margin = New Padding(2)
-        btn_terrain_non_navigable_wet_sand.Name = "btn_terrain_non_navigable_wet_sand"
-        btn_terrain_non_navigable_wet_sand.Size = New Size(32, 32)
-        btn_terrain_non_navigable_wet_sand.TabIndex = 24
-        btn_terrain_non_navigable_wet_sand.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_beach_ice
-        ' 
-        btn_terrain_beach_ice.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_beach_ice.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_beach_ice.FlatStyle = FlatStyle.Flat
-        btn_terrain_beach_ice.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_beach_ice.Image = My.Resources.Resources.beach_ice
-        btn_terrain_beach_ice.Location = New Point(824, 336)
-        btn_terrain_beach_ice.Margin = New Padding(2)
-        btn_terrain_beach_ice.Name = "btn_terrain_beach_ice"
-        btn_terrain_beach_ice.Size = New Size(32, 32)
-        btn_terrain_beach_ice.TabIndex = 25
-        btn_terrain_beach_ice.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_beach_vegetation
-        ' 
-        btn_terrain_beach_vegetation.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_beach_vegetation.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_beach_vegetation.FlatStyle = FlatStyle.Flat
-        btn_terrain_beach_vegetation.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_beach_vegetation.Image = My.Resources.Resources.beach_vegetation
-        btn_terrain_beach_vegetation.Location = New Point(824, 368)
-        btn_terrain_beach_vegetation.Margin = New Padding(2)
-        btn_terrain_beach_vegetation.Name = "btn_terrain_beach_vegetation"
-        btn_terrain_beach_vegetation.Size = New Size(32, 32)
-        btn_terrain_beach_vegetation.TabIndex = 26
-        btn_terrain_beach_vegetation.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_beach_wet
-        ' 
-        btn_terrain_beach_wet.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_beach_wet.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_beach_wet.FlatStyle = FlatStyle.Flat
-        btn_terrain_beach_wet.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_beach_wet.Image = My.Resources.Resources.beach_wet
-        btn_terrain_beach_wet.Location = New Point(824, 400)
-        btn_terrain_beach_wet.Margin = New Padding(2)
-        btn_terrain_beach_wet.Name = "btn_terrain_beach_wet"
-        btn_terrain_beach_wet.Size = New Size(32, 32)
-        btn_terrain_beach_wet.TabIndex = 27
-        btn_terrain_beach_wet.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_beach_wet_gravel
-        ' 
-        btn_terrain_beach_wet_gravel.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_beach_wet_gravel.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_beach_wet_gravel.FlatStyle = FlatStyle.Flat
-        btn_terrain_beach_wet_gravel.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_beach_wet_gravel.Image = My.Resources.Resources.beach_wet_gravel
-        btn_terrain_beach_wet_gravel.Location = New Point(824, 432)
-        btn_terrain_beach_wet_gravel.Margin = New Padding(2)
-        btn_terrain_beach_wet_gravel.Name = "btn_terrain_beach_wet_gravel"
-        btn_terrain_beach_wet_gravel.Size = New Size(32, 32)
-        btn_terrain_beach_wet_gravel.TabIndex = 28
-        btn_terrain_beach_wet_gravel.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_beach_wet_rock
-        ' 
-        btn_terrain_beach_wet_rock.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_beach_wet_rock.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_beach_wet_rock.FlatStyle = FlatStyle.Flat
-        btn_terrain_beach_wet_rock.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_beach_wet_rock.Image = My.Resources.Resources.beach_wet_rock
-        btn_terrain_beach_wet_rock.Location = New Point(824, 464)
-        btn_terrain_beach_wet_rock.Margin = New Padding(2)
-        btn_terrain_beach_wet_rock.Name = "btn_terrain_beach_wet_rock"
-        btn_terrain_beach_wet_rock.Size = New Size(32, 32)
-        btn_terrain_beach_wet_rock.TabIndex = 29
-        btn_terrain_beach_wet_rock.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_beach_white
-        ' 
-        btn_terrain_beach_white.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_beach_white.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_beach_white.FlatStyle = FlatStyle.Flat
-        btn_terrain_beach_white.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_beach_white.Image = My.Resources.Resources.beach_white
-        btn_terrain_beach_white.Location = New Point(856, 176)
-        btn_terrain_beach_white.Margin = New Padding(2)
-        btn_terrain_beach_white.Name = "btn_terrain_beach_white"
-        btn_terrain_beach_white.Size = New Size(32, 32)
-        btn_terrain_beach_white.TabIndex = 30
-        btn_terrain_beach_white.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_beach_white_vegetation
-        ' 
-        btn_terrain_beach_white_vegetation.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_beach_white_vegetation.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_beach_white_vegetation.FlatStyle = FlatStyle.Flat
-        btn_terrain_beach_white_vegetation.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_beach_white_vegetation.Image = My.Resources.Resources.beach_white_vegetation
-        btn_terrain_beach_white_vegetation.Location = New Point(856, 208)
-        btn_terrain_beach_white_vegetation.Margin = New Padding(2)
-        btn_terrain_beach_white_vegetation.Name = "btn_terrain_beach_white_vegetation"
-        btn_terrain_beach_white_vegetation.Size = New Size(32, 32)
-        btn_terrain_beach_white_vegetation.TabIndex = 31
-        btn_terrain_beach_white_vegetation.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_black
-        ' 
-        btn_terrain_black.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_black.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_black.FlatStyle = FlatStyle.Flat
-        btn_terrain_black.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_black.Image = My.Resources.Resources.black
-        btn_terrain_black.Location = New Point(856, 240)
-        btn_terrain_black.Margin = New Padding(2)
-        btn_terrain_black.Name = "btn_terrain_black"
-        btn_terrain_black.Size = New Size(32, 32)
-        btn_terrain_black.TabIndex = 32
-        btn_terrain_black.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_desert_cracked
-        ' 
-        btn_terrain_desert_cracked.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_desert_cracked.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_desert_cracked.FlatStyle = FlatStyle.Flat
-        btn_terrain_desert_cracked.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_desert_cracked.Image = My.Resources.Resources.desert_cracked
-        btn_terrain_desert_cracked.Location = New Point(856, 272)
-        btn_terrain_desert_cracked.Margin = New Padding(2)
-        btn_terrain_desert_cracked.Name = "btn_terrain_desert_cracked"
-        btn_terrain_desert_cracked.Size = New Size(32, 32)
-        btn_terrain_desert_cracked.TabIndex = 33
-        btn_terrain_desert_cracked.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_desert_quicksand
-        ' 
-        btn_terrain_desert_quicksand.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_desert_quicksand.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_desert_quicksand.FlatStyle = FlatStyle.Flat
-        btn_terrain_desert_quicksand.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_desert_quicksand.Image = My.Resources.Resources.desert_quicksand
-        btn_terrain_desert_quicksand.Location = New Point(856, 304)
-        btn_terrain_desert_quicksand.Margin = New Padding(2)
-        btn_terrain_desert_quicksand.Name = "btn_terrain_desert_quicksand"
-        btn_terrain_desert_quicksand.Size = New Size(32, 32)
-        btn_terrain_desert_quicksand.TabIndex = 34
-        btn_terrain_desert_quicksand.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_desert_sand
-        ' 
-        btn_terrain_desert_sand.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_desert_sand.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_desert_sand.FlatStyle = FlatStyle.Flat
-        btn_terrain_desert_sand.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_desert_sand.Image = My.Resources.Resources.desert_sand
-        btn_terrain_desert_sand.Location = New Point(856, 336)
-        btn_terrain_desert_sand.Margin = New Padding(2)
-        btn_terrain_desert_sand.Name = "btn_terrain_desert_sand"
-        btn_terrain_desert_sand.Size = New Size(32, 32)
-        btn_terrain_desert_sand.TabIndex = 35
-        btn_terrain_desert_sand.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_dirt_1
-        ' 
-        btn_terrain_dirt_1.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_dirt_1.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_dirt_1.FlatStyle = FlatStyle.Flat
-        btn_terrain_dirt_1.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_dirt_1.Image = My.Resources.Resources.dirt_1
-        btn_terrain_dirt_1.Location = New Point(856, 368)
-        btn_terrain_dirt_1.Margin = New Padding(2)
-        btn_terrain_dirt_1.Name = "btn_terrain_dirt_1"
-        btn_terrain_dirt_1.Size = New Size(32, 32)
-        btn_terrain_dirt_1.TabIndex = 36
-        btn_terrain_dirt_1.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_dirt_2
-        ' 
-        btn_terrain_dirt_2.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_dirt_2.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_dirt_2.FlatStyle = FlatStyle.Flat
-        btn_terrain_dirt_2.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_dirt_2.Image = My.Resources.Resources.dirt_2
-        btn_terrain_dirt_2.Location = New Point(856, 400)
-        btn_terrain_dirt_2.Margin = New Padding(2)
-        btn_terrain_dirt_2.Name = "btn_terrain_dirt_2"
-        btn_terrain_dirt_2.Size = New Size(32, 32)
-        btn_terrain_dirt_2.TabIndex = 37
-        btn_terrain_dirt_2.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_dirt_3
-        ' 
-        btn_terrain_dirt_3.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_dirt_3.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_dirt_3.FlatStyle = FlatStyle.Flat
-        btn_terrain_dirt_3.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_dirt_3.Image = My.Resources.Resources.dirt_3
-        btn_terrain_dirt_3.Location = New Point(856, 432)
-        btn_terrain_dirt_3.Margin = New Padding(2)
-        btn_terrain_dirt_3.Name = "btn_terrain_dirt_3"
-        btn_terrain_dirt_3.Size = New Size(32, 32)
-        btn_terrain_dirt_3.TabIndex = 38
-        btn_terrain_dirt_3.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_dirt_4
-        ' 
-        btn_terrain_dirt_4.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_dirt_4.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_dirt_4.FlatStyle = FlatStyle.Flat
-        btn_terrain_dirt_4.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_dirt_4.Image = My.Resources.Resources.dirt_4
-        btn_terrain_dirt_4.Location = New Point(856, 464)
-        btn_terrain_dirt_4.Margin = New Padding(2)
-        btn_terrain_dirt_4.Name = "btn_terrain_dirt_4"
-        btn_terrain_dirt_4.Size = New Size(32, 32)
-        btn_terrain_dirt_4.TabIndex = 39
-        btn_terrain_dirt_4.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_dirt_mud
-        ' 
-        btn_terrain_dirt_mud.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_dirt_mud.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_dirt_mud.FlatStyle = FlatStyle.Flat
-        btn_terrain_dirt_mud.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_dirt_mud.Image = My.Resources.Resources.dirt_mud
-        btn_terrain_dirt_mud.Location = New Point(888, 176)
-        btn_terrain_dirt_mud.Margin = New Padding(2)
-        btn_terrain_dirt_mud.Name = "btn_terrain_dirt_mud"
-        btn_terrain_dirt_mud.Size = New Size(32, 32)
-        btn_terrain_dirt_mud.TabIndex = 40
-        btn_terrain_dirt_mud.UseVisualStyleBackColor = True
-        ' 
-        ' btn_terrain_dirt_savannah
-        ' 
-        btn_terrain_dirt_savannah.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        btn_terrain_dirt_savannah.BackgroundImageLayout = ImageLayout.Stretch
-        btn_terrain_dirt_savannah.FlatStyle = FlatStyle.Flat
-        btn_terrain_dirt_savannah.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_terrain_dirt_savannah.Image = My.Resources.Resources.dirt_savannah
-        btn_terrain_dirt_savannah.Location = New Point(888, 208)
-        btn_terrain_dirt_savannah.Margin = New Padding(2)
-        btn_terrain_dirt_savannah.Name = "btn_terrain_dirt_savannah"
-        btn_terrain_dirt_savannah.Size = New Size(32, 32)
-        btn_terrain_dirt_savannah.TabIndex = 41
-        btn_terrain_dirt_savannah.UseVisualStyleBackColor = True
+        btn_terrain_farm.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        btn_terrain_farm.BackgroundImageLayout = ImageLayout.Stretch
+        btn_terrain_farm.FlatStyle = FlatStyle.Flat
+        btn_terrain_farm.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_terrain_farm.Image = My.Resources.Resources.farm
+        btn_terrain_farm.Location = New Point(888, 240)
+        btn_terrain_farm.Margin = New Padding(2)
+        btn_terrain_farm.Name = "btn_terrain_farm"
+        btn_terrain_farm.Size = New Size(32, 32)
+        btn_terrain_farm.TabIndex = 42
+        btn_terrain_farm.UseVisualStyleBackColor = True
         ' 
         ' frm_scenario_maker
         ' 
@@ -5746,4 +5762,5 @@ Partial Class frm_scenario_maker
     Public WithEvents btn_terrain_dirt_4 As Button
     Public WithEvents btn_terrain_dirt_mud As Button
     Public WithEvents btn_terrain_dirt_savannah As Button
+    Public WithEvents btn_terrain_farm As Button
 End Class
